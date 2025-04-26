@@ -1,0 +1,12 @@
+{
+	"type": "word",
+	"front": "食べる",
+	"reading": "たべる",
+	"class": "ichidan",
+	"meaning": "manger",
+	"mnemonic": "Pensez à 'table' où l'on mange (taberu ≈ table + ru)",
+	"example": [
+	  "朝ごはんを食べる (あさごはんをたべる - prendre le petit-déjeuner)",
+	  "パンを食べる (ぱんをたべる - manger du pain)"
+	]
+}

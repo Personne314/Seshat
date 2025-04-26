@@ -1,3 +1,4 @@
 env/
 *.sh
 *.log
+__pycache__
