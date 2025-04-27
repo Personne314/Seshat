@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from model.flashcard import *
+from model.deck import *
 
 app = Flask(__name__)
 
@@ -8,10 +8,7 @@ def home():
     return render_template('index.html')
 
 if __name__ == '__main__':
-    f1 = Flashcard("data/deck/test/kanji_test.json")
-    f2 = Flashcard("data/deck/test/radical_test.json")
-    f3 = Flashcard("data/deck/test/word_test.json")
-    print(f1,f2,f3)
+    deck = Deck("test")
     
     print("\nStarting Flask Server...")
     app.run(debug=True)

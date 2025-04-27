@@ -2,6 +2,9 @@ import json
 from model.type import *
 
 
+
+# This class is used to represent the model of a flashcard.
+# This can load a flashcard from a json file.
 class Flashcard:
 
 	# Loads a flashcard from a json file.
