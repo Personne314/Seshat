@@ -35,7 +35,7 @@ body {
     padding-top: 140px;
 }
 
-.flashcards-carousel {
+.flashcards-deck {
     position: relative;
     display: flex;
     justify-content: center;
@@ -45,13 +45,13 @@ body {
     overflow: hidden;
 }
 
-.carousel-container {
+.deck-container {
     position: relative;
     width: 500px;
     height: 500px;
 }
 
-.carousel-btn {
+.deck-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -67,15 +67,15 @@ body {
     z-index: 10;
 }
 
-.carousel-btn:hover {
+.deck-btn:hover {
     background: rgba(0, 0, 0, 0.9);
 }
 
-.carousel-btn.prev {
+.deck-btn.prev {
     left: 15px;
 }
 
-.carousel-btn.next {
+.deck-btn.next {
     right: 15px;
 }
 

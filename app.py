@@ -1,51 +1,37 @@
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template, jsonify, abort, json
 from model.deck import Deck
+from os import path, listdir
 
+
+# Creates the app.
 app = Flask(__name__)
 
 
-
+# Main route. Placeholder.
 @app.route('/')
 def index():
-    deckname = "test"
+	deck_data = "test"
+	return render_template('deck.html', deck_data=deck_data)
+	
+# Route used to get the json files of the cards of a deck. 
+@app.route("/api/deck/<deck_name>/files")
+def list_deck_files(deck_name):
+	folder_path = path.join("data/deck/",deck_name)
+	if not path.exists(folder_path):
+		abort(404, description=f"Folder '{folder_path}' not found")
+	files = [f for f in listdir(folder_path) if f.endswith('.json') and f != "_deck.json"]
+	return jsonify(files)
 
-    deck = Deck(deckname)
-    if deck.init:
-        return render_template('carousel.html')
-    return ""
+# Route used to get a card json file. 
+@app.route("/api/deck/<deck_name>/file/<card_name>")
+def get_deck_file(deck_name, card_name):
+	file_path = path.join("data/deck", deck_name, card_name)
+	if not path.exists(file_path):
+		abort(404, description=f"File '{card_name}' not found in deck '{deck_name}'")
+	with open(file_path, 'r', encoding='utf-8') as f:
+		return jsonify(json.load(f))
 
 
-
-@app.route('/api/deck/<deck_name>')
-def api_get_deck(deck_name):
-    deck = Deck(deck_name)
-    if not deck.init:
-        return jsonify({"error": "Deck loading failed"}), 400
-    
-    cards = []
-    for front in deck:
-        card = deck[front]
-        cards.append({
-            "id": f"{card.type.name.lower()}_{hash(front)}",
-            "type": card.type.name.lower(),
-            "front": card.front,
-            "meta": {
-                **({"on": card.on, "kun": card.kun, "radical": card.radical} if card.type.name == "KANJI" else {}),
-                **({"reading": card.reading, "class": card.word_class.name.lower()} if card.type.name == "WORD" else {}),
-                **({"name": card.name} if card.type.name == "RADICAL" else {})
-            },
-            "content": {
-                "meaning": card.meaning,
-                "mnemonic": card.mnemonic,
-                "examples": card.example
-            }
-        })
-    
-    return jsonify({
-        "name": deck.name,
-        "tags": deck.tags,
-        "cards": cards
-    })
-
+# Launches the app.
 if __name__ == '__main__':
-    app.run(debug=True)
+	app.run(debug=True)

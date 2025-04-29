@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Carrousel Flashcards</title>
+	<link rel="stylesheet" href="/static/css/deck.css">
+</head>
+<body>
+
+	<header class="deck-header">
+		<h1 id="deck-name"></h1>
+		<div id="deck-tags"></div>
+	</header>
+	<main class="deck-main">
+		<div class="flashcards-deck">
+			<div class="deck-container" id="deck-container"></div>
+			<button class="deck-btn prev">&lt;</button>
+			<button class="deck-btn next">&gt;</button>
+		</div>
+	</main>
+
+
+	<div id="deck-data" 
+		data-name="{{deck_data}}"
+		style="display: none;">
+	</div>
+	<script src="/static/js/flashcard.js"></script>
+	<script src="/static/js/deck.js"></script>
+
+</body>
+</html>
