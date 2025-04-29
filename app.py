@@ -1,5 +1,4 @@
 from flask import Flask, render_template, jsonify, abort, json
-from model.deck import Deck
 from os import path, listdir
 
 
