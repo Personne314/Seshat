@@ -1,5 +1,6 @@
 from flask import Flask, render_template, jsonify, abort, json
 from os import path, listdir
+from random import shuffle
 from database import *
 
 
@@ -30,6 +31,21 @@ def index():
 def text():
 	return render_template('text.html')
 
+
+
+
+
+# API Routes
+
+# Route used to generate the json describing a radical exercice.
+@app.route("/api/exercice/radical/<deck_name>")
+def generate_radical_exercice(deck_name):
+	folder_path = path.join("static/data/deck/",deck_name)
+	if not path.exists(folder_path):
+		abort(404, description=f"Folder '{folder_path}' not found")
+	files = [f for f in listdir(folder_path) if f.endswith('.json') and f != "_deck.json"]
+	shuffle(files)
+	return jsonify(files)
 
 # Route used to get the json files of the cards of a deck. 
 @app.route("/api/deck/<deck_name>/files")
