@@ -40,7 +40,7 @@ class Flashcard {
 					</div>
 					<div class="flashcard-face flashcard-back">
 						<div class="card-content">
-							<h3 class="card-title">${this.meaning}</h3>`;
+							<h3 class="card-title">${this.meaning.join(', ')}</h3>`;
 	}
 
 	// This renders the shared last part of the card HTML script.
@@ -167,11 +167,16 @@ async function loadCard(deck_name, file_name) {
 		if (typeof front !== 'string') {
 			throw new Error(`[SESHAT]: '${file_name}' must define a 'front' string field`);
 		}
-		if (typeof meaning !== 'string') {
+		if (typeof mnemonic !== 'string') {
 			throw new Error(`[SESHAT]: '${file_name}' must define a 'meaning' string field`);
 		}
-		if (typeof mnemonic !== 'string') {
+		if (!Array.isArray(meaning)) {
 			throw new Error(`[SESHAT]: '${file_name}' must define a 'mnemonic' string field`);
+		}
+		for (const e of meaning) {
+			if (typeof e !== 'string') {
+				throw new Error(`[SESHAT]: '${file_name}' 'example' field must contain only strings`);
+			}
 		}
 		if (!Array.isArray(example)) {
 			throw new Error(`[SESHAT]: '${file_name}' must define an 'example' list field`);

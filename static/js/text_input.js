@@ -27,8 +27,3 @@ function toggleKana() {
 		console.log("Kana désactivé");
 	}
 }
-
-function setQuestion(text) {
-	const box = document.getElementById('question-box');
-	box.textContent = text;
-}

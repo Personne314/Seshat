@@ -2,7 +2,7 @@
     "type": "radical",
     "front": "艹",
     "name": "くさかんむり",
-    "meaning": "herbe",
+    "meaning": ["herbe"],
     "mnemonic": "Deux brins d'herbe qui poussent - imaginez un petit jardin qui germe",
     "example": ["花", "草", "茶", "薬"]
 }
