@@ -32,7 +32,7 @@ def index():
 # Radical exercice route.
 @app.route('/radicals-exercise')
 def radicals_exercise():
-	deck_data = "radicals-1"
+	deck_data = "radicals-14"
 	return render_template('exercices/radical_exercise.html', deck_data=deck_data)
 
 
