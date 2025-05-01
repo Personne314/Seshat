@@ -1,11 +1,12 @@
 let cards = [];
 let currentIndex = 0;
-let deckName = 'test'; // À ajuster dynamiquement si besoin
 
 const cardContainer = document.getElementById('deck-container');
 const textInput = document.getElementById('text-input');
 const responseBtn = document.getElementById('response-btn');
 const nextBtn = document.getElementById('next-btn');
+const deckDataElement = document.getElementById('deck-data');
+let deckName = deckDataElement ? deckDataElement.dataset.name || 'error' : 'error';
 
 async function fetchCards() {
 	try {

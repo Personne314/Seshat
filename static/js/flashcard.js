@@ -9,6 +9,11 @@ const allowedCardTypes = [
 ];
 
 
+allowFlip = false;
+function cardsAllowFlip() {allowFlip = true;}
+function cardsPreventFlip() {allowFlip = false;}
+
+
 // Flashcard base class.
 class Flashcard {
 	constructor(type, front, meaning, mnemonic, example) {
@@ -28,7 +33,7 @@ class Flashcard {
 	renderPre(index) {
 		return `
 			<div class="flashcard ${this.type} ${index === 0 ? 'active' : ''}" 
-			onclick="this.classList.toggle('flipped')">
+			${allowFlip ? 'onclick="this.classList.toggle(\'flipped\')"' : ''}>
 				<div class="flashcard-inner">
 					<div class="flashcard-face flashcard-front">
 						${this.front}

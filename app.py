@@ -27,11 +27,13 @@ def index():
 	
 
 
-@app.route('/text')
-def text():
-	return render_template('text.html')
 
 
+# Radical exercice route.
+@app.route('/radicals-exercise')
+def radicals_exercise():
+	deck_data = "radicals-1"
+	return render_template('exercices/radical_exercise.html', deck_data=deck_data)
 
 
 
@@ -60,6 +62,7 @@ def list_deck_files(deck_name):
 @app.route("/api/deck/<deck_name>/file/<card_name>")
 def get_deck_file(deck_name, card_name):
 	file_path = path.join("static/data/deck", deck_name, card_name)
+	print(file_path)
 	if not path.exists(file_path):
 		abort(404, description=f"File '{card_name}' not found in deck '{deck_name}'")
 	with open(file_path, 'r', encoding='utf-8') as f:

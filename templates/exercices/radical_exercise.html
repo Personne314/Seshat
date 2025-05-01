@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exercice Radical</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/text_input.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/deck.css') }}">
+</head>
+<body>
+
+	<div class="flashcards-deck">
+		<div class="deck-container" id="deck-container"></div>
+	</div>
+
+	<div id="text-input-container" style="text-align:center; margin-top: 20px;">
+		<div id="question-box">Quel est la signification du radial suivant ?</div>
+
+		<div id="text-input-answer	-container" style="text-align:center; margin-top: 20px;">
+			<input type="text" id="text-input" placeholder="Tapez ici..." />
+			<button id="response-btn" hidden>Valider</button>
+			<button id="next-btn" hidden>Suivant</button>
+			<div id="feedback" style="margin-top: 1em; font-weight: bold;"></div>
+		</div>
+	</div>
+	
+	<div id="deck-data" 
+		data-name="{{deck_data}}"
+		style="display: none;">
+	</div>
+	<script src="{{ url_for('static', filename='js/flashcard.js') }}">cardsPreventFlip();</script>
+	<script src="{{ url_for('static', filename='js/exercise_flashcard.js') }}"></script>
+</body>
+</html>
