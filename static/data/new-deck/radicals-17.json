@@ -7,7 +7,6 @@
   },
   "cards": [
     {
-      "type": "radical",
       "front": "青",
       "name": "あお",
       "meaning": [
@@ -22,7 +21,6 @@
       ]
     },
     {
-      "type": "radical",
       "front": "毋",
       "name": "なかれ",
       "meaning": [
@@ -37,7 +35,6 @@
       ]
     },
     {
-      "type": "radical",
       "front": "爻",
       "name": "めめ",
       "meaning": [
@@ -51,7 +48,6 @@
       ]
     },
     {
-      "type": "radical",
       "front": "臣",
       "name": "しん",
       "meaning": [
@@ -65,7 +61,6 @@
       ]
     },
     {
-      "type": "radical",
       "front": "广",
       "name": "まだれ",
       "meaning": [
@@ -79,7 +74,6 @@
       ]
     },
     {
-      "type": "radical",
       "front": "弋",
       "name": "しきがまえ",
       "meaning": [
@@ -93,7 +87,6 @@
       ]
     },
     {
-      "type": "radical",
       "front": "疋",
       "name": "ひき",
       "meaning": [
@@ -107,7 +100,6 @@
       ]
     },
     {
-      "type": "radical",
       "front": "癶",
       "name": "はつがしら",
       "meaning": [
@@ -121,7 +113,6 @@
       ]
     },
     {
-      "type": "radical",
       "front": "辰",
       "name": "しんのたつ",
       "meaning": [
@@ -135,7 +126,6 @@
       ]
     },
     {
-      "type": "radical",
       "front": "釆",
       "name": "のごめ",
       "meaning": [
@@ -149,7 +139,6 @@
       ]
     },
     {
-      "type": "radical",
       "front": "里",
       "name": "さと",
       "meaning": [
@@ -163,7 +152,6 @@
       ]
     },
     {
-      "type": "radical",
       "front": "鼎",
       "name": "かなえ",
       "meaning": [
@@ -177,7 +165,6 @@
       ]
     },
     {
-      "type": "radical",
       "front": "龍",
       "name": "りゅう",
       "meaning": [
@@ -191,7 +178,6 @@
       ]
     },
     {
-      "type": "radical",
       "front": "无",
       "name": "むにょう",
       "meaning": [
@@ -206,7 +192,6 @@
       ]
     },
     {
-      "type": "radical",
       "front": "禸",
       "name": "うのあし",
       "meaning": [

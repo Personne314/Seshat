@@ -7,7 +7,6 @@
   },
   "cards": [
     {
-      "type": "radical",
       "front": "月",
       "name": "つき",
       "meaning": [
@@ -22,7 +21,6 @@
       ]
     },
     {
-      "type": "radical",
       "front": "豆",
       "name": "まめ",
       "meaning": [
@@ -36,7 +34,6 @@
       ]
     },
     {
-      "type": "radical",
       "front": "尢",
       "name": "まげあし",
       "meaning": [
@@ -51,7 +48,6 @@
       ]
     },
     {
-      "type": "radical",
       "front": "面",
       "name": "めん",
       "meaning": [
@@ -65,7 +61,6 @@
       ]
     },
     {
-      "type": "radical",
       "front": "矛",
       "name": "むのほこ",
       "meaning": [
@@ -79,7 +74,6 @@
       ]
     },
     {
-      "type": "radical",
       "front": "勹",
       "name": "つつみがまえ",
       "meaning": [
@@ -93,7 +87,6 @@
       ]
     },
     {
-      "type": "radical",
       "front": "匚",
       "name": "はこがまえ",
       "meaning": [
@@ -107,7 +100,6 @@
       ]
     },
     {
-      "type": "radical",
       "front": "矢",
       "name": "や",
       "meaning": [
@@ -121,7 +113,6 @@
       ]
     },
     {
-      "type": "radical",
       "front": "彡",
       "name": "さんづくり",
       "meaning": [
@@ -136,7 +127,6 @@
       ]
     },
     {
-      "type": "radical",
       "front": "血",
       "name": "ち",
       "meaning": [

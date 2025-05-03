@@ -7,7 +7,6 @@
   },
   "cards": [
     {
-      "type": "radical",
       "front": "十",
       "name": "じゅう",
       "meaning": [
@@ -22,7 +21,6 @@
       ]
     },
     {
-      "type": "radical",
       "front": "斤",
       "name": "おの",
       "meaning": [
@@ -36,7 +34,6 @@
       ]
     },
     {
-      "type": "radical",
       "front": "瓜",
       "name": "うり",
       "meaning": [
@@ -50,7 +47,6 @@
       ]
     },
     {
-      "type": "radical",
       "front": "長",
       "name": "ながい",
       "meaning": [
@@ -64,7 +60,6 @@
       ]
     },
     {
-      "type": "radical",
       "front": "谷",
       "name": "たに",
       "meaning": [
@@ -78,7 +73,6 @@
       ]
     },
     {
-      "type": "radical",
       "front": "行",
       "name": "ぎょう",
       "meaning": [
@@ -93,7 +87,6 @@
       ]
     },
     {
-      "type": "radical",
       "front": "儿",
       "name": "にんにょう",
       "meaning": [
@@ -108,7 +101,6 @@
       ]
     },
     {
-      "type": "radical",
       "front": "冂",
       "name": "まきがまえ",
       "meaning": [
@@ -122,7 +114,6 @@
       ]
     },
     {
-      "type": "radical",
       "front": "幺",
       "name": "いとがしら",
       "meaning": [
@@ -136,7 +127,6 @@
       ]
     },
     {
-      "type": "radical",
       "front": "廾",
       "name": "にじゅうあし",
       "meaning": [
@@ -151,7 +141,6 @@
       ]
     },
     {
-      "type": "radical",
       "front": "鼻",
       "name": "はな",
       "meaning": [
@@ -165,7 +154,6 @@
       ]
     },
     {
-      "type": "radical",
       "front": "爿",
       "name": "しょうへん",
       "meaning": [
@@ -179,7 +167,6 @@
       ]
     },
     {
-      "type": "radical",
       "front": "黍",
       "name": "きび",
       "meaning": [
@@ -193,7 +180,6 @@
       ]
     },
     {
-      "type": "radical",
       "front": "鼓",
       "name": "つづみ",
       "meaning": [
@@ -207,7 +193,6 @@
       ]
     },
     {
-      "type": "radical",
       "front": "卜",
       "name": "ぼくのと",
       "meaning": [
