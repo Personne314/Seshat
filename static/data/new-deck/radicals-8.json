@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "name": "Radicaux - 8",
+    "tags": [
+      "radical"
+    ]
+  },
+  "cards": [
+    {
+      "type": "radical",
+      "front": "尸",
+      "name": "しかばね",
+      "meaning": [
+        "corps",
+        "cadavre"
+      ],
+      "mnemonic": "La silhouette d'un corps allongé - pensez à une forme recroquevillée",
+      "example": [
+        "尺",
+        "局",
+        "尿"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "豕",
+      "name": "いのこ",
+      "meaning": [
+        "porc"
+      ],
+      "mnemonic": "Un porc avec son groin et sa queue en tire-bouchon",
+      "example": [
+        "豚",
+        "象",
+        "豢"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "鬼",
+      "name": "おに",
+      "meaning": [
+        "fantôme"
+      ],
+      "mnemonic": "Un oni (démon japonais) avec ses cornes et son regard menaçant",
+      "example": [
+        "魂",
+        "魔",
+        "魅"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "豸",
+      "name": "むじな",
+      "meaning": [
+        "chat",
+        "blaireau"
+      ],
+      "mnemonic": "Un animal sauvage au dos arqué, prêt à bondir",
+      "example": [
+        "豹",
+        "貌",
+        "貍"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "大",
+      "name": "だい",
+      "meaning": [
+        "grand",
+        "gros",
+        "très"
+      ],
+      "mnemonic": "Une personne debout les bras étendus pour montrer sa grandeur",
+      "example": [
+        "太",
+        "天",
+        "奥"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "麦",
+      "name": "むぎ",
+      "meaning": [
+        "froment"
+      ],
+      "mnemonic": "Des épis de blé courbés sous le vent",
+      "example": [
+        "麺",
+        "麩",
+        "麴"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "厂",
+      "name": "がんだれ",
+      "meaning": [
+        "falaise"
+      ],
+      "mnemonic": "Le profil abrupt d'une falaise rocheuse",
+      "example": [
+        "厚",
+        "原",
+        "厳"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "皿",
+      "name": "さら",
+      "meaning": [
+        "plat"
+      ],
+      "mnemonic": "Un plat creux traditionnel pour servir la nourriture",
+      "example": [
+        "盆",
+        "盃",
+        "監"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "囗",
+      "name": "くにがまえ",
+      "meaning": [
+        "enclos"
+      ],
+      "mnemonic": "Un cadre carré représentant un espace délimité",
+      "example": [
+        "国",
+        "園",
+        "囲"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "戈",
+      "name": "かのほこ",
+      "meaning": [
+        "hallebarde"
+      ],
+      "mnemonic": "Une arme ancienne avec son long manche et sa lame courbée",
+      "example": [
+        "戦",
+        "戯",
+        "戒"
+      ]
+    }
+  ]
+}

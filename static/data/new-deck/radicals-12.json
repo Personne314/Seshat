@@ -1,0 +1,224 @@
+{
+  "meta": {
+    "name": "Radicaux - 12",
+    "tags": [
+      "radical"
+    ]
+  },
+  "cards": [
+    {
+      "type": "radical",
+      "front": "十",
+      "name": "じゅう",
+      "meaning": [
+        "dix",
+        "complet"
+      ],
+      "mnemonic": "Un dix romain légèrement tourné",
+      "example": [
+        "千",
+        "午",
+        "協"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "斤",
+      "name": "おの",
+      "meaning": [
+        "hache"
+      ],
+      "mnemonic": "Une lame de hache avec son manche court et oblique",
+      "example": [
+        "新",
+        "断",
+        "斬"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "瓜",
+      "name": "うり",
+      "meaning": [
+        "melon"
+      ],
+      "mnemonic": "Un melon suspendu à sa vigne avec ses vrilles caractéristiques",
+      "example": [
+        "瓠",
+        "瓢",
+        "瓣"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "長",
+      "name": "ながい",
+      "meaning": [
+        "long"
+      ],
+      "mnemonic": "Une personne aux cheveux longs, symbolisant la durée",
+      "example": [
+        "張",
+        "帳",
+        "髪"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "谷",
+      "name": "たに",
+      "meaning": [
+        "vallée"
+      ],
+      "mnemonic": "L'intersection de deux montagnes formant une vallée encaissée",
+      "example": [
+        "浴",
+        "容",
+        "俗"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "行",
+      "name": "ぎょう",
+      "meaning": [
+        "aller",
+        "faire"
+      ],
+      "mnemonic": "Une intersection de routes symbolisant le mouvement",
+      "example": [
+        "術",
+        "街",
+        "衛"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "儿",
+      "name": "にんにょう",
+      "meaning": [
+        "jambes",
+        "enfant"
+      ],
+      "mnemonic": "Deux jambes en mouvement, comme un enfant qui court",
+      "example": [
+        "元",
+        "兄",
+        "光"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "冂",
+      "name": "まきがまえ",
+      "meaning": [
+        "boîte retournée"
+      ],
+      "mnemonic": "Un cadre ouvert vers le bas comme un panier renversé",
+      "example": [
+        "内",
+        "再",
+        "周"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "幺",
+      "name": "いとがしら",
+      "meaning": [
+        "fil court"
+      ],
+      "mnemonic": "Un brin de soie fine noué à son extrémité",
+      "example": [
+        "幻",
+        "幼",
+        "幽"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "廾",
+      "name": "にじゅうあし",
+      "meaning": [
+        "deux mains",
+        "vingt"
+      ],
+      "mnemonic": "Deux mains jointes comme pour porter un objet lourd, évoquant aussi le nombre 20 en ancien chinois",
+      "example": [
+        "弁",
+        "弄",
+        "弈"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "鼻",
+      "name": "はな",
+      "meaning": [
+        "nez"
+      ],
+      "mnemonic": "Un nez avec ses narines bien visibles et son arête centrale",
+      "example": [
+        "鼾",
+        "齁",
+        "齃"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "爿",
+      "name": "しょうへん",
+      "meaning": [
+        "bois fendu"
+      ],
+      "mnemonic": "Une planche de bois avec ses veines verticales après fendage",
+      "example": [
+        "牀",
+        "牆",
+        "牃"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "黍",
+      "name": "きび",
+      "meaning": [
+        "millet"
+      ],
+      "mnemonic": "Une plante céréalière avec ses grains en grappes denses",
+      "example": [
+        "黏",
+        "黎",
+        "黐"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "鼓",
+      "name": "つづみ",
+      "meaning": [
+        "tambour"
+      ],
+      "mnemonic": "Un tambour traditionnel avec ses percussions et son cadre en bois",
+      "example": [
+        "鼕",
+        "鼙",
+        "鼛"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "卜",
+      "name": "ぼくのと",
+      "meaning": [
+        "divination"
+      ],
+      "mnemonic": "Des fissures sur un os oracle utilisé pour la divination ancienne",
+      "example": [
+        "占",
+        "卦",
+        "貞"
+      ]
+    }
+  ]
+}

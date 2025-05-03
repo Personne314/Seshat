@@ -1,0 +1,150 @@
+{
+  "meta": {
+    "name": "Radicaux - 7",
+    "tags": [
+      "radical"
+    ]
+  },
+  "cards": [
+    {
+      "type": "radical",
+      "front": "瓦",
+      "name": "かわら",
+      "meaning": [
+        "tuile"
+      ],
+      "mnemonic": "Une tuile de toit traditionnelle avec sa courbure caractéristique",
+      "example": [
+        "瓶",
+        "甕",
+        "瓧"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "耳",
+      "name": "みみ",
+      "meaning": [
+        "oreille"
+      ],
+      "mnemonic": "Le contour d'une oreille humaine avec son lobe bien visible",
+      "example": [
+        "聞",
+        "聴",
+        "職"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "黑",
+      "name": "くろ",
+      "meaning": [
+        "noir"
+      ],
+      "mnemonic": "De la suie ou de l'encre épaisse représentant la noirceur",
+      "example": [
+        "墨",
+        "點",
+        "黛"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "弓",
+      "name": "ゆみ",
+      "meaning": [
+        "arc"
+      ],
+      "mnemonic": "Un arc bandé prêt à décocher une flèche",
+      "example": [
+        "引",
+        "弔",
+        "強"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "力",
+      "name": "ちから",
+      "meaning": [
+        "force"
+      ],
+      "mnemonic": "Un biceps contracté symbolisant l'effort musculaire",
+      "example": [
+        "加",
+        "助",
+        "動"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "罒",
+      "name": "あみがしら",
+      "meaning": [
+        "filet"
+      ],
+      "mnemonic": "Un filet de pêche aux mailles serrées",
+      "example": [
+        "買",
+        "罪",
+        "羅"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "歯",
+      "name": "は",
+      "meaning": [
+        "dent"
+      ],
+      "mnemonic": "Une rangée de dents bien alignées avec leurs racines",
+      "example": [
+        "齢",
+        "齟",
+        "齲"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "見",
+      "name": "みる",
+      "meaning": [
+        "voir"
+      ],
+      "mnemonic": "Un œil sur des jambes, symbolisant l'action de regarder",
+      "example": [
+        "視",
+        "覚",
+        "観"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "角",
+      "name": "つの",
+      "meaning": [
+        "corne"
+      ],
+      "mnemonic": "Une corne d'animal courbée et pointue",
+      "example": [
+        "解",
+        "触",
+        "觴"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "羊",
+      "name": "ひつじ",
+      "meaning": [
+        "mouton"
+      ],
+      "mnemonic": "Une tête de mouton avec ses cornes spiralées",
+      "example": [
+        "美",
+        "祥",
+        "着"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "meta": {
+    "name": "Radicaux - 14",
+    "tags": [
+      "radical"
+    ]
+  },
+  "cards": [
+    {
+      "type": "radical",
+      "front": "曰",
+      "name": "にち",
+      "meaning": [
+        "dire"
+      ],
+      "mnemonic": "Une bouche ouverte (日) avec un trait évoquant des paroles qui s'échappent",
+      "example": [
+        "書",
+        "最",
+        "曹"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "香",
+      "name": "においこう",
+      "meaning": [
+        "parfumé"
+      ],
+      "mnemonic": "Des grains de riz (禾) qui dégagent un doux parfum",
+      "example": [
+        "馨",
+        "馥",
+        "馫"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "爫",
+      "name": "つめ",
+      "meaning": [
+        "griffe"
+      ],
+      "mnemonic": "Des serres d'oiseau prêtes à saisir une proie",
+      "example": [
+        "爬",
+        "爭",
+        "爲"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "辛",
+      "name": "からい",
+      "meaning": [
+        "amer",
+        "laborieux"
+      ],
+      "mnemonic": "Une plante médicinale au goût amer nécessitant un dur labeur pour être récoltée",
+      "example": [
+        "辣",
+        "辨",
+        "辮"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "夕",
+      "name": "ゆうべ",
+      "meaning": [
+        "soir"
+      ],
+      "mnemonic": "Un croissant de lune apparaissant à la tombée du jour",
+      "example": [
+        "夜",
+        "多",
+        "外"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "自",
+      "name": "みずから",
+      "meaning": [
+        "soi-même",
+        "nez"
+      ],
+      "mnemonic": "Un nez au-dessus d'une bouche, symbolisant la personne elle-même",
+      "example": [
+        "息",
+        "臭",
+        "鼻"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "高",
+      "name": "たかい",
+      "meaning": [
+        "haut"
+      ],
+      "mnemonic": "Une tour à étages avec son toit pointu dominant le paysage",
+      "example": [
+        "髞",
+        "髜",
+        "髙"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "麻",
+      "name": "あさ",
+      "meaning": [
+        "chanvre"
+      ],
+      "mnemonic": "Des plantes de chanvre alignées dans un champ",
+      "example": [
+        "魔",
+        "靡",
+        "麿"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "丿",
+      "name": "の",
+      "meaning": [
+        "oblique"
+      ],
+      "mnemonic": "Un coup de pinceau diagonal de haut en bas",
+      "example": [
+        "九",
+        "久",
+        "乗"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "斗",
+      "name": "とます",
+      "meaning": [
+        "plongeur"
+      ],
+      "mnemonic": "Une louche traditionnelle pour mesurer le volume des grains",
+      "example": [
+        "料",
+        "斜",
+        "斟"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "舌",
+      "name": "した",
+      "meaning": [
+        "langue"
+      ],
+      "mnemonic": "Une langue sortie de la bouche, avec sa pointe bifide",
+      "example": [
+        "話",
+        "舐",
+        "辞"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "赤",
+      "name": "あか",
+      "meaning": [
+        "rouge"
+      ],
+      "mnemonic": "Un feu (火) sous la terre (土), évoquant la couleur rouge de la lave",
+      "example": [
+        "赫",
+        "赭",
+        "赦"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "冖",
+      "name": "わかんむり",
+      "meaning": [
+        "couverture"
+      ],
+      "mnemonic": "Un toit plat recouvrant un espace",
+      "example": [
+        "冠",
+        "冥",
+        "冪"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "二",
+      "name": "に",
+      "meaning": [
+        "deux"
+      ],
+      "mnemonic": "Deux traits horizontaux superposés représentant la dualité",
+      "example": [
+        "五",
+        "井",
+        "些"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "西",
+      "name": "にし",
+      "meaning": [
+        "ouest"
+      ],
+      "mnemonic": "Un soleil couchant derrière un nuage, symbolisant le point cardinal",
+      "example": [
+        "要",
+        "覇",
+        "覆"
+      ]
+    }
+  ]
+}

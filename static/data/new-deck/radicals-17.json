@@ -1,0 +1,223 @@
+{
+  "meta": {
+    "name": "Radicaux - 17",
+    "tags": [
+      "radical"
+    ]
+  },
+  "cards": [
+    {
+      "type": "radical",
+      "front": "青",
+      "name": "あお",
+      "meaning": [
+        "bleu",
+        "vert"
+      ],
+      "mnemonic": "La couleur du printemps entre le bleu du ciel et le vert des plantes",
+      "example": [
+        "晴",
+        "静",
+        "靖"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "毋",
+      "name": "なかれ",
+      "meaning": [
+        "ne pas faire",
+        "mère (variante)"
+      ],
+      "mnemonic": "Une main qui bloque une action (né de 母 'mère' avec une barre d'interdiction)",
+      "example": [
+        "母",
+        "毎",
+        "梅"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "爻",
+      "name": "めめ",
+      "meaning": [
+        "double croix"
+      ],
+      "mnemonic": "Deux croisements superposés, comme les lignes d'un hexagramme du Yi Jing",
+      "example": [
+        "爽",
+        "爾",
+        "爼"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "臣",
+      "name": "しん",
+      "meaning": [
+        "ministre"
+      ],
+      "mnemonic": "Un œil baissé en signe de soumission à l'empereur",
+      "example": [
+        "臥",
+        "蔵",
+        "臨"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "广",
+      "name": "まだれ",
+      "meaning": [
+        "maison sur une falaise"
+      ],
+      "mnemonic": "Un toit abritant un espace construit en hauteur",
+      "example": [
+        "店",
+        "庭",
+        "広"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "弋",
+      "name": "しきがまえ",
+      "meaning": [
+        "tir"
+      ],
+      "mnemonic": "Une flèche plantée dans une cible",
+      "example": [
+        "式",
+        "弑",
+        "代"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "疋",
+      "name": "ひき",
+      "meaning": [
+        "rouleau de tissu"
+      ],
+      "mnemonic": "Un rouleau d'étoffe déployé partiellement",
+      "example": [
+        "楚",
+        "胥",
+        "延"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "癶",
+      "name": "はつがしら",
+      "meaning": [
+        "empreintes de pas"
+      ],
+      "mnemonic": "Deux pieds laissant des traces en marchant",
+      "example": [
+        "発",
+        "登",
+        "癹"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "辰",
+      "name": "しんのたつ",
+      "meaning": [
+        "matin"
+      ],
+      "mnemonic": "Le soleil levant derrière une colline",
+      "example": [
+        "辱",
+        "農",
+        "晨"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "釆",
+      "name": "のごめ",
+      "meaning": [
+        "distinguer"
+      ],
+      "mnemonic": "Des grains triés sur un tamis",
+      "example": [
+        "釉",
+        "釋",
+        "悉"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "里",
+      "name": "さと",
+      "meaning": [
+        "village"
+      ],
+      "mnemonic": "Des champs (田) et de la terre (土) regroupés",
+      "example": [
+        "野",
+        "重",
+        "量"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "鼎",
+      "name": "かなえ",
+      "meaning": [
+        "tripode"
+      ],
+      "mnemonic": "Un chaudron ancien à trois pieds",
+      "example": [
+        "鼐",
+        "鼒",
+        "鼏"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "龍",
+      "name": "りゅう",
+      "meaning": [
+        "dragon"
+      ],
+      "mnemonic": "Un dragon sinueux avec ses écailles",
+      "example": [
+        "襲",
+        "籠",
+        "龕"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "无",
+      "name": "むにょう",
+      "meaning": [
+        "manque",
+        "ne pas"
+      ],
+      "mnemonic": "Une main vide tendue vers le ciel",
+      "example": [
+        "既",
+        "旣",
+        "无"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "禸",
+      "name": "うのあし",
+      "meaning": [
+        "piste"
+      ],
+      "mnemonic": "Des traces d'animal dans la boue",
+      "example": [
+        "禹",
+        "禺",
+        "禽"
+      ]
+    }
+  ]
+}

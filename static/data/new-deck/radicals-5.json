@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "name": "Radicaux - 5",
+    "tags": [
+      "radical"
+    ]
+  },
+  "cards": [
+    {
+      "type": "radical",
+      "front": "攵",
+      "name": "ぼくづくり",
+      "meaning": [
+        "frapper"
+      ],
+      "mnemonic": "Une main tenant un bâton prêt à frapper - action énergique",
+      "example": [
+        "收",
+        "數",
+        "斅"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "巾",
+      "name": "はば",
+      "meaning": [
+        "turban",
+        "écharpe"
+      ],
+      "mnemonic": "Un morceau de tissu suspendu - étoffe flottante",
+      "example": [
+        "布",
+        "帝",
+        "常"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "酉",
+      "name": "ひよみのとり",
+      "meaning": [
+        "vin",
+        "alcool"
+      ],
+      "mnemonic": "Une jarre ancienne contenant du saké - symbole des boissons fermentées",
+      "example": [
+        "酒",
+        "酢",
+        "醤"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "走",
+      "name": "はしる",
+      "meaning": [
+        "courir"
+      ],
+      "mnemonic": "Une silhouette en pleine course - jambes en mouvement",
+      "example": [
+        "起",
+        "超",
+        "越"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "貝",
+      "name": "かい",
+      "meaning": [
+        "coquillage"
+      ],
+      "mnemonic": "Une coquille Saint-Jacques ouverte - symbole ancien de monnaie",
+      "example": [
+        "財",
+        "貨",
+        "貿"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "宀",
+      "name": "うかんむり",
+      "meaning": [
+        "toit"
+      ],
+      "mnemonic": "Un toit de maison traditionnelle avec ses poutres apparentes",
+      "example": [
+        "家",
+        "安",
+        "室"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "門",
+      "name": "もん",
+      "meaning": [
+        "porte",
+        "portail"
+      ],
+      "mnemonic": "Deux battants de porte monumentaux prêts à s'ouvrir",
+      "example": [
+        "開",
+        "閉",
+        "間"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "髟",
+      "name": "かみがしら",
+      "meaning": [
+        "longs cheveux"
+      ],
+      "mnemonic": "Une chevelure soyeuse qui tombe en cascade",
+      "example": [
+        "髪",
+        "鬚",
+        "髭"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "欠",
+      "name": "あくび",
+      "meaning": [
+        "bâillement"
+      ],
+      "mnemonic": "Une bouche grande ouverte lors d'un bâillement involontaire",
+      "example": [
+        "歌",
+        "飲",
+        "欲"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "牛",
+      "name": "うし",
+      "meaning": [
+        "vache"
+      ],
+      "mnemonic": "Une tête de bovin avec ses cornes caractéristiques",
+      "example": [
+        "物",
+        "牧",
+        "牲"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "meta": {
+    "name": "Radicaux - 18",
+    "tags": [
+      "radical"
+    ]
+  },
+  "cards": [
+    {
+      "type": "radical",
+      "front": "隶",
+      "name": "れいづくり",
+      "meaning": [
+        "esclave"
+      ],
+      "mnemonic": "Une personne agenouillée, les mains liées",
+      "example": [
+        "隷",
+        "隸",
+        "逮"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "夂",
+      "name": "ふゆがしら",
+      "meaning": [
+        "aller"
+      ],
+      "mnemonic": "Des pas traînants dans la neige (forme similaire à 夊)",
+      "example": [
+        "夏",
+        "処",
+        "復"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "丶",
+      "name": "てん",
+      "meaning": [
+        "point"
+      ],
+      "mnemonic": "Un coup de pinceau unique, comme une goutte d'encre",
+      "example": [
+        "丸",
+        "主",
+        "丹"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "氏",
+      "name": "うじ",
+      "meaning": [
+        "clan"
+      ],
+      "mnemonic": "Un emblème familial suspendu",
+      "example": [
+        "民",
+        "紙",
+        "婚"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "父",
+      "name": "ちち",
+      "meaning": [
+        "père"
+      ],
+      "mnemonic": "Une main tenant une baguette de discipline paternelle",
+      "example": [
+        "爺",
+        "爸",
+        "斧"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "用",
+      "name": "もちいる",
+      "meaning": [
+        "utiliser"
+      ],
+      "mnemonic": "Un outil tenu fermement dans la main",
+      "example": [
+        "佣",
+        "甬",
+        "勇"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "舛",
+      "name": "ます",
+      "meaning": [
+        "opposé"
+      ],
+      "mnemonic": "Deux pieds pointant dans des directions contraires",
+      "example": [
+        "舞",
+        "舜",
+        "舛"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "干",
+      "name": "はす",
+      "meaning": [
+        "sécher"
+      ],
+      "mnemonic": "Un bâton utilisé pour étendre le linge au soleil",
+      "example": [
+        "平",
+        "年",
+        "幹"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "廴",
+      "name": "いんにょう",
+      "meaning": [
+        "longue enjambée"
+      ],
+      "mnemonic": "Une jambe faisant un grand pas vers l'avant",
+      "example": [
+        "延",
+        "建",
+        "廷"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "牙",
+      "name": "きばへん",
+      "meaning": [
+        "croc"
+      ],
+      "mnemonic": "Une dent pointue prête à mordre",
+      "example": [
+        "芽",
+        "邪",
+        "雅"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "鬯",
+      "name": "ちよう",
+      "meaning": [
+        "vin sacrificiel"
+      ],
+      "mnemonic": "Un vase cérémoniel contenant de l'alcool parfumé",
+      "example": [
+        "鬱",
+        "鬰",
+        "彧"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "黹",
+      "name": "ふつ",
+      "meaning": [
+        "broderie"
+      ],
+      "mnemonic": "Une aiguille et des fils entrelacés",
+      "example": [
+        "黼",
+        "黻",
+        "黺"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "玄",
+      "name": "げん",
+      "meaning": [
+        "sombre",
+        "profond"
+      ],
+      "mnemonic": "Un fil noir suspendu dans l'obscurité",
+      "example": [
+        "弦",
+        "玆",
+        "畜"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "艮",
+      "name": "うしとら",
+      "meaning": [
+        "arrêter"
+      ],
+      "mnemonic": "Un regard fixe qui stoppe net une action",
+      "example": [
+        "良",
+        "艱",
+        "限"
+      ]
+    }
+  ]
+}

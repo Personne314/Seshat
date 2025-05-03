@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "name": "Radicaux - 3",
+    "tags": [
+      "radical"
+    ]
+  },
+  "cards": [
+    {
+      "type": "radical",
+      "front": "⻊",
+      "name": "あしへん",
+      "meaning": [
+        "pied"
+      ],
+      "mnemonic": "Un pied en mouvement - imaginez une silhouette qui marche",
+      "example": [
+        "跑",
+        "路",
+        "跪",
+        "跟"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "魚",
+      "name": "うお",
+      "meaning": [
+        "poisson"
+      ],
+      "mnemonic": "Un poisson avec ses nageoires et ses écailles bien visibles",
+      "example": [
+        "鯉",
+        "鮑",
+        "魟",
+        "鯛"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "疒",
+      "name": "やまいだれ",
+      "meaning": [
+        "maladie"
+      ],
+      "mnemonic": "Un lit d'hôpital avec un patient alité - symbole de maladie",
+      "example": [
+        "病",
+        "痛",
+        "癌",
+        "癖"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "石",
+      "name": "いし",
+      "meaning": [
+        "pierre"
+      ],
+      "mnemonic": "Un rocher solide avec des aspérités caractéristiques",
+      "example": [
+        "岩",
+        "砂",
+        "碑",
+        "碧"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "王",
+      "name": "たまへん",
+      "meaning": [
+        "jade"
+      ],
+      "mnemonic": "Une pierre précieuse polie avec ses reflets verts",
+      "example": [
+        "玉",
+        "皇",
+        "理",
+        "聖"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "馬",
+      "name": "うま",
+      "meaning": [
+        "cheval"
+      ],
+      "mnemonic": "Un cheval galopant avec sa crinière au vent",
+      "example": [
+        "騎",
+        "駆",
+        "駐",
+        "驚"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "日",
+      "name": "にち",
+      "meaning": [
+        "soleil"
+      ],
+      "mnemonic": "Un soleil rond avec ses rayons qui illuminent",
+      "example": [
+        "明",
+        "時",
+        "晩",
+        "映"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "犭",
+      "name": "けものへん",
+      "meaning": [
+        "chien"
+      ],
+      "mnemonic": "Un chien assis avec ses oreilles pointues",
+      "example": [
+        "犯",
+        "狂",
+        "狩",
+        "獣"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "禾",
+      "name": "のぎへん",
+      "meaning": [
+        "grain"
+      ],
+      "mnemonic": "Un épi de blé qui ploie sous le poids des grains",
+      "example": [
+        "利",
+        "和",
+        "香",
+        "穀"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "飠",
+      "name": "しょくへん",
+      "meaning": [
+        "manger"
+      ],
+      "mnemonic": "Un bol de riz fumant avec des baguettes",
+      "example": [
+        "飯",
+        "飲",
+        "飼",
+        "館"
+      ]
+    }
+  ]
+}

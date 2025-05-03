@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "name": "Radicaux - 10",
+    "tags": [
+      "radical"
+    ]
+  },
+  "cards": [
+    {
+      "type": "radical",
+      "front": "方",
+      "name": "ほう",
+      "meaning": [
+        "carré",
+        "direction"
+      ],
+      "mnemonic": "Une équerre traçant des angles parfaits, symbolisant aussi les points cardinaux",
+      "example": [
+        "放",
+        "旅",
+        "族"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "飛",
+      "name": "とぶ",
+      "meaning": [
+        "voler"
+      ],
+      "mnemonic": "Un oiseau aux ailes déployées en plein vol ascendant",
+      "example": [
+        "飛",
+        "飜",
+        "飝"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "鼠",
+      "name": "ねずみ",
+      "meaning": [
+        "rat"
+      ],
+      "mnemonic": "Un rongeur avec ses longues moustaches et queue sinueuse",
+      "example": [
+        "鼡",
+        "鼬",
+        "鼯"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "又",
+      "name": "また",
+      "meaning": [
+        "main droite",
+        "encore"
+      ],
+      "mnemonic": "Une main qui saisit quelque chose à nouveau",
+      "example": [
+        "友",
+        "取",
+        "受"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "耒",
+      "name": "らいすき",
+      "meaning": [
+        "charrue"
+      ],
+      "mnemonic": "Un outil agricole avec son manche courbé et soc pointu",
+      "example": [
+        "耕",
+        "耜",
+        "耨"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "子",
+      "name": "こ",
+      "meaning": [
+        "enfant",
+        "graine"
+      ],
+      "mnemonic": "Un bébé emmailloté avec sa grosse tête caractéristique",
+      "example": [
+        "学",
+        "孫",
+        "孩"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "片",
+      "name": "かた",
+      "meaning": [
+        "tranche"
+      ],
+      "mnemonic": "Une planche de bois fendue dans le sens du grain",
+      "example": [
+        "版",
+        "牌",
+        "牒"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "缶",
+      "name": "ほとぎ",
+      "meaning": [
+        "jarre"
+      ],
+      "mnemonic": "Un récipient à col étroit pour conserver les aliments",
+      "example": [
+        "罐",
+        "陶",
+        "窑"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "鬲",
+      "name": "かく",
+      "meaning": [
+        "chaudron"
+      ],
+      "mnemonic": "Un ancien récipient de cuisine avec ses trois pieds caractéristiques",
+      "example": [
+        "融",
+        "鬴",
+        "鬷"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "臼",
+      "name": "うす",
+      "meaning": [
+        "mortier"
+      ],
+      "mnemonic": "Un mortier traditionnel avec son pilon pour piler le riz",
+      "example": [
+        "舂",
+        "舅",
+        "臽"
+      ]
+    }
+  ]
+}

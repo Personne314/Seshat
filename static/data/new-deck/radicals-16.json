@@ -1,0 +1,225 @@
+{
+  "meta": {
+    "name": "Radicaux - 16",
+    "tags": [
+      "radical"
+    ]
+  },
+  "cards": [
+    {
+      "type": "radical",
+      "front": "而",
+      "name": "しかして",
+      "meaning": [
+        "et",
+        "barbe"
+      ],
+      "mnemonic": "Une barbe bien fournie qui descend en cascade",
+      "example": [
+        "耐",
+        "耑",
+        "耍"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "丨",
+      "name": "ぼう",
+      "meaning": [
+        "ligne verticale"
+      ],
+      "mnemonic": "Un trait droit qui perce de haut en bas",
+      "example": [
+        "中",
+        "串",
+        "丳"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "比",
+      "name": "くらべるひ",
+      "meaning": [
+        "comparer"
+      ],
+      "mnemonic": "Deux personnes côte à côte pour se comparer",
+      "example": [
+        "皆",
+        "批",
+        "毘"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "色",
+      "name": "いろ",
+      "meaning": [
+        "couleur"
+      ],
+      "mnemonic": "Un pinceau qui mélange des pigments colorés",
+      "example": [
+        "艶",
+        "艴",
+        "絶"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "己",
+      "name": "おのれ",
+      "meaning": [
+        "soi-même"
+      ],
+      "mnemonic": "Un serpent enroulé sur lui-même, symbolisant l'introspection",
+      "example": [
+        "忌",
+        "紀",
+        "起"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "韭",
+      "name": "にら",
+      "meaning": [
+        "poireau",
+        "ail"
+      ],
+      "mnemonic": "Plusieurs tiges de poireaux alignées",
+      "example": [
+        "韮",
+        "韲",
+        "齏"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "首",
+      "name": "くび",
+      "meaning": [
+        "tête"
+      ],
+      "mnemonic": "Une tête avec ses cheveux et son cou",
+      "example": [
+        "道",
+        "馘",
+        "馗"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "亅",
+      "name": "はねぼう",
+      "meaning": [
+        "crochet"
+      ],
+      "mnemonic": "Un crochet de boucher ou de calligraphe",
+      "example": [
+        "了",
+        "事",
+        "争"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "匕",
+      "name": "さじのひ",
+      "meaning": [
+        "cuillère"
+      ],
+      "mnemonic": "Une cuillère à riz traditionnelle",
+      "example": [
+        "化",
+        "北",
+        "匙"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "聿",
+      "name": "ふでづくり",
+      "meaning": [
+        "pinceau"
+      ],
+      "mnemonic": "Une main tenant un pinceau à calligraphie",
+      "example": [
+        "書",
+        "律",
+        "建"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "龠",
+      "name": "やく",
+      "meaning": [
+        "flûte",
+        "pot de mesure"
+      ],
+      "mnemonic": "Une flûte ancienne avec ses trous d'air",
+      "example": [
+        "龢",
+        "龤",
+        "龥"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "齐",
+      "name": "せい",
+      "meaning": [
+        "uniformément"
+      ],
+      "mnemonic": "Des épis de blé alignés de manière régulière",
+      "example": [
+        "斉",
+        "齋",
+        "劑"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "匸",
+      "name": "はこがまえ",
+      "meaning": [
+        "caché"
+      ],
+      "mnemonic": "Un objet dissimulé dans une boîte à moitié fermée",
+      "example": [
+        "匹",
+        "区",
+        "匿"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "工",
+      "name": "たくみ",
+      "meaning": [
+        "travail",
+        "artisan"
+      ],
+      "mnemonic": "Une équerre d'artisan, outil de précision",
+      "example": [
+        "左",
+        "巧",
+        "功"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "气",
+      "name": "きがまえ",
+      "meaning": [
+        "souffle",
+        "vapeur"
+      ],
+      "mnemonic": "De la vapeur qui s'échappe en volutes",
+      "example": [
+        "気",
+        "汽",
+        "氧"
+      ]
+    }
+  ]
+}

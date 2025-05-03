@@ -1,0 +1,151 @@
+{
+  "meta": {
+    "name": "Radicaux - 9",
+    "tags": [
+      "radical"
+    ]
+  },
+  "cards": [
+    {
+      "type": "radical",
+      "front": "冫",
+      "name": "にすい",
+      "meaning": [
+        "glace"
+      ],
+      "mnemonic": "Deux gouttes d'eau gelées en train de former de la glace",
+      "example": [
+        "冷",
+        "凍",
+        "冬"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "虍",
+      "name": "とらかんむり",
+      "meaning": [
+        "tigre"
+      ],
+      "mnemonic": "Les rayures caractéristiques du front d'un tigre",
+      "example": [
+        "虎",
+        "虐",
+        "彪"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "白",
+      "name": "しろ",
+      "meaning": [
+        "blanc"
+      ],
+      "mnemonic": "Un soleil éclatant symbolisant la pureté et la blancheur",
+      "example": [
+        "的",
+        "皆",
+        "皓"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "鹿",
+      "name": "しか",
+      "meaning": [
+        "cerf"
+      ],
+      "mnemonic": "Un cerf avec ses bois majestueux bien visibles",
+      "example": [
+        "麿",
+        "麗",
+        "麟"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "立",
+      "name": "たつ",
+      "meaning": [
+        "debout",
+        "ériger"
+      ],
+      "mnemonic": "Une personne debout bien droite sur ses deux jambes",
+      "example": [
+        "站",
+        "競",
+        "親"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "韋",
+      "name": "なめしがわ",
+      "meaning": [
+        "cuir tanné"
+      ],
+      "mnemonic": "Des bandes de cuir entrelacées en cours de tannage",
+      "example": [
+        "韓",
+        "韜",
+        "韋"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "止",
+      "name": "とめる",
+      "meaning": [
+        "arrêt"
+      ],
+      "mnemonic": "Une empreinte de pied marquant un point d'arrêt",
+      "example": [
+        "正",
+        "歩",
+        "武"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "身",
+      "name": "み",
+      "meaning": [
+        "corps"
+      ],
+      "mnemonic": "Le torse d'une personne avec une épaule bien visible",
+      "example": [
+        "躾",
+        "躲",
+        "軀"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "皮",
+      "name": "けがわ",
+      "meaning": [
+        "peau"
+      ],
+      "mnemonic": "Une peau animale étirée avec ses plis caractéristiques",
+      "example": [
+        "彼",
+        "波",
+        "披"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "殳",
+      "name": "ほこつくり",
+      "meaning": [
+        "arme"
+      ],
+      "mnemonic": "Une main tenant une arme ancienne avec un manche long",
+      "example": [
+        "殴",
+        "投",
+        "役"
+      ]
+    }
+  ]
+}

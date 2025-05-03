@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "name": "Radicaux - 4",
+    "tags": [
+      "radical"
+    ]
+  },
+  "cards": [
+    {
+      "type": "radical",
+      "front": "辵",
+      "name": "しんにゅう",
+      "meaning": [
+        "marche"
+      ],
+      "mnemonic": "Une jambe qui fait des zigzags comme si elle ne savait pas où aller.",
+      "example": [
+        "巡",
+        "迎",
+        "通",
+        "追",
+        "逃",
+        "進"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "刀",
+      "name": "かたな",
+      "meaning": [
+        "couteau"
+      ],
+      "mnemonic": "Une lame affûtée prête à trancher... même les devoirs en deux.",
+      "example": [
+        "刀",
+        "分",
+        "切",
+        "初",
+        "利",
+        "刻",
+        "則",
+        "前"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "頁",
+      "name": "おおがい",
+      "meaning": [
+        "feuille"
+      ],
+      "mnemonic": "Une grosse tête remplie de pages de savoir.",
+      "example": [
+        "頃",
+        "項",
+        "順",
+        "須",
+        "領",
+        "頭",
+        "頂"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "車",
+      "name": "くるま",
+      "meaning": [
+        "charette"
+      ],
+      "mnemonic": "Un chariot avec des rayons de roues comme dans un vieux dessin animé.",
+      "example": [
+        "軌",
+        "軟",
+        "較",
+        "軍",
+        "載"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "邑",
+      "name": "むら",
+      "meaning": [
+        "ville"
+      ],
+      "mnemonic": "Un village caché derrière un mur, comme un secret bien gardé.",
+      "example": [
+        "那",
+        "邦",
+        "郎",
+        "部",
+        "郭",
+        "都",
+        "鄉"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "阜",
+      "name": "ぎふのふ",
+      "meaning": [
+        "butte"
+      ],
+      "mnemonic": "Une colline si raide que même les kanji glissent en bas.",
+      "example": [
+        "阪",
+        "防",
+        "阻",
+        "陸",
+        "陘",
+        "院",
+        "険",
+        "陳"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "米",
+      "name": "こめ",
+      "meaning": [
+        "riz"
+      ],
+      "mnemonic": "Des grains de riz qui explosent comme un feu d’artifice.",
+      "example": [
+        "料",
+        "断",
+        "奥",
+        "糊",
+        "麟"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "革",
+      "name": "かくのかわ",
+      "meaning": [
+        "cuir"
+      ],
+      "mnemonic": "Une peau qu’on tend pour en faire des bottes ou une selle.",
+      "example": [
+        "靴",
+        "鞍",
+        "鞅",
+        "鞭"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "穴",
+      "name": "あな",
+      "meaning": [
+        "grotte"
+      ],
+      "mnemonic": "Un toit avec un gros trou dessous… une tanière secrète.",
+      "example": [
+        "空",
+        "突",
+        "窅",
+        "窘",
+        "窩",
+        "窶",
+        "竇"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "雨",
+      "name": "あめ",
+      "meaning": [
+        "pluie"
+      ],
+      "mnemonic": "Des gouttes bien alignées qui tombent sous un toit.",
+      "example": [
+        "雾",
+        "霜",
+        "雪",
+        "霸",
+        "雲",
+        "霧"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "name": "Radicaux - 2",
+    "tags": [
+      "radical"
+    ]
+  },
+  "cards": [
+    {
+      "type": "radical",
+      "front": "釒",
+      "name": "かねへん",
+      "meaning": [
+        "métal",
+        "or"
+      ],
+      "mnemonic": "Un lingot d'or avec des reflets brillants - imaginez le scintillement du métal précieux",
+      "example": [
+        "銀",
+        "銅",
+        "針",
+        "鈴"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "亻",
+      "name": "にんべん",
+      "meaning": [
+        "homme"
+      ],
+      "mnemonic": "Une personne debout, les bras légèrement écartés - posture humaine caractéristique",
+      "example": [
+        "休",
+        "仕",
+        "作",
+        "体"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "鳥",
+      "name": "とり",
+      "meaning": [
+        "oiseau"
+      ],
+      "mnemonic": "Un oiseau avec ses ailes déployées et ses pattes - pensez à une silhouette d'oiseau en vol",
+      "example": [
+        "鳩",
+        "鶏",
+        "鳴",
+        "鶴"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "女",
+      "name": "おんなへん",
+      "meaning": [
+        "femme"
+      ],
+      "mnemonic": "Une femme assise en tailleur - posture traditionnelle féminine",
+      "example": [
+        "好",
+        "姉",
+        "妻",
+        "婚"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "⺼",
+      "name": "にくづき",
+      "meaning": [
+        "viande"
+      ],
+      "mnemonic": "Un morceau de viande avec ses striations - texture musculaire caractéristique",
+      "example": [
+        "肌",
+        "肝",
+        "胃",
+        "腸"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "目",
+      "name": "めへん",
+      "meaning": [
+        "oeil"
+      ],
+      "mnemonic": "Un oeil ouvert avec la pupille bien visible - regard perçant",
+      "example": [
+        "眠",
+        "眼",
+        "睛",
+        "瞳"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "灬",
+      "name": "れっか",
+      "meaning": [
+        "feu"
+      ],
+      "mnemonic": "Des flammes qui dansent - quatre petites flammes regroupées",
+      "example": [
+        "熱",
+        "煮",
+        "焦",
+        "烈"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "山",
+      "name": "やま",
+      "meaning": [
+        "montagne"
+      ],
+      "mnemonic": "Trois pics montagneux - silhouette caractéristique d'une chaine de montagnes",
+      "example": [
+        "岩",
+        "島",
+        "峰",
+        "岳"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "衤",
+      "name": "ころもへん",
+      "meaning": [
+        "vêtement"
+      ],
+      "mnemonic": "Un vêtement plié avec ses manches bien visibles - pensez à un kimono",
+      "example": [
+        "初",
+        "被",
+        "裁",
+        "複"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "土",
+      "name": "つちへん",
+      "meaning": [
+        "terre"
+      ],
+      "mnemonic": "Un monticule de terre avec une plante qui pousse - symbole de fertilité",
+      "example": [
+        "地",
+        "場",
+        "壁",
+        "城"
+      ]
+    }
+  ]
+}

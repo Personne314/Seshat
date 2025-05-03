@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "name": "Radicaux - 11",
+    "tags": [
+      "radical"
+    ]
+  },
+  "cards": [
+    {
+      "type": "radical",
+      "front": "月",
+      "name": "つき",
+      "meaning": [
+        "lune",
+        "mois"
+      ],
+      "mnemonic": "Un croissant de lune avec ses deux extrémités pointues",
+      "example": [
+        "明",
+        "朝",
+        "期"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "豆",
+      "name": "まめ",
+      "meaning": [
+        "haricot"
+      ],
+      "mnemonic": "Un grain de haricot au milieu, posé dans un plat",
+      "example": [
+        "登",
+        "豊",
+        "豎"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "尢",
+      "name": "まげあし",
+      "meaning": [
+        "courbé",
+        "boiteux"
+      ],
+      "mnemonic": "Une jambe fléchie montrant une posture courbée",
+      "example": [
+        "尭",
+        "就",
+        "尷"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "面",
+      "name": "めん",
+      "meaning": [
+        "visage"
+      ],
+      "mnemonic": "Le contour d'un visage avec un œil bien centré",
+      "example": [
+        "靨",
+        "靦",
+        "麵"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "矛",
+      "name": "むのほこ",
+      "meaning": [
+        "lance"
+      ],
+      "mnemonic": "Une arme de jet avec sa pointe acérée et son crochet",
+      "example": [
+        "柔",
+        "矜",
+        "矞"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "勹",
+      "name": "つつみがまえ",
+      "meaning": [
+        "envelopper"
+      ],
+      "mnemonic": "Un bras courbé comme pour enlacer ou emballer un objet",
+      "example": [
+        "包",
+        "勾",
+        "匂"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "匚",
+      "name": "はこがまえ",
+      "meaning": [
+        "boîte ouverte"
+      ],
+      "mnemonic": "Un coffre sans son couvercle, prêt à recevoir des objets",
+      "example": [
+        "区",
+        "医",
+        "匹"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "矢",
+      "name": "や",
+      "meaning": [
+        "flèche"
+      ],
+      "mnemonic": "Une flèche avec sa pointe et ses plumes stabilisatrices",
+      "example": [
+        "知",
+        "短",
+        "矯"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "彡",
+      "name": "さんづくり",
+      "meaning": [
+        "poils",
+        "art"
+      ],
+      "mnemonic": "Trois traits évoquant des cheveux au vent ou des coups de pinceau",
+      "example": [
+        "形",
+        "彩",
+        "影"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "血",
+      "name": "ち",
+      "meaning": [
+        "sang"
+      ],
+      "mnemonic": "Une goutte de sang dans un bol sacrificiel",
+      "example": [
+        "衆",
+        "衁",
+        "衅"
+      ]
+    }
+  ]
+}

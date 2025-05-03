@@ -1,0 +1,221 @@
+{
+  "meta": {
+    "name": "Radicaux - 13",
+    "tags": [
+      "radical"
+    ]
+  },
+  "cards": [
+    {
+      "type": "radical",
+      "front": "八",
+      "name": "はちがしら",
+      "meaning": [
+        "huit",
+        "diviser"
+      ],
+      "mnemonic": "Deux lignes divergentes comme le chiffre 8 coupé en deux",
+      "example": [
+        "分",
+        "公",
+        "六"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "戸",
+      "name": "とびらのと",
+      "meaning": [
+        "porte"
+      ],
+      "mnemonic": "Un battant de porte traditionnelle avec sa penture visible",
+      "example": [
+        "所",
+        "扉",
+        "戻"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "卤",
+      "name": "ろ",
+      "meaning": [
+        "sel"
+      ],
+      "mnemonic": "Des cristaux de sel dans une mare salante",
+      "example": [
+        "鹹",
+        "塩",
+        "鹸"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "音",
+      "name": "おと",
+      "meaning": [
+        "son"
+      ],
+      "mnemonic": "Une bouche ouverte (口) au-dessus d'un soleil (日), émettant du son",
+      "example": [
+        "響",
+        "韻",
+        "暗"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "一",
+      "name": "いち",
+      "meaning": [
+        "un"
+      ],
+      "mnemonic": "Un trait horizontal symbolisant l'unité et le commencement",
+      "example": [
+        "三",
+        "七",
+        "世"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "乙",
+      "name": "おつ",
+      "meaning": [
+        "second"
+      ],
+      "mnemonic": "Un crochet symbolisant le deuxième élément",
+      "example": [
+        "九",
+        "乞",
+        "乱"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "黄",
+      "name": "きいろ",
+      "meaning": [
+        "jaune"
+      ],
+      "mnemonic": "Un épi de blé mûr de couleur jaune doré",
+      "example": [
+        "黌",
+        "黈",
+        "黋"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "小",
+      "name": "ちいさい",
+      "meaning": [
+        "petit"
+      ],
+      "mnemonic": "Trois petites gouttes symbolisant la petitesse",
+      "example": [
+        "少",
+        "尖",
+        "塵"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "卩",
+      "name": "ふしづくり",
+      "meaning": [
+        "sceau"
+      ],
+      "mnemonic": "Un sceau officiel avec son noeud caractéristique",
+      "example": [
+        "印",
+        "危",
+        "却"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "厶",
+      "name": "む",
+      "meaning": [
+        "privé"
+      ],
+      "mnemonic": "Un espace clos représentant la sphère privée",
+      "example": [
+        "私",
+        "参",
+        "去"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "寸",
+      "name": "すん",
+      "meaning": [
+        "pouce"
+      ],
+      "mnemonic": "Une main mesurant une distance d'un pouce",
+      "example": [
+        "寺",
+        "対",
+        "尊"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "黾",
+      "name": "べん",
+      "meaning": [
+        "amphibien"
+      ],
+      "mnemonic": "Une grenouille avec ses pattes palmées caractéristiques",
+      "example": [
+        "鼈",
+        "蝇",
+        "鼍"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "亠",
+      "name": "なべぶた",
+      "meaning": [
+        "couvercle"
+      ],
+      "mnemonic": "Un couvercle de pot avec sa poignée",
+      "example": [
+        "京",
+        "亭",
+        "高"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "几",
+      "name": "つくえ",
+      "meaning": [
+        "table"
+      ],
+      "mnemonic": "Le plateau d'une table basse traditionnelle",
+      "example": [
+        "机",
+        "風",
+        "処"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "屮",
+      "name": "てつ",
+      "meaning": [
+        "pousser"
+      ],
+      "mnemonic": "Une plante qui perce le sol en poussant",
+      "example": [
+        "屯",
+        "山",
+        "岐"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "meta": {
+    "name": "Radicaux - 15",
+    "tags": [
+      "radical"
+    ]
+  },
+  "cards": [
+    {
+      "type": "radical",
+      "front": "入",
+      "name": "いる",
+      "meaning": [
+        "entrer"
+      ],
+      "mnemonic": "Un pas franchissant le seuil d'une porte",
+      "example": [
+        "入",
+        "內",
+        "全"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "川",
+      "name": "まがりがわ",
+      "meaning": [
+        "rivière"
+      ],
+      "mnemonic": "Trois courbes représentant le flux d'une rivière",
+      "example": [
+        "州",
+        "巡",
+        "順"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "支",
+      "name": "しんよう",
+      "meaning": [
+        "branche"
+      ],
+      "mnemonic": "Une main (又) tenant une branche d'arbre",
+      "example": [
+        "枝",
+        "技",
+        "岐"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "文",
+      "name": "ぶんにょう",
+      "meaning": [
+        "écriture"
+      ],
+      "mnemonic": "Un pinceau traçant des motifs symétriques",
+      "example": [
+        "斈",
+        "斌",
+        "斑"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "彐",
+      "name": "けいがしら",
+      "meaning": [
+        "groin"
+      ],
+      "mnemonic": "Le museau aplati d'un porc",
+      "example": [
+        "彖",
+        "彙",
+        "彝"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "非",
+      "name": "あらず",
+      "meaning": [
+        "faux",
+        "négation"
+      ],
+      "mnemonic": "Deux ailes symétriques barrées, indiquant la contradiction",
+      "example": [
+        "靠",
+        "靡",
+        "靟"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "士",
+      "name": "さむらい",
+      "meaning": [
+        "lettré",
+        "samouraï"
+      ],
+      "mnemonic": "Un homme debout avec son chapeau de lettré",
+      "example": [
+        "仕",
+        "志",
+        "吉"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "至",
+      "name": "いたる",
+      "meaning": [
+        "arriver"
+      ],
+      "mnemonic": "Une flèche atteignant sa cible au sol",
+      "example": [
+        "到",
+        "致",
+        "臺"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "龟",
+      "name": "かめ",
+      "meaning": [
+        "tortue"
+      ],
+      "mnemonic": "Une tortue avec sa carapace et ses pattes",
+      "example": [
+        "龝",
+        "龕",
+        "龜"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "凵",
+      "name": "うけばこ",
+      "meaning": [
+        "boîte"
+      ],
+      "mnemonic": "Un récipient ouvert vers le haut",
+      "example": [
+        "凶",
+        "出",
+        "函"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "夊",
+      "name": "ふゆがしら",
+      "meaning": [
+        "aller lentement"
+      ],
+      "mnemonic": "Des pas traînants dans la neige",
+      "example": [
+        "夏",
+        "愛",
+        "憂"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "鬥",
+      "name": "とうがまえ",
+      "meaning": [
+        "combat"
+      ],
+      "mnemonic": "Deux adversaires face à face",
+      "example": [
+        "鬧",
+        "鬨",
+        "鬪"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "甘",
+      "name": "あまい",
+      "meaning": [
+        "doux"
+      ],
+      "mnemonic": "Une bouche ouverte goûtant quelque chose de sucré",
+      "example": [
+        "甜",
+        "柑",
+        "酣"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "生",
+      "name": "うまれる",
+      "meaning": [
+        "vie"
+      ],
+      "mnemonic": "Une plante qui germe dans la terre",
+      "example": [
+        "性",
+        "星",
+        "産"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "老",
+      "name": "おい",
+      "meaning": [
+        "vieux"
+      ],
+      "mnemonic": "Une personne âgée appuyée sur sa canne",
+      "example": [
+        "孝",
+        "耆",
+        "耋"
+      ]
+    }
+  ]
+}

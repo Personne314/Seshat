@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "name": "Radicaux - 1",
+    "tags": [
+      "radical"
+    ]
+  },
+  "cards": [
+    {
+      "type": "radical",
+      "front": "艹",
+      "name": "くさかんむり",
+      "meaning": [
+        "herbe"
+      ],
+      "mnemonic": "Deux brins d'herbe qui poussent - imaginez un petit jardin qui germe",
+      "example": [
+        "花",
+        "草",
+        "茶",
+        "薬"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "氵",
+      "name": "さんずい",
+      "meaning": [
+        "eau",
+        "liquide"
+      ],
+      "mnemonic": "Trois gouttes d'eau qui coulent - imaginez des gouttes tombant d'un robinet",
+      "example": [
+        "海",
+        "泳",
+        "漢",
+        "瀬"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "木",
+      "name": "きへん",
+      "meaning": [
+        "arbre"
+      ],
+      "mnemonic": "Un arbre avec ses racines et ses branches - dessinez-le mentalement",
+      "example": [
+        "林",
+        "森",
+        "板",
+        "機"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "扌",
+      "name": "てへん",
+      "meaning": [
+        "main"
+      ],
+      "mnemonic": "Une main qui attrape quelque chose - geste de saisie",
+      "example": [
+        "持",
+        "打",
+        "抱",
+        "押"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "口",
+      "name": "くち",
+      "meaning": [
+        "bouche"
+      ],
+      "mnemonic": "Un carré qui représente une bouche ouverte",
+      "example": [
+        "叫",
+        "吃",
+        "名",
+        "和"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "忄",
+      "name": "りっしんべん",
+      "meaning": [
+        "coeur"
+      ],
+      "mnemonic": "Un coeur qui bat - visualisez les pulsations",
+      "example": [
+        "忙",
+        "性",
+        "情",
+        "想"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "虫",
+      "name": "むし",
+      "meaning": [
+        "insecte",
+        "serpent"
+      ],
+      "mnemonic": "Un ver qui se tortille ou un serpent lové",
+      "example": [
+        "蚊",
+        "蛇",
+        "蟹",
+        "蟻"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "⺮",
+      "name": "たけかんむり",
+      "meaning": [
+        "bambou"
+      ],
+      "mnemonic": "Deux feuilles de bambou qui se croisent",
+      "example": [
+        "笑",
+        "笛",
+        "筆",
+        "箱"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "訁",
+      "name": "ごんべん",
+      "meaning": [
+        "parole"
+      ],
+      "mnemonic": "Des mots qui s'envolent comme de la fumée",
+      "example": [
+        "話",
+        "語",
+        "説",
+        "読"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "糹",
+      "name": "いとへん",
+      "meaning": [
+        "soie"
+      ],
+      "mnemonic": "Un fil de soie qui s'étire délicatement",
+      "example": [
+        "紙",
+        "細",
+        "組",
+        "絵"
+      ]
+    }
+  ]
+}

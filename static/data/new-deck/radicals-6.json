@@ -1,0 +1,151 @@
+{
+  "meta": {
+    "name": "Radicaux - 6",
+    "tags": [
+      "radical"
+    ]
+  },
+  "cards": [
+    {
+      "type": "radical",
+      "front": "隹",
+      "name": "ふるとり",
+      "meaning": [
+        "oiseau à queue courte"
+      ],
+      "mnemonic": "Un oiseau perché avec sa queue courte et compacte",
+      "example": [
+        "雀",
+        "集",
+        "雁",
+        "雅"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "歹",
+      "name": "がつへん",
+      "meaning": [
+        "mort"
+      ],
+      "mnemonic": "Un os fissuré symbolisant la fragilité de la vie",
+      "example": [
+        "死",
+        "列",
+        "殕"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "羽",
+      "name": "はね",
+      "meaning": [
+        "plume"
+      ],
+      "mnemonic": "Deux plumes d'aile symétriques prêtes à s'envoler",
+      "example": [
+        "習",
+        "翔",
+        "翁"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "彳",
+      "name": "ぎょうにんべん",
+      "meaning": [
+        "pas"
+      ],
+      "mnemonic": "Une route avec des empreintes de pas qui avancent",
+      "example": [
+        "役",
+        "得",
+        "徳"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "礻",
+      "name": "しめす",
+      "meaning": [
+        "esprit"
+      ],
+      "mnemonic": "Un autel sacré avec des offrandes aux divinités",
+      "example": [
+        "神",
+        "祭",
+        "福"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "毛",
+      "name": "け",
+      "meaning": [
+        "poil"
+      ],
+      "mnemonic": "Une touffe de cheveux ou de fourrure ébouriffée",
+      "example": [
+        "毫",
+        "毟",
+        "毡"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "舟",
+      "name": "ふね",
+      "meaning": [
+        "bateau"
+      ],
+      "mnemonic": "Une barque traditionnelle avec sa coque arrondie",
+      "example": [
+        "船",
+        "航",
+        "艦"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "田",
+      "name": "た",
+      "meaning": [
+        "champ"
+      ],
+      "mnemonic": "Une rizière divisée en parcelles carrées",
+      "example": [
+        "町",
+        "留",
+        "略"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "骨",
+      "name": "ほね",
+      "meaning": [
+        "os"
+      ],
+      "mnemonic": "Une colonne vertébrale avec ses articulations visibles",
+      "example": [
+        "骼",
+        "髀",
+        "髒"
+      ]
+    },
+    {
+      "type": "radical",
+      "front": "風",
+      "name": "かぜ",
+      "meaning": [
+        "vent"
+      ],
+      "mnemonic": "Des rafales de vent courbant les arbres",
+      "example": [
+        "颱",
+        "飄",
+        "颪"
+      ]
+    }
+  ]
+}
