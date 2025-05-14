@@ -92,7 +92,8 @@ CREATE TABLE Deck (
 -- This contains all the deck tags.
 -- Deck  1 <--> n  DeckTag
 CREATE TABLE DeckTag (
-	deck_id INTEGER PRIMARY KEY,
+	deck_id INTEGER,
 	tag TEXT NOT NULL,
+	PRIMARY KEY (deck_id, tag),
 	FOREIGN KEY (deck_id) REFERENCES Deck(id) ON DELETE CASCADE
 );

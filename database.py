@@ -70,10 +70,20 @@ def create_deck(db, meta, json_file):
 			values = []
 			for tag in tags:
 				values.extend([deck_id, tag])
-			db.execute(
-				f"INSERT INTO DeckTag (deck_id, tag) VALUES {placeholders}",
-				values
-			)
+			# db.execute(
+			# 	f"INSERT INTO DeckTag (deck_id, tag) VALUES {placeholders}",
+			# 	values
+			# )
+			try:
+				db.execute(
+					f"INSERT INTO DeckTag (deck_id, tag) VALUES {placeholders}",
+					values
+				)
+			except sqlite3.IntegrityError as e:
+				print(f"[ERROR]: IntegrityError while inserting into DeckTag: {e}")
+				print(f"Tags being inserted: {tags}")
+				print(f"Deck ID: {deck_id}")
+				exit(1)
 	else:
 		print(f"[SESHAT]: error: deck '{json_file}' tags must be a list of strings")
 		exit(1)
@@ -140,13 +150,102 @@ def create_cards_radical(db, deck_id, cards, json_file):
 		reading_values
 	)
 
+
+
+
+
+
+
+
+
+
+
+
 # Adds all the word cards from a deck to the database.
 def create_cards_word(db, deck_id, cards, json_file):
 	pass
 
+
+
+
+
+
+
+
+
+
+
+
 # Adds all the kanji cards from a deck to the database.
 def create_cards_kanji(db, deck_id, cards, json_file):
-	pass
+	next_id = get_next_autoincrement_id(db, "Element")
+	
+	# Gets all the values from the cards.
+	cards_values = []
+	meaning_values = []
+	example_values = []
+	reading_values = []
+	radical_values = []
+	for i in range(len(cards)):
+		card = cards[i]
+		if not isinstance(card, dict):
+			print(f"[SESHAT]: error: deck '{json_file}' card {i+1} is invalid")
+			exit(1)
+
+		# Récupération des champs obligatoires
+		front = card.get("front")
+		mnemonic = card.get("mnemonic")
+		meanings = card.get("meaning", [])
+		examples = card.get("example", [])
+		readings_on = card.get("on", [])
+		readings_kun = card.get("kun", [])
+		radicals = card.get("radical", [])
+
+		# Stores the values in lists.
+		cards_values.extend([deck_id, "kanji", front, mnemonic])
+		for meaning in meanings:
+			if not isinstance(meaning, str): continue
+			meaning_values.extend([next_id, meaning])
+		for example in examples:
+			if not isinstance(example, str): continue
+			example_values.extend([next_id, example])
+		for on_reading in readings_on:
+			if not isinstance(on_reading, str): continue
+			reading_values.extend([next_id, on_reading, "on"])
+		for kun_reading in readings_kun:
+			if not isinstance(kun_reading, str): continue
+			reading_values.extend([next_id, kun_reading, "kun"])
+		for radical in radicals:
+			if not isinstance(radical, str): continue
+			radical_values.extend([next_id, radical])
+		next_id += 1
+
+	# Executes the requests to insert the values.
+	cards_placeholder = ", ".join(["(?,?,?,?)"] * (len(cards_values)//4))
+	meaning_placeholder = ", ".join(["(?,?)"] * (len(meaning_values)//2))
+	example_placeholder = ", ".join(["(?,?)"] * (len(example_values)//2))
+	reading_placeholder = ", ".join(["(?,?,?)"] * (len(reading_values)//3))
+	radical_placeholder = ", ".join(["(?,?)"] * (len(radical_values)//2))
+	db.execute(
+		f"INSERT INTO Element (deck_id, element_type, japanese_name, mnemonic) VALUES {cards_placeholder}",
+		cards_values
+	)
+	db.execute(
+		f"INSERT INTO Meaning (element_id, meaning) VALUES {meaning_placeholder}",
+		meaning_values
+	)
+	db.execute(
+		f"INSERT INTO Example (element_id, example) VALUES {example_placeholder}",
+		example_values
+	)
+	db.execute(
+		f"INSERT INTO KanjiReading (element_id, reading, reading_type) VALUES {reading_placeholder}",
+		reading_values
+	)
+	db.execute(
+		f"INSERT INTO KanjiRadical (element_id, radical) VALUES {radical_placeholder}",
+		radical_values
+	)
 
 
 
@@ -184,7 +283,7 @@ def init_db():
 			except JSONDecodeError as e:
 				print(f"[SESHAT]: error: deck '{json_file}' couldn't be loaded : {e}")
 				exit(1)
-	db.commit()
+		db.commit()	
 	print(f"[SESHAT]: info: database initialized\n")
 
 
@@ -194,7 +293,7 @@ def init_db():
 # Gets all the cards of the specified deck.
 def db_get_deck_cards(name):
 	db = get_db()
-	request = """
+	request = f"""
 	SELECT 
 		E.id,
 		E.japanese_name,
@@ -207,8 +306,9 @@ def db_get_deck_cards(name):
 		FROM Example EX
 		WHERE EX.element_id = E.id) AS example
 	FROM Element E
+	JOIN Deck D ON E.deck_id = D.deck_id
 	LEFT JOIN RadicalReading RR ON E.id = RR.element_id
-	WHERE E.element_type = 'radical' AND E.deck_id = 1;
+	WHERE E.element_type = 'radical' AND D.deck_name = '{name}';
 	"""
 	res = db.execute(request)
 	data = [
@@ -221,8 +321,7 @@ def db_get_deck_cards(name):
 	]
 	return data
 
-
-
+# Gets a deck metadata.
 def db_get_deck_meta(name):
 	db = get_db()
 	request = f"""

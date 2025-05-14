@@ -1,0 +1,90 @@
+{
+	"meta": {
+		"name": "Kanji JLPT5 - 1",
+		"tags": [
+			"kanji", "jlpt5"
+		]
+	},
+	"cards": [
+		{
+			"type": "kanji",
+			"front": "人",
+			"on": ["ジン", "ニン"],
+			"kun": ["ひと", "-り", "-と"],
+			"meaning": ["personne", "humain"],
+			"mnemonic": "Une silhouette simplifiée d'un être humain. Imaginez les deux jambes de quelqu'un qui marche.",
+			"example": ["人々", "日本人", "一人"],
+			"radical": ["人"]
+		},
+		{
+			"type": "kanji",
+			"front": "一",
+			"on": ["イチ", "イツ"],
+			"kun": ["ひと"],
+			"meaning": ["un"],
+			"mnemonic": "Une simple ligne horizontale représentant l'unité. Imaginez-la comme la base de tout, la première marche d'un escalier.",
+			"example": ["一人", "一日", "一つ"],
+			"radical": ["一"]
+		},
+		{
+			"type": "kanji",
+			"front": "日",
+			"on": ["ニチ", "ジツ"],
+			"kun": ["ひ", "-び", "-か"],
+			"meaning": ["jour", "soleil"],
+			"mnemonic": "Représente le soleil avec un cercle contenant un point central. Imaginez-le illuminant le ciel chaque jour.",
+			"example": ["日曜日", "日本", "毎日"],
+			"radical": ["日"]
+		},
+		{
+			"type": "kanji",
+			"front": "大",
+			"on": ["ダイ", "タイ"],
+			"kun": ["おお", "おお.きい", "おお.いに"],
+			"meaning": ["grand", "large"],
+			"mnemonic": "Un homme avec les bras et jambes écartés pour paraître plus grand. Imaginez quelqu'un s'étendant pour montrer sa grandeur.",
+			"example": ["大学", "大人", "大使館"],
+			"radical": ["大"]
+		},
+		{
+			"type": "kanji",
+			"front": "年",
+			"on": ["ネン"],
+			"kun": ["とし"],
+			"meaning": ["année"],
+			"mnemonic": "Basé sur le radical 干 (sec). Imaginez une tige sèche représentant le passage du temps, chaque année laissant sa marque.",
+			"example": ["今年", "去年", "来年"],
+			"radical": ["干", "丿"]
+		},
+		{
+			"type": "kanji",
+			"front": "出",
+			"on": ["シュツ"],
+			"kun": ["で.る", "だ.す"],
+			"meaning": ["sortir", "provenir"],
+			"mnemonic": "Composé de deux fois le radical 山 (montagne). Imaginez quelque chose émergeant entre deux montagnes, symbolisant la sortie.",
+			"example": ["出口", "出発", "出る"],
+			"radical": ["山", "凵"]
+		},
+		{
+			"type": "kanji",
+			"front": "本",
+			"on": ["ホン"],
+			"kun": ["もと"],
+			"meaning": ["livre", "origine", "principal"],
+			"mnemonic": "Basé sur le radical 木 (arbre). Une ligne à la base de l'arbre indique la racine ou l'origine. Imaginez un livre comme la racine de la connaissance.",
+			"example": ["日本", "本棚", "本当"],
+			"radical": ["木", "一"]
+		},
+		{
+			"type": "kanji",
+			"front": "中",
+			"on": ["チュウ"],
+			"kun": ["なか"],
+			"meaning": ["milieu", "intérieur"],
+			"mnemonic": "Basé sur le radical 丨 (ligne verticale). Imaginez une boîte avec une ligne traversant le centre, indiquant le milieu.",
+			"example": ["中国", "中心", "中学"],
+			"radical": ["丨", "口"]
+		}
+	]
+}
