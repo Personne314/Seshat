@@ -94,7 +94,7 @@ class WordCard extends Flashcard {
 class RadicalCard extends Flashcard {
 	constructor(type, front, meaning, mnemonic, example, data) {
 		super(type, front, meaning, mnemonic, example);
-		this.name = data.name ?? null;
+		this.name = data.radical_reading ?? null;
 		if (typeof this.name !== 'string') {
 			throw new Error(`[SESHAT]: missing or invalid 'name' field (${this.name})`);
 		}
@@ -146,46 +146,20 @@ class KanjiCard extends Flashcard {
 }
 
 // Loads a card from its json file.
-async function loadCard(deck_name, file_name) {
+async function loadCard(deck_name, card_data, type) {
 	try {
-		const res = await fetch(`api/deck/${deck_name}/file/${file_name}`);
-		if (!res.ok) throw new Error(`File not found : api/deck/${deck_name}/file/${file_name}`);
-		const card_data = await res.json();
 
 		// Gets all the shared data between card types.
-		const type = card_data.type ?? null;
-		const front = card_data.front ?? null;
+		const front = card_data.japanese_name ?? null;
 		const meaning = card_data.meaning ?? null;
 		const mnemonic = card_data.mnemonic ?? null;
 		const example = card_data.example ?? null;
-		if (typeof type !== 'string') {
-			throw new Error(`[SESHAT]: '${file_name}' must define a 'type' string field`);
-		}
-		if (!allowedCardTypes.includes(type)) {
-			throw new Error(`[SESHAT]: '${file_name}' 'type' field must be one of: ${allowedCardTypes.join(", ")}`);
-		}
-		if (typeof front !== 'string') {
-			throw new Error(`[SESHAT]: '${file_name}' must define a 'front' string field`);
-		}
-		if (typeof mnemonic !== 'string') {
-			throw new Error(`[SESHAT]: '${file_name}' must define a 'meaning' string field`);
-		}
-		if (!Array.isArray(meaning)) {
-			throw new Error(`[SESHAT]: '${file_name}' must define a 'mnemonic' string field`);
-		}
-		for (const e of meaning) {
-			if (typeof e !== 'string') {
-				throw new Error(`[SESHAT]: '${file_name}' 'example' field must contain only strings`);
-			}
-		}
-		if (!Array.isArray(example)) {
-			throw new Error(`[SESHAT]: '${file_name}' must define an 'example' list field`);
-		}
-		for (const e of example) {
-			if (typeof e !== 'string') {
-				throw new Error(`[SESHAT]: '${file_name}' 'example' field must contain only strings`);
-			}
-		}
+
+		console.log(type);
+		console.log(front);
+		console.log(meaning);
+		console.log(mnemonic);
+		console.log(example);
 
 		// Creates the right card.
 		switch (type) {
@@ -201,7 +175,7 @@ async function loadCard(deck_name, file_name) {
 
 	// Errors managment.
 	} catch (error) {
-		console.error(`Error when loading deck '${this.name}/_deck.json' :`, error);
+		console.error(`Error when loading deck '${deck_name}' card :`, error);
 		return null;
 	}
 }

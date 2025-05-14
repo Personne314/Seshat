@@ -26,48 +26,40 @@ class FlashcardDeck {
 	// It loads its metadata, then renders the deck.
 	async loadDeck() {
 		try {
-			const res = await fetch(`api/deck/${this.name}/file/_deck.json`);
-			if (!res.ok) throw new Error(`File not found : api/deck/${this.name}/file/_deck.json`);
-			const deck_meta = await res.json();
-			this.deck_name = deck_meta.name;
-			this.deck_tags = deck_meta.tags;
-			if (typeof this.deck_name !== 'string') {
-				throw new Error("Field 'name' missing or invalid");
-			}
-			if (!Array.isArray(this.deck_tags) || !this.deck_tags.every(tag => typeof tag === 'string')) {
-				throw new Error("Field 'tags' missing or invalid");
-			}
-			await this.renderDeckInfo();
-			await this.renderCards();
+			const res = await fetch(`api/deck/${encodeURIComponent(this.name)}`);
+			if (!res.ok) throw new Error("Deck not found");
+			const deck = await res.json();
+			const deck_meta = deck.meta;
+			const deck_cards = deck.cards;
+			this.type = ['radical', 'kanji', 'word'].find(tag => deck_meta.tags.includes(tag)) || 'unknown';
+			await this.renderDeckInfo(deck_meta);
+			await this.renderCards(deck_cards);
 		} catch (error) {
-			console.error(`Error when loading deck '${this.name}/_deck.json' :`, error);
+			console.error(`Error when loading deck '${this.name}' :`, error);
 		}
 	}
 
-	// This returns the card names.
-	async getCardsNames() {
-		const response = await fetch(`/api/deck/${this.name}/files`);
-		const files = await response.json();
-		return files;
-	}
-
 	// This renders the name and the tags of the deck.
-	async renderDeckInfo() {
-		document.getElementById('deck-name').textContent = this.deck_name;
+	async renderDeckInfo(deck_meta) {
+		console.log(deck_meta);
+		const deck_name = deck_meta.name;
+		const deck_tags = deck_meta.tags;
+		document.getElementById('deck-name').textContent = deck_name;
 		const tagsContainer = document.getElementById('deck-tags');
-		tagsContainer.innerHTML = this.deck_tags.map(tag => 
+		tagsContainer.innerHTML = deck_tags.map(tag => 
 			`<span class="tag">${tag}</span>`
 		).join('');
 	}
 
 	// This is used to render the cards of the deck.
-	async renderCards() {
-		
+	async renderCards(deck_cards) {
+		console.log("deck_cards: ", deck_cards)
+		console.log("deck name: ", this.name)
+
 		// Loads the cards from jsons.
 		const cards = [];
-		const card_names = await this.getCardsNames();
-		for (const file_name of card_names) {
-			let card = await loadCard(this.name, file_name);
+		for (const card_data of deck_cards) {
+			let card = await loadCard(this.name, card_data, this.type);
 			if (card != null) cards.push(card);
 		}
 
@@ -79,13 +71,46 @@ class FlashcardDeck {
 
 	// This setup the controls events.
 	setupEventListeners() {
-		this.prevBtn.addEventListener('click', () => this.navigate(-1));
-		this.nextBtn.addEventListener('click', () => this.navigate(1));
+		this.prevBtn.addEventListener('click', () => {
+			this.resetCurrentCardFlip();
+			this.navigate(-1);
+		});
+		this.nextBtn.addEventListener('click', () => {
+			this.resetCurrentCardFlip();
+			this.navigate(1);
+		});
 		document.addEventListener('keydown', (e) => {
-			if (e.key === 'ArrowLeft') this.navigate(-1);
-			if (e.key === 'ArrowRight') this.navigate(1);
+			if (e.key === 'ArrowLeft') {
+				this.resetCurrentCardFlip();
+				this.navigate(-1);
+			}
+			if (e.key === 'ArrowRight') {
+				this.resetCurrentCardFlip();
+				this.navigate(1);
+			}
+			if (e.key === ' ') {
+				e.preventDefault();
+				const currentCard = this.cards[this.currentIndex];
+				if (currentCard) {
+					currentCard.classList.toggle('flipped');
+				}
+			}
 		});
 		window.addEventListener('resize', () => this.updateDeck());
+		this.deck.addEventListener('click', (e) => {
+			const card = e.target.closest('.flashcard');
+			if (card && card.classList.contains('active')) {
+				card.classList.toggle('flipped');
+			}
+		});
+	}
+
+	// This remove the flipped class from the current card.
+	resetCurrentCardFlip() {
+		const currentCard = this.cards[this.currentIndex];
+		if (currentCard && currentCard.classList.contains('flipped')) {
+			currentCard.classList.remove('flipped');
+		}
 	}
 
 	// This is used to navigate between the cards.

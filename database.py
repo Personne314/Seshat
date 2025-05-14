@@ -1,8 +1,9 @@
 import sqlite3
 from flask import g
-from os import path, walk
+from os import path
 from pathlib import Path
-from json import load, JSONDecodeError
+from json import load, JSONDecodeError, dump
+from flask import jsonify
 from sys import exit
 
 
@@ -159,7 +160,7 @@ def init_db():
 		db.executescript(f.read())
 
 	# Gets all the json deck files.
-	json_dir = Path("static/data/new-deck/")
+	json_dir = Path("static/data/deck/")
 	for json_file in json_dir.glob("**/*.json"):
 		with open(json_file, "r", encoding="utf-8") as f:
 			try:
@@ -185,3 +186,60 @@ def init_db():
 				exit(1)
 	db.commit()
 	print(f"[SESHAT]: info: database initialized\n")
+
+
+
+# This section defines functions to access specific data in the db.
+
+# Gets all the cards of the specified deck.
+def db_get_deck_cards(name):
+	db = get_db()
+	request = """
+	SELECT 
+		E.id,
+		E.japanese_name,
+		E.mnemonic,
+		RR.reading AS radical_reading,
+		(SELECT GROUP_CONCAT(meaning, '|') 
+		FROM Meaning M 
+		WHERE M.element_id = E.id) AS meaning,
+		(SELECT GROUP_CONCAT(example, '|') 
+		FROM Example EX
+		WHERE EX.element_id = E.id) AS example
+	FROM Element E
+	LEFT JOIN RadicalReading RR ON E.id = RR.element_id
+	WHERE E.element_type = 'radical' AND E.deck_id = 1;
+	"""
+	res = db.execute(request)
+	data = [
+		{
+			**dict(row),
+			'meaning': [m.strip() for m in row['meaning'].split('|') if m.strip()],
+			'example': [e.strip() for e in row['example'].split('|') if e.strip()]
+		}
+		for row in res
+	]
+	return data
+
+
+
+def db_get_deck_meta(name):
+	db = get_db()
+	request = f"""
+		SELECT 
+			D.deck_name as name,
+			(SELECT GROUP_CONCAT(tag, '|') 
+			FROM DeckTag DT 
+			WHERE DT.deck_id = D.deck_id) AS tags
+		FROM Deck D
+		WHERE D.deck_name = '{name}';
+	"""
+	res = db.execute(request)
+	data = [
+		{
+			**dict(row),
+			'tags': [t.strip() for t in row['tags'].split('|') if t.strip()]
+		}
+		for row in res
+	]
+	return data[0]
