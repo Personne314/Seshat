@@ -94,10 +94,7 @@ class WordCard extends Flashcard {
 class RadicalCard extends Flashcard {
 	constructor(type, front, meaning, mnemonic, example, data) {
 		super(type, front, meaning, mnemonic, example);
-		this.name = data.radical_reading ?? null;
-		if (typeof this.name !== 'string') {
-			throw new Error(`[SESHAT]: missing or invalid 'name' field (${this.name})`);
-		}
+		this.name = data.radical_reading;
 	}
 
 	// This function returns the HTML to render the card.
@@ -117,28 +114,14 @@ class KanjiCard extends Flashcard {
 		this.on = data.on ?? null;
 		this.kun = data.kun ?? null;
 		this.radical = data.radical ?? null;
-		if (typeof this.on !== 'string') {
-			throw new Error(`[SESHAT]: missing or invalid 'on' field (${this.on})`);
-		}
-		if (typeof this.kun !== 'string') {
-			throw new Error(`[SESHAT]: missing or invalid 'kun' field (${this.kun})`);
-		}
-		if (!Array.isArray(this.radical)) {
-			throw new Error(`[SESHAT]: missing or invalid 'radical' field (must be list) (${this.radical})`);
-		}
-		for (const r of this.radical) {
-			if (typeof r !== 'string') {
-				throw new Error(`[SESHAT]: 'radical' field must contain only strings (${this.radical})`);
-			}
-		}
 	}
 
 	// This function returns the HTML to render the card.
 	render(index) {
 		return `
 			${this.renderPre(index)}
-				<p class="card-info"><strong>On:</strong> ${this.on}</p>
-				<p class="card-info"><strong>Kun:</strong> ${this.kun}</p>
+				<p class="card-info"><strong>On:</strong> ${this.on.join(', ')}</p>
+				<p class="card-info"><strong>Kun:</strong> ${this.kun.join(', ')}</p>
 				<p class="card-info"><strong>Radical:</strong> ${this.radical.join(', ')}</p>
 			${this.renderPost()}
 		`;

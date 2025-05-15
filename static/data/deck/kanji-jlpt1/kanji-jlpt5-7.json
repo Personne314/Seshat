@@ -1,0 +1,82 @@
+{
+	"meta": {
+		"name": "Kanji JLPT5 - 7",
+		"tags": [
+			"kanji", "jlpt5"
+		]
+	},
+	"cards": [
+		{
+			"front": "九",
+			"on": ["キュウ", "ク"],
+			"kun": ["ここの", "ここの.つ"],
+			"meaning": ["neuf"],
+			"mnemonic": "Le trait recourbé symbolise une main qui plie les doigts en comptant jusqu’à neuf, presque au bout.",
+			"example": ["九つ", "九人", "九月"],
+			"radical": ["乙"]
+		},
+		{
+			"front": "食",
+			"on": ["ショク", "ジキ"],
+			"kun": ["た.べる", "く.う", "く.らう"],
+			"meaning": ["manger", "nourriture"],
+			"mnemonic": "Un couvercle sur une bouche : imaginez un plat chaud posé devant quelqu’un prêt à manger.",
+			"example": ["食べる", "食事", "朝食"],
+			"radical": ["食"]
+		},
+		{
+			"front": "八",
+			"on": ["ハチ"],
+			"kun": ["や", "やっ.つ", "よう"],
+			"meaning": ["huit"],
+			"mnemonic": "Deux traits s’écartant vers le bas comme une paire de jambes : le kanji s’ouvre, représentant la division en huit.",
+			"example": ["八つ", "八人", "八月"],
+			"radical": ["八"]
+		},
+		{
+			"front": "水",
+			"on": ["スイ"],
+			"kun": ["みず"],
+			"meaning": ["eau"],
+			"mnemonic": "L’eau qui coule avec éclaboussures : imaginez une source d’eau jaillissante en mouvement.",
+			"example": ["水曜日", "水道", "飲み水"],
+			"radical": ["水"]
+		},
+		{
+			"front": "天",
+			"on": ["テン"],
+			"kun": ["あま", "あめ"],
+			"meaning": ["ciel", "paradis"],
+			"mnemonic": "Un grand homme (大) avec un trait au-dessus : imaginez le ciel au-dessus de tout ce qui est grand.",
+			"example": ["天気", "天国", "天空"],
+			"radical": ["大"]
+		},
+		{
+			"front": "木",
+			"on": ["モク", "ボク"],
+			"kun": ["き", "こ"],
+			"meaning": ["arbre", "bois"],
+			"mnemonic": "La forme d’un arbre stylisé : tronc vertical, branches étendues, racines en bas.",
+			"example": ["木曜日", "木材", "木陰"],
+			"radical": ["木"]
+		},
+		{
+			"front": "六",
+			"on": ["ロク"],
+			"kun": ["む", "むっ.つ", "むい"],
+			"meaning": ["six"],
+			"mnemonic": "Un toit sur une spirale : imaginez une cabane où six personnes se réunissent à l’intérieur.",
+			"example": ["六月", "六つ", "六人"],
+			"radical": ["亠"]
+		},
+		{
+			"front": "万",
+			"on": ["マン", "バン"],
+			"kun": [],
+			"meaning": ["dix mille"],
+			"mnemonic": "Visualisez un scorpion ou un symbole stylisé représentant l’infinité, comme un très grand nombre (10 000).",
+			"example": ["一万円", "万歳", "万人"],
+			"radical": ["一"]
+		}
+	]
+}

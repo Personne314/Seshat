@@ -1,0 +1,82 @@
+{
+	"meta": {
+		"name": "Kanji JLPT5 - 9",
+		"tags": [
+			"kanji", "jlpt5"
+		]
+	},
+	"cards": [
+		{
+			"front": "半",
+			"on": ["ハン"],
+			"kun": ["なか.ば"],
+			"meaning": ["moitié"],
+			"mnemonic": "Le trait en haut (十) coupe le grand trait (干) en deux, montrant la moitié.",
+			"example": ["半分", "半年", "半島"],
+			"radical": ["十", "干"]
+		},
+		{
+			"front": "百",
+			"on": ["ヒャク"],
+			"kun": ["もも"],
+			"meaning": ["cent"],
+			"mnemonic": "Une bouche (口) qui peut contenir cent petites choses, symbolisant le nombre 100.",
+			"example": ["百円", "百人", "百貨店"],
+			"radical": ["白", "口"]
+		},
+		{
+			"front": "土",
+			"on": ["ド", "ト"],
+			"kun": ["つち"],
+			"meaning": ["terre", "sol"],
+			"mnemonic": "Un trait horizontal représente le sol, le vertical est une plante qui pousse dans la terre.",
+			"example": ["土曜日", "土地", "土壌"],
+			"radical": ["土"]
+		},
+		{
+			"front": "西",
+			"on": ["セイ", "サイ", "スイ"],
+			"kun": ["にし"],
+			"meaning": ["ouest"],
+			"mnemonic": "La main (西) tient le soleil couchant, symbole de l'ouest.",
+			"example": ["西洋", "西口", "西風"],
+			"radical": ["西"]
+		},
+		{
+			"front": "読",
+			"on": ["ドク", "トク", "トウ"],
+			"kun": ["よ.む"],
+			"meaning": ["lire"],
+			"mnemonic": "La bouche (言) utilise l'œil (目) pour lire des mots.",
+			"example": ["読書", "読む", "新聞"],
+			"radical": ["言", "売"]
+		},
+		{
+			"front": "千",
+			"on": ["セン"],
+			"kun": ["ち"],
+			"meaning": ["mille"],
+			"mnemonic": "Le trait croisé (十) forme la base d’un grand nombre, mille étant beaucoup plus grand que dix.",
+			"example": ["千円", "千人", "千葉"],
+			"radical": ["十", "乞"]
+		},
+		{
+			"front": "校",
+			"on": ["コウ"],
+			"kun": [],
+			"meaning": ["école"],
+			"mnemonic": "L’arbre (木) pousse à côté de la croix (交), comme à l’école où on se croise pour apprendre.",
+			"example": ["学校", "高校", "校長"],
+			"radical": ["木", "交"]
+		},
+		{
+			"front": "右",
+			"on": ["ウ", "ユウ"],
+			"kun": ["みぎ"],
+			"meaning": ["droite"],
+			"mnemonic": "La bouche (口) indique une main (ナ) levée à droite.",
+			"example": ["右手", "右側", "右折"],
+			"radical": ["口", "ナ"]
+		}
+	]
+}

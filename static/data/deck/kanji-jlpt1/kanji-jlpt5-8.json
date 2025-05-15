@@ -1,0 +1,82 @@
+{
+	"meta": {
+		"name": "Kanji JLPT5 - 8",
+		"tags": [
+			"kanji", "jlpt5"
+		]
+	},
+	"cards": [
+		{
+			"front": "白",
+			"on": ["ハク", "ビャク"],
+			"kun": ["しろ", "しら"],
+			"meaning": ["blanc"],
+			"mnemonic": "Un point de lumière dans un carré : imaginez une goutte de peinture blanche brillante au centre.",
+			"example": ["白い", "白紙", "面白い"],
+			"radical": ["白"]
+		},
+		{
+			"front": "七",
+			"on": ["シチ"],
+			"kun": ["なな", "なな.つ", "なの"],
+			"meaning": ["sept"],
+			"mnemonic": "Un trait barré qui ressemble à un crochet : visualisez un chiffre 7 stylisé.",
+			"example": ["七つ", "七人", "七月"],
+			"radical": ["一"]
+		},
+		{
+			"front": "円",
+			"on": ["エン"],
+			"kun": ["まる.い"],
+			"meaning": ["yen", "cercle"],
+			"mnemonic": "Un cercle fermé : imaginez une pièce de monnaie japonaise ou une forme arrondie.",
+			"example": ["百円", "円い", "円高"],
+			"radical": ["冂"]
+		},
+		{
+			"front": "電",
+			"on": ["デン"],
+			"kun": [],
+			"meaning": ["électricité"],
+			"mnemonic": "La pluie (雨) et un champ électrifié : imaginez des éclairs tombant sur des rizières.",
+			"example": ["電話", "電車", "電気"],
+			"radical": ["雨"]
+		},
+		{
+			"front": "父",
+			"on": ["フ"],
+			"kun": ["ちち"],
+			"meaning": ["père"],
+			"mnemonic": "Deux haches croisées symbolisent l’autorité ou le chef de famille.",
+			"example": ["父親", "祖父", "お父さん"],
+			"radical": ["父"]
+		},
+		{
+			"front": "北",
+			"on": ["ホク"],
+			"kun": ["きた"],
+			"meaning": ["nord"],
+			"mnemonic": "Deux personnes tournées dos à dos : imaginez deux voyageurs qui se séparent et vont vers le nord.",
+			"example": ["北海道", "北風", "北側"],
+			"radical": ["匕"]
+		},
+		{
+			"front": "車",
+			"on": ["シャ"],
+			"kun": ["くるま"],
+			"meaning": ["voiture", "véhicule"],
+			"mnemonic": "Un dessin stylisé d’une roue avec des rayons, comme une charrette vue de dessus.",
+			"example": ["車道", "自動車", "電車"],
+			"radical": ["車"]
+		},
+		{
+			"front": "母",
+			"on": ["ボ"],
+			"kun": ["はは"],
+			"meaning": ["mère"],
+			"mnemonic": "Deux traits pour les seins et un regard protecteur : image stylisée de la maternité.",
+			"example": ["母親", "母国", "お母さん"],
+			"radical": ["母"]
+		}
+	]
+}

@@ -1,0 +1,82 @@
+{
+	"meta": {
+		"name": "Kanji JLPT5 - 5",
+		"tags": [
+			"kanji", "jlpt5"
+		]
+	},
+	"cards": [
+		{
+			"front": "話",
+			"on": ["ワ"],
+			"kun": ["はな.す", "はなし"],
+			"meaning": ["parler", "histoire"],
+			"mnemonic": "Une bouche (口) utilisée pour raconter ou transmettre une histoire (言).",
+			"example": ["会話", "話す", "電話"],
+			"radical": ["言", "口"]
+		},
+		{
+			"front": "山",
+			"on": ["サン"],
+			"kun": ["やま"],
+			"meaning": ["montagne"],
+			"mnemonic": "Une forme triangulaire représentant trois sommets — un pictogramme d’une montagne.",
+			"example": ["山登り", "火山", "富士山"],
+			"radical": ["山"]
+		},
+		{
+			"front": "高",
+			"on": ["コウ"],
+			"kun": ["たか.い"],
+			"meaning": ["haut", "cher"],
+			"mnemonic": "Une tour avec un toit et des fenêtres, image stylisée d’un bâtiment élevé.",
+			"example": ["高校", "高い", "最高"],
+			"radical": ["高", "口"]
+		},
+		{
+			"front": "今",
+			"on": ["コン", "キン"],
+			"kun": ["いま"],
+			"meaning": ["maintenant"],
+			"mnemonic": "Une personne qui serre les mains devant elle comme pour dire ‘maintenant’ ou ‘ce moment’.",
+			"example": ["今日", "今週", "今夜"],
+			"radical": ["人", "一", "𠆢"]
+		},
+		{
+			"front": "書",
+			"on": ["ショ"],
+			"kun": ["か.く"],
+			"meaning": ["écrire", "document"],
+			"mnemonic": "Une main (聿) qui tient un pinceau et écrit sous un couvercle ou un toit.",
+			"example": ["書く", "図書館", "書類"],
+			"radical": ["聿", "日"]
+		},
+		{
+			"front": "五",
+			"on": ["ゴ"],
+			"kun": ["いつ", "いつ.つ"],
+			"meaning": ["cinq"],
+			"mnemonic": "Un caractère représentant les 5 éléments ou les 5 traits d’un ancien idéogramme.",
+			"example": ["五月", "五人", "第五"],
+			"radical": ["二"]
+		},
+		{
+			"front": "名",
+			"on": ["メイ", "ミョウ"],
+			"kun": ["な"],
+			"meaning": ["nom", "réputation"],
+			"mnemonic": "Une bouche (口) qui annonce le soir (夕) : on appelle les gens par leur nom.",
+			"example": ["名前", "有名", "名刺"],
+			"radical": ["夕", "口"]
+		},
+		{
+			"front": "金",
+			"on": ["キン", "コン"],
+			"kun": ["かね", "かな"],
+			"meaning": ["or", "argent", "métal"],
+			"mnemonic": "Un lingot de métal ou une pépite brillante, le kanji évoque directement l'idée de richesse.",
+			"example": ["金曜日", "お金", "金属"],
+			"radical": ["金"]
+		}
+	]
+}

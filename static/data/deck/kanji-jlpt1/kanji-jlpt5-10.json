@@ -1,0 +1,82 @@
+{
+	"meta": {
+		"name": "Kanji JLPT5 - 10",
+		"tags": [
+			"kanji", "jlpt5"
+		]
+	},
+	"cards": [
+		{
+			"front": "南",
+			"on": ["ナン", "ナ"],
+			"kun": ["みなみ"],
+			"meaning": ["sud"],
+			"mnemonic": "La bouche (口) sous un toit (冂) qui protège des rayons du soleil du sud.",
+			"example": ["南口", "南極", "南風"],
+			"radical": ["十", "口", "冂"]
+		},
+		{
+			"front": "左",
+			"on": ["サ"],
+			"kun": ["ひだり"],
+			"meaning": ["gauche"],
+			"mnemonic": "La main (工) agit sous le croisement (𠂉) à gauche.",
+			"example": ["左手", "左側", "左折"],
+			"radical": ["工", "𠂉"]
+		},
+		{
+			"front": "友",
+			"on": ["ユウ"],
+			"kun": ["とも"],
+			"meaning": ["ami"],
+			"mnemonic": "Deux mains (又) qui se rejoignent, symbolisant l'amitié.",
+			"example": ["友達", "友情", "友人"],
+			"radical": ["又"]
+		},
+		{
+			"front": "火",
+			"on": ["カ"],
+			"kun": ["ひ", "ほ"],
+			"meaning": ["feu"],
+			"mnemonic": "Imaginez les flammes qui s’élèvent vers le haut, avec quatre branches.",
+			"example": ["火山", "火事", "火曜日"],
+			"radical": ["火"]
+		},
+		{
+			"front": "毎",
+			"on": ["マイ"],
+			"kun": ["ごと.に"],
+			"meaning": ["chaque"],
+			"mnemonic": "Le trait central (母) se répète pour dire 'chaque fois'.",
+			"example": ["毎日", "毎週", "毎年"],
+			"radical": ["母"]
+		},
+		{
+			"front": "雨",
+			"on": ["ウ"],
+			"kun": ["あめ", "あま-"],
+			"meaning": ["pluie"],
+			"mnemonic": "Des gouttes de pluie tombent sous un toit (冖).",
+			"example": ["雨天", "大雨", "梅雨"],
+			"radical": ["雨"]
+		},
+		{
+			"front": "休",
+			"on": ["キュウ"],
+			"kun": ["やす.む", "やす.まる"],
+			"meaning": ["reposer"],
+			"mnemonic": "Une personne (人) se repose sous un arbre (木).",
+			"example": ["休日", "休憩", "休む"],
+			"radical": ["亻", "木"]
+		},
+		{
+			"front": "午",
+			"on": ["ゴ"],
+			"kun": [],
+			"meaning": ["midi"],
+			"mnemonic": "Un trait horizontal (十) sur le sol pour indiquer le point le plus haut du jour, midi.",
+			"example": ["午前", "午後", "正午"],
+			"radical": ["十"]
+		}
+	]
+}

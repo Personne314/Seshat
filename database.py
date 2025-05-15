@@ -291,8 +291,23 @@ def init_db():
 # This section defines functions to access specific data in the db.
 
 # Gets all the cards of the specified deck.
-def db_get_deck_cards(name):
+def db_get_deck_cards(name, tags):
 	db = get_db()
+	r = "radical" in tags
+	w = "word" in tags
+	k = "kanji" in tags
+	if r and not w and not k:
+		return db_get_deck_cards_radical(db, name)
+	elif not r and w and not k:
+		return db_get_deck_cards_word(db, name)
+	elif not r and not w and k:
+		return db_get_deck_cards_kanji(db, name)
+	else :
+		print(f"[SESHAT]: error: deck '{name}' tags must contains radical, word or kanji")
+		return {}
+
+# Gets all the cards of the specified radical deck.
+def db_get_deck_cards_radical(db, name):
 	request = f"""
 	SELECT 
 		E.id,
@@ -314,8 +329,68 @@ def db_get_deck_cards(name):
 	data = [
 		{
 			**dict(row),
-			'meaning': [m.strip() for m in row['meaning'].split('|') if m.strip()],
-			'example': [e.strip() for e in row['example'].split('|') if e.strip()]
+			"meaning": [m.strip() for m in row["meaning"].split("|") if m.strip()],
+			"example": [e.strip() for e in row["example"].split("|") if e.strip()]
+		}
+		for row in res
+	]
+	return data
+
+
+
+
+
+
+
+
+# Gets all the cards of the specified word deck.
+def db_get_deck_cards_word(db, name):
+	pass
+
+
+
+
+
+
+
+
+
+
+# Gets all the cards of the specified kanji deck.
+def db_get_deck_cards_kanji(db, name):
+	request = f"""
+	SELECT 
+		E.id,
+		E.japanese_name,
+		E.mnemonic,
+		(SELECT GROUP_CONCAT(reading, '|') 
+		FROM KanjiReading 
+		WHERE element_id = E.id AND reading_type = 'on') AS "on",
+		(SELECT GROUP_CONCAT(reading, '|') 
+		FROM KanjiReading 
+		WHERE element_id = E.id AND reading_type = 'kun') AS kun,
+		(SELECT GROUP_CONCAT(meaning, '|') 
+		FROM Meaning M 
+		WHERE M.element_id = E.id) AS meaning,
+		(SELECT GROUP_CONCAT(example, '|') 
+		FROM Example EX 
+		WHERE EX.element_id = E.id) AS example,
+		(SELECT GROUP_CONCAT(radical, '|') 
+		FROM KanjiRadical KR 
+		WHERE KR.element_id = E.id) AS radical
+	FROM Element E
+	JOIN Deck D ON E.deck_id = D.deck_id
+	WHERE E.element_type = 'kanji' AND D.deck_name = '{name}';
+	"""
+	res = db.execute(request)
+	data = [
+		{
+			**dict(row),
+			"on": [o.strip() for o in row["on"].split("|") if o.strip()],
+			"kun": [k.strip() for k in row["kun"].split("|") if k.strip()],
+			"radical": [r.strip() for r in row["radical"].split("|") if r.strip()],
+			"meaning": [m.strip() for m in row["meaning"].split("|") if m.strip()],
+			"example": [e.strip() for e in row["example"].split("|") if e.strip()]
 		}
 		for row in res
 	]

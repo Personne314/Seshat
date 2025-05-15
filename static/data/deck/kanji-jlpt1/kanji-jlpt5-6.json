@@ -1,0 +1,82 @@
+{
+	"meta": {
+		"name": "Kanji JLPT5 - 6",
+		"tags": [
+			"kanji", "jlpt5"
+		]
+	},
+	"cards": [
+		{
+			"front": "男",
+			"on": ["ダン", "ナン"],
+			"kun": ["おとこ"],
+			"meaning": ["homme"],
+			"mnemonic": "Imaginez un homme (田 pour le champ) qui travaille dur avec force (力). Un homme est celui qui cultive la terre avec ses bras.",
+			"example": ["男性", "男子", "男の子"],
+			"radical": ["田", "力"]
+		},
+		{
+			"front": "外",
+			"on": ["ガイ", "ゲ"],
+			"kun": ["そと", "はず.れる", "ほか"],
+			"meaning": ["dehors", "extérieur"],
+			"mnemonic": "Visualisez un couvercle (亠) qu'on soulève pour faire sortir quelque chose (夕), comme pour aller dehors.",
+			"example": ["外国", "外す", "外側"],
+			"radical": ["夕"]
+		},
+		{
+			"front": "四",
+			"on": ["シ"],
+			"kun": ["よ", "よっ.つ", "よん"],
+			"meaning": ["quatre"],
+			"mnemonic": "Le cadre (囗) entoure une bouche (儿 ou 口 stylisé), comme quatre murs autour d'une pièce.",
+			"example": ["四月", "四つ", "四人"],
+			"radical": ["囗"]
+		},
+		{
+			"front": "先",
+			"on": ["セン"],
+			"kun": ["さき"],
+			"meaning": ["avant", "précédent", "futur"],
+			"mnemonic": "Visualisez une personne (儿) qui avance vers l'avant, précédant les autres.",
+			"example": ["先生", "先に", "先月"],
+			"radical": ["儿"]
+		},
+		{
+			"front": "川",
+			"on": ["セン"],
+			"kun": ["かわ"],
+			"meaning": ["rivière"],
+			"mnemonic": "Les trois lignes représentent les courants parallèles d'une rivière en mouvement.",
+			"example": ["川辺", "川口", "川上"],
+			"radical": ["川"]
+		},
+		{
+			"front": "東",
+			"on": ["トウ"],
+			"kun": ["ひがし"],
+			"meaning": ["est"],
+			"mnemonic": "Imaginez le soleil (日) pris entre les branches d’un arbre (木), symbole du lever de soleil à l’est.",
+			"example": ["東京", "東口", "東方"],
+			"radical": ["木"]
+		},
+		{
+			"front": "聞",
+			"on": ["ブン", "モン"],
+			"kun": ["き.く", "き.こえる"],
+			"meaning": ["écouter", "entendre"],
+			"mnemonic": "Imaginez une oreille (耳) derrière une porte (門) : on écoute sans être vu.",
+			"example": ["新聞", "聞く", "聞こえる"],
+			"radical": ["門", "耳"]
+		},
+		{
+			"front": "語",
+			"on": ["ゴ"],
+			"kun": ["かた.る", "かた.らう"],
+			"meaning": ["langue", "parole", "raconter"],
+			"mnemonic": "Les mots (言) sont reliés au cinq (五) et à une bouche (口), symbolisant les échanges verbaux dans une langue.",
+			"example": ["日本語", "英語", "語る"],
+			"radical": ["言", "五", "口"]
+		}
+	]
+}

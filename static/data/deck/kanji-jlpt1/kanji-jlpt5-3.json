@@ -1,0 +1,82 @@
+{
+	"meta": {
+		"name": "Kanji JLPT5 - 3",
+		"tags": [
+			"kanji", "jlpt5"
+		]
+	},
+	"cards": [
+		{
+			"front": "間",
+			"on": ["カン", "ケン"],
+			"kun": ["あいだ", "ま", "あい"],
+			"meaning": ["intervalle", "temps", "entre"],
+			"mnemonic": "Imagine une porte ouverte (門) laissant passer un rayon de soleil (日) : c’est l’espace ou le moment 'entre' deux choses.",
+			"example": ["時間", "人間", "間に合う"],
+			"radical": ["門", "日"]
+		},
+		{
+			"front": "時",
+			"on": ["ジ"],
+			"kun": ["とき"],
+			"meaning": ["temps", "heure", "moment"],
+			"mnemonic": "Le soleil (日) qui éclaire un vieux temple (寺) symbolise le temps qui passe, rythmé par les cloches du temple.",
+			"example": ["時間", "時代", "時々"],
+			"radical": ["日", "土", "寸"]
+		},
+		{
+			"front": "気",
+			"on": ["キ", "ケ"],
+			"kun": [],
+			"meaning": ["esprit", "énergie", "air", "humeur"],
+			"mnemonic": "Un souffle léger (气) qui circule librement : c’est l’énergie invisible, l’air, le 'ki' intérieur.",
+			"example": ["元気", "天気", "気分"],
+			"radical": ["气"]
+		},
+		{
+			"front": "十",
+			"on": ["ジュウ", "ジッ", "ジュッ"],
+			"kun": ["とお", "と"],
+			"meaning": ["dix"],
+			"mnemonic": "Deux lignes qui se croisent forment une croix parfaite : facile à retenir comme symbole du nombre dix.",
+			"example": ["十日", "十分", "十年"],
+			"radical": ["十"]
+		},
+		{
+			"front": "女",
+			"on": ["ジョ", "ニョ", "ニョウ"],
+			"kun": ["おんな", "め"],
+			"meaning": ["femme", "féminin"],
+			"mnemonic": "Une silhouette agenouillée, bras croisés, représentation stylisée d'une femme à l’époque ancienne.",
+			"example": ["女性", "彼女", "女の子"],
+			"radical": ["女"]
+		},
+		{
+			"front": "三",
+			"on": ["サン"],
+			"kun": ["み", "みっ", "みつ"],
+			"meaning": ["trois"],
+			"mnemonic": "Trois lignes horizontales : simple, clair, évident. Trois comme trois doigts tendus.",
+			"example": ["三日", "三人", "三年"],
+			"radical": ["一"]
+		},
+		{
+			"front": "前",
+			"on": ["ゼン"],
+			"kun": ["まえ"],
+			"meaning": ["avant", "devant"],
+			"mnemonic": "Imagine la lune (月) devant un sabre (刂) : se placer 'devant' pour faire face à quelque chose.",
+			"example": ["名前", "午前", "前半"],
+			"radical": ["刂", "月"]
+		},
+		{
+			"front": "入",
+			"on": ["ニュウ"],
+			"kun": ["い", "はい", "いり", "いれる"],
+			"meaning": ["entrer", "insérer"],
+			"mnemonic": "Deux jambes qui s’écartent vers l’intérieur : imagine quelqu’un qui pénètre dans une pièce.",
+			"example": ["入口", "入学", "入れる"],
+			"radical": ["入"]
+		}
+	]
+}

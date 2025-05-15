@@ -36,10 +36,10 @@ def radicals_exercise():
 
 
 
-
+# This route generates a page showing the kanji of a deck.
 @app.route('/deck')
 def deck():
-	deck_data = "Radicaux - 1"
+	deck_data = "Kanji JLPT5 - 1"
 	return render_template('deck.html', deck_data=deck_data)
 
 
@@ -50,7 +50,7 @@ def deck():
 @app.route('/api/deck/<string:deck_name>')
 def get_deck(deck_name):
 	deck_meta = db_get_deck_meta(deck_name)
-	deck_cards = db_get_deck_cards(deck_name)
+	deck_cards = db_get_deck_cards(deck_name, deck_meta["tags"])
 	return jsonify({"meta": deck_meta, "cards": deck_cards})
 
 

@@ -1,0 +1,82 @@
+{
+	"meta": {
+		"name": "Kanji JLPT5 - 2",
+		"tags": [
+			"kanji", "jlpt5"
+		]
+	},
+	"cards": [
+		{
+			"front": "子",
+			"on": ["シ"],
+			"kun": ["こ"],
+			"meaning": ["enfant"],
+			"mnemonic": "Imaginez un enfant avec une grosse tête et les bras écartés, prêt à recevoir un câlin. C'est l'image même de l'innocence et de la jeunesse.",
+			"example": ["子供", "男子", "女子"],
+			"radical": ["子"]
+		},
+		{
+			"front": "見",
+			"on": ["ケン"],
+			"kun": ["み.る", "み.える", "み.せる"],
+			"meaning": ["voir", "regarder"],
+			"mnemonic": "Visualisez un œil sur des jambes en train de marcher, symbolisant l'action de voir en mouvement.",
+			"example": ["見学", "意見", "見せる"],
+			"radical": ["目", "儿"]
+		},
+		{
+			"front": "国",
+			"on": ["コク"],
+			"kun": ["くに"],
+			"meaning": ["pays", "nation"],
+			"mnemonic": "Imaginez un trésor précieux (玉) enfermé dans une enceinte (囗) pour le protéger. Ce trésor représente la richesse d'un pays.",
+			"example": ["外国", "中国", "国際"],
+			"radical": ["囗", "玉"]
+		},
+		{
+			"front": "上",
+			"on": ["ジョウ"],
+			"kun": ["うえ", "あ.がる", "のぼ.る"],
+			"meaning": ["au-dessus", "monter"],
+			"mnemonic": "Pensez à une ligne horizontale représentant le sol, avec un objet ou une personne au-dessus, indiquant une position élevée.",
+			"example": ["上手", "上がる", "以上"],
+			"radical": ["一", "丨"]
+		},
+		{
+			"front": "分",
+			"on": ["ブン", "フン", "ブ"],
+			"kun": ["わ.ける", "わ.かる"],
+			"meaning": ["diviser", "minute", "comprendre"],
+			"mnemonic": "Visualisez une épée (刀) coupant quelque chose en deux, symbolisant la division ou la compréhension en séparant les parties.",
+			"example": ["分ける", "分かる", "十分"],
+			"radical": ["刀", "八"]
+		},
+		{
+			"front": "生",
+			"on": ["セイ", "ショウ"],
+			"kun": ["い.きる", "う.まれる", "なま"],
+			"meaning": ["vie", "naître", "cru"],
+			"mnemonic": "Imaginez une plante qui pousse du sol, représentant la naissance et la croissance de la vie.",
+			"example": ["学生", "生まれる", "生ビール"],
+			"radical": ["生"]
+		},
+		{
+			"front": "行",
+			"on": ["コウ", "ギョウ"],
+			"kun": ["い.く", "ゆ.く", "おこな.う"],
+			"meaning": ["aller", "voyager", "exécuter"],
+			"mnemonic": "Visualisez deux routes parallèles représentant un chemin ou un voyage, symbolisant l'action d'aller ou de se déplacer.",
+			"example": ["旅行", "行く", "銀行"],
+			"radical": ["行"]
+		},
+		{
+			"front": "二",
+			"on": ["ニ"],
+			"kun": ["ふた", "ふた.つ"],
+			"meaning": ["deux"],
+			"mnemonic": "Imaginez deux lignes parallèles représentant le chiffre deux, simple et direct.",
+			"example": ["二人", "二月", "二重"],
+			"radical": ["二"]
+		}
+	]
+}

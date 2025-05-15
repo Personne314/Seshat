@@ -1,0 +1,82 @@
+{
+	"meta": {
+		"name": "Kanji JLPT5 - 4",
+		"tags": [
+			"kanji", "jlpt5"
+		]
+	},
+	"cards": [
+		{
+			"front": "小",
+			"on": ["ショウ"],
+			"kun": ["ちい.さい", "こ", "お"],
+			"meaning": ["petit"],
+			"mnemonic": "Trois petits traits convergent vers un point central : une image de quelque chose de petit, rassemblé.",
+			"example": ["小学校", "小さい", "小説"],
+			"radical": ["小"]
+		},
+		{
+			"front": "後",
+			"on": ["ゴ", "コウ"],
+			"kun": ["のち", "うし.ろ", "あと"],
+			"meaning": ["après", "derrière"],
+			"mnemonic": "Une personne avançant lentement (夂) avec une ligne indiquant le mouvement en arrière.",
+			"example": ["午後", "最後", "後ろ"],
+			"radical": ["彳", "夂"]
+		},
+		{
+			"front": "長",
+			"on": ["チョウ"],
+			"kun": ["なが.い"],
+			"meaning": ["long", "chef"],
+			"mnemonic": "Une tête avec des cheveux longs et une ligne de longueur : image d'une personne âgée ou d'un chef respecté.",
+			"example": ["社長", "長い", "学長"],
+			"radical": ["長"]
+		},
+		{
+			"front": "下",
+			"on": ["カ", "ゲ"],
+			"kun": ["した", "さ.がる", "くだ.る"],
+			"meaning": ["en dessous", "descendre"],
+			"mnemonic": "Un objet sous une ligne : la représentation directe du bas ou de ce qui est en dessous.",
+			"example": ["地下", "下がる", "以下"],
+			"radical": ["一", "卜"]
+		},
+		{
+			"front": "学",
+			"on": ["ガク"],
+			"kun": ["まな.ぶ"],
+			"meaning": ["apprendre", "études"],
+			"mnemonic": "Un toit (宀) abritant des enfants qui apprennent : une école ou un lieu d’apprentissage.",
+			"example": ["学生", "大学", "学ぶ"],
+			"radical": ["子", "冖", "八"]
+		},
+		{
+			"front": "月",
+			"on": ["ゲツ", "ガツ"],
+			"kun": ["つき"],
+			"meaning": ["lune", "mois"],
+			"mnemonic": "Une représentation ancienne de la lune en croissant avec ses phases.",
+			"example": ["一月", "月曜日", "今月"],
+			"radical": ["月"]
+		},
+		{
+			"front": "何",
+			"on": ["カ"],
+			"kun": ["なに", "なん"],
+			"meaning": ["quoi", "quel"],
+			"mnemonic": "Un homme (亻) qui porte une bouche (口) pour poser des questions — 'Qu’est-ce que c’est ?'",
+			"example": ["何時", "何人", "何年"],
+			"radical": ["亻", "可"]
+		},
+		{
+			"front": "来",
+			"on": ["ライ"],
+			"kun": ["く.る", "きた.る"],
+			"meaning": ["venir"],
+			"mnemonic": "Des épis (⽊ et variantes) stylisés qui arrivent à maturité : idée de quelque chose qui arrive.",
+			"example": ["来る", "来年", "将来"],
+			"radical": ["木", "米"]
+		}
+	]
+}
