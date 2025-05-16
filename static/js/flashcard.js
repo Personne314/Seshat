@@ -1,14 +1,3 @@
-const allowedWordClasses = [
-	"ichidan", "godan", "irregular",
-	"i_adj", "na_adj",
-	"particle", "adverb", "pronoun", "conjunction",
-	"noun"
-];
-const allowedCardTypes = [
-	"word", "radical", "kanji"
-];
-
-
 allowFlip = false;
 function cardsAllowFlip() {allowFlip = true;}
 function cardsPreventFlip() {allowFlip = false;}
@@ -66,17 +55,8 @@ class Flashcard {
 class WordCard extends Flashcard {
 	constructor(type, front, meaning, mnemonic, example, data) {
 		super(type, front, meaning, mnemonic, example);
-		this.reading = data.reading ?? null;
-		this.word_class = data.class ?? null;
-		if (typeof this.reading !== 'string') {
-			throw new Error(`[SESHAT]: missing or invalid 'reading' field (${this.reading})`);
-		}
-		if (typeof this.word_class !== 'string') {
-			throw new Error(`[SESHAT]: missing or invalid 'class' field (${this.word_class})`);
-		}
-		if (!allowedWordClasses.includes(this.word_class)) {
-			throw new Error(`[SESHAT]: invalid 'class' field: must be one of ${allowedWordClasses.join(", ")} (${this.word_class})`);
-		}
+		this.reading = data.reading;
+		this.word_class = data.class;
 	}
 
 	// This function returns the HTML to render the card.
@@ -111,9 +91,9 @@ class RadicalCard extends Flashcard {
 class KanjiCard extends Flashcard {
 	constructor(type, front, meaning, mnemonic, example, data) {
 		super(type, front, meaning, mnemonic, example);
-		this.on = data.on ?? null;
-		this.kun = data.kun ?? null;
-		this.radical = data.radical ?? null;
+		this.on = data.on;
+		this.kun = data.kun;
+		this.radical = data.radical;
 	}
 
 	// This function returns the HTML to render the card.

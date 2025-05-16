@@ -8,6 +8,14 @@ from sys import exit
 
 
 
+# Constants to check the structure of jsons.
+_radical_fields = ["front", "name", "meaning", "mnemonic", "example"]
+_radical_field_islist = [False, False, True, False, True]
+_word_fields = ["front", "reading", "class", "meaning", "mnemonic", "example"]
+_word_field_islist = [False, False, False, True, False, True]
+_kanji_fields = ["front", "on", "kun", "meaning", "mnemonic", "example", "radical"]
+_kanji_field_islist = [False, True, True, True, False, True, True]
+
 # Database name.
 DATABASE = 'app.db'
 
@@ -31,17 +39,12 @@ def close_db(e=None):
 
 
 
-
-# Constants to check the structure of jsons.
-_radical_fields = ["front", "name", "meaning", "mnemonic", "example"]
-_radical_field_islist = [False, False, True, False, True]
-
 # Checks the structure of a card dict.
 def check_card_structure(json, fields, lists):
 	if not isinstance(json, dict): return False
 	for i in range(len(fields)):
-		t = list if _radical_field_islist[i] else str
-		e = json.get(_radical_fields[i], None)
+		t = list if lists[i] else str
+		e = json.get(fields[i], None)
 		if not isinstance(e, t): return False
 		if isinstance(e, list):
 			for elt in e :
@@ -150,31 +153,52 @@ def create_cards_radical(db, deck_id, cards, json_file):
 		reading_values
 	)
 
-
-
-
-
-
-
-
-
-
-
-
 # Adds all the word cards from a deck to the database.
 def create_cards_word(db, deck_id, cards, json_file):
-	pass
+	next_id = get_next_autoincrement_id(db, "Element")
 
+	# Gets all the values from the cards.
+	cards_values = []
+	meaning_values = []
+	example_values = []
+	wordinfo_values = []
+	for i in range(len(cards)):
+		card = cards[i]
+		if not check_card_structure(card, _word_fields, _word_field_islist):
+			print(f"[SESHAT]: error: deck '{json_file}' card {i+1} is invalid")
+			exit(1)
 
+		# Stores the values in lists.
+		cards_values.extend([deck_id, "word", card["front"], card["mnemonic"]])
+		for meaning in card["meaning"]:
+			meaning_values.extend([next_id, meaning])
+		for example in card["example"]:
+			example_values.extend([next_id, example])
+		word_class = card["class"]
+		wordinfo_values.extend([next_id, card["reading"], word_class])
+		next_id += 1
 
-
-
-
-
-
-
-
-
+	# Executes the requests to insert the values.
+	cards_placeholder = ", ".join(["(?,?,?,?)"] * int(len(cards_values)/4))
+	meaning_placeholder = ", ".join(["(?,?)"] * int(len(meaning_values)/2))
+	example_placeholder = ", ".join(["(?,?)"] * int(len(example_values)/2))
+	wordinfo_placeholder = ", ".join(["(?,?,?)"] * int(len(wordinfo_values)/3))
+	db.execute(
+		f"INSERT INTO Element (deck_id, element_type, japanese_name, mnemonic) VALUES {cards_placeholder}",
+		cards_values
+	)
+	db.execute(
+		f"INSERT INTO Meaning (element_id, meaning) VALUES {meaning_placeholder}",
+		meaning_values
+	)
+	db.execute(
+		f"INSERT INTO Example (element_id, example) VALUES {example_placeholder}",
+		example_values
+	)
+	db.execute(
+		f"INSERT INTO WordInfo (element_id, reading, word_class) VALUES {wordinfo_placeholder}",
+		wordinfo_values
+	)
 
 # Adds all the kanji cards from a deck to the database.
 def create_cards_kanji(db, deck_id, cards, json_file):
@@ -188,7 +212,7 @@ def create_cards_kanji(db, deck_id, cards, json_file):
 	radical_values = []
 	for i in range(len(cards)):
 		card = cards[i]
-		if not isinstance(card, dict):
+		if not check_card_structure(card, _kanji_fields, _kanji_field_islist):
 			print(f"[SESHAT]: error: deck '{json_file}' card {i+1} is invalid")
 			exit(1)
 
@@ -260,7 +284,10 @@ def init_db():
 
 	# Gets all the json deck files.
 	json_dir = Path("static/data/deck/")
-	for json_file in json_dir.glob("**/*.json"):
+	files = list(json_dir.glob("**/*.json"))
+	len_files = len(files)
+	i = 0
+	for json_file in files:
 		with open(json_file, "r", encoding="utf-8") as f:
 			try:
 
@@ -276,15 +303,19 @@ def init_db():
 
 				# Adds the data to the database.
 				deck_id = create_deck(db, meta, json_file)
-				create_cards(db, deck_id, cards, tags, json_file)
-				
-				print(f"[SESHAT]: info: {json_file} loaded into the database")
+				create_cards(db, deck_id, cards, tags, json_file)	
+				i += 1
+				print(f"[SESHAT]: info: {json_file} loaded into the database ({i}/{len_files})")
 
 			except JSONDecodeError as e:
 				print(f"[SESHAT]: error: deck '{json_file}' couldn't be loaded : {e}")
 				exit(1)
 		db.commit()	
-	print(f"[SESHAT]: info: database initialized\n")
+
+	if len_files == i :
+		print(f"[SESHAT]: info: database initialized\n")
+	else :
+		print(f"[SESHAT]: error: database initialization failed !\n")
 
 
 
@@ -309,8 +340,7 @@ def db_get_deck_cards(name, tags):
 # Gets all the cards of the specified radical deck.
 def db_get_deck_cards_radical(db, name):
 	request = f"""
-	SELECT 
-		E.id,
+	SELECT
 		E.japanese_name,
 		E.mnemonic,
 		RR.reading AS radical_reading,
@@ -345,7 +375,34 @@ def db_get_deck_cards_radical(db, name):
 
 # Gets all the cards of the specified word deck.
 def db_get_deck_cards_word(db, name):
-	pass
+    request = f"""
+    SELECT
+        E.japanese_name,
+        E.mnemonic,
+        WI.reading AS reading,
+        WI.word_class AS class,
+        (SELECT GROUP_CONCAT(meaning, '|')
+         FROM Meaning M
+         WHERE M.element_id = E.id) AS meaning,
+        (SELECT GROUP_CONCAT(example, '|')
+         FROM Example EX
+         WHERE EX.element_id = E.id) AS example
+    FROM Element E
+    JOIN Deck D ON E.deck_id = D.deck_id
+    LEFT JOIN WordInfo WI ON E.id = WI.element_id
+    WHERE E.element_type = 'word' AND D.deck_name = '{name}';
+    """
+    res = db.execute(request)
+    data = [
+        {
+            **dict(row),
+            "meaning": [m.strip() for m in row["meaning"].split("|") if m.strip()] if row["meaning"] else [],
+            "example": [e.strip() for e in row["example"].split("|") if e.strip()] if row["example"] else []
+        }
+        for row in res
+    ]
+    return data
+
 
 
 
@@ -360,7 +417,6 @@ def db_get_deck_cards_word(db, name):
 def db_get_deck_cards_kanji(db, name):
 	request = f"""
 	SELECT 
-		E.id,
 		E.japanese_name,
 		E.mnemonic,
 		(SELECT GROUP_CONCAT(reading, '|') 

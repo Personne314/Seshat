@@ -1,0 +1,230 @@
+{
+	"meta": {
+		"name": "Vocabulaire JLPT5 - 1",
+		"tags": [
+			"word", "jlpt5", "vocabulaire"
+		]
+	},
+	"cards": [
+		{
+			"front": "会う",
+			"reading": "あう",
+			"class": "verbe intransitif",
+			"meaning": ["rencontrer", "voir"],
+			"mnemonic": "あう → Imaginez deux personnes qui s’exclament « Ah ! » (あ) et « Ouah ! » (う) en se rencontrant.",
+			"example": [
+			"友達に会う (ともだちにあう - Rencontrer un ami)",
+			"駅で会う (えきであう - Se voir à la gare)"
+			]
+		},
+		{
+			"front": "青い",
+			"reading": "あおい",
+			"class": "adjectif en -i",
+			"meaning": ["bleu"],
+			"mnemonic": "あおい → « A.O. » comme dans « Azur Océan » (la couleur bleue de la mer).",
+			"example": [
+			"青い空 (あおいそら - Ciel bleu)",
+			"青い目 (あおいめ - Yeux bleus)"
+			]
+		},
+		{
+			"front": "赤",
+			"reading": "あか",
+			"class": "nom",
+			"meaning": ["rouge"],
+			"mnemonic": "あか → Imaginez un « arc-en-ciel » (aka) où le rouge est la première couleur.",
+			"example": [
+			"赤が好き (あかがすき - J’aime le rouge)",
+			"赤のドレス (あかのどれす - Une robe rouge)"
+			]
+		},
+		{
+			"front": "赤い",
+			"reading": "あかい",
+			"class": "adjectif en -i",
+			"meaning": ["rouge (adjectif)"],
+			"mnemonic": "あかい → « À qui » est ce feu rouge ? À moi (akai).",
+			"example": [
+			"赤いりんご (あかいりんご - Pomme rouge)",
+			"赤い信号 (あかいしんごう - Feu rouge)"
+			]
+		},
+		{
+			"front": "上がる",
+			"reading": "あがる",
+			"class": "verbe godan intransitif",
+			"meaning": ["monter"],
+			"mnemonic": "あがる → « À gare » (on monte dans le train à la gare).",
+			"example": [
+			"階段を上がる (かいだんをあがる - Monter les escaliers)",
+			"手を上げる (てをあげる - Lever la main)"
+			]
+		},
+		{
+			"front": "明るい",
+			"reading": "あかるい",
+			"class": "adjectif en -i",
+			"meaning": ["brillant", "lumineux"],
+			"mnemonic": "あかるい → « À clarté » (comme une pièce remplie de lumière).",
+			"example": [
+			"明るい部屋 (あかるいへや - Pièce lumineuse)",
+			"明るい性格 (あかるいせいかく - Personnalité joyeuse)"
+			]
+		},
+		{
+			"front": "秋",
+			"reading": "あき",
+			"class": "nom",
+			"meaning": ["automne"],
+			"mnemonic": "あき → « Aki » ressemble à « aquitaine » (région où les automnes sont colorés).",
+			"example": [
+			"秋の紅葉 (あきのこうよう - Feuilles d’automne)",
+			"秋が好き (あきがすき - J’aime l’automne)"
+			]
+		},
+		{
+			"front": "開く",
+			"reading": "あく",
+			"class": "verbe godan intransitif",
+			"meaning": ["s’ouvrir"],
+			"mnemonic": "あく → « À cul » (une porte qui s’ouvre à reculons, familier).",
+			"example": [
+			"ドアが開く (どあがあく - La porte s’ouvre)",
+			"店が開く (みせがあく - Le magasin ouvre)"
+			]
+		},
+		{
+			"front": "開ける",
+			"reading": "あける",
+			"class": "verbe ichidan transitif",
+			"meaning": ["ouvrir"],
+			"mnemonic": "あける → « À clé » (on utilise une clé pour ouvrir).",
+			"example": [
+			"窓を開ける (まどをあける - Ouvrir la fenêtre)",
+			"瓶を開ける (びんをあける - Ouvrir une bouteille)"
+			]
+		},
+		{
+			"front": "あげる",
+			"reading": "あげる",
+			"class": "verbe ichidan transitif",
+			"meaning": ["donner"],
+			"mnemonic": "あげる → « À gérer » (on donne une tâche à gérer).",
+			"example": [
+			"プレゼントをあげる (ぷれぜんとをあげる - Donner un cadeau)",
+			"アドバイスをあげる (あどばいすをあげる - Donner un conseil)"
+			]
+		},
+		{
+			"front": "朝",
+			"reading": "あさ",
+			"class": "nom",
+			"meaning": ["matin"],
+			"mnemonic": "あさ → « Ah ! Le soleil » (exclamation matinale).",
+			"example": [
+			"朝早い (あさはやい - Tôt le matin)",
+			"朝の散歩 (あさのさんぽ - Promenade matinale)"
+			]
+		},
+		{
+			"front": "朝ご飯",
+			"reading": "あさごはん",
+			"class": "nom",
+			"meaning": ["petit-déjeuner"],
+			"mnemonic": "あさごはん → « À sa table » le matin pour manger.",
+			"example": [
+			"朝ご飯を食べる (あさごはんをたべる - Prendre le petit-déjeuner)",
+			"朝ご飯の準備 (あさごはんのじゅんび - Préparer le petit-déjeuner)"
+			]
+		},
+		{
+			"front": "明後日",
+			"reading": "あさって",
+			"class": "nom",
+			"meaning": ["surlendemain"],
+			"mnemonic": "あさって → « À sauter deux jours » (on saute demain pour arriver après).",
+			"example": [
+			"明後日会いましょう (あさってあいましょう - Rendez-vous après-demain)",
+			"明後日の予定 (あさってのよてい - Plannification d’après-demain)"
+			]
+		},
+		{
+			"front": "足",
+			"reading": "あし",
+			"class": "nom",
+			"meaning": ["pied", "jambe"],
+			"mnemonic": "あし → « Achille » (héros grec connu pour son talon vulnérable).",
+			"example": [
+			"足が長い (あしがながい - Avoir de longues jambes)",
+			"足を洗う (あしをあらう - Laver ses pieds)"
+			]
+		},
+		{
+			"front": "明日",
+			"reading": "あした",
+			"class": "nom",
+			"meaning": ["demain"],
+			"mnemonic": "あした → « À château » (demain nous visitons un château).",
+			"example": [
+			"明日会いましょう (あしたあいましょう - Rendez-vous demain)",
+			"明日の天気 (あしたのてんき - Météo de demain)"
+			]
+		},
+		{
+			"front": "あそこ",
+			"reading": "あそこ",
+			"class": "nom",
+			"meaning": ["là-bas"],
+			"mnemonic": "あそこ → « À socque » (chaussure traditionnelle, on pointe du pied vers un lieu).",
+			"example": [
+			"あそこの店 (あそこのみせ - Le magasin là-bas)",
+			"あそこに座る (あそこにすわる - S’asseoir là-bas)"
+			]
+		},
+		{
+			"front": "遊ぶ",
+			"reading": "あそぶ",
+			"class": "verbe godan intransitif",
+			"meaning": ["jouer"],
+			"mnemonic": "あそぶ → « À robot » (un robot qui joue et s’amuse).",
+			"example": [
+			"公園で遊ぶ (こうえんであそぶ - Jouer au parc)",
+			"子供と遊ぶ (こどもとあそぶ - Jouer avec des enfants)"
+			]
+		},
+		{
+			"front": "暖かい",
+			"reading": "あたたかい",
+			"class": "adjectif en -i",
+			"meaning": ["chaud"],
+			"mnemonic": "あたたかい → « À ta tasse chaude » (comme une boisson réconfortante).",
+			"example": [
+			"暖かい料理 (あたたかいりょうり - Plat chaud)",
+			"暖かい気持ち (あたたかいきもち - Sentiment chaleureux)"
+			]
+		},
+		{
+			"front": "頭",
+			"reading": "あたま",
+			"class": "nom",
+			"meaning": ["tête"],
+			"mnemonic": "あたま → « À ta matière grise » (la tête qui réfléchit).",
+			"example": [
+			"頭がいい (あたまがいい - Être intelligent)",
+			"頭が痛い (あたまがいたい - Avoir mal à la tête)"
+			]
+		},
+		{
+			"front": "新しい",
+			"reading": "あたらしい",
+			"class": "adjectif en -i",
+			"meaning": ["nouveau", "neuf"],
+			"mnemonic": "あたらしい → « À ta nouvelle vie » (commencer quelque chose de neuf).",
+			"example": [
+			"新しい靴 (あたらしいくつ - Nouvelles chaussures)",
+			"新しい家 (あたらしいいえ - Nouvelle maison)"
+			]
+		}
+	]
+}

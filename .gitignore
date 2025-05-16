@@ -3,3 +3,4 @@ env/
 *.log
 *.db
 __pycache__
+notes/voc_n5.txt
