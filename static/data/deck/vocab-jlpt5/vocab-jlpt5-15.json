@@ -1,0 +1,230 @@
+{
+	"meta": {
+		"name": "Vocabulaire JLPT5 - 15",
+		"tags": [
+			"word", "jlpt5", "vocabulaire"
+		]
+	},
+	"cards": [
+		{
+			"front": "セーター",
+			"reading": "セーター",
+			"class": "nom",
+			"meaning": ["pull"],
+			"mnemonic": "Mot emprunté à l’anglais « sweater ».",
+			"example": [
+			"セーターを着る (セーターをきる - Porter un pull)",
+			"毛糸のセーター (けいとのセーター - Pull en laine)"
+			]
+		},
+		{
+			"front": "石鹸",
+			"reading": "せっけん",
+			"class": "nom",
+			"meaning": ["savon"],
+			"mnemonic": "せっけん → « Sec » (le savon rend la peau sèche).",
+			"example": [
+			"石鹸で手を洗う (せっけんでてをあらう - Se laver les mains au savon)",
+			"液体石鹸 (えきたいせっけん - Savon liquide)"
+			]
+		},
+		{
+			"front": "背広",
+			"reading": "せびろ",
+			"class": "nom",
+			"meaning": ["costume"],
+			"mnemonic": "Origine : adaptation de « Savile Row » (rue londonienne de tailleurs).",
+			"example": [
+			"背広を着る (せびろをきる - Porter un costume)",
+			"新しい背広 (あたらしいせびろ - Nouveau costume)"
+			]
+		},
+		{
+			"front": "狭い",
+			"reading": "せまい",
+			"class": "adjectif en -i",
+			"meaning": ["étroit"],
+			"mnemonic": "せまい → « Sans espace » (manque de place).",
+			"example": [
+			"狭い部屋 (せまいへや - Pièce étroite)",
+			"道が狭い (みちがせまい - Rue étroite)"
+			]
+		},
+		{
+			"front": "ゼロ",
+			"reading": "ゼロ",
+			"class": "nom",
+			"meaning": ["zéro"],
+			"mnemonic": "Mot emprunté à l’anglais « zero ».",
+			"example": [
+			"ゼロから始める (ゼロからはじめる - Commencer à zéro)",
+			"結果はゼロ (けっかはゼロ - Résultat nul)"
+			]
+		},
+		{
+			"front": "先月",
+			"reading": "せんげつ",
+			"class": "nom",
+			"meaning": ["mois dernier"],
+			"mnemonic": "せんげつ → « C’est en jeu ce mois » (passé).",
+			"example": [
+			"先月の給料 (せんげつのきゅうりょう - Salaire du mois dernier)",
+			"先月旅行した (せんげつりょこうした - Voyage du mois dernier)"
+			]
+		},
+		{
+			"front": "先週",
+			"reading": "せんしゅう",
+			"class": "nom",
+			"meaning": ["semaine dernière"],
+			"mnemonic": "せんしゅう → « C’est en jeu cette semaine » (passée).",
+			"example": [
+			"先週の会議 (せんしゅうのかいぎ - Réunion de la semaine dernière)",
+			"先週雨が降った (せんしゅうあめがふった - Il a plu la semaine dernière)"
+			]
+		},
+		{
+			"front": "先生",
+			"reading": "せんせい",
+			"class": "nom",
+			"meaning": ["professeur"],
+			"mnemonic": "せんせい → « Sage » (celui qui enseigne la sagesse).",
+			"example": [
+			"数学の先生 (すうがくのせんせい - Professeur de maths)",
+			"先生に質問する (せんせいにしつもんする - Poser une question au professeur)"
+			]
+		},
+		{
+			"front": "洗濯",
+			"reading": "せんたく",
+			"class": "nom (verbe en する)",
+			"meaning": ["lessive"],
+			"mnemonic": "せんたく → « Sans tache » (linge propre).",
+			"example": [
+			"洗濯をする (せんたくをする - Faire la lessive)",
+			"洗濯物を干す (せんたくものをほす - Étendre le linge)"
+			]
+		},
+		{
+			"front": "全部",
+			"reading": "ぜんぶ",
+			"class": "nom",
+			"meaning": ["tout"],
+			"mnemonic": "ぜんぶ → « Tout est là » (intégralité).",
+			"example": [
+			"全部食べる (ぜんぶたべる - Tout manger)",
+			"全部終わった (ぜんぶおわった - Tout est fini)"
+			]
+		},
+		{
+			"front": "掃除",
+			"reading": "そうじ",
+			"class": "nom (verbe en する)",
+			"meaning": ["nettoyage"],
+			"mnemonic": "そうじ → « Sous le lit » (nettoyer les recoins).",
+			"example": [
+			"部屋を掃除する (へやをそうじする - Nettoyer la pièce)",
+			"掃除機をかける (そうじきをかける - Passer l’aspirateur)"
+			]
+		},
+		{
+			"front": "そこ",
+			"reading": "そこ",
+			"class": "nom",
+			"meaning": ["ici (proche)"],
+			"mnemonic": "そこ → « Socle » (base où on place un objet).",
+			"example": [
+			"そこに置く (そこにおく - Poser ici)",
+			"そこが問題 (そこがもんだい - C’est là le problème)"
+			]
+		},
+		{
+			"front": "そして",
+			"reading": "そして",
+			"class": "conjonction",
+			"meaning": ["et ensuite"],
+			"mnemonic": "そして → « Sauter site » (passer à la suite).",
+			"example": [
+			"起きて、そして出かけた (おきて、そしてでかけた - Je me suis levé, puis je suis sorti)",
+			"勉強し、そして遊ぶ (べんきょうし、そしてあそぶ - Étudier puis jouer)"
+			]
+		},
+		{
+			"front": "そちら",
+			"reading": "そちら",
+			"class": "nom",
+			"meaning": ["ce côté-là"],
+			"mnemonic": "そちら → « Sous le chapeau » (pointez vers une direction).",
+			"example": [
+			"そちらへ行く (そちらへいく - Aller par là)",
+			"そちらの意見は？ (そちらのいけんは？ - Quel est votre avis ?)"
+			]
+		},
+		{
+			"front": "外",
+			"reading": "そと",
+			"class": "nom",
+			"meaning": ["extérieur"],
+			"mnemonic": "そと → « Sortir » (aller dehors).",
+			"example": [
+			"外で遊ぶ (そとであそぶ - Jouer dehors)",
+			"外は寒い (そとはさむい - Il fait froid dehors)"
+			]
+		},
+		{
+			"front": "その",
+			"reading": "その",
+			"class": "adjectif démonstratif",
+			"meaning": ["ce ..."],
+			"mnemonic": "その → « Ceux-là » (désigne quelque chose de spécifique).",
+			"example": [
+			"その本 (そのほん - Ce livre)",
+			"その時 (そのとき - À ce moment-là)"
+			]
+		},
+		{
+			"front": "そば",
+			"reading": "そば",
+			"class": "nom",
+			"meaning": ["à côté"],
+			"mnemonic": "そば → « Sous bas » (proche du sol, donc près).",
+			"example": [
+			"駅のそば (えきのそば - À côté de la gare)",
+			"そばにいる (そばにいる - Être à côté)"
+			]
+		},
+		{
+			"front": "空",
+			"reading": "そら",
+			"class": "nom",
+			"meaning": ["ciel"],
+			"mnemonic": "そら → « Soleil levant » (le ciel au lever du soleil).",
+			"example": [
+			"空が青い (そらがあおい - Le ciel est bleu)",
+			"空を見上げる (そらをみあげる - Lever les yeux vers le ciel)"
+			]
+		},
+		{
+			"front": "それ",
+			"reading": "それ",
+			"class": "nom",
+			"meaning": ["ça"],
+			"mnemonic": "それ → « Ça roule » (désigne un objet en mouvement).",
+			"example": [
+			"それは何？ (それはなん？ - Qu’est-ce que c’est ?)",
+			"それを見せて (それをみせて - Montre-moi ça)"
+			]
+		},
+		{
+			"front": "それから",
+			"reading": "それから",
+			"class": "conjonction",
+			"meaning": ["et ensuite"],
+			"mnemonic": "それから → « Ça roule car après » (enchaînement d’actions).",
+			"example": [
+			"食事をし、それから映画を見た (しょくじをし、それからえいがをみた - J’ai mangé, puis regardé un film)",
+			"勉強して、それから寝る (べんきょうして、それからねる - Étudier puis dormir)"
+			]
+		}
+	]
+}

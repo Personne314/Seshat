@@ -1,0 +1,230 @@
+{
+	"meta": {
+		"name": "Vocabulaire JLPT5 - 24",
+		"tags": [
+			"word", "jlpt5", "vocabulaire"
+		]
+	},
+	"cards": [
+		{
+			"front": "晴れ",
+			"reading": "は・れ",
+			"class": "nom",
+			"meaning": ["temps dégagé", "beau temps"],
+			"mnemonic": "Hare → « Halte au rêve » (ciel sans nuages).",
+			"example": [
+			"今日は晴れだ (きょうははれだ - Aujourd'hui il fait beau)",
+			"晴れの日 (はれのひ - Jour ensoleillé)"
+			]
+		},
+		{
+			"front": "晴れる",
+			"reading": "は・れる",
+			"class": "verbe ichidan intransitif",
+			"meaning": ["être dégagé", "être ensoleillé"],
+			"mnemonic": "Hareru → « Halle rêve » (espace ouvert sous le soleil).",
+			"example": [
+			"空が晴れる (そらがはれる - Le ciel se dégage)",
+			"午後から晴れる (ごごからはれる - Ça va s'éclaircir cet après-midi)"
+			]
+		},
+		{
+			"front": "晩",
+			"reading": "ばん",
+			"class": "nom",
+			"meaning": ["soir", "soirée", "nuit"],
+			"mnemonic": "Ban → « Ban soirée » (fin de journée festive).",
+			"example": [
+			"今晩 (こんばん - Ce soir)",
+			"晩ご飯の後 (ばんごはんのあと - Après le dîner)"
+			]
+		},
+		{
+			"front": "パン",
+			"reading": "パン",
+			"class": "nom",
+			"meaning": ["pain"],
+			"mnemonic": "Pan → Portugais « pão » (même sens en français).",
+			"example": [
+			"パンを焼く (パンをやく - Cuire du pain)",
+			"フランスパン (フランスパン - Baguette)"
+			]
+		},
+		{
+			"front": "ハンカチ",
+			"reading": "ハンカチ",
+			"class": "nom",
+			"meaning": ["mouchoir"],
+			"mnemonic": "Hankachi → Anglais « handkerchief » (même origine).",
+			"example": [
+			"ハンカチを出す (ハンカチをだす - Sortir un mouchoir)",
+			"絹のハンカチ (きぬのハンカチ - Mouchoir en soie)"
+			]
+		},
+		{
+			"front": "番号",
+			"reading": "ばん・ごう",
+			"class": "nom",
+			"meaning": ["numéro", "code"],
+			"mnemonic": "Bangô → « Ban gâteau » (étiquette numérique).",
+			"example": [
+			"電話番号 (でんわばんごう - Numéro de téléphone)",
+			"番号札 (ばんごうふだ - Jeton numéroté)"
+			]
+		},
+		{
+			"front": "晩ご飯",
+			"reading": "ばん・ご・はん",
+			"class": "nom",
+			"meaning": ["dîner"],
+			"mnemonic": "Bangohan → « Ban goût han » (repas du soir savoureux).",
+			"example": [
+			"晩ご飯を作る (ばんごはんをつくる - Préparer le dîner)",
+			"晩ご飯の時間 (ばんごはんのじかん - L'heure du dîner)"
+			]
+		},
+		{
+			"front": "半分",
+			"reading": "はん・ぶん",
+			"class": "nom",
+			"meaning": ["la moitié"],
+			"mnemonic": "Hanbun → « Han butin » (partage équitable).",
+			"example": [
+			"リンゴを半分に切る (リンゴをはんぶんにきる - Couper une pomme en deux)",
+			"半分こする (はんぶんこする - Partager à moitié)"
+			]
+		},
+		{
+			"front": "パン屋",
+			"reading": "パン・や",
+			"class": "nom",
+			"meaning": ["boulangerie"],
+			"mnemonic": "Pan'ya → « Pain y ah ! » (lieu de fabrication).",
+			"example": [
+			"パン屋で買う (パンやでかう - Acheter à la boulangerie)",
+			"パン屋の匂い (パンやのにおい - Odeur de boulangerie)"
+			]
+		},
+		{
+			"front": "日",
+			"reading": "ひ",
+			"class": "nom",
+			"meaning": ["un jour"],
+			"mnemonic": "Hi → « Hie » (durée d'une journée).",
+			"example": [
+			"一日中 (いちにちじゅう - Toute la journée)",
+			"良い日を過ごす (いいひをすごす - Passer une bonne journée)"
+			]
+		},
+		{
+			"front": "東",
+			"reading": "ひがし",
+			"class": "nom",
+			"meaning": ["l'Est"],
+			"mnemonic": "Higashi → « Hilare gazouillis » (soleil levant joyeux).",
+			"example": [
+			"東に向かう (ひがしにむかう - Se diriger vers l'est)",
+			"東の空 (ひがしのそら - Ciel à l'est)"
+			]
+		},
+		{
+			"front": "引く",
+			"reading": "ひ・く",
+			"class": "verbe godan transitif",
+			"meaning": ["tirer", "attraper un rhume"],
+			"mnemonic": "Hiku → « Hic coup » (action brusque de traction).",
+			"example": [
+			"ドアを引く (ドアをひく - Tirer la porte)",
+			"風邪を引く (かぜをひく - Attraper un rhume)"
+			]
+		},
+		{
+			"front": "弾く",
+			"reading": "ひ・く",
+			"class": "verbe godan transitif",
+			"meaning": ["jouer (instrument de musique)"],
+			"mnemonic": "Hiku → « Hic musique » (jouer une note).",
+			"example": [
+			"ピアノを弾く (ピアノをひく - Jouer du piano)",
+			"ギターを弾く (ギターをひく - Jouer de la guitare)"
+			]
+		},
+		{
+			"front": "低い",
+			"reading": "ひく・い",
+			"class": "adjectif en -i",
+			"meaning": ["bas (position)", "bas (rang)", "bas (qualité)", "bas (valeur)", "bas (degré)"],
+			"mnemonic": "Hikui → « Hic ouïe » (son ou position basse).",
+			"example": [
+			"低い声 (ひくいこえ - Voix grave)",
+			"低い評価 (ひくいひょうか - Évaluation médiocre)"
+			]
+		},
+		{
+			"front": "飛行機",
+			"reading": "ひ・こう・き",
+			"class": "nom",
+			"meaning": ["avion"],
+			"mnemonic": "Hikôki → « Hic haut qui » (machine volante).",
+			"example": [
+			"飛行機に乗る (ひこうきにのる - Prendre l'avion)",
+			"飛行機のチケット (ひこうきのチケット - Billet d'avion)"
+			]
+		},
+		{
+			"front": "左",
+			"reading": "ひだり",
+			"class": "nom",
+			"meaning": ["la gauche"],
+			"mnemonic": "Hidari → « Hilare à droite » (contraste directionnel).",
+			"example": [
+			"左に曲がる (ひだりにまがる - Tourner à gauche)",
+			"左側通行 (ひだりがわつうこう - Circulation à gauche)"
+			]
+		},
+		{
+			"front": "人",
+			"reading": "ひと",
+			"class": "nom",
+			"meaning": ["une personne"],
+			"mnemonic": "Hito → « Hic tôt » (individu rencontré).",
+			"example": [
+			"優しい人 (やさしいひと - Personne gentille)",
+			"人が多い (ひとがおおい - Beaucoup de monde)"
+			]
+		},
+		{
+			"front": "暇",
+			"reading": "ひま",
+			"class": "nom",
+			"meaning": ["temps libre"],
+			"mnemonic": "Hima → « Hic m'à » (moment disponible).",
+			"example": [
+			"暇な時間 (ひまなじかん - Temps libre)",
+			"暇をつぶす (ひまをつぶす - Tuer le temps)"
+			]
+		},
+		{
+			"front": "病院",
+			"reading": "びょういん",
+			"class": "nom",
+			"meaning": ["hôpital"],
+			"mnemonic": "Byôin → « Billot in » (lieu de soins).",
+			"example": [
+			"病院に行く (びょういんにいく - Aller à l'hôpital)",
+			"病院の先生 (びょういんのせんせい - Médecin hospitalier)"
+			]
+		},
+		{
+			"front": "病気",
+			"reading": "びょう・き",
+			"class": "nom",
+			"meaning": ["maladie"],
+			"mnemonic": "Byôki → « Billot ki » (état affaibli).",
+			"example": [
+			"病気になる (びょうきになる - Tomber malade)",
+			"重い病気 (おもいびょうき - Maladie grave)"
+			]
+		}
+	]
+}

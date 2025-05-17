@@ -1,0 +1,230 @@
+{
+	"meta": {
+		"name": "Vocabulaire JLPT5 - 17",
+		"tags": [
+			"word", "jlpt5", "vocabulaire"
+		]
+	},
+	"cards": [
+		{
+			"front": "多分",
+			"reading": "たぶん",
+			"class": "adverbe",
+			"meaning": ["probablement", "peut-être"],
+			"mnemonic": "たぶん → « Ta bûne » (ta chance, lié à la probabilité).",
+			"example": [
+			"多分雨が降る (たぶんあめがふる - Il va probablement pleuvoir)",
+			"多分大丈夫 (たぶんだいじょうぶ - Ça ira peut-être)"
+			]
+		},
+		{
+			"front": "食べ物",
+			"reading": "たべもの",
+			"class": "nom",
+			"meaning": ["nourriture"],
+			"mnemonic": "たべもの → « Table mon » (la nourriture est sur la table).",
+			"example": [
+			"美味しい食べ物 (おいしいたべもの - Nourriture délicieuse)",
+			"食べ物を買う (たべものをかう - Acheter de la nourriture)"
+			]
+		},
+		{
+			"front": "食べる",
+			"reading": "たべる",
+			"class": "verbe ichidan transitif",
+			"meaning": ["manger"],
+			"mnemonic": "たべる → « Table heure » (l’heure de manger).",
+			"example": [
+			"朝ごはんを食べる (あさごはんをたべる - Manger le petit-déjeuner)",
+			"野菜を食べる (やさいをたべる - Manger des légumes)"
+			]
+		},
+		{
+			"front": "卵",
+			"reading": "たまご",
+			"class": "nom",
+			"meaning": ["œuf"],
+			"mnemonic": "たまご → « Tama gogo » (une balle à 17h, forme ronde comme un œuf).",
+			"example": [
+			"卵を割る (たまごをわる - Casser un œuf)",
+			"卵料理 (たまごりょうり - Plat à base d’œufs)"
+			]
+		},
+		{
+			"front": "誰",
+			"reading": "だれ",
+			"class": "pronom",
+			"meaning": ["qui ?"],
+			"mnemonic": "だれ → « Dare » (qui ose ?).",
+			"example": [
+			"誰が来た？ (だれがきた？ - Qui est venu ?)",
+			"誰ですか？ (だれですか？ - Qui est-ce ?)"
+			]
+		},
+		{
+			"front": "誕生日",
+			"reading": "たんじょうび",
+			"class": "nom",
+			"meaning": ["anniversaire"],
+			"mnemonic": "たんじょうび → « Tango joyeux » (célébration dansante).",
+			"example": [
+			"誕生日パーティー (たんじょうびパーティー - Fête d’anniversaire)",
+			"誕生日ケーキ (たんじょうびケーキ - Gâteau d’anniversaire)"
+			]
+		},
+		{
+			"front": "だんだん",
+			"reading": "だんだん",
+			"class": "adverbe",
+			"meaning": ["graduellement"],
+			"mnemonic": "だんだん → « Danse lente » (progression comme une danse lente).",
+			"example": [
+			"だんだん寒くなる (だんだんさむくなる - Devenir progressivement froid)",
+			"だんだん慣れる (だんだんなれる - S’habituer petit à petit)"
+			]
+		},
+		{
+			"front": "小さい",
+			"reading": "ちいさい",
+			"class": "adjectif en -i",
+			"meaning": ["petit"],
+			"mnemonic": "ちいさい → « Chic ici » (quelque chose de petit et élégant).",
+			"example": [
+			"小さい犬 (ちいさいいぬ - Petit chien)",
+			"小さい声 (ちいさいこえ - Voix faible)"
+			]
+		},
+		{
+			"front": "小さな",
+			"reading": "ちいさな",
+			"class": "adjectif pré-nominal",
+			"meaning": ["petit"],
+			"mnemonic": "ちいさな → « Chez sana » (un petit endroit sain).",
+			"example": [
+			"小さな家 (ちいさないえ - Petite maison)",
+			"小さな問題 (ちいさなもんだい - Petit problème)"
+			]
+		},
+		{
+			"front": "近い",
+			"reading": "ちかい",
+			"class": "adjectif en -i",
+			"meaning": ["proche"],
+			"mnemonic": "ちかい → « Chez quai » (près de la gare).",
+			"example": [
+			"駅が近い (えきがちかい - La gare est proche)",
+			"近い将来 (ちかいしょうらい - Futur proche)"
+			]
+		},
+		{
+			"front": "近く",
+			"reading": "ちかく",
+			"class": "nom",
+			"meaning": ["proximité"],
+			"mnemonic": "ちかく → « Chez casque » (à portée de main).",
+			"example": [
+			"近くの店 (ちかくのみせ - Magasin à proximité)",
+			"近くに住む (ちかくにすむ - Habiter près)"
+			]
+		},
+		{
+			"front": "違う",
+			"reading": "ちがう",
+			"class": "verbe godan intransitif",
+			"meaning": ["différer"],
+			"mnemonic": "ちがう → « Chez gars » (différent de l’autre).",
+			"example": [
+			"意見が違う (いけんがちがう - Avoir un avis différent)",
+			"違う方法 (ちがうほうほう - Méthode alternative)"
+			]
+		},
+		{
+			"front": "地下鉄",
+			"reading": "ちかてつ",
+			"class": "nom",
+			"meaning": ["métro"],
+			"mnemonic": "ちかてつ → « Chic quête » (voyage stylé sous terre).",
+			"example": [
+			"地下鉄に乗る (ちかてつにのる - Prendre le métro)",
+			"地下鉄の駅 (ちかてつのえき - Station de métro)"
+			]
+		},
+		{
+			"front": "地図",
+			"reading": "ちず",
+			"class": "nom",
+			"meaning": ["carte"],
+			"mnemonic": "ちず → « Chez sûr » (une carte guide vers un lieu sûr).",
+			"example": [
+			"地図を見る (ちずをみる - Regarder une carte)",
+			"地図を描く (ちずをかく - Dessiner une carte)"
+			]
+		},
+		{
+			"front": "父",
+			"reading": "ちち",
+			"class": "nom",
+			"meaning": ["père"],
+			"mnemonic": "ちち → « Chez père » (la figure paternelle).",
+			"example": [
+			"父の日 (ちちのひ - Fête des pères)",
+			"父と話す (ちちとはなす - Parler à son père)"
+			]
+		},
+		{
+			"front": "茶色",
+			"reading": "ちゃいろ",
+			"class": "nom",
+			"meaning": ["marron"],
+			"mnemonic": "ちゃいろ → « Thé » (couleur du thé).",
+			"example": [
+			"茶色の靴 (ちゃいろのくつ - Chaussures marron)",
+			"茶色の髪 (ちゃいろのかみ - Cheveux bruns)"
+			]
+		},
+		{
+			"front": "茶碗",
+			"reading": "ちゃわん",
+			"class": "nom",
+			"meaning": ["bol à riz"],
+			"mnemonic": "ちゃわん → « Thé one » (un bol pour le riz ou le thé).",
+			"example": [
+			"茶碗にご飯 (ちゃわんにごはん - Riz dans un bol)",
+			"茶碗を洗う (ちゃわんをあらう - Laver le bol)"
+			]
+		},
+		{
+			"front": "中学校",
+			"reading": "ちゅうがっこう",
+			"class": "nom",
+			"meaning": ["collège"],
+			"mnemonic": "ちゅうがっこう → « Juge à l’école » (apprentissage structuré).",
+			"example": [
+			"中学校の先生 (ちゅうがっこうのせんせい - Professeur de collège)",
+			"中学校に通う (ちゅうがっこうにかよう - Aller au collège)"
+			]
+		},
+		{
+			"front": "ちょうど",
+			"reading": "ちょうど",
+			"class": "adverbe",
+			"meaning": ["exactement"],
+			"mnemonic": "ちょうど → « Chaud dos » (précision comme une mesure exacte).",
+			"example": [
+			"ちょうど今 (ちょうどいま - Tout de suite)",
+			"ちょうどいい (ちょうどいい - Parfait)"
+			]
+		},
+		{
+			"front": "ちょっと",
+			"reading": "ちょっと",
+			"class": "adverbe",
+			"meaning": ["un peu"],
+			"mnemonic": "ちょっと → « Chaud tête » (un peu de chaleur).",
+			"example": [
+			"ちょっと待って (ちょっとまって - Attends une seconde)",
+			"ちょっと難しい (ちょっとむずかしい - Un peu difficile)"
+			]
+		}
+	]
+}

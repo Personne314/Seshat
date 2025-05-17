@@ -1,0 +1,230 @@
+{
+	"meta": {
+		"name": "Vocabulaire JLPT5 - 19",
+		"tags": [
+			"word", "jlpt5", "vocabulaire"
+		]
+	},
+	"cards": [
+		{
+			"front": "では",
+			"reading": "では",
+			"class": "conjonction",
+			"meaning": ["alors", "donc"],
+			"mnemonic": "では → « Déjà là » (passer à la suite).",
+			"example": [
+			"では始めます (でははじめます - Alors commençons)",
+			"ではまた明日 (ではまたあした - À demain alors)"
+			]
+		},
+		{
+			"front": "デパート",
+			"reading": "デパート",
+			"class": "nom",
+			"meaning": ["grand magasin"],
+			"mnemonic": "Mot emprunté à l’anglais « department store » (abrégé).",
+			"example": [
+			"デパートで買い物 (デパートでかいもの - Faire des courses au grand magasin)",
+			"新しいデパート (あたらしいデパート - Nouveau centre commercial)"
+			]
+		},
+		{
+			"front": "でも",
+			"reading": "でも",
+			"class": "conjonction",
+			"meaning": ["mais"],
+			"mnemonic": "でも → « Démon » (contraste comme un obstacle).",
+			"example": [
+			"行きたい、でも時間がない (いきたい、でもじかんがない - Je veux y aller, mais je n’ai pas le temps)",
+			"安い、でも質が悪い (やすい、でもしつがわるい - Pas cher, mais de mauvaise qualité)"
+			]
+		},
+		{
+			"front": "出る",
+			"reading": "でる",
+			"class": "verbe ichidan intransitif",
+			"meaning": ["sortir"],
+			"mnemonic": "でる → « Dé » (dé à jouer) + « lu » (partir en lançant le dé).",
+			"example": [
+			"家を出る (いえをでる - Quitter la maison)",
+			"電車から出る (でんしゃからでる - Descendre du train)"
+			]
+		},
+		{
+			"front": "テレビ",
+			"reading": "テレビ",
+			"class": "nom",
+			"meaning": ["télévision"],
+			"mnemonic": "Mot emprunté à l’anglais « television » (abrégé).",
+			"example": [
+			"テレビを見る (テレビをみる - Regarder la télé)",
+			"新しいテレビ (あたらしいテレビ - Nouvelle télévision)"
+			]
+		},
+		{
+			"front": "天気",
+			"reading": "てんき",
+			"class": "nom",
+			"meaning": ["météo"],
+			"mnemonic": "てんき → « T’enquiert » (s’informer sur le temps).",
+			"example": [
+			"天気が良い (てんきがいい - Beau temps)",
+			"天気予報 (てんきよほう - Prévisions météo)"
+			]
+		},
+		{
+			"front": "電気",
+			"reading": "でんき",
+			"class": "nom",
+			"meaning": ["électricité"],
+			"mnemonic": "でんき → « Den ki » (énergie du *den* en japonais).",
+			"example": [
+			"電気を消す (でんきをけす - Éteindre la lumière)",
+			"電気代 (でんきだい - Facture d’électricité)"
+			]
+		},
+		{
+			"front": "電車",
+			"reading": "でんしゃ",
+			"class": "nom",
+			"meaning": ["train"],
+			"mnemonic": "でんしゃ → « Den » (électrique) + « sha » (véhicule).",
+			"example": [
+			"電車に乗る (でんしゃにのる - Prendre le train)",
+			"電車の時刻表 (でんしゃのじこくひょう - Horaire des trains)"
+			]
+		},
+		{
+			"front": "電話",
+			"reading": "でんわ",
+			"class": "nom (verbe en する)",
+			"meaning": ["téléphone"],
+			"mnemonic": "Mot venant du chinois « denwa » (communication électrique).",
+			"example": [
+			"電話をかける (でんわをかける - Passer un appel)",
+			"携帯電話 (けいたいでんわ - Téléphone portable)"
+			]
+		},
+		{
+			"front": "電話番号",
+			"reading": "でんわばんごう",
+			"class": "nom",
+			"meaning": ["numéro de téléphone"],
+			"mnemonic": "でんわ (téléphone) + ばんごう (numéro).",
+			"example": [
+			"電話番号を教える (でんわばんごうをおしえる - Donner son numéro)",
+			"電話番号が違う (でんわばんごうがちがう - Mauvais numéro)"
+			]
+		},
+		{
+			"front": "戸",
+			"reading": "と",
+			"class": "nom",
+			"meaning": ["porte (traditionnelle)"],
+			"mnemonic": "と → « Toit » (élément de la maison).",
+			"example": [
+			"戸を開ける (とをあける - Ouvrir la porte)",
+			"ガラス戸 (ガラスど - Porte en verre)"
+			]
+		},
+		{
+			"front": "土曜日",
+			"reading": "どようび",
+			"class": "nom",
+			"meaning": ["samedi"],
+			"mnemonic": "どようび → « Terre » (土) + « jour » (曜日), associé à Saturne (terre en astrologie).",
+			"example": [
+			"土曜日の予定 (どようびのよてい - Planning du samedi)",
+			"土曜日は休み (どようびはやすみ - Repos le samedi)"
+			]
+		},
+		{
+			"front": "ドア",
+			"reading": "ドア",
+			"class": "nom",
+			"meaning": ["porte"],
+			"mnemonic": "Mot emprunté à l’anglais « door ».",
+			"example": [
+			"ドアを閉める (ドアをしめる - Fermer la porte)",
+			"自動ドア (じどうドア - Porte automatique)"
+			]
+		},
+		{
+			"front": "トイレ",
+			"reading": "トイレ",
+			"class": "nom",
+			"meaning": ["toilettes"],
+			"mnemonic": "Mot emprunté à l’anglais « toilet ».",
+			"example": [
+			"トイレに行く (トイレにいく - Aller aux toilettes)",
+			"公衆トイレ (こうしゅうトイレ - Toilettes publiques)"
+			]
+		},
+		{
+			"front": "どうぞ",
+			"reading": "どうぞ",
+			"class": "adverbe",
+			"meaning": ["s’il vous plaît"],
+			"mnemonic": "どうぞ → « Dos au zoo » (offrir poliment).",
+			"example": [
+			"どうぞお入りください (どうぞおはいりください - Entrez, je vous en prie)",
+			"どうぞ召し上がれ (どうぞめしあがれ - Bon appétit)"
+			]
+		},
+		{
+			"front": "どう",
+			"reading": "どう",
+			"class": "adverbe",
+			"meaning": ["comment"],
+			"mnemonic": "どう → « Doux » (demander gentiment).",
+			"example": [
+			"どう思う？ (どうおもう？ - Qu’en penses-tu ?)",
+			"どうすればいい？ (どうすればいい？ - Que dois-je faire ?)"
+			]
+		},
+		{
+			"front": "どうして",
+			"reading": "どうして",
+			"class": "adverbe",
+			"meaning": ["pourquoi"],
+			"mnemonic": "どうして → « Doux château » (questionner une raison imaginaire).",
+			"example": [
+			"どうして来たの？ (どうしてきたの？ - Pourquoi es-tu venu ?)",
+			"どうして遅れた？ (どうしておくれた？ - Pourquoi es-tu en retard ?)"
+			]
+		},
+		{
+			"front": "どこ",
+			"reading": "どこ",
+			"class": "pronom",
+			"meaning": ["où"],
+			"mnemonic": "どこ → « D’eau » (chercher une source).",
+			"example": [
+			"どこに住んでる？ (どこにすんでる？ - Où habites-tu ?)",
+			"駅はどこ？ (えきはどこ？ - Où est la gare ?)"
+			]
+		},
+		{
+			"front": "どちら",
+			"reading": "どちら",
+			"class": "pronom",
+			"meaning": ["quelle direction"],
+			"mnemonic": "どちら → « Docteur a... » (demander une direction).",
+			"example": [
+			"どちらに行きますか？ (どちらにいきますか？ - Où allez-vous ?)",
+			"どちらが好き？ (どちらがすき？ - Lequel préfères-tu ?)"
+			]
+		},
+		{
+			"front": "どれ",
+			"reading": "どれ",
+			"class": "pronom",
+			"meaning": ["lequel"],
+			"mnemonic": "どれ → « Dorer » (choisir un objet précieux).",
+			"example": [
+			"どれが欲しい？ (どれがほしい？ - Lequel veux-tu ?)",
+			"どれが本当？ (どれがほんとう？ - Lequel est vrai ?)"
+			]
+		}
+	]
+}

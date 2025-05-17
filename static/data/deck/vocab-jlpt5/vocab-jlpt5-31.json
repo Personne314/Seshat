@@ -1,0 +1,186 @@
+{
+	"meta": {
+		"name": "Vocabulaire JLPT5 - 31",
+		"tags": [
+			"word", "jlpt5", "vocabulaire"
+		]
+	},
+	"cards": [
+		{
+			"front": "旅行",
+			"reading": "りょ・こう",
+			"class": "verbe (suru)",
+			"meaning": ["voyage", "faire un voyage"],
+			"mnemonic": "Ryokō → « Rio coup » (escapade exotique).",
+			"example": [
+			"旅行の計画 (りょこうのけいかく - Plan de voyage)",
+			"海外旅行 (かいがいりょこう - Voyage à l'étranger)"
+			]
+		},
+		{
+			"front": "旅行会社",
+			"reading": "りょこう・がいしゃ",
+			"class": "nom",
+			"meaning": ["agence de voyage"],
+			"mnemonic": "Ryokōgaisha → « Rio coup galerie » (organisateur de trajets).",
+			"example": [
+			"旅行会社で予約する (りょこうがいしゃでよやくする - Réserver via une agence)",
+			"大手旅行会社 (おおてりょこうがいしゃ - Grande agence de voyage)"
+			]
+		},
+		{
+			"front": "りんご",
+			"reading": "りんご",
+			"class": "nom",
+			"meaning": ["pomme"],
+			"mnemonic": "Ringo → « Ringard goût » (fruit classique).",
+			"example": [
+			"りんごを食べる (りんごをたべる - Manger une pomme)",
+			"りんごの木 (りんごのき - Pommier)"
+			]
+		},
+		{
+			"front": "例",
+			"reading": "れい",
+			"class": "nom",
+			"meaning": ["exemple", "cas"],
+			"mnemonic": "Rei → « Règle » (modèle à suivre).",
+			"example": [
+			"例を挙げる (れいをあげる - Donner un exemple)",
+			"典型的な例 (てんけいてきなれい - Exemple typique)"
+			]
+		},
+		{
+			"front": "冷蔵庫",
+			"reading": "れい・ぞう・こ",
+			"class": "nom",
+			"meaning": ["réfrigérateur"],
+			"mnemonic": "Reizōko → « Rei zouave » (gardien du froid).",
+			"example": [
+			"冷蔵庫を開ける (れいぞうこをあける - Ouvrir le frigo)",
+			"冷蔵庫の中 (れいぞうこのなか - Contenu du réfrigérateur)"
+			]
+		},
+		{
+			"front": "レコード",
+			"reading": "レコード",
+			"class": "nom",
+			"meaning": ["enregistrement"],
+			"mnemonic": "Rekōdo → Anglais « record » (même sens).",
+			"example": [
+			"レコードを聴く (レコードをきく - Écouter un disque)",
+			"古いレコード (ふるいレコード - Vieux vinyle)"
+			]
+		},
+		{
+			"front": "レストラン",
+			"reading": "レストラン",
+			"class": "nom",
+			"meaning": ["restaurant"],
+			"mnemonic": "Resutoran → Anglais « restaurant » (même sens).",
+			"example": [
+			"レストランで食事 (レストランでしょくじ - Repas au restaurant)",
+			"高級レストラン (こうきゅうレストラン - Restaurant gastronomique)"
+			]
+		},
+		{
+			"front": "練習",
+			"reading": "れん・しゅう",
+			"class": "verbe (suru)",
+			"meaning": ["exercice", "s'entraîner"],
+			"mnemonic": "Renshū → « Ranger chou » (répétition organisée).",
+			"example": [
+			"ピアノを練習する (ピアノをれんしゅうする - S'exercer au piano)",
+			"毎日の練習 (まいにちのれんしゅう - Entraînement quotidien)"
+			]
+		},
+		{
+			"front": "廊下",
+			"reading": "ろう・か",
+			"class": "nom",
+			"meaning": ["couloir"],
+			"mnemonic": "Rōka → « Loup carré » (espace rectiligne).",
+			"example": [
+			"廊下を走る (ろうかをはしる - Courir dans le couloir)",
+			"長い廊下 (ながいろうか - Long corridor)"
+			]
+		},
+		{
+			"front": "若い",
+			"reading": "わか・い",
+			"class": "adjectif en -i",
+			"meaning": ["jeune"],
+			"mnemonic": "Wakai → « Wagon quai » (énergie juvénile).",
+			"example": [
+			"若い世代 (わかいせだい - Jeune génération)",
+			"若い頃 (わかいころ - Jeunesse)"
+			]
+		},
+		{
+			"front": "わかる",
+			"reading": "わかる",
+			"class": "verbe godan intransitif",
+			"meaning": ["comprendre"],
+			"mnemonic": "Wakaru → « Wagon culte » (acquisition de savoir).",
+			"example": [
+			"意味がわかる (いみがわかる - Comprendre le sens)",
+			"問題がわからない (もんだいがわからない - Ne pas comprendre le problème)"
+			]
+		},
+		{
+			"front": "忘れる",
+			"reading": "わす・れる",
+			"class": "verbe ichidan transitif",
+			"meaning": ["oublier"],
+			"mnemonic": "Wasureru → « Wagon sûreté » (perte de mémoire).",
+			"example": [
+			"名前を忘れる (なまえをわすれる - Oublier un nom)",
+			"約束を忘れた (やくそくをわすれた - J'ai oublié la promesse)"
+			]
+		},
+		{
+			"front": "私",
+			"reading": "わたし",
+			"class": "pronom",
+			"meaning": ["moi", "je"],
+			"mnemonic": "Watashi → « Wagon tache » (expression personnelle).",
+			"example": [
+			"私の意見 (わたしのいけん - Mon opinion)",
+			"私は学生です (わたしはがくせいです - Je suis étudiant)"
+			]
+		},
+		{
+			"front": "渡す",
+			"reading": "わた・す",
+			"class": "verbe godan transitif",
+			"meaning": ["transmettre", "passer"],
+			"mnemonic": "Watasu → « Wagon tasse » (passer un objet).",
+			"example": [
+			"手紙を渡す (てがみをわたす - Remettre une lettre)",
+			"バトンを渡す (バトンをわたす - Passer le relais)"
+			]
+		},
+		{
+			"front": "渡る",
+			"reading": "わた・る",
+			"class": "verbe godan intransitif",
+			"meaning": ["traverser"],
+			"mnemonic": "Wataru → « Wagon tarin » (franchir une distance).",
+			"example": [
+			"橋を渡る (はしをわたる - Traverser un pont)",
+			"道を渡る (みちをわたる - Traverser la rue)"
+			]
+		},
+		{
+			"front": "悪い",
+			"reading": "わる・い",
+			"class": "adjectif en -i",
+			"meaning": ["mauvais"],
+			"mnemonic": "Warui → « Wagon rouillé » (état défectueux).",
+			"example": [
+			"悪い天気 (わるいてんき - Mauvais temps)",
+			"気分が悪い (きぶんがわるい - Se sentir mal)"
+			]
+		}
+	]
+}

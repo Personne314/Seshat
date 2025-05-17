@@ -1,0 +1,229 @@
+{
+	"meta": {
+		"name": "Vocabulaire JLPT5 - 29",
+		"tags": [
+			"word", "jlpt5", "vocabulaire"
+		]
+	},
+	"cards": [
+		{
+			"front": "眼鏡",
+			"reading": "め・がね",
+			"class": "nom",
+			"meaning": ["lunettes"],
+			"mnemonic": "Megane → « Méga nez » (accessoire nasal).",
+			"example": [
+			"眼鏡をかける (めがねをかける - Porter des lunettes)",
+			"新しい眼鏡 (あたらしいめがね - Nouvelles lunettes)"
+			]
+		},
+		{
+			"front": "メモ",
+			"reading": "メモ",
+			"class": "verbe (suru)",
+			"meaning": ["une note", "prendre note"],
+			"mnemonic": "Memo → Anglais « memo » (même sens en français).",
+			"example": [
+			"メモを取る (メモをとる - Prendre des notes)",
+			"重要なメモ (じゅうようなメモ - Note importante)"
+			]
+		},
+		{
+			"front": "もう",
+			"reading": "もう",
+			"class": "adverbe",
+			"meaning": ["déjà", "encore", "maintenant"],
+			"mnemonic": "Mō → « Moule » (répétition ou achèvement).",
+			"example": [
+			"もう終わった (もうおわった - C'est déjà fini)",
+			"もう一度 (もういちど - Encore une fois)"
+			]
+		},
+		{
+			"front": "木曜日",
+			"reading": "もくようび",
+			"class": "nom",
+			"meaning": ["jeudi"],
+			"mnemonic": "Mokuyôbi → « Moc yo yo » (jour des arbres).",
+			"example": [
+			"木曜日の会議 (もくようびのかいぎ - Réunion du jeudi)",
+			"毎週木曜日 (まいしゅうもくようび - Tous les jeudis)"
+			]
+		},
+		{
+			"front": "もしもし",
+			"reading": "もしもし",
+			"class": "interjection",
+			"meaning": ["allô (téléphone)"],
+			"mnemonic": "Moshimoshi → « Moche moche » (salutation téléphonique).",
+			"example": [
+			"もしもし、田中です (もしもし、たなかです - Allô, c'est Tanaka)"
+			]
+		},
+		{
+			"front": "もちろん",
+			"reading": "もちろん",
+			"class": "adverbe",
+			"meaning": ["bien sûr", "évidemment"],
+			"mnemonic": "Mochiron → « Moche rond » (certitude absolue).",
+			"example": [
+			"もちろん行きます (もちろんいきます - Bien sûr que j'y vais)",
+			"もちろん正解 (もちろんせいかい - Évidemment correct)"
+			]
+		},
+		{
+			"front": "持つ",
+			"reading": "も・つ",
+			"class": "verbe godan transitif",
+			"meaning": ["tenir", "posséder"],
+			"mnemonic": "Motsu → « Mot » (posséder des mots).",
+			"example": [
+			"荷物を持つ (にもつをもつ - Porter des bagages)",
+			"車を持っている (くるまをもっている - Posséder une voiture)"
+			]
+		},
+		{
+			"front": "もっと",
+			"reading": "もっと",
+			"class": "adverbe",
+			"meaning": ["plus"],
+			"mnemonic": "Motto → « Moteur » (augmentation d'intensité).",
+			"example": [
+			"もっと速く (もっとはやく - Plus vite)",
+			"もっと大きい (もっとおおきい - Plus grand)"
+			]
+		},
+		{
+			"front": "物",
+			"reading": "もの",
+			"class": "nom",
+			"meaning": ["objet", "chose"],
+			"mnemonic": "Mono → « Monotone » (élément générique).",
+			"example": [
+			"大切な物 (たいせつなもの - Chose importante)",
+			"古い物 (ふるいもの - Vieux truc)"
+			]
+		},
+		{
+			"front": "もらう",
+			"reading": "もらう",
+			"class": "verbe godan transitif",
+			"meaning": ["recevoir"],
+			"mnemonic": "Morau → « Mollusque » (recevoir un coquillage).",
+			"example": [
+			"プレゼントをもらう (プレゼントをもらう - Recevoir un cadeau)",
+			"許可をもらう (きょかをもらう - Obtenir une permission)"
+			]
+		},
+		{
+			"front": "門",
+			"reading": "もん",
+			"class": "nom",
+			"meaning": ["porte (gate)"],
+			"mnemonic": "Mon → « Monument » (structure d'entrée).",
+			"example": [
+			"門をくぐる (もんをくぐる - Passer sous la porte)",
+			"寺の門 (てらのもん - Porte de temple)"
+			]
+		},
+		{
+			"front": "問題",
+			"reading": "もん・だい",
+			"class": "nom",
+			"meaning": ["question", "problème"],
+			"mnemonic": "Mondai → « Mon défi » (défi à résoudre).",
+			"example": [
+			"数学の問題 (すうがくのもんだい - Problème de maths)",
+			"深刻な問題 (しんこくなもんだい - Problème sérieux)"
+			]
+		},
+		{
+			"front": "問題用紙",
+			"reading": "もん・だい・よう・し",
+			"class": "nom",
+			"meaning": ["questionnaire"],
+			"mnemonic": "Mondaiyōshi → « Mon défi yogi » (feuille d'examen).",
+			"example": [
+			"問題用紙に答える (もんだいようしにこたえる - Répondre au questionnaire)",
+			"試験問題用紙 (しけんもんだいようし - Feuille d'examen)"
+			]
+		},
+		{
+			"front": "八百屋",
+			"reading": "や・おや",
+			"class": "nom",
+			"meaning": ["marchand de fruits et légumes"],
+			"mnemonic": "Yaoya → « Y'a au yaourt » (étalage varié).",
+			"example": [
+			"八百屋で買い物 (やおやでかいもの - Acheter chez le primeur)",
+			"新鮮な八百屋 (しんせんなやおや - Primeur frais)"
+			]
+		},
+		{
+			"front": "野菜",
+			"reading": "やさい",
+			"class": "nom",
+			"meaning": ["légumes"],
+			"mnemonic": "Yasai → « Y'a ça y est » (aliments sains).",
+			"example": [
+			"野菜を切る (やさいをきる - Couper des légumes)",
+			"有機野菜 (ゆうきやさい - Légumes bio)"
+			]
+		},
+		{
+			"front": "やさしい",
+			"reading": "やさしい",
+			"class": "adjectif en -i",
+			"meaning": ["facile", "simple"],
+			"mnemonic": "Yasashii → « Ya ça si » (simplicité évidente).",
+			"example": [
+			"やさしい問題 (やさしいもんだい - Problème facile)",
+			"説明がやさしい (せつめいがやさしい - Explication simple)"
+			]
+		},
+		{
+			"front": "安い",
+			"reading": "やす・い",
+			"class": "adjectif en -i",
+			"meaning": ["bon marché"],
+			"mnemonic": "Yasui → « Ya suisse » (coût modéré).",
+			"example": [
+			"安い価格 (やすいかかく - Prix bas)",
+			"安いホテル (やすいホテル - Hôtel pas cher)"
+			]
+		},
+		{
+			"front": "休み",
+			"reading": "やす・み",
+			"class": "nom",
+			"meaning": ["vacances", "repos"],
+			"mnemonic": "Yasumi → « Ya sommeil » (période de détente).",
+			"example": [
+			"夏休み (なつやすみ - Vacances d'été)",
+			"休みを取る (やすみをとる - Prendre des congés)"
+			]
+		},
+		{
+			"front": "休む",
+			"reading": "やす・む",
+			"class": "verbe godan intransitif",
+			"meaning": ["se reposer"],
+			"mnemonic": "Yasumu → « Ya sumo » (pause physique).",
+			"example": [
+			"仕事を休む (しごとをやすむ - Prendre un jour de congé)",
+			"家で休む (いえでやすむ - Se reposer à la maison)"
+			]
+		},
+		{
+			"front": "山",
+			"reading": "やま",
+			"class": "nom",
+			"meaning": ["montagne"],
+			"mnemonic": "Yama → « Y'a maman » (figure imposante).",
+			"example": [
+			"山に登る (やまにのぼる - Grimper une montagne)",
+			"高い山 (たかいやま - Montagne élevée)"
+			]
+		}
+	]
+}

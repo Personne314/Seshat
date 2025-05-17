@@ -1,0 +1,230 @@
+{
+	"meta": {
+		"name": "Vocabulaire JLPT5 - 25",
+		"tags": [
+			"word", "jlpt5", "vocabulaire"
+		]
+	},
+	"cards": [
+		{
+			"front": "ひらがな",
+			"reading": "ひらがな",
+			"class": "nom",
+			"meaning": ["hiragana"],
+			"mnemonic": "Hiragana → « Hier au gant » (écriture sur un accessoire ancien).",
+			"example": [
+			"ひらがなを練習する (ひらがなをれんしゅうする - S'entraîner aux hiragana)",
+			"ひらがなの表 (ひらがなのひょう - Tableau des hiragana)"
+			]
+		},
+		{
+			"front": "昼",
+			"reading": "ひる",
+			"class": "nom",
+			"meaning": ["midi", "mi-journée"],
+			"mnemonic": "Hiru → « Heure du midi » (pic de luminosité).",
+			"example": [
+			"昼の光 (ひるのひかり - Lumière du jour)",
+			"昼休み (ひるやすみ - Pause déjeuner)"
+			]
+		},
+		{
+			"front": "昼ご飯",
+			"reading": "ひる・ご・はん",
+			"class": "nom",
+			"meaning": ["le déjeuner"],
+			"mnemonic": "Hirugohan → « Heure goût han » (repas savoureux du jour).",
+			"example": [
+			"昼ご飯を食べる (ひるごはんをたべる - Déjeuner)",
+			"昼ご飯の準備 (ひるごはんのじゅんび - Préparer le déjeuner)"
+			]
+		},
+		{
+			"front": "ビル",
+			"reading": "ビル",
+			"class": "nom",
+			"meaning": ["building"],
+			"mnemonic": "Biru → Anglais « building » (même sens en français).",
+			"example": [
+			"高いビル (たかいビル - Gratte-ciel)",
+			"オフィスビル (オフィスビル - Bâtiment de bureaux)"
+			]
+		},
+		{
+			"front": "広い",
+			"reading": "ひろ・い",
+			"class": "adjectif en -i",
+			"meaning": ["spacieux", "vaste"],
+			"mnemonic": "Hiroi → « Héroïque espace » (dimension impressionnante).",
+			"example": [
+			"広い部屋 (ひろいへや - Grande pièce)",
+			"広い公園 (ひろいこうえん - Parc spacieux)"
+			]
+		},
+		{
+			"front": "フィルム",
+			"reading": "フィルム",
+			"class": "nom",
+			"meaning": ["film"],
+			"mnemonic": "Firumu → Anglais « film » (pellicule photo/cinéma).",
+			"example": [
+			"フィルムを買う (フィルムをかう - Acheter une pellicule)",
+			"カメラフィルム (カメラフィルム - Film photographique)"
+			]
+		},
+		{
+			"front": "封筒",
+			"reading": "ふう・とう",
+			"class": "nom",
+			"meaning": ["enveloppe"],
+			"mnemonic": "Fūtō → « Fou toit » (couvercle protecteur).",
+			"example": [
+			"封筒を閉じる (ふうとうをとじる - Fermer une enveloppe)",
+			"手紙を封筒に入れる (てがみをふうとうにいれる - Mettre une lettre dans une enveloppe)"
+			]
+		},
+		{
+			"front": "プール",
+			"reading": "プール",
+			"class": "nom",
+			"meaning": ["la piscine"],
+			"mnemonic": "Pûru → Anglais « pool » (même sens en français).",
+			"example": [
+			"プールで泳ぐ (プールでおよぐ - Nager dans la piscine)",
+			"屋外プール (おくがいプール - Piscine extérieure)"
+			]
+		},
+		{
+			"front": "フォーク",
+			"reading": "フォーク",
+			"class": "nom",
+			"meaning": ["la fourchette"],
+			"mnemonic": "Fôku → Anglais « fork » (ustensile de table).",
+			"example": [
+			"フォークで食べる (フォークでたべる - Manger avec une fourchette)",
+			"プラスチックのフォーク (プラスチックのフォーク - Fourchette en plastique)"
+			]
+		},
+		{
+			"front": "吹く",
+			"reading": "ふ・く",
+			"class": "verbe godan intransitif",
+			"meaning": ["souffler", "jouer (instrument à vent)"],
+			"mnemonic": "Fuku → « Fou culte » (action énergique du vent).",
+			"example": [
+			"風が吹く (かぜがふく - Le vent souffle)",
+			"フルートを吹く (フルートをふく - Jouer de la flûte)"
+			]
+		},
+		{
+			"front": "服",
+			"reading": "ふく",
+			"class": "nom",
+			"meaning": ["vêtements"],
+			"mnemonic": "Fuku → « Foulard » (élément vestimentaire).",
+			"example": [
+			"服を着る (ふくをきる - Mettre des vêtements)",
+			"新しい服 (あたらしいふく - Nouveaux habits)"
+			]
+		},
+		{
+			"front": "豚肉",
+			"reading": "ぶた・にく",
+			"class": "nom",
+			"meaning": ["viande de porc"],
+			"mnemonic": "Butaniku → « Bûche ton nickel » (viande économique).",
+			"example": [
+			"豚肉を焼く (ぶたにくをやく - Griller du porc)",
+			"豚肉料理 (ぶたにくりょうり - Plat à base de porc)"
+			]
+		},
+		{
+			"front": "太い",
+			"reading": "ふと・い",
+			"class": "adjectif en -i",
+			"meaning": ["gros", "épais"],
+			"mnemonic": "Futoi → « Foot oie » (pattes épaisses d'une oie).",
+			"example": [
+			"太い木 (ふといき - Arbre épais)",
+			"太い線 (ふといせん - Ligne épaisse)"
+			]
+		},
+		{
+			"front": "冬",
+			"reading": "ふゆ",
+			"class": "nom",
+			"meaning": ["hiver"],
+			"mnemonic": "Fuyu → « Fu yu » (absence de neige ? Non, saison froide).",
+			"example": [
+			"冬の寒さ (ふゆのさむさ - Froid hivernal)",
+			"冬休み (ふゆやすみ - Vacances d'hiver)"
+			]
+		},
+		{
+			"front": "降る",
+			"reading": "ふ・る",
+			"class": "verbe godan intransitif",
+			"meaning": ["tomber (pluie, neige)"],
+			"mnemonic": "Furu → « Fou rue » (précipitations intenses).",
+			"example": [
+			"雨が降る (あめがふる - Il pleut)",
+			"雪が降る (ゆきがふる - Il neige)"
+			]
+		},
+		{
+			"front": "古い",
+			"reading": "ふる・い",
+			"class": "adjectif en -i",
+			"meaning": ["vieux", "ancien", "antique"],
+			"mnemonic": "Furui → « Furêt il » (objet usé par le temps).",
+			"example": [
+			"古い本 (ふるいほん - Livre ancien)",
+			"古い習慣 (ふるいしゅうかん - Vieille tradition)"
+			]
+		},
+		{
+			"front": "風呂",
+			"reading": "ふ・ろ",
+			"class": "nom",
+			"meaning": ["bain"],
+			"mnemonic": "Furo → « Fur et eau » (relaxation aquatique).",
+			"example": [
+			"風呂に入る (ふろにはいる - Prendre un bain)",
+			"風呂場 (ふろば - Salle de bain)"
+			]
+		},
+		{
+			"front": "文",
+			"reading": "ぶん",
+			"class": "nom",
+			"meaning": ["phrase"],
+			"mnemonic": "Bun → « Bond » (suite de mots liés).",
+			"example": [
+			"文を作る (ぶんをつくる - Former une phrase)",
+			"短い文 (みじかいぶん - Phrase courte)"
+			]
+		},
+		{
+			"front": "文章",
+			"reading": "ぶん・しょう",
+			"class": "nom",
+			"meaning": ["texte", "article"],
+			"mnemonic": "Bunshō → « Bond chaud » (contenu écrit structuré).",
+			"example": [
+			"文章を書く (ぶんしょうをかく - Écrire un texte)",
+			"長い文章 (ながいぶんしょう - Texte long)"
+			]
+		},
+		{
+			"front": "パージ",
+			"reading": "パージ",
+			"class": "nom",
+			"meaning": ["page"],
+			"mnemonic": "Pāji → Anglais « page » (feuille d'un livre).",
+			"example": [
+			"パージをめくる (パージをめくる - Tourner une page)",
+			"次のパージ (つぎのパージ - Page suivante)"
+			]
+		}
+	]
+}

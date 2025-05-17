@@ -1,0 +1,230 @@
+{
+	"meta": {
+		"name": "Vocabulaire JLPT5 - 28",
+		"tags": [
+			"word", "jlpt5", "vocabulaire"
+		]
+	},
+	"cards": [
+		{
+			"front": "磨く",
+			"reading": "みが・く",
+			"class": "verbe godan transitif",
+			"meaning": ["polir", "brosser (ex: dents)", "dorer"],
+			"mnemonic": "Migaku → « Mi gâteau » (action de polir comme un décor).",
+			"example": [
+			"歯を磨く (はをみがく - Se brosser les dents)",
+			"銀器を磨く (ぎんきをみがく - Polir de l'argenterie)"
+			]
+		},
+		{
+			"front": "右",
+			"reading": "みぎ",
+			"class": "nom",
+			"meaning": ["la droite"],
+			"mnemonic": "Migi → « Mille gis » (direction majoritaire).",
+			"example": [
+			"右に曲がる (みぎにまがる - Tourner à droite)",
+			"右手 (みぎて - Main droite)"
+			]
+		},
+		{
+			"front": "短い",
+			"reading": "みじか・い",
+			"class": "adjectif en -i",
+			"meaning": ["court", "bref"],
+			"mnemonic": "Mijikai → « Mi-chemin » (durée ou longueur réduite).",
+			"example": [
+			"短い髪 (みじかいかみ - Cheveux courts)",
+			"短い説明 (みじかいせつめい - Explication brève)"
+			]
+		},
+		{
+			"front": "水",
+			"reading": "みず",
+			"class": "nom",
+			"meaning": ["l'eau"],
+			"mnemonic": "Mizu → « Missue » (liquide vital).",
+			"example": [
+			"冷たい水 (つめたいみず - Eau froide)",
+			"水を飲む (みずをのむ - Boire de l'eau)"
+			]
+		},
+		{
+			"front": "店",
+			"reading": "みせ",
+			"class": "nom",
+			"meaning": ["magasin", "boutique", "établissement"],
+			"mnemonic": "Mise → « Mise en scène » (présentation commerciale).",
+			"example": [
+			"店を開く (みせをひらく - Ouvrir un magasin)",
+			"小さな店 (ちいさなみせ - Petite boutique)"
+			]
+		},
+		{
+			"front": "見る",
+			"reading": "み・る",
+			"class": "verbe ichidan transitif",
+			"meaning": ["voir", "regarder"],
+			"mnemonic": "Miru → « Miroir » (action de se refléter).",
+			"example": [
+			"テレビを見る (テレビをみる - Regarder la télé)",
+			"映画を見る (えいがをみる - Voir un film)"
+			]
+		},
+		{
+			"front": "見せる",
+			"reading": "み・せる",
+			"class": "verbe ichidan transitif",
+			"meaning": ["montrer", "afficher"],
+			"mnemonic": "Miseru → « Mise en lumière » (révéler quelque chose).",
+			"example": [
+			"パスポートを見せる (パスポートをみせる - Montrer son passeport)",
+			"結果を見せる (けっかをみせる - Présenter un résultat)"
+			]
+		},
+		{
+			"front": "道",
+			"reading": "みち",
+			"class": "nom",
+			"meaning": ["route", "chemin", "rue"],
+			"mnemonic": "Michi → « Michelin » (marque associée aux trajets).",
+			"example": [
+			"狭い道 (せまいみち - Route étroite)",
+			"道を歩く (みちであるく - Marcher sur le chemin)"
+			]
+		},
+		{
+			"front": "皆さん",
+			"reading": "みな・さん",
+			"class": "nom (poli)",
+			"meaning": ["tout le monde"],
+			"mnemonic": "Minasan → « Mini salon » (groupe rassemblé).",
+			"example": [
+			"皆さん、おはよう (みなさん、おはよう - Bonjour à tous)",
+			"皆さんの意見 (みなさんのいけん - L'avis de tout le monde)"
+			]
+		},
+		{
+			"front": "みんな",
+			"reading": "みんな",
+			"class": "nom",
+			"meaning": ["tout le monde"],
+			"mnemonic": "Minna → « Mini nation » (collectivité entière).",
+			"example": [
+			"みんなの助け (みんなのたすけ - L'aide de tous)",
+			"みんな集まる (みんなあつまる - Tout le monde se rassemble)"
+			]
+		},
+		{
+			"front": "南",
+			"reading": "みなみ",
+			"class": "nom",
+			"meaning": ["le Sud"],
+			"mnemonic": "Minami → « Mini ami » (direction ensoleillée).",
+			"example": [
+			"南へ向かう (みなみへむかう - Se diriger vers le sud)",
+			"南風 (みなみかぜ - Vent du sud)"
+			]
+		},
+		{
+			"front": "耳",
+			"reading": "みみ",
+			"class": "nom",
+			"meaning": ["l'oreille"],
+			"mnemonic": "Mimi → « Mimi que » (organe auditif).",
+			"example": [
+			"耳が大きい (みみがおおきい - Avoir de grandes oreilles)",
+			"耳が痛い (みみがいたい - Avoir mal à l'oreille)"
+			]
+		},
+		{
+			"front": "緑",
+			"reading": "みどり",
+			"class": "nom",
+			"meaning": ["vert"],
+			"mnemonic": "Midori → Mot japonais directement utilisé en français.",
+			"example": [
+			"緑の葉 (みどりのは - Feuilles vertes)",
+			"信号が緑 (しんごうがみどり - Feu vert)"
+			]
+		},
+		{
+			"front": "向こう",
+			"reading": "む・こう",
+			"class": "nom",
+			"meaning": ["l'autre côté", "direction opposée", "par là"],
+			"mnemonic": "Mukō → « Moule coq » (au-delà d'un obstacle).",
+			"example": [
+			"山の向こう (やまのむこう - Au-delà de la montagne)",
+			"川の向こう側 (かわのむこうがわ - L'autre rive)"
+			]
+		},
+		{
+			"front": "難しい",
+			"reading": "むずか・しい",
+			"class": "adjectif en -i",
+			"meaning": ["difficile", "dur", "compliqué", "sérieux (problème, maladie)"],
+			"mnemonic": "Muzukashii → « Muscule chi » (effort nécessaire).",
+			"example": [
+			"難しい問題 (むずかしいもんだい - Problème complexe)",
+			"難しい試験 (むずかしいしけん - Examen difficile)"
+			]
+		},
+		{
+			"front": "息子",
+			"reading": "むすこ",
+			"class": "nom",
+			"meaning": ["fils"],
+			"mnemonic": "Musuko → « Muscle coq » (fils robuste).",
+			"example": [
+			"長男の息子 (ちょうなんのむすこ - Fils aîné)",
+			"息子の友達 (むすこのともだち - Ami de mon fils)"
+			]
+		},
+		{
+			"front": "娘",
+			"reading": "むすめ",
+			"class": "nom",
+			"meaning": ["fille"],
+			"mnemonic": "Musume → « Musique mélodie » (douceur féminine).",
+			"example": [
+			"一人娘 (ひとりむすめ - Fille unique)",
+			"娘の学校 (むすめのがっこう - École de ma fille)"
+			]
+		},
+		{
+			"front": "村",
+			"reading": "むら",
+			"class": "nom",
+			"meaning": ["village"],
+			"mnemonic": "Mura → « Mur à » (communauté close).",
+			"example": [
+			"小さな村 (ちいさなむら - Petit village)",
+			"村祭り (むらまつり - Fête du village)"
+			]
+		},
+		{
+			"front": "目",
+			"reading": "め",
+			"class": "nom",
+			"meaning": ["oeil"],
+			"mnemonic": "Me → « Mètre » (organe de mesure visuelle).",
+			"example": [
+			"目が痛い (めがいたい - Avoir mal aux yeux)",
+			"美しい目 (うつくしいめ - Yeux magnifiques)"
+			]
+		},
+		{
+			"front": "メートル",
+			"reading": "メートル",
+			"class": "nom",
+			"meaning": ["mètres"],
+			"mnemonic": "Mētoru → Français « mètre » (unité de mesure).",
+			"example": [
+			"100メートル走 (100メートルそう - Course de 100 mètres)",
+			"身長は1.7メートル (しんちょうは1.7メートル - Taille de 1,70m)"
+			]
+		}
+	]
+}

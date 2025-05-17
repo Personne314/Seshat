@@ -1,0 +1,230 @@
+{
+	"meta": {
+		"name": "Vocabulaire JLPT5 - 27",
+		"tags": [
+			"word", "jlpt5", "vocabulaire"
+		]
+	},
+	"cards": [
+		{
+			"front": "本屋",
+			"reading": "ほん・や",
+			"class": "nom",
+			"meaning": ["librairie"],
+			"mnemonic": "Honya → « Honnête ya » (lieu de livres intègres).",
+			"example": [
+			"本屋で買う (ほんやでかう - Acheter en librairie)",
+			"大きな本屋 (おおきなほんや - Grande librairie)"
+			]
+		},
+		{
+			"front": "毎〜",
+			"reading": "まい",
+			"class": "préfixe",
+			"meaning": ["chaque..."],
+			"mnemonic": "Mai → « Maille » (répétition régulière).",
+			"example": [
+			"毎週月曜日 (まいしゅうげつようび - Chaque lundi)",
+			"毎回注意する (まいかいちゅういする - Faire attention à chaque fois)"
+			]
+		},
+		{
+			"front": "毎朝",
+			"reading": "まい・あさ",
+			"class": "nom",
+			"meaning": ["chaque matin"],
+			"mnemonic": "Maiasa → « Maille à ça » (routine matinale).",
+			"example": [
+			"毎朝ジョギングする (まいあさジョギングする - Jogging chaque matin)",
+			"毎朝6時に起きる (まいあさ6じにおきる - Se lever à 6h tous les matins)"
+			]
+		},
+		{
+			"front": "毎晩",
+			"reading": "まい・ばん",
+			"class": "nom",
+			"meaning": ["chaque soir"],
+			"mnemonic": "Maiban → « Maille banc » (soirées répétées).",
+			"example": [
+			"毎晩読書する (まいばんどくしょする - Lire chaque soir)",
+			"毎晩電話する (まいばんでんわする - Appeler tous les soirs)"
+			]
+		},
+		{
+			"front": "毎月",
+			"reading": "まい・げつ",
+			"class": "nom",
+			"meaning": ["chaque mois"],
+			"mnemonic": "Maigetsu → « Maille guette » (cycle mensuel).",
+			"example": [
+			"毎月支払う (まいげつしはらう - Payer chaque mois)",
+			"毎月の報告 (まいげつのほうこく - Rapport mensuel)"
+			]
+		},
+		{
+			"front": "毎週",
+			"reading": "まい・しゅう",
+			"class": "nom",
+			"meaning": ["chaque semaine"],
+			"mnemonic": "Maishū → « Maille chou » (rythme hebdomadaire).",
+			"example": [
+			"毎週会議がある (まいしゅうかいぎがある - Réunion chaque semaine)",
+			"毎週日曜日 (まいしゅうにちようび - Tous les dimanches)"
+			]
+		},
+		{
+			"front": "毎日",
+			"reading": "まい・にち",
+			"class": "nom",
+			"meaning": ["chaque jour"],
+			"mnemonic": "Mainichi → « Maille niche » (quotidien comme un rituel).",
+			"example": [
+			"毎日練習する (まいにちれんしゅうする - S'entraîner quotidiennement)",
+			"毎日忙しい (まいにちいそがしい - Être occupé tous les jours)"
+			]
+		},
+		{
+			"front": "毎年",
+			"reading": "まい・ねん",
+			"class": "nom",
+			"meaning": ["chaque année"],
+			"mnemonic": "Mainen → « Maille naine » (cycle annuel infaillible).",
+			"example": [
+			"毎年旅行する (まいねんりょこうする - Voyager chaque année)",
+			"毎年恒例 (まいねんこうれい - Tradition annuelle)"
+			]
+		},
+		{
+			"front": "前",
+			"reading": "まえ",
+			"class": "nom",
+			"meaning": ["devant", "avant", "précédemment"],
+			"mnemonic": "Mae → « Même avant » (position antérieure).",
+			"example": [
+			"前の席 (まえのせき - Siège avant)",
+			"三日前 (みっかまえ - Trois jours avant)"
+			]
+		},
+		{
+			"front": "曲がる",
+			"reading": "ま・がる",
+			"class": "verbe godan intransitif",
+			"meaning": ["plier", "courber", "tourner"],
+			"mnemonic": "Magaru → « Magie ruelle » (virage mystique).",
+			"example": [
+			"角を曲がる (かどをまがる - Tourner au coin)",
+			"道が曲がる (みちがまがる - La route tourne)"
+			]
+		},
+		{
+			"front": "まずい",
+			"reading": "まずい",
+			"class": "adjectif en -i",
+			"meaning": ["déplaisant", "mauvais (au goût)"],
+			"mnemonic": "Mazui → « Ma zut ! » (dégoût soudain).",
+			"example": [
+			"まずい料理 (まずいりょうり - Plat mauvais)",
+			"まずい選択 (まずいせんたく - Mauvaise décision)"
+			]
+		},
+		{
+			"front": "また",
+			"reading": "また",
+			"class": "adverbe",
+			"meaning": ["encore", "à nouveau", "également"],
+			"mnemonic": "Mata → « Mat après » (répétition).",
+			"example": [
+			"また会いましょう (またあいましょう - À la prochaine fois)",
+			"また失敗した (またしっぱいした - Échec à nouveau)"
+			]
+		},
+		{
+			"front": "まだ",
+			"reading": "まだ",
+			"class": "adverbe",
+			"meaning": ["pour l'instant", "encore"],
+			"mnemonic": "Mada → « M’a déjà » (attente persistante).",
+			"example": [
+			"まだ終わっていない (まだおわっていない - Pas encore fini)",
+			"まだ時間がある (まだじかんがある - Il reste du temps)"
+			]
+		},
+		{
+			"front": "町",
+			"reading": "まち",
+			"class": "nom",
+			"meaning": ["ville", "voisinage", "quartier"],
+			"mnemonic": "Machi → « Matchi » (centre urbain animé).",
+			"example": [
+			"町を歩く (まちであるく - Se promener en ville)",
+			"小さな町 (ちいさなまち - Petite ville)"
+			]
+		},
+		{
+			"front": "待つ",
+			"reading": "ま・つ",
+			"class": "verbe godan transitif",
+			"meaning": ["attendre", "être attendu"],
+			"mnemonic": "Matsu → « Mats ! » (pause forcée).",
+			"example": [
+			"バスを待つ (バスをまつ - Attendre le bus)",
+			"返事を待つ (へんじをまつ - Attendre une réponse)"
+			]
+		},
+		{
+			"front": "まっすぐ",
+			"reading": "まっすぐ",
+			"class": "adjectif en -na",
+			"meaning": ["tout droit", "direct", "directement"],
+			"mnemonic": "Massugu → « Masque gueule » (direction non déviée).",
+			"example": [
+			"まっすぐ進む (まっすぐすすむ - Aller tout droit)",
+			"まっすぐな性格 (まっすぐなせいかく - Personnalité honnête)"
+			]
+		},
+		{
+			"front": "マッチ",
+			"reading": "マッチ",
+			"class": "nom",
+			"meaning": ["un match"],
+			"mnemonic": "Matchi → Anglais « match » (compétition).",
+			"example": [
+			"サッカーのマッチ (サッカーのマッチ - Match de football)",
+			"マッチに勝つ (マッチにかつ - Gagner un match)"
+			]
+		},
+		{
+			"front": "窓",
+			"reading": "まど",
+			"class": "nom",
+			"meaning": ["fenêtre"],
+			"mnemonic": "Mado → « Madot » (ouverture lumineuse).",
+			"example": [
+			"窓を開ける (まどをあける - Ouvrir la fenêtre)",
+			"明るい窓 (あかるいまど - Fenêtre lumineuse)"
+			]
+		},
+		{
+			"front": "丸い",
+			"reading": "まる・い",
+			"class": "adjectif en -i",
+			"meaning": ["rond", "circulaire", "sphérique"],
+			"mnemonic": "Marui → « Marque huile » (forme parfaite).",
+			"example": [
+			"丸いテーブル (まるいテーブル - Table ronde)",
+			"月が丸い (つきがまるい - La lune est ronde)"
+			]
+		},
+		{
+			"front": "万年筆",
+			"reading": "まん・ねん・ひつ",
+			"class": "nom",
+			"meaning": ["stylo plume"],
+			"mnemonic": "Mannenhitsu → « Manne en hiver tsu » (outil élégant).",
+			"example": [
+			"万年筆で書く (まんねんひつでかく - Écrire au stylo plume)",
+			"高級万年筆 (こうきゅうまんねんひつ - Stylo plume de luxe)"
+			]
+		}
+	]
+}

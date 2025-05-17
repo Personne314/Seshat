@@ -1,0 +1,230 @@
+{
+	"meta": {
+		"name": "Vocabulaire JLPT5 - 18",
+		"tags": [
+			"word", "jlpt5", "vocabulaire"
+		]
+	},
+	"cards": [
+		{
+			"front": "使う",
+			"reading": "つかう",
+			"class": "verbe godan transitif",
+			"meaning": ["utiliser"],
+			"mnemonic": "つかう → « Tsuka » (comme « toucher » pour utiliser un objet).",
+			"example": [
+			"ペンを使う (ペンをつかう - Utiliser un stylo)",
+			"スマホを使う (スマホをつかう - Utiliser un smartphone)"
+			]
+		},
+		{
+			"front": "疲れる",
+			"reading": "つかれる",
+			"class": "verbe ichidan intransitif",
+			"meaning": ["être fatigué"],
+			"mnemonic": "つかれる → « Tsuka » (toucher) + « reru » (rester), épuisé après avoir touché beaucoup de choses.",
+			"example": [
+			"仕事で疲れる (しごとでつかれる - Être fatigué par le travail)",
+			"疲れて寝る (つかれてねる - Dormir par fatigue)"
+			]
+		},
+		{
+			"front": "次",
+			"reading": "つぎ",
+			"class": "nom",
+			"meaning": ["prochain"],
+			"mnemonic": "つぎ → « Suivre » (le suivant dans l’ordre).",
+			"example": [
+			"次の駅 (つぎのえき - Prochaine gare)",
+			"次は君の番 (つぎはきみのばん - C’est ton tour ensuite)"
+			]
+		},
+		{
+			"front": "着く",
+			"reading": "つく",
+			"class": "verbe godan intransitif",
+			"meaning": ["arriver"],
+			"mnemonic": "つく → « Tsuku » (son similaire à « toucher » le lieu de destination).",
+			"example": [
+			"空港に着く (くうこうにつく - Arriver à l’aéroport)",
+			"家に着いた (いえについた - Je suis arrivé à la maison)"
+			]
+		},
+		{
+			"front": "机",
+			"reading": "つくえ",
+			"class": "nom",
+			"meaning": ["bureau"],
+			"mnemonic": "つくえ → « Tsuke » (fixer) + « e » (image), un endroit pour fixer ses documents.",
+			"example": [
+			"机の上 (つくえのうえ - Sur le bureau)",
+			"木の机 (きのつくえ - Bureau en bois)"
+			]
+		},
+		{
+			"front": "作る",
+			"reading": "つくる",
+			"class": "verbe godan transitif",
+			"meaning": ["créer"],
+			"mnemonic": "つくる → « Tsuku » (construire) + « ru » (rue), bâtir quelque chose.",
+			"example": [
+			"料理を作る (りょうりをつくる - Préparer un plat)",
+			"計画を作る (けいかくをつくる - Élaborer un plan)"
+			]
+		},
+		{
+			"front": "つける",
+			"reading": "つける",
+			"class": "verbe ichidan transitif",
+			"meaning": ["attacher"],
+			"mnemonic": "つける → « Tsuke » (comme « attacher » en français).",
+			"example": [
+			"ボタンをつける (ボタンをつける - Attacher un bouton)",
+			"ライトをつける (ライトをつける - Allumer la lumière)"
+			]
+		},
+		{
+			"front": "勤める",
+			"reading": "つとめる",
+			"class": "verbe ichidan transitif",
+			"meaning": ["travailler pour"],
+			"mnemonic": "つとめる → « Tuto » (tuteur) + « meru » (merci), remercier son employeur.",
+			"example": [
+			"会社に勤める (かいしゃにつとめる - Travailler pour une entreprise)",
+			"学校に勤める (がっこうにつとめる - Enseigner à l’école)"
+			]
+		},
+		{
+			"front": "つまらない",
+			"reading": "つまらない",
+			"class": "adjectif en -i",
+			"meaning": ["ennuyeux"],
+			"mnemonic": "つまらない → « Tsuma » (épouse) + « ranai » (pas), quelque chose qui n’intéresse pas même une épouse.",
+			"example": [
+			"つまらない話 (つまらないはなし - Histoire ennuyeuse)",
+			"つまらない映画 (つまらないえいが - Film sans intérêt)"
+			]
+		},
+		{
+			"front": "冷たい",
+			"reading": "つめたい",
+			"class": "adjectif en -i",
+			"meaning": ["froid (toucher)"],
+			"mnemonic": "つめたい → « Tsume » (griffe) + « tai » (corps), une griffe glaciale.",
+			"example": [
+			"冷たい水 (つめたいみず - Eau froide)",
+			"冷たい風 (つめたいかぜ - Vent froid)"
+			]
+		},
+		{
+			"front": "強い",
+			"reading": "つよい",
+			"class": "adjectif en -i",
+			"meaning": ["fort"],
+			"mnemonic": "つよい → « Tsuyo » (force) + « i » (oui), confirmer la puissance.",
+			"example": [
+			"強いコーヒー (つよいコーヒー - Café fort)",
+			"強い意志 (つよいいし - Volonté forte)"
+			]
+		},
+		{
+			"front": "手",
+			"reading": "て",
+			"class": "nom",
+			"meaning": ["main"],
+			"mnemonic": "て → « Tête » (mais c’est la main qui touche).",
+			"example": [
+			"手を洗う (てをあらう - Se laver les mains)",
+			"手が大きい (てがおおきい - Avoir de grandes mains)"
+			]
+		},
+		{
+			"front": "テープ",
+			"reading": "テープ",
+			"class": "nom",
+			"meaning": ["ruban", "cassette"],
+			"mnemonic": "Mot emprunté à l’anglais « tape ».",
+			"example": [
+			"テープを切る (テープをきる - Couper du ruban)",
+			"音楽テープ (おんがくテープ - Cassette audio)"
+			]
+		},
+		{
+			"front": "テープレコーダー",
+			"reading": "テープレコーダー",
+			"class": "nom",
+			"meaning": ["magnétophone"],
+			"mnemonic": "Mot emprunté à l’anglais « tape recorder ».",
+			"example": [
+			"テープレコーダーで録音する (テープレコーダーでろくおんする - Enregistrer avec un magnétophone)",
+			"古いテープレコーダー (ふるいテープレコーダー - Vieux magnétophone)"
+			]
+		},
+		{
+			"front": "テーブル",
+			"reading": "テーブル",
+			"class": "nom",
+			"meaning": ["table"],
+			"mnemonic": "Mot emprunté à l’anglais « table ».",
+			"example": [
+			"テーブルを拭く (テーブルをふく - Nettoyer la table)",
+			"ガラスのテーブル (ガラスのテーブル - Table en verre)"
+			]
+		},
+		{
+			"front": "出かける",
+			"reading": "でかける",
+			"class": "verbe ichidan intransitif",
+			"meaning": ["sortir"],
+			"mnemonic": "でかける → « Dé » (sortir) + « kakeru » (accrocher), sortir pour une activité.",
+			"example": [
+			"買い物に出かける (かいものにでかける - Sortir faire des courses)",
+			"散歩に出かける (さんぽにでかける - Aller se promener)"
+			]
+		},
+		{
+			"front": "手紙",
+			"reading": "てがみ",
+			"class": "nom",
+			"meaning": ["lettre"],
+			"mnemonic": "てがみ → « Te » (main) + « kami » (papier), écrite à la main.",
+			"example": [
+			"手紙を書く (てがみをかく - Écrire une lettre)",
+			"手紙を送る (てがみをおくる - Envoyer une lettre)"
+			]
+		},
+		{
+			"front": "できる",
+			"reading": "できる",
+			"class": "verbe ichidan intransitif",
+			"meaning": ["pouvoir"],
+			"mnemonic": "できる → « Défi clé » (surmonter un défi avec compétence).",
+			"example": [
+			"日本語ができる (にほんごができる - Savoir parler japonais)",
+			"料理ができる (りょうりができる - Savoir cuisiner)"
+			]
+		},
+		{
+			"front": "出口",
+			"reading": "でぐち",
+			"class": "nom",
+			"meaning": ["sortie"],
+			"mnemonic": "でぐち → « Dé » (sortir) + « kuchi » (bouche), la bouche de sortie.",
+			"example": [
+			"出口を探す (でぐちをさがす - Chercher la sortie)",
+			"緊急出口 (きんきゅうでぐち - Sortie de secours)"
+			]
+		},
+		{
+			"front": "テスト",
+			"reading": "テスト",
+			"class": "nom",
+			"meaning": ["examen"],
+			"mnemonic": "Mot emprunté à l’anglais « test ».",
+			"example": [
+			"テストを受ける (テストをうける - Passer un examen)",
+			"数学のテスト (すうがくのテスト - Examen de maths)"
+			]
+		}
+	]
+}

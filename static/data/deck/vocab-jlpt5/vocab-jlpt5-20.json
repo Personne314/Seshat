@@ -1,0 +1,230 @@
+{
+	"meta": {
+		"name": "Vocabulaire JLPT5 - 20",
+		"tags": [
+			"word", "jlpt5", "vocabulaire"
+		]
+	},
+	"cards": [
+		{
+			"front": "どっち",
+			"reading": "どっち",
+			"class": "pronom",
+			"meaning": ["lequel", "entre deux choix"],
+			"mnemonic": "どっち → « Deux châssis » (choisir entre deux cadres/options).",
+			"example": [
+			"どっちが正解？ (どっちがせいかい？ - Lequel est la bonne réponse ?)",
+			"どっちを選ぶ？ (どっちをえらぶ？ - Lequel choisis-tu ?)"
+			]
+		},
+		{
+			"front": "どんな",
+			"reading": "どんな",
+			"class": "pronom",
+			"meaning": ["quel type de"],
+			"mnemonic": "どんな → « Donne un type ? » (demander une spécification).",
+			"example": [
+			"どんな映画が好き？ (どんなえいががすき？ - Quel genre de films aimes-tu ?)",
+			"どんな人？ (どんなひと？ - Quel genre de personne ?)"
+			]
+		},
+		{
+			"front": "東京",
+			"reading": "とうきょう",
+			"class": "nom",
+			"meaning": ["Tokyo"],
+			"mnemonic": "Tôkyô → « Touche au ciel » (métropole verticale).",
+			"example": [
+			"東京に行きたい (とうきょうにいきたい - Je veux aller à Tokyo)",
+			"東京タワー (とうきょうタワー - La Tour de Tokyo)"
+			]
+		},
+		{
+			"front": "豆腐",
+			"reading": "とう・ふ",
+			"class": "nom",
+			"meaning": ["tofu"],
+			"mnemonic": "Tôfu → Même mot en français (pâte de soja).",
+			"example": [
+			"豆腐料理 (とうふりょうり - Plat à base de tofu)",
+			"豆腐を買う (とうふをかう - Acheter du tofu)"
+			]
+		},
+		{
+			"front": "動物",
+			"reading": "どうぶつ",
+			"class": "nom",
+			"meaning": ["un animal"],
+			"mnemonic": "Dôbutsu → « Deux bêtes » (groupe d'animaux).",
+			"example": [
+			"動物園 (どうぶつえん - Zoo)",
+			"動物を保護する (どうぶつをほごする - Protéger les animaux)"
+			]
+		},
+		{
+			"front": "遠い",
+			"reading": "とお・い",
+			"class": "adjectif en -i",
+			"meaning": ["loin", "distant"],
+			"mnemonic": "Tôi → « Toi au loin » (personne éloignée).",
+			"example": [
+			"駅は遠い (えきはとおい - La gare est loin)",
+			"遠い未来 (とおいみらい - Un futur lointain)"
+			]
+		},
+		{
+			"front": "遠く",
+			"reading": "とお・く",
+			"class": "nom",
+			"meaning": ["le lointain", "la distance"],
+			"mnemonic": "Tôku → « Tout coup » (distance soudaine).",
+			"example": [
+			"遠くに山が見える (とおくにやまがみえる - Voir des montagnes au loin)",
+			"遠くへ旅する (とおくへたびする - Voyager au loin)"
+			]
+		},
+		{
+			"front": "時々",
+			"reading": "とき・どき",
+			"class": "adverbe",
+			"meaning": ["parfois", "de temps en temps"],
+			"mnemonic": "Tokidoki → « Toc-toc des fois » (événement intermittent).",
+			"example": [
+			"時々会う (ときどきあう - Se voir parfois)",
+			"時々寂しい (ときどきさびしい - Se sentir seul parfois)"
+			]
+		},
+		{
+			"front": "時計",
+			"reading": "とけい",
+			"class": "nom",
+			"meaning": ["l'horloge", "la montre"],
+			"mnemonic": "Tokei → « Tocquet » (bruit d'une horloge ancienne).",
+			"example": [
+			"時計を直す (とけいをなおす - Réparer une montre)",
+			"デジタル時計 (デジタルとけい - Montre digitale)"
+			]
+		},
+		{
+			"front": "所",
+			"reading": "ところ",
+			"class": "nom",
+			"meaning": ["l'endroit", "le lieu", "la place"],
+			"mnemonic": "Tokoro → « Trou corail » (endroit coloré et spécifique).",
+			"example": [
+			"安全な所 (あんぜんなところ - Endroit sûr)",
+			"ここはいい所 (ここはいいところ - C'est un bon endroit)"
+			]
+		},
+		{
+			"front": "図書館",
+			"reading": "と・しょ・かん",
+			"class": "nom",
+			"meaning": ["bibliothèque"],
+			"mnemonic": "Toshokan → « Tout est show ici » (lieux de découvertes).",
+			"example": [
+			"図書館で勉強する (としょかんでべんきょうする - Étudier à la bibliothèque)",
+			"図書館の本 (としょかんのほん - Livre de la bibliothèque)"
+			]
+		},
+		{
+			"front": "とても",
+			"reading": "とても",
+			"class": "adverbe",
+			"meaning": ["très"],
+			"mnemonic": "Totemo → « Totalement très » (intensité maximale).",
+			"example": [
+			"とても美味しい (とてもおいしい - Très délicieux)",
+			"とても暑い (とてもあつい - Très chaud)"
+			]
+		},
+		{
+			"front": "隣",
+			"reading": "となり",
+			"class": "nom",
+			"meaning": ["près de", "adjacent", "proximité"],
+			"mnemonic": "Tonari → « Ton nid là » (proximité rassurante).",
+			"example": [
+			"隣の部屋 (となりのへや - La pièce d'à côté)",
+			"隣に座る (となりにすわる - S'asseoir à côté)"
+			]
+		},
+		{
+			"front": "飛ぶ",
+			"reading": "と・ぶ",
+			"class": "verbe godan intransitif",
+			"meaning": ["voler"],
+			"mnemonic": "Tobu → « Tombé du nid » (apprentissage du vol).",
+			"example": [
+			"鳥が飛ぶ (とりがとぶ - L'oiseau vole)",
+			"飛行機が飛ぶ (ひこうきがとぶ - L'avion vole)"
+			]
+		},
+		{
+			"front": "止まる",
+			"reading": "と・まる",
+			"class": "verbe godan intransitif",
+			"meaning": ["s'arrêter", "se stopper"],
+			"mnemonic": "Tomaru → « Tomber arrêt net » (mouvement interrompu).",
+			"example": [
+			"車が止まる (くるまがとまる - La voiture s'arrête)",
+			"時計が止まった (とけいがとまった - La montre s'est arrêtée)"
+			]
+		},
+		{
+			"front": "友達",
+			"reading": "ともだち",
+			"class": "nom",
+			"meaning": ["ami"],
+			"mnemonic": "Tomodachi → « Tous mes potes ici » (groupe d'amis).",
+			"example": [
+			"友達と遊ぶ (ともだちとあそぶ - Jouer avec des amis)",
+			"親友達 (しんゆうだち - Amis proches)"
+			]
+		},
+		{
+			"front": "鳥",
+			"reading": "とり",
+			"class": "nom",
+			"meaning": ["oiseau"],
+			"mnemonic": "Tori → « Tordre l'air » (mouvement d'un oiseau en vol).",
+			"example": [
+			"鳥の声 (とりのこえ - Chant d'oiseau)",
+			"鳥を飼う (とりをかう - Élever un oiseau)"
+			]
+		},
+		{
+			"front": "鶏肉",
+			"reading": "とり・にく",
+			"class": "nom",
+			"meaning": ["viande de poulet"],
+			"mnemonic": "Toriniku → « T'as riz ni vu ? » (plat classique).",
+			"example": [
+			"鶏肉を焼く (とりにくをやく - Griller du poulet)",
+			"鶏肉料理 (とりにくりょうり - Plat à base de poulet)"
+			]
+		},
+		{
+			"front": "取る",
+			"reading": "と・る",
+			"class": "verbe godan transitif",
+			"meaning": ["prendre", "attraper"],
+			"mnemonic": "Toru → « T'as reçu ? » (saisir un objet).",
+			"example": [
+			"手を取る (てをとる - Prendre la main)",
+			"資格を取る (しかくをとる - Obtenir un diplôme)"
+			]
+		},
+		{
+			"front": "撮る",
+			"reading": "と・る",
+			"class": "verbe godan transitif",
+			"meaning": ["prendre une photo", "prendre une vidéo"],
+			"mnemonic": "Toru → « Tourne l'objectif » (action de photographier).",
+			"example": [
+			"写真を撮る (しゃしんをとる - Prendre une photo)",
+			"動画を撮る (どうがをとる - Filmer une vidéo)"
+			]
+		}
+	]
+}

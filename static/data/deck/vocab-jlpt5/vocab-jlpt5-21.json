@@ -1,0 +1,230 @@
+{
+	"meta": {
+		"name": "Vocabulaire JLPT5 - 21",
+		"tags": [
+			"word", "jlpt5", "vocabulaire"
+		]
+	},
+	"cards": [
+		{
+			"front": "ナイフ",
+			"reading": "ナイフ",
+			"class": "nom",
+			"meaning": ["couteau"],
+			"mnemonic": "ナイフ → Anglais « knife » (même sens en français).",
+			"example": [
+			"ナイフで切る (ナイフできる - Couper avec un couteau)",
+			"ステーキナイフ (ステーキナイフ - Couteau à steak)"
+			]
+		},
+		{
+			"front": "中",
+			"reading": "なか",
+			"class": "nom",
+			"meaning": ["l'intérieur"],
+			"mnemonic": "Naka → « Nacre » (coquillage contenant un intérieur précieux).",
+			"example": [
+			"中に入る (なかにはいる - Entrer à l'intérieur)",
+			"箱の中 (はこのなか - Contenu de la boîte)"
+			]
+		},
+		{
+			"front": "長い",
+			"reading": "なが・い",
+			"class": "adjectif en -i",
+			"meaning": ["long (distance)", "long (temps)"],
+			"mnemonic": "Nagai → « Nage libre » (longue distance à parcourir).",
+			"example": [
+			"長い道 (ながいみち - Long chemin)",
+			"長い会議 (ながいかいぎ - Réunion interminable)"
+			]
+		},
+		{
+			"front": "鳴く",
+			"reading": "な・く",
+			"class": "verbe godan intransitif",
+			"meaning": ["chanter (oiseau)", "produire un son (animal)"],
+			"mnemonic": "Naku → « N'a qu'un cri » (son unique produit).",
+			"example": [
+			"鳥が鳴く (とりがなく - L'oiseau chante)",
+			"猫が鳴く (ねこがなく - Le chat miaule)"
+			]
+		},
+		{
+			"front": "なくす",
+			"reading": "なくす",
+			"class": "verbe godan transitif",
+			"meaning": ["perdre quelque chose"],
+			"mnemonic": "Nakusu → « N'a qu'à suer » (effort pour retrouver un objet perdu).",
+			"example": [
+			"鍵をなくす (かぎをなくす - Perdre ses clés)",
+			"自信をなくす (じしんをなくす - Perdre confiance)"
+			]
+		},
+		{
+			"front": "夏",
+			"reading": "なつ",
+			"class": "nom",
+			"meaning": ["l'été"],
+			"mnemonic": "Natsu → « Natte soleil » (coiffure estivale).",
+			"example": [
+			"夏の海 (なつのうみ - Mer en été)",
+			"夏祭り (なつまつり - Festival d'été)"
+			]
+		},
+		{
+			"front": "夏休み",
+			"reading": "なつ・やす・み",
+			"class": "nom",
+			"meaning": ["vacances d'été"],
+			"mnemonic": "Natsuyasumi → « Natte y'a sommeil » (repos estival).",
+			"example": [
+			"夏休みの計画 (なつやすみのけいかく - Projet pour les vacances d'été)",
+			"夏休み中 (なつやすみちゅう - Pendant les vacances d'été)"
+			]
+		},
+		{
+			"front": "など",
+			"reading": "など",
+			"class": "particule",
+			"meaning": ["etc...", "et ainsi de suite"],
+			"mnemonic": "Nado → « Nappe d'eau » (énumération qui s'étend).",
+			"example": [
+			"りんごなど (りんごなど - Pommes etc.)",
+			"本やペンなど (ほんやペンなど - Livres, stylos, etc.)"
+			]
+		},
+		{
+			"front": "何",
+			"reading": "なに",
+			"class": "pronom",
+			"meaning": ["quoi ?"],
+			"mnemonic": "Nani → « Nanny ? » (question surprise).",
+			"example": [
+			"何ですか？ (なんですか？ - Qu'est-ce que c'est ?)",
+			"何が欲しい？ (なにがほしい？ - Que veux-tu ?)"
+			]
+		},
+		{
+			"front": "何時",
+			"reading": "なん・じ",
+			"class": "pronom",
+			"meaning": ["à quelle heure ?", "quelle heure ?"],
+			"mnemonic": "Nanji → « Non, c'est l'heure ? » (demande temporelle).",
+			"example": [
+			"何時に始まる？ (なんじにはじまる？ - À quelle heure ça commence ?)",
+			"今何時？ (いまなんじ？ - Quelle heure est-il ?)"
+			]
+		},
+		{
+			"front": "何日",
+			"reading": "なん・にち",
+			"class": "pronom",
+			"meaning": ["quel jour ?"],
+			"mnemonic": "Nannichi → « Non, ni chichi » (jour indéterminé).",
+			"example": [
+			"何日ですか？ (なんにちですか？ - Quel jour sommes-nous ?)",
+			"誕生日は何日？ (たんじょうびはなんにち？ - Quel jour est ton anniversaire ?)"
+			]
+		},
+		{
+			"front": "名前",
+			"reading": "な・まえ",
+			"class": "nom",
+			"meaning": ["nom"],
+			"mnemonic": "Namae → « Nom à mettre » (identification personnelle).",
+			"example": [
+			"名前を書く (なまえをかく - Écrire son nom)",
+			"名前を覚える (なまえをおぼえる - Retenir un nom)"
+			]
+		},
+		{
+			"front": "習う",
+			"reading": "なら・う",
+			"class": "verbe godan transitif",
+			"meaning": ["apprendre", "étudier"],
+			"mnemonic": "Narau → « Nappe raide » (apprentissage rigoureux).",
+			"example": [
+			"日本語を習う (にほんごをならう - Apprendre le japonais)",
+			"ピアノを習う (ピアノをならう - Apprendre le piano)"
+			]
+		},
+		{
+			"front": "並ぶ",
+			"reading": "なら・ぶ",
+			"class": "verbe godan intransitif",
+			"meaning": ["s'aligner", "se ranger", "faire la queue"],
+			"mnemonic": "Narabu → « Nappe ruban » (alignement ordonné).",
+			"example": [
+			"列に並ぶ (れつにならぶ - Faire la queue)",
+			"本棚に並ぶ (ほんだなにならぶ - Être aligné sur l'étagère)"
+			]
+		},
+		{
+			"front": "並べる",
+			"reading": "なら・べる",
+			"class": "verbe ichidan transitif",
+			"meaning": ["aligner", "ranger", "former une ligne"],
+			"mnemonic": "Naraberu → « Nappe rail bête » (alignement méthodique).",
+			"example": [
+			"本を並べる (ほんをならべる - Ranger des livres)",
+			"机を並べる (つくえをならべる - Aligner les bureaux)"
+			]
+		},
+		{
+			"front": "なる",
+			"reading": "なる",
+			"class": "verbe godan intransitif",
+			"meaning": ["devenir"],
+			"mnemonic": "Naru → « Nature » (transformation naturelle).",
+			"example": [
+			"医者になる (いしゃになる - Devenir médecin)",
+			"暗くなる (くらくなる - Devenir sombre)"
+			]
+		},
+		{
+			"front": "苦い",
+			"reading": "にが・い",
+			"class": "adjectif en -i",
+			"meaning": ["amer", "âpre"],
+			"mnemonic": "Nigai → « Ni gai » (absence de plaisir gustatif).",
+			"example": [
+			"苦い薬 (にがいくすり - Médicament amer)",
+			"苦い経験 (にがいけいけん - Expérience amère)"
+			]
+		},
+		{
+			"front": "賑やか",
+			"reading": "にぎ・やか",
+			"class": "adjectif en -na",
+			"meaning": ["animé", "vivant", "bondé", "occupé"],
+			"mnemonic": "Nigiyaka → « Ni gui, yak à part » (ambiance festive).",
+			"example": [
+			"賑やかな祭り (にぎやかなまつり - Festival animé)",
+			"賑やかな通り (にぎやかなとおり - Rue animée)"
+			]
+		},
+		{
+			"front": "肉",
+			"reading": "にく",
+			"class": "nom",
+			"meaning": ["viande"],
+			"mnemonic": "Niku → « Nique viande » (expression familière pour manger).",
+			"example": [
+			"肉を焼く (にくをやく - Griller de la viande)",
+			"牛肉 (ぎゅうにく - Bœuf)"
+			]
+		},
+		{
+			"front": "西",
+			"reading": "にし",
+			"class": "nom",
+			"meaning": ["l'Ouest"],
+			"mnemonic": "Nishi → « Ni chichi » (point cardinal sans parenté).",
+			"example": [
+			"西の空 (にしのそら - Ciel à l'ouest)",
+			"西に向かう (にしにむかう - Se diriger vers l'ouest)"
+			]
+		}
+	]
+}

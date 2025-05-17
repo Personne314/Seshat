@@ -1,0 +1,230 @@
+{
+	"meta": {
+		"name": "Vocabulaire JLPT5 - 26",
+		"tags": [
+			"word", "jlpt5", "vocabulaire"
+		]
+	},
+	"cards": [
+		{
+			"front": "下手",
+			"reading": "へた",
+			"class": "adjectif en -na",
+			"meaning": ["mauvais à", "non qualifié", "pauvre"],
+			"mnemonic": "Heta → « Hétéroclite » (manque de compétence).",
+			"example": [
+			"下手な料理 (へたなりょうり - Cuisine maladroite)",
+			"絵が下手 (えがへた - Être mauvais en dessin)"
+			]
+		},
+		{
+			"front": "ベッド",
+			"reading": "ベッド",
+			"class": "nom",
+			"meaning": ["lit"],
+			"mnemonic": "Beddo → Anglais « bed » (même sens en français).",
+			"example": [
+			"ベッドを整える (ベッドをととのえる - Faire le lit)",
+			"新しいベッド (あたらしいベッド - Nouveau lit)"
+			]
+		},
+		{
+			"front": "部屋",
+			"reading": "へや",
+			"class": "nom",
+			"meaning": ["chambre", "pièce"],
+			"mnemonic": "Heya → « Hé y a » (espace personnel).",
+			"example": [
+			"部屋を掃除する (へやをそうじする - Nettoyer la pièce)",
+			"広い部屋 (ひろいへや - Grande chambre)"
+			]
+		},
+		{
+			"front": "辺",
+			"reading": "へん",
+			"class": "nom",
+			"meaning": ["zone", "alentours", "région"],
+			"mnemonic": "Hen → « Haine ? » (zone indéfinie).",
+			"example": [
+			"この辺は静か (このへんはしずか - Ce quartier est calme)",
+			"辺りを見回す (あたりをみまわす - Regarder autour)"
+			]
+		},
+		{
+			"front": "ペン",
+			"reading": "ペン",
+			"class": "nom",
+			"meaning": ["stylo"],
+			"mnemonic": "Pen → Anglais « pen » (même sens en français).",
+			"example": [
+			"ペンで書く (ペンでかく - Écrire avec un stylo)",
+			"赤いペン (あかいペン - Stylo rouge)"
+			]
+		},
+		{
+			"front": "勉強",
+			"reading": "べんきょう",
+			"class": "verbe (suru)",
+			"meaning": ["les études", "étudier"],
+			"mnemonic": "Benkyō → « Banc qu’eau » (concentration studieuse).",
+			"example": [
+			"日本語を勉強する (にほんごをべんきょうする - Étudier le japonais)",
+			"毎日勉強 (まいにちべんきょう - Études quotidiennes)"
+			]
+		},
+		{
+			"front": "弁当",
+			"reading": "べんとう",
+			"class": "nom",
+			"meaning": ["bento (lunch box japonaise)"],
+			"mnemonic": "Bentō → « Bento » (même mot en français).",
+			"example": [
+			"弁当を作る (べんとうをつくる - Préparer un bento)",
+			"駅弁当 (えきべんとう - Bento de gare)"
+			]
+		},
+		{
+			"front": "便利",
+			"reading": "べん・り",
+			"class": "adjectif en -na",
+			"meaning": ["commode", "utile"],
+			"mnemonic": "Benri → « Benne lit » (outil pratique).",
+			"example": [
+			"便利な道具 (べんりなどうぐ - Outil pratique)",
+			"便利な店 (べんりなみせ - Magasin utile)"
+			]
+		},
+		{
+			"front": "帽子",
+			"reading": "ぼう・し",
+			"class": "nom",
+			"meaning": ["chapeau", "casquette"],
+			"mnemonic": "Bōshi → « Beau chichi » (accessoire stylé).",
+			"example": [
+			"帽子を被る (ぼうしをかぶる - Porter un chapeau)",
+			"新しい帽子 (あたらしいぼうし - Nouvelle casquette)"
+			]
+		},
+		{
+			"front": "ボールペン",
+			"reading": "ボールペン",
+			"class": "nom",
+			"meaning": ["stylo à bille"],
+			"mnemonic": "Bōrupen → Anglais « ball pen » (même sens).",
+			"example": [
+			"ボールペンでサインする (ボールペンでサインする - Signer avec un stylo)",
+			"ボールペンをなくす (ボールペンをなくす - Perdre un stylo)"
+			]
+		},
+		{
+			"front": "他",
+			"reading": "ほか",
+			"class": "nom",
+			"meaning": ["le reste", "l'autre"],
+			"mnemonic": "Hoka → « Hoquet » (élément supplémentaire).",
+			"example": [
+			"他の人 (ほかのひと - Autre personne)",
+			"他に方法は？ (ほかにほうほうは？ - D'autres solutions ?)"
+			]
+		},
+		{
+			"front": "僕",
+			"reading": "ぼく",
+			"class": "pronom",
+			"meaning": ["moi / je (masculin)"],
+			"mnemonic": "Boku → « Beau culte » (auto-désignation masculine).",
+			"example": [
+			"僕の名前は… (ぼくのなまえは… - Mon nom est…)",
+			"僕がやる (ぼくがやる - Je le fais)"
+			]
+		},
+		{
+			"front": "ポケット",
+			"reading": "ポケット",
+			"class": "nom",
+			"meaning": ["poche"],
+			"mnemonic": "Poketto → Anglais « pocket » (même sens).",
+			"example": [
+			"ポケットに手を入れる (ポケットにてをいれる - Mettre les mains dans les poches)",
+			"ポケットサイズ (ポケットサイズ - Taille de poche)"
+			]
+		},
+		{
+			"front": "欲しい",
+			"reading": "ほ・しい",
+			"class": "adjectif en -i",
+			"meaning": ["voulu", "désiré"],
+			"mnemonic": "Hoshii → « Hoche hi » (objet convoité).",
+			"example": [
+			"車が欲しい (くるまがほしい - Vouloir une voiture)",
+			"お金が欲しい (おかねがほしい - Désirer de l'argent)"
+			]
+		},
+		{
+			"front": "細い",
+			"reading": "ほそ・い",
+			"class": "adjectif en -i",
+			"meaning": ["fin", "maigre"],
+			"mnemonic": "Hosoi → « Hoseau » (forme allongée).",
+			"example": [
+			"細い指 (ほそいゆび - Doigts fins)",
+			"細い道 (ほそいみち - Chemin étroit)"
+			]
+		},
+		{
+			"front": "ボタン",
+			"reading": "ボタン",
+			"class": "nom",
+			"meaning": ["bouton"],
+			"mnemonic": "Botan → Anglais « button » (même sens).",
+			"example": [
+			"シャツのボタン (シャツのボタン - Bouton de chemise)",
+			"ボタンを押す (ボタンをおす - Appuyer sur un bouton)"
+			]
+		},
+		{
+			"front": "ホテル",
+			"reading": "ホテル",
+			"class": "nom",
+			"meaning": ["hôtel"],
+			"mnemonic": "Hoteru → Anglais « hotel » (même sens).",
+			"example": [
+			"ホテルに泊まる (ホテルにとまる - Rester à l'hôtel)",
+			"高級ホテル (こうきゅうホテル - Hôtel de luxe)"
+			]
+		},
+		{
+			"front": "本",
+			"reading": "ほん",
+			"class": "nom",
+			"meaning": ["livre"],
+			"mnemonic": "Hon → « Honneur » (objet de savoir).",
+			"example": [
+			"本を読む (ほんをよむ - Lire un livre)",
+			"面白い本 (おもしろいほん - Livre intéressant)"
+			]
+		},
+		{
+			"front": "本棚",
+			"reading": "ほん・だな",
+			"class": "nom",
+			"meaning": ["étagère"],
+			"mnemonic": "Hondana → « Honte à nada » (rangement littéraire).",
+			"example": [
+			"本棚を整理する (ほんだなをせいりする - Ranger l'étagère)",
+			"大きな本棚 (おおきなほんだな - Grande bibliothèque)"
+			]
+		},
+		{
+			"front": "本当",
+			"reading": "ほん・とう",
+			"class": "nom",
+			"meaning": ["la vérité", "la réalité"],
+			"mnemonic": "Hontō → « Honte haut » (vérité choquante).",
+			"example": [
+			"本当の話 (ほんとうのはなし - Histoire vraie)",
+			"本当ですか？ (ほんとうですか？ - Est-ce vrai ?)"
+			]
+		}
+	]
+}

@@ -1,0 +1,230 @@
+{
+	"meta": {
+		"name": "Vocabulaire JLPT5 - 13",
+		"tags": [
+			"word", "jlpt5", "vocabulaire"
+		]
+	},
+	"cards": [
+		{
+			"front": "質問",
+			"reading": "しつもん",
+			"class": "nom (verbe en する)",
+			"meaning": ["question"],
+			"mnemonic": "しつもん → « C’est mon questionnement » (poser une question).",
+			"example": [
+			"質問があります (しつもんがあります - J’ai une question)",
+			"質問に答える (しつもんにこたえる - Répondre à une question)"
+			]
+		},
+		{
+			"front": "自転車",
+			"reading": "じてんしゃ",
+			"class": "nom",
+			"meaning": ["vélo"],
+			"mnemonic": "じてんしゃ → « J’ai tendu la chape » (action de pédaler).",
+			"example": [
+			"自転車に乗る (じてんしゃにのる - Monter à vélo)",
+			"電動自転車 (でんどうじてんしゃ - Vélo électrique)"
+			]
+		},
+		{
+			"front": "自動車",
+			"reading": "じどうしゃ",
+			"class": "nom",
+			"meaning": ["voiture"],
+			"mnemonic": "じどうしゃ → « J’ai dodo, chauffeur » (voiture autonome).",
+			"example": [
+			"自動車を運転する (じどうしゃをうんてんする - Conduire une voiture)",
+			"自動車の鍵 (じどうしゃのかぎ - Clés de voiture)"
+			]
+		},
+		{
+			"front": "死ぬ",
+			"reading": "しぬ",
+			"class": "verbe godan intransitif",
+			"meaning": ["mourir"],
+			"mnemonic": "しぬ → « Chien nu » (image absurde pour retenir le sens).",
+			"example": [
+			"植物が死ぬ (しょくぶつがしぬ - La plante meurt)",
+			"死ぬほど疲れた (しぬほどつかれた - Épuisé à en mourir)"
+			]
+		},
+		{
+			"front": "自分",
+			"reading": "じぶん",
+			"class": "nom",
+			"meaning": ["soi-même"],
+			"mnemonic": "じぶん → « Je bun » (moi, enveloppé dans un pain).",
+			"example": [
+			"自分の意見 (じぶんのいけん - Son propre avis)",
+			"自分でやる (じぶんでやる - Faire soi-même)"
+			]
+		},
+		{
+			"front": "する",
+			"reading": "する",
+			"class": "verbe irrégulier",
+			"meaning": ["faire"],
+			"mnemonic": "する → « Sur un vélo » (faire du vélo).",
+			"example": [
+			"勉強する (べんきょうする - Étudier)",
+			"料理する (りょうりする - Cuisiner)"
+			]
+		},
+		{
+			"front": "閉まる",
+			"reading": "しまる",
+			"class": "verbe godan intransitif",
+			"meaning": ["se fermer"],
+			"mnemonic": "しまる → « Chat mur » (un chat ferme la porte).",
+			"example": [
+			"ドアが閉まる (ドアがしまる - La porte se ferme)",
+			"店が閉まる (みせがしまる - Le magasin ferme)"
+			]
+		},
+		{
+			"front": "閉める",
+			"reading": "しめる",
+			"class": "verbe ichidan transitif",
+			"meaning": ["fermer"],
+			"mnemonic": "しめる → « Chie mer » (fermer une bouteille d’eau).",
+			"example": [
+			"窓を閉める (まどをしめる - Fermer la fenêtre)",
+			"電気を閉める (でんきをしめる - Éteindre la lumière)"
+			]
+		},
+		{
+			"front": "写真",
+			"reading": "しゃしん",
+			"class": "nom",
+			"meaning": ["photo"],
+			"mnemonic": "しゃしん → « Chasse en » (chasser des images).",
+			"example": [
+			"写真を撮る (しゃしんをとる - Prendre une photo)",
+			"家族の写真 (かぞくのしゃしん - Photo de famille)"
+			]
+		},
+		{
+			"front": "シャツ",
+			"reading": "シャツ",
+			"class": "nom",
+			"meaning": ["chemise"],
+			"mnemonic": "Mot emprunté à l’anglais « shirt ».",
+			"example": [
+			"白いシャツ (しろいシャツ - Chemise blanche)",
+			"シャツを着る (シャツをきる - Porter une chemise)"
+			]
+		},
+		{
+			"front": "シャワー",
+			"reading": "シャワー",
+			"class": "nom",
+			"meaning": ["douche"],
+			"mnemonic": "Mot emprunté à l’anglais « shower ».",
+			"example": [
+			"シャワーを浴びる (シャワーをあびる - Prendre une douche)",
+			"ホテルのシャワー (ホテルのシャワー - Douche d’hôtel)"
+			]
+		},
+		{
+			"front": "週",
+			"reading": "しゅう",
+			"class": "nom",
+			"meaning": ["semaine"],
+			"mnemonic": "しゅう → « Chou » (un chou par semaine).",
+			"example": [
+			"週末 (しゅうまつ - Week-end)",
+			"一週間 (いっしゅうかん - Une semaine)"
+			]
+		},
+		{
+			"front": "ジュース",
+			"reading": "ジュース",
+			"class": "nom",
+			"meaning": ["jus"],
+			"mnemonic": "Mot emprunté à l’anglais « juice ».",
+			"example": [
+			"オレンジジュース (オレンジジュース - Jus d’orange)",
+			"ジュースを飲む (ジュースをのむ - Boire du jus)"
+			]
+		},
+		{
+			"front": "授業",
+			"reading": "じゅぎょう",
+			"class": "nom",
+			"meaning": ["cours"],
+			"mnemonic": "じゅぎょう → « Jeu géant » (apprendre en s’amusant).",
+			"example": [
+			"数学の授業 (すうがくのじゅぎょう - Cours de maths)",
+			"授業が始まる (じゅぎょうがはじまる - Le cours commence)"
+			]
+		},
+		{
+			"front": "宿題",
+			"reading": "しゅくだい",
+			"class": "nom",
+			"meaning": ["devoirs"],
+			"mnemonic": "しゅくだい → « Chute d’œil » (jeter un œil aux devoirs).",
+			"example": [
+			"宿題を終える (しゅくだいをおえる - Finir ses devoirs)",
+			"宿題が多い (しゅくだいがおおい - Avoir beaucoup de devoirs)"
+			]
+		},
+		{
+			"front": "小学校",
+			"reading": "しょうがっこう",
+			"class": "nom",
+			"meaning": ["école primaire"],
+			"mnemonic": "しょうがっこう → « Chaud gâteau cool » (école douce et joyeuse).",
+			"example": [
+			"小学校に通う (しょうがっこうにかよう - Aller à l’école primaire)",
+			"小学校の先生 (しょうがっこうのせんせい - Professeur des écoles)"
+			]
+		},
+		{
+			"front": "上手",
+			"reading": "じょうず",
+			"class": "adjectif en -na",
+			"meaning": ["habile"],
+			"mnemonic": "じょうず → « Jeux où Zeus » (être divinement doué).",
+			"example": [
+			"ピアノが上手 (ピアノがじょうず - Être bon au piano)",
+			"上手に描く (じょうずにかく - Dessiner avec talent)"
+			]
+		},
+		{
+			"front": "丈夫",
+			"reading": "じょうぶ",
+			"class": "adjectif en -na",
+			"meaning": ["solide"],
+			"mnemonic": "じょうぶ → « Jeune bûche » (robuste comme un tronc).",
+			"example": [
+			"丈夫な箱 (じょうぶなはこ - Boîte solide)",
+			"体が丈夫 (からだがじょうぶ - Être en bonne santé)"
+			]
+		},
+		{
+			"front": "食堂",
+			"reading": "しょくどう",
+			"class": "nom",
+			"meaning": ["cantine"],
+			"mnemonic": "しょくどう → « Choc d’eau » (lieu où on mange bruyamment).",
+			"example": [
+			"学校の食堂 (がっこうのしょくどう - Cantine scolaire)",
+			"食堂で昼食 (しょくどうでちゅうしょく - Déjeuner à la cantine)"
+			]
+		},
+		{
+			"front": "知る",
+			"reading": "しる",
+			"class": "verbe godan transitif",
+			"meaning": ["savoir"],
+			"mnemonic": "しる → « Chez l’ours » (découvrir un secret).",
+			"example": [
+			"真相を知る (しんそうをしる - Connaître la vérité)",
+			"彼を知っている (かれをしっている - Le connaître)"
+			]
+		}
+	]
+}

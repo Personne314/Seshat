@@ -1,0 +1,230 @@
+{
+	"meta": {
+		"name": "Vocabulaire JLPT5 - 22",
+		"tags": [
+			"word", "jlpt5", "vocabulaire"
+		]
+	},
+	"cards": [
+		{
+			"front": "日曜日",
+			"reading": "にちようび",
+			"class": "nom",
+			"meaning": ["dimanche"],
+			"mnemonic": "Nichiyôbi → « Niche y'a bee » (repos dominical comme une abeille en pause).",
+			"example": [
+			"日曜日に散歩する (にちようびにさんぽする - Se promener le dimanche)",
+			"日曜日は休み (にちようびはやすみ - Le dimanche est un jour de repos)"
+			]
+		},
+		{
+			"front": "日本",
+			"reading": "にほん",
+			"class": "nom",
+			"meaning": ["Japon"],
+			"mnemonic": "Nihon → « Née honnête » (pays aux valeurs traditionnelles).",
+			"example": [
+			"日本文化 (にほんぶんか - Culture japonaise)",
+			"日本へ旅行する (にほんへりょこうする - Voyager au Japon)"
+			]
+		},
+		{
+			"front": "日本語",
+			"reading": "にほん・ご",
+			"class": "nom",
+			"meaning": ["la langue japonaise"],
+			"mnemonic": "Nihongo → « Née honnête gosse » (langue apprise dès l'enfance).",
+			"example": [
+			"日本語を話す (にほんごをはなす - Parler japonais)",
+			"日本語の授業 (にほんごのじゅぎょう - Cours de japonais)"
+			]
+		},
+		{
+			"front": "荷物",
+			"reading": "に・もつ",
+			"class": "nom",
+			"meaning": ["bagage", "valise"],
+			"mnemonic": "Nimotsu → « Ni mots » (bagage rempli de lettres/objets).",
+			"example": [
+			"荷物を預ける (にもつをあずける - Confier ses bagages)",
+			"重い荷物 (おもいにもつ - Bagage lourd)"
+			]
+		},
+		{
+			"front": "ニュース",
+			"reading": "ニュース",
+			"class": "nom",
+			"meaning": ["les infos", "les actualités"],
+			"mnemonic": "Nyûsu → Mot anglais « news » (même sens en français).",
+			"example": [
+			"ニュースを見る (ニュースをみる - Regarder les actualités)",
+			"重大ニュース (じゅうだいニュース - Actualité importante)"
+			]
+		},
+		{
+			"front": "庭",
+			"reading": "にわ",
+			"class": "nom",
+			"meaning": ["le jardin"],
+			"mnemonic": "Niwa → « Ni wagon » (espace vert sans train).",
+			"example": [
+			"庭で遊ぶ (にわであそぶ - Jouer dans le jardin)",
+			"美しい庭 (うつくしいにわ - Jardin magnifique)"
+			]
+		},
+		{
+			"front": "脱ぐ",
+			"reading": "ぬ・ぐ",
+			"class": "verbe godan transitif",
+			"meaning": ["enlever (vêtements)"],
+			"mnemonic": "Nugu → « Nuage » (vêtements qui disparaissent comme des nuages).",
+			"example": [
+			"靴を脱ぐ (くつをぬぐ - Enlever ses chaussures)",
+			"コートを脱ぐ (コートをぬぐ - Retirer son manteau)"
+			]
+		},
+		{
+			"front": "塗る",
+			"reading": "ぬ・る",
+			"class": "verbe godan transitif",
+			"meaning": ["peindre"],
+			"mnemonic": "Nuru → « Nue rue » (peindre une rue en couleur).",
+			"example": [
+			"壁を塗る (かべをぬる - Peindre un mur)",
+			"爪を塗る (つめをぬる - Vernir ses ongles)"
+			]
+		},
+		{
+			"front": "ぬるい",
+			"reading": "ぬるい",
+			"class": "adjectif en -i",
+			"meaning": ["tiède"],
+			"mnemonic": "Nurui → « Nul luit » (tiédeur peu efficace).",
+			"example": [
+			"ぬるいコーヒー (ぬるいコーヒー - Café tiède)",
+			"お湯がぬるい (おゆがぬるい - L'eau est tiède)"
+			]
+		},
+		{
+			"front": "ネクタイ",
+			"reading": "ネクタイ",
+			"class": "nom",
+			"meaning": ["cravate"],
+			"mnemonic": "Nekutai → Anglais « necktie » (même sens en français).",
+			"example": [
+			"ネクタイを締める (ネクタイをしめる - Mettre une cravate)",
+			"赤いネクタイ (あかいネクタイ - Cravate rouge)"
+			]
+		},
+		{
+			"front": "猫",
+			"reading": "ねこ",
+			"class": "nom",
+			"meaning": ["chat"],
+			"mnemonic": "Neko → « Né ko » (animal né ici).",
+			"example": [
+			"猫を飼う (ねこをかう - Avoir un chat)",
+			"黒い猫 (くろいねこ - Chat noir)"
+			]
+		},
+		{
+			"front": "寝る",
+			"reading": "ね・る",
+			"class": "verbe ichidan intransitif",
+			"meaning": ["aller se coucher", "dormir"],
+			"mnemonic": "Neru → « N'est lune » (dormir sous la lune).",
+			"example": [
+			"早く寝る (はやくねる - Se coucher tôt)",
+			"ソファで寝る (ソファでねる - Dormir sur le canapé)"
+			]
+		},
+		{
+			"front": "ノート",
+			"reading": "ノート",
+			"class": "nom",
+			"meaning": ["cahier", "carnet"],
+			"mnemonic": "Nôto → Anglais « note » (même usage en français).",
+			"example": [
+			"ノートに書く (ノートにかく - Écrire dans un cahier)",
+			"新しいノート (あたらしいノート - Nouveau carnet)"
+			]
+		},
+		{
+			"front": "上る",
+			"reading": "のぼ・る",
+			"class": "verbe godan intransitif",
+			"meaning": ["escalader", "grimper"],
+			"mnemonic": "Noboru → « No bounds » (dépasser ses limites).",
+			"example": [
+			"山に上る (やまにのぼる - Grimper une montagne)",
+			"階段を上る (かいだんをのぼる - Monter les escaliers)"
+			]
+		},
+		{
+			"front": "飲む",
+			"reading": "の・む",
+			"class": "verbe godan transitif",
+			"meaning": ["boire"],
+			"mnemonic": "Nomu → « Nom » (action de boire comme un nom commun).",
+			"example": [
+			"水を飲む (みずをのむ - Boire de l'eau)",
+			"コーヒーを飲む (コーヒーをのむ - Boire un café)"
+			]
+		},
+		{
+			"front": "飲み物",
+			"reading": "の・み・もの",
+			"class": "nom",
+			"meaning": ["boisson", "breuvage"],
+			"mnemonic": "Nomimono → « Nomme eau » (désignation des liquides).",
+			"example": [
+			"冷たい飲み物 (つめたいのみもの - Boisson fraîche)",
+			"飲み物を注文する (のみものをちゅうもんする - Commander une boisson)"
+			]
+		},
+		{
+			"front": "乗る",
+			"reading": "の・る",
+			"class": "verbe godan intransitif",
+			"meaning": ["monter", "embarquer"],
+			"mnemonic": "Noru → « Nord » (direction prise en montant à bord).",
+			"example": [
+			"電車に乗る (でんしゃにのる - Prendre le train)",
+			"自転車に乗る (じてんしゃにのる - Monter à vélo)"
+			]
+		},
+		{
+			"front": "歯",
+			"reading": "は",
+			"class": "nom",
+			"meaning": ["dent"],
+			"mnemonic": "Ha → « Ha ! » (cri lorsque une dent fait mal).",
+			"example": [
+			"歯を磨く (はをみがく - Se brosser les dents)",
+			"虫歯 (むしば - Carie dentaire)"
+			]
+		},
+		{
+			"front": "パーティー",
+			"reading": "パーティー",
+			"class": "nom",
+			"meaning": ["fête"],
+			"mnemonic": "Pâtî → Anglais « party » (même sens en français).",
+			"example": [
+			"誕生日パーティー (たんじょうびパーティー - Fête d'anniversaire)",
+			"パーティーを開く (パーティーをひらく - Organiser une fête)"
+			]
+		},
+		{
+			"front": "入る",
+			"reading": "はい・る",
+			"class": "verbe godan intransitif",
+			"meaning": ["entrer", "aller dans"],
+			"mnemonic": "Hairu → « Hail rude » (entrer dans une tempête).",
+			"example": [
+			"部屋に入る (へやにはいる - Entrer dans la pièce)",
+			"お風呂に入る (おふろにはいる - Entrer dans le bain)"
+			]
+		}
+	]
+}

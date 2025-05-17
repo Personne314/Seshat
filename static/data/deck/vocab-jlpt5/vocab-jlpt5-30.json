@@ -1,0 +1,230 @@
+{
+	"meta": {
+		"name": "Vocabulaire JLPT5 - 30",
+		"tags": [
+			"word", "jlpt5", "vocabulaire"
+		]
+	},
+	"cards": [
+		{
+			"front": "夕方",
+			"reading": "ゆう・がた",
+			"class": "nom",
+			"meaning": ["début de soirée"],
+			"mnemonic": "Yûgata → « You goût tard » (transition vers la nuit).",
+			"example": [
+			"夕方に散歩する (ゆうがたにさんぽする - Se promener en début de soirée)",
+			"夕方の空 (ゆうがたのそら - Ciel du crépuscule)"
+			]
+		},
+		{
+			"front": "郵便局",
+			"reading": "ゆう・びん・きょく",
+			"class": "nom",
+			"meaning": ["la poste"],
+			"mnemonic": "Yûbinkyoku → « You vainc cloche » (lieu d'envoi).",
+			"example": [
+			"郵便局に行く (ゆうびんきょくにいく - Aller à la poste)",
+			"手紙を郵便局から送る (てがみをゆうびんきょくからおくる - Envoyer une lettre depuis la poste)"
+			]
+		},
+		{
+			"front": "有名",
+			"reading": "ゆう・めい",
+			"class": "adjectif en -na",
+			"meaning": ["célèbre", "connu"],
+			"mnemonic": "Yûmei → « You mène » (personnalité influente).",
+			"example": [
+			"有名な俳優 (ゆうめいなはいゆう - Acteur célèbre)",
+			"有名な観光地 (ゆうめいなかんこうち - Site touristique connu)"
+			]
+		},
+		{
+			"front": "雪",
+			"reading": "ゆき",
+			"class": "nom",
+			"meaning": ["la neige"],
+			"mnemonic": "Yuki → « You qui » (blancheur hivernale).",
+			"example": [
+			"雪が降る (ゆきがふる - Neiger)",
+			"雪だるまを作る (ゆきだるまをつくる - Faire un bonhomme de neige)"
+			]
+		},
+		{
+			"front": "ゆっくり",
+			"reading": "ゆっくり",
+			"class": "adverbe",
+			"meaning": ["lentement", "sans se presser"],
+			"mnemonic": "Yukkuri → « You clique » (rythme détendu).",
+			"example": [
+			"ゆっくり話す (ゆっくりはなす - Parler lentement)",
+			"ゆっくり休む (ゆっくりやすむ - Se reposer tranquillement)"
+			]
+		},
+		{
+			"front": "洋服",
+			"reading": "よう・ふく",
+			"class": "nom",
+			"meaning": ["vêtements (style européen)"],
+			"mnemonic": "Yôfuku → « Yo, faux culte » (mode occidentale).",
+			"example": [
+			"洋服を買う (ようふくをかう - Acheter des vêtements)",
+			"新しい洋服 (あたらしいようふく - Nouveaux habits)"
+			]
+		},
+		{
+			"front": "よく",
+			"reading": "よく",
+			"class": "adverbe",
+			"meaning": ["souvent", "bien"],
+			"mnemonic": "Yoku → « Yoke » (fréquence ou qualité).",
+			"example": [
+			"よく勉強する (よくべんきょうする - Étudier souvent)",
+			"よく眠る (よくねむる - Bien dormir)"
+			]
+		},
+		{
+			"front": "横",
+			"reading": "よこ",
+			"class": "nom",
+			"meaning": ["horizontal", "côté"],
+			"mnemonic": "Yoko → « Yo, ko » (position latérale).",
+			"example": [
+			"横に並ぶ (よこにならぶ - S'aligner horizontalement)",
+			"机の横 (つくえのよこ - Côté du bureau)"
+			]
+		},
+		{
+			"front": "呼ぶ",
+			"reading": "よ・ぶ",
+			"class": "verbe godan transitif",
+			"meaning": ["appeler", "inviter"],
+			"mnemonic": "Yobu → « Y'a beau » (attirer l'attention).",
+			"example": [
+			"名前を呼ぶ (なまえをよぶ - Appeler par son nom)",
+			"パーティーに呼ぶ (パーティーによぶ - Inviter à une fête)"
+			]
+		},
+		{
+			"front": "読む",
+			"reading": "よ・む",
+			"class": "verbe godan transitif",
+			"meaning": ["lire"],
+			"mnemonic": "Yomu → « Yo, mue » (transformer des symboles en sens).",
+			"example": [
+			"新聞を読む (しんぶんをよむ - Lire le journal)",
+			"小説を読む (しょうせつをよむ - Lire un roman)"
+			]
+		},
+		{
+			"front": "夜",
+			"reading": "よる",
+			"class": "nom",
+			"meaning": ["la nuit"],
+			"mnemonic": "Yoru → « Y'a rue » (obscurité nocturne).",
+			"example": [
+			"夜に出かける (よるにでかける - Sortir la nuit)",
+			"夜の静けさ (よるのしずけさ - Calme nocturne)"
+			]
+		},
+		{
+			"front": "ラーメン",
+			"reading": "ラーメン",
+			"class": "nom",
+			"meaning": ["ramen"],
+			"mnemonic": "Râmen → Mot japonais emprunté (plat de nouilles).",
+			"example": [
+			"ラーメンを食べる (ラーメンをたべる - Manger des ramen)",
+			"醤油ラーメン (しょうゆラーメン - Ramen à la sauce soja)"
+			]
+		},
+		{
+			"front": "来月",
+			"reading": "らい・げつ",
+			"class": "nom",
+			"meaning": ["le mois prochain"],
+			"mnemonic": "Raigetsu → « Lai gâteau » (futur proche).",
+			"example": [
+			"来月の予定 (らいげつのよてい - Plan du mois prochain)",
+			"来月から始まる (らいげつからはじまる - Commencer le mois prochain)"
+			]
+		},
+		{
+			"front": "来週",
+			"reading": "らい・しゅう",
+			"class": "nom",
+			"meaning": ["la semaine prochaine"],
+			"mnemonic": "Raishû → « Lai chou » (cycle à venir).",
+			"example": [
+			"来週の会議 (らいしゅうのかいぎ - Réunion de la semaine prochaine)",
+			"来週旅行する (らいしゅうりょこうする - Voyager la semaine prochaine)"
+			]
+		},
+		{
+			"front": "来年",
+			"reading": "らい・ねん",
+			"class": "nom",
+			"meaning": ["l'an prochain"],
+			"mnemonic": "Rainen → « Laine année » (futur textile temporel).",
+			"example": [
+			"来年の目標 (らいねんのもくひょう - Objectif pour l'an prochain)",
+			"来年大学に入る (らいねんだいがくにはいる - Entrer à l'université l'an prochain)"
+			]
+		},
+		{
+			"front": "ラジオ",
+			"reading": "ラジオ",
+			"class": "nom",
+			"meaning": ["la radio"],
+			"mnemonic": "Rajio → Anglais « radio » (même sens).",
+			"example": [
+			"ラジオを聴く (ラジオをきく - Écouter la radio)",
+			"ラジオ番組 (ラジオばんぐみ - Programme radio)"
+			]
+		},
+		{
+			"front": "立派",
+			"reading": "りっぱ",
+			"class": "adjectif en -na",
+			"meaning": ["splendide", "respectable"],
+			"mnemonic": "Rippa → « Ripaille » (grandeur impressionnante).",
+			"example": [
+			"立派な建物 (りっぱなたてもの - Édifice splendide)",
+			"立派な人物 (りっぱなじんぶつ - Personne respectable)"
+			]
+		},
+		{
+			"front": "留学生",
+			"reading": "りゅう・がくせい",
+			"class": "nom",
+			"meaning": ["étudiants à l'étranger"],
+			"mnemonic": "Ryûgakusei → « Lion galaxie » (voyage académique).",
+			"example": [
+			"留学生と友達になる (りゅうがくせいとともだちになる - Se lier avec un étudiant étranger)",
+			"留学生活 (りゅうがくせいかつ - Vie d'étudiant à l'étranger)"
+			]
+		},
+		{
+			"front": "両親",
+			"reading": "りょうしん",
+			"class": "nom",
+			"meaning": ["les parents"],
+			"mnemonic": "Ryōshin → « Lion chien » (piliers familiaux).",
+			"example": [
+			"両親に電話する (りょうしんにでんわする - Appeler ses parents)",
+			"両親の家 (りょうしんのいえ - Maison des parents)"
+			]
+		},
+		{
+			"front": "料理",
+			"reading": "りょう・り",
+			"class": "verbe (suru)",
+			"meaning": ["cuisine", "cuisiner"],
+			"mnemonic": "Ryōri → « Rio lit » (art culinaire).",
+			"example": [
+			"日本料理を作る (にほんりょうりをつくる - Cuisiner un plat japonais)",
+			"料理が上手 (りょうりがじょうず - Être bon en cuisine)"
+			]
+		}
+	]
+}

@@ -1,0 +1,230 @@
+{
+	"meta": {
+		"name": "Vocabulaire JLPT5 - 14",
+		"tags": [
+			"word", "jlpt5", "vocabulaire"
+		]
+	},
+	"cards": [
+		{
+			"front": "白い",
+			"reading": "しろい",
+			"class": "adjectif en -i",
+			"meaning": ["blanc"],
+			"mnemonic": "しろい → « Shiroi » (même racine que « blanc » en français, couleur pure).",
+			"example": [
+			"白い雪 (しろいゆき - Neige blanche)",
+			"白いシャツ (しろいシャツ - Chemise blanche)"
+			]
+		},
+		{
+			"front": "新聞",
+			"reading": "しんぶん",
+			"class": "nom",
+			"meaning": ["journal"],
+			"mnemonic": "しんぶん → « Chien bon » (un bon chien qui rapporte le journal).",
+			"example": [
+			"新聞を読む (しんぶんをよむ - Lire le journal)",
+			"朝日新聞 (あさひしんぶん - Journal Asahi)"
+			]
+		},
+		{
+			"front": "水曜日",
+			"reading": "すいようび",
+			"class": "nom",
+			"meaning": ["mercredi"],
+			"mnemonic": "すいようび → « Eau » (水) + « jour » (曜日), associé à Mercure (eau en japonais).",
+			"example": [
+			"水曜日の予定 (すいようびのよてい - Planning du mercredi)",
+			"水曜日は休み (すいようびはやすみ - Fermé le mercredi)"
+			]
+		},
+		{
+			"front": "吸う",
+			"reading": "すう",
+			"class": "verbe godan transitif",
+			"meaning": ["fumer", "respirer"],
+			"mnemonic": "すう → « Souffler » (comme lorsqu’on fume ou inhale).",
+			"example": [
+			"タバコを吸う (タバコをすう - Fumer une cigarette)",
+			"空気を吸う (くうきをすう - Respirer)"
+			]
+		},
+		{
+			"front": "スカート",
+			"reading": "スカート",
+			"class": "nom",
+			"meaning": ["jupe"],
+			"mnemonic": "Mot emprunté à l’anglais « skirt ».",
+			"example": [
+			"長いスカート (ながいスカート - Jupe longue)",
+			"スカートをはく (スカートをはく - Porter une jupe)"
+			]
+		},
+		{
+			"front": "好き",
+			"reading": "すき",
+			"class": "adjectif en -na",
+			"meaning": ["aimé"],
+			"mnemonic": "すき → « Sucré » (quelque chose d’aussi doux que ce qu’on aime).",
+			"example": [
+			"猫が好き (ねこがすき - J’aime les chats)",
+			"好きな音楽 (すきなおんがく - Musique préférée)"
+			]
+		},
+		{
+			"front": "少ない",
+			"reading": "すくない",
+			"class": "adjectif en -i",
+			"meaning": ["peu"],
+			"mnemonic": "すくない → « Sucre n’aie » (n’aie pas trop de sucre).",
+			"example": [
+			"時間が少ない (じかんがすくない - Peu de temps)",
+			"少ないお金 (すくないおかね - Peu d’argent)"
+			]
+		},
+		{
+			"front": "すぐに",
+			"reading": "すぐに",
+			"class": "adverbe",
+			"meaning": ["immédiatement"],
+			"mnemonic": "すぐに → « Sue guêpe nid » (agir vite si un nid est proche).",
+			"example": [
+			"すぐに来て (すぐにきて - Viens tout de suite)",
+			"すぐに終わる (すぐにおわる - Finir rapidement)"
+			]
+		},
+		{
+			"front": "少し",
+			"reading": "すこし",
+			"class": "adverbe",
+			"meaning": ["un peu"],
+			"mnemonic": "すこし → « Sucre au chien » (juste un peu pour le chien).",
+			"example": [
+			"少し待って (すこしまって - Attends un peu)",
+			"少し疲れた (すこしつかれた - Un peu fatigué)"
+			]
+		},
+		{
+			"front": "寿司",
+			"reading": "すし",
+			"class": "nom",
+			"meaning": ["sushi"],
+			"mnemonic": "Mot japonais internationalisé, pas de mnémonique nécessaire.",
+			"example": [
+			"寿司を食べる (すしをたべる - Manger des sushis)",
+			"寿司屋 (すしや - Restaurant de sushis)"
+			]
+		},
+		{
+			"front": "涼しい",
+			"reading": "すずしい",
+			"class": "adjectif en -i",
+			"meaning": ["rafraîchissant"],
+			"mnemonic": "すずしい → « Sous le zéphyr » (brise fraîche).",
+			"example": [
+			"涼しい風 (すずしいかぜ - Vent frais)",
+			"涼しい朝 (すずしいあさ - Matin frais)"
+			]
+		},
+		{
+			"front": "ストーブ",
+			"reading": "ストーブ",
+			"class": "nom",
+			"meaning": ["radiateur"],
+			"mnemonic": "Mot emprunté à l’anglais « stove » (poêle).",
+			"example": [
+			"ストーブをつける (ストーブをつける - Allumer le radiateur)",
+			"石油ストーブ (せきゆストーブ - Poêle à pétrole)"
+			]
+		},
+		{
+			"front": "スプーン",
+			"reading": "スプーン",
+			"class": "nom",
+			"meaning": ["cuillère"],
+			"mnemonic": "Mot emprunté à l’anglais « spoon ».",
+			"example": [
+			"スプーンで食べる (スプーンでたべる - Manger avec une cuillère)",
+			"木のスプーン (きのスプーン - Cuillère en bois)"
+			]
+		},
+		{
+			"front": "スポーツ",
+			"reading": "スポーツ",
+			"class": "nom",
+			"meaning": ["sport"],
+			"mnemonic": "Mot emprunté à l’anglais « sports ».",
+			"example": [
+			"スポーツをする (スポーツをする - Faire du sport)",
+			"スポーツカー (スポーツカー - Voiture de sport)"
+			]
+		},
+		{
+			"front": "住む",
+			"reading": "すむ",
+			"class": "verbe godan intransitif",
+			"meaning": ["habiter"],
+			"mnemonic": "すむ → « Sur mur » (vivre dans une maison solide).",
+			"example": [
+			"東京に住む (とうきょうにすむ - Habiter à Tokyo)",
+			"アパートに住む (アパートにすむ - Vivre en appartement)"
+			]
+		},
+		{
+			"front": "スリッパ",
+			"reading": "スリッパ",
+			"class": "nom",
+			"meaning": ["chaussons"],
+			"mnemonic": "Mot emprunté à l’anglais « slippers ».",
+			"example": [
+			"スリッパを履く (スリッパをはく - Mettre des chaussons)",
+			"ホテルのスリッパ (ホテルのスリッパ - Chaussons d’hôtel)"
+			]
+		},
+		{
+			"front": "座る",
+			"reading": "すわる",
+			"class": "verbe godan intransitif",
+			"meaning": ["s’asseoir"],
+			"mnemonic": "すわる → « Sur le mur » (s’asseoir *sur* une surface).",
+			"example": [
+			"椅子に座る (いすにすわる - S’asseoir sur une chaise)",
+			"地面に座る (じめんにすわる - S’asseoir par terre)"
+			]
+		},
+		{
+			"front": "ズボン",
+			"reading": "ズボン",
+			"class": "nom",
+			"meaning": ["pantalon"],
+			"mnemonic": "Mot venant du français « jupon » (adapté en japonais pour « pantalon »).",
+			"example": [
+			"新しいズボン (あたらしいズボン - Nouveau pantalon)",
+			"ズボンをはく (ズボンをはく - Porter un pantalon)"
+			]
+		},
+		{
+			"front": "生徒",
+			"reading": "せいと",
+			"class": "nom",
+			"meaning": ["élève"],
+			"mnemonic": "せいと → « C’est tout » (les élèves terminent leurs devoirs).",
+			"example": [
+			"高校の生徒 (こうこうのせいと - Lycéen)",
+			"生徒会 (せいとかい - Conseil des élèves)"
+			]
+		},
+		{
+			"front": "生活",
+			"reading": "せいかつ",
+			"class": "nom (verbe en する)",
+			"meaning": ["vie quotidienne"],
+			"mnemonic": "せいかつ → « Sage cas » (une vie organisée et sage).",
+			"example": [
+			"生活が変わる (せいかつがかわる - Changer de mode de vie)",
+			"健康的な生活 (けんこうてきなせいかつ - Vie saine)"
+			]
+		}
+	]
+}

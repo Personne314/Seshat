@@ -1,0 +1,230 @@
+{
+	"meta": {
+		"name": "Vocabulaire JLPT5 - 23",
+		"tags": [
+			"word", "jlpt5", "vocabulaire"
+		]
+	},
+	"cards": [
+		{
+			"front": "走る",
+			"reading": "はし・る",
+			"class": "verbe godan intransitif",
+			"meaning": ["courir", "conduire"],
+			"mnemonic": "Hashiru → « Hâter sûr » (action rapide et contrôlée).",
+			"example": [
+			"道を走る (みちをはしる - Courir sur la route)",
+			"車を走らせる (くるまをはしらせる - Faire rouler une voiture)"
+			]
+		},
+		{
+			"front": "はがき",
+			"reading": "はがき",
+			"class": "nom",
+			"meaning": ["carte postale"],
+			"mnemonic": "Hagaki → « Ha ! Gâteau kiwi » (dessin coloré sur une carte).",
+			"example": [
+			"はがきを送る (はがきをおくる - Envoyer une carte postale)",
+			"旅行はがき (りょこうはがき - Carte postale de voyage)"
+			]
+		},
+		{
+			"front": "履く",
+			"reading": "は・く",
+			"class": "verbe godan transitif",
+			"meaning": ["mettre", "porter (vêtements du bas)"],
+			"mnemonic": "Haku → « Haut culte » (porter un pantalon élégant).",
+			"example": [
+			"ズボンを履く (ズボンをはく - Mettre un pantalon)",
+			"靴下を履く (くつしたをはく - Enfiler des chaussettes)"
+			]
+		},
+		{
+			"front": "箱",
+			"reading": "はこ",
+			"class": "nom",
+			"meaning": ["boîte", "casier", "coffre"],
+			"mnemonic": "Hako → « Haut coffre » (conteneur élevé).",
+			"example": [
+			"箱を開ける (はこをあける - Ouvrir une boîte)",
+			"木の箱 (きのはこ - Boîte en bois)"
+			]
+		},
+		{
+			"front": "箸",
+			"reading": "はし",
+			"class": "nom",
+			"meaning": ["baguette", "bâton"],
+			"mnemonic": "Hashi → « Hachis » (outil pour manger des morceaux).",
+			"example": [
+			"箸で食べる (はしでたべる - Manger avec des baguettes)",
+			"割り箸 (わりばし - Baguettes jetables)"
+			]
+		},
+		{
+			"front": "橋",
+			"reading": "はし",
+			"class": "nom",
+			"meaning": ["pont"],
+			"mnemonic": "Hashi → « Haut chichi » (structure enjambant un vide).",
+			"example": [
+			"橋を渡る (はしをわたる - Traverser un pont)",
+			"鉄の橋 (てつのはし - Pont en fer)"
+			]
+		},
+		{
+			"front": "始まる",
+			"reading": "はじ・まる",
+			"class": "verbe godan intransitif",
+			"meaning": ["commencer", "débuter"],
+			"mnemonic": "Hajimaru → « Hachez marrant » (début dynamique).",
+			"example": [
+			"授業が始まる (じゅぎょうがはじまる - Le cours commence)",
+			"コンサートが始まった (コンサートがはじまった - Le concert a débuté)"
+			]
+		},
+		{
+			"front": "初めて",
+			"reading": "はじ・めて",
+			"class": "adverbe",
+			"meaning": ["pour la première fois"],
+			"mnemonic": "Hajimete → « Hachez mets » (première expérience culinaire).",
+			"example": [
+			"初めての旅行 (はじめてのりょこう - Premier voyage)",
+			"初めて会った日 (はじめてあったひ - Jour de notre première rencontre)"
+			]
+		},
+		{
+			"front": "バス",
+			"reading": "バス",
+			"class": "nom",
+			"meaning": ["bus"],
+			"mnemonic": "Basu → Mot anglais « bus » (même sens en français).",
+			"example": [
+			"バスに乗る (バスにのる - Prendre le bus)",
+			"バスの時刻表 (バスのじこくひょう - Horaires de bus)"
+			]
+		},
+		{
+			"front": "バス停",
+			"reading": "バス・てい",
+			"class": "nom",
+			"meaning": ["arrêt de bus"],
+			"mnemonic": "Basutei → « Bas d’été » (attendre sous le soleil).",
+			"example": [
+			"バス停で待つ (バスていでまつ - Attendre à l'arrêt de bus)",
+			"最寄りのバス停 (もよりのバスてい - Arrêt de bus le plus proche)"
+			]
+		},
+		{
+			"front": "バター",
+			"reading": "バター",
+			"class": "nom",
+			"meaning": ["beurre"],
+			"mnemonic": "Batâ → Anglais « butter » (même sens en français).",
+			"example": [
+			"パンにバターを塗る (パンにバターをぬる - Beurrer du pain)",
+			"バターの塊 (バターのかたまり - Motte de beurre)"
+			]
+		},
+		{
+			"front": "働く",
+			"reading": "はたら・く",
+			"class": "verbe godan intransitif",
+			"meaning": ["travailler"],
+			"mnemonic": "Hataraku → « Hâte à la queue » (activité laborieuse).",
+			"example": [
+			"会社で働く (かいしゃではたらく - Travailler en entreprise)",
+			"夜遅くまで働く (よるおそくまではたらく - Travailler jusqu'à tard)"
+			]
+		},
+		{
+			"front": "鼻",
+			"reading": "はな",
+			"class": "nom",
+			"meaning": ["nez"],
+			"mnemonic": "Hana → « Hannibal » (stratège connu pour traverser les Alpes).",
+			"example": [
+			"鼻が高い (はながたかい - Être fier [litt. avoir le nez haut])",
+			"鼻をかむ (はなをかむ - Se moucher)"
+			]
+		},
+		{
+			"front": "花",
+			"reading": "はな",
+			"class": "nom",
+			"meaning": ["fleur"],
+			"mnemonic": "Hana → « Honneur à la nature » (beauté florale).",
+			"example": [
+			"花を咲かせる (はなをさかせる - Faire fleurir)",
+			"桜の花 (さくらのはな - Fleur de cerisier)"
+			]
+		},
+		{
+			"front": "話",
+			"reading": "はなし",
+			"class": "nom",
+			"meaning": ["conversation", "discours"],
+			"mnemonic": "Hanashi → « Hana chi » (énergie communicative).",
+			"example": [
+			"面白い話 (おもしろいはなし - Histoire intéressante)",
+			"長い話 (ながいはなし - Long discours)"
+			]
+		},
+		{
+			"front": "話す",
+			"reading": "はな・す",
+			"class": "verbe godan transitif",
+			"meaning": ["parler", "converser"],
+			"mnemonic": "Hanasu → « Hannae souk » (dialogue animé au marché).",
+			"example": [
+			"友達と話す (ともだちとはなす - Parler avec un ami)",
+			"日本語で話す (にほんごではなす - Parler en japonais)"
+			]
+		},
+		{
+			"front": "母",
+			"reading": "はは",
+			"class": "nom",
+			"meaning": ["mère"],
+			"mnemonic": "Haha → « Hélas, hélas » (inquiétude maternelle).",
+			"example": [
+			"母の日 (ははのひ - Fête des mères)",
+			"母の料理 (ははのりょうり - Cuisine de ma mère)"
+			]
+		},
+		{
+			"front": "早い",
+			"reading": "はや・い",
+			"class": "adjectif en -i",
+			"meaning": ["rapide", "tôt"],
+			"mnemonic": "Hayai → « Hâte à il » (action précipitée).",
+			"example": [
+			"早い返事 (はやいへんじ - Réponse rapide)",
+			"朝早い (あさはやい - Tôt le matin)"
+			]
+		},
+		{
+			"front": "春",
+			"reading": "はる",
+			"class": "nom",
+			"meaning": ["printemps"],
+			"mnemonic": "Haru → « Haro sur la nature » (réveil saisonnier).",
+			"example": [
+			"春の風 (はるのかぜ - Vent printanier)",
+			"春が来た (はるがきた - Le printemps est arrivé)"
+			]
+		},
+		{
+			"front": "張る",
+			"reading": "は・る",
+			"class": "verbe godan transitif",
+			"meaning": ["coller", "fixer"],
+			"mnemonic": "Hāru → « Hâle rude » (adhésif sous le soleil).",
+			"example": [
+			"ポスターを張る (ポスターをはる - Coller une affiche)",
+			"氷が張る (こおりがはる - La glace se forme)"
+			]
+		}
+	]
+}

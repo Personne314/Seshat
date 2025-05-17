@@ -1,0 +1,230 @@
+{
+	"meta": {
+		"name": "Vocabulaire JLPT5 - 16",
+		"tags": [
+			"word", "jlpt5", "vocabulaire"
+		]
+	},
+	"cards": [
+		{
+			"front": "それでは",
+			"reading": "それでは",
+			"class": "conjonction",
+			"meaning": ["eh bien...", "donc..."],
+			"mnemonic": "それでは → « Soleil levant, donc... » (transition vers une action).",
+			"example": [
+			"それでは始めましょう (それでははじめましょう - Alors commençons)",
+			"それでは失礼します (それではしつれいします - Eh bien, je m’en vais)"
+			]
+		},
+		{
+			"front": "大学",
+			"reading": "だいがく",
+			"class": "nom",
+			"meaning": ["université"],
+			"mnemonic": "だいがく → « Grand apprentissage » (dai = grand, gaku = étude).",
+			"example": [
+			"大学に通う (だいがくにかよう - Aller à l’université)",
+			"大学の図書館 (だいがくのとしょかん - Bibliothèque universitaire)"
+			]
+		},
+		{
+			"front": "大使館",
+			"reading": "たいしかん",
+			"class": "nom",
+			"meaning": ["ambassade"],
+			"mnemonic": "たいしかん → « Taishi » (ambassadeur) + « kan » (bâtiment).",
+			"example": [
+			"大使館に行く (たいしかんにいく - Aller à l’ambassade)",
+			"フランス大使館 (フランスたいしかん - Ambassade de France)"
+			]
+		},
+		{
+			"front": "大丈夫",
+			"reading": "だいじょうぶ",
+			"class": "adjectif en -na",
+			"meaning": ["sans problème"],
+			"mnemonic": "だいじょうぶ → « Déjà vu, but safe » (rassurant).",
+			"example": [
+			"大丈夫ですか？ (だいじょうぶですか？ - Ça va ?)",
+			"大丈夫、安心して (だいじょうぶ、あんしんして - Tout va bien, ne t’inquiète pas)"
+			]
+		},
+		{
+			"front": "大好き",
+			"reading": "だいすき",
+			"class": "adjectif en -na",
+			"meaning": ["adoré"],
+			"mnemonic": "だいすき → « Déçu qui ? » (personne, car c’est aimé).",
+			"example": [
+			"寿司が大好き (すしがだいすき - J’adore les sushis)",
+			"大好きな笑顔 (だいすきなえがお - Sourire adoré)"
+			]
+		},
+		{
+			"front": "大切",
+			"reading": "たいせつ",
+			"class": "adjectif en -na",
+			"meaning": ["important"],
+			"mnemonic": "たいせつ → « T’es sûr ? » (confirmation d’importance).",
+			"example": [
+			"大切な人 (たいせつなひと - Personne importante)",
+			"大切な宝物 (たいせつなたからもの - Trésor précieux)"
+			]
+		},
+		{
+			"front": "たいてい",
+			"reading": "たいてい",
+			"class": "adverbe",
+			"meaning": ["généralement"],
+			"mnemonic": "たいてい → « Tête à tête » (rencontre habituelle).",
+			"example": [
+			"たいてい忙しい (たいていいそがしい - Généralement occupé)",
+			"たいてい9時に着く (たいていくじにつく - Arriver vers 9h en général)"
+			]
+		},
+		{
+			"front": "台所",
+			"reading": "だいどころ",
+			"class": "nom",
+			"meaning": ["cuisine"],
+			"mnemonic": "だいどころ → « Dîner d’or » (lieu des repas).",
+			"example": [
+			"台所を掃除する (だいどころをそうじする - Nettoyer la cuisine)",
+			"台所の道具 (だいどころのどうぐ - Ustensiles de cuisine)"
+			]
+		},
+		{
+			"front": "大変",
+			"reading": "たいへん",
+			"class": "adjectif en -na / adverbe",
+			"meaning": ["très", "grave"],
+			"mnemonic": "たいへん → « T’es bien ? » (en situation difficile).",
+			"example": [
+			"大変な仕事 (たいへんなしごと - Travail épuisant)",
+			"大変だ！ (たいへんだ！ - C’est grave !)"
+			]
+		},
+		{
+			"front": "高い",
+			"reading": "たかい",
+			"class": "adjectif en -i",
+			"meaning": ["cher", "haut"],
+			"mnemonic": "たかい → « Taquet » (talon haut).",
+			"example": [
+			"高いバッグ (たかいバッグ - Sac cher)",
+			"高い山 (たかいやま - Montagne haute)"
+			]
+		},
+		{
+			"front": "だから",
+			"reading": "だから",
+			"class": "conjonction",
+			"meaning": ["donc"],
+			"mnemonic": "だから → « D’accord, là » (conclusion logique).",
+			"example": [
+			"勉強した、だから合格した (べんきょうした、だからごうかくした - J’ai étudié, donc j’ai réussi)",
+			"疲れた、だから寝る (つかれた、だからねる - Je suis fatigué, donc je dors)"
+			]
+		},
+		{
+			"front": "たくさん",
+			"reading": "たくさん",
+			"class": "adverbe",
+			"meaning": ["beaucoup"],
+			"mnemonic": "たくさん → « Tas de sacs » (grande quantité).",
+			"example": [
+			"たくさんの本 (たくさんのほん - Beaucoup de livres)",
+			"たくさん食べる (たくさんたべる - Manger beaucoup)"
+			]
+		},
+		{
+			"front": "タクシー",
+			"reading": "タクシー",
+			"class": "nom",
+			"meaning": ["taxi"],
+			"mnemonic": "Mot emprunté à l’anglais « taxi ».",
+			"example": [
+			"タクシーを呼ぶ (タクシーをよぶ - Appeler un taxi)",
+			"空港行きのタクシー (くうこういきのタクシー - Taxi pour l’aéroport)"
+			]
+		},
+		{
+			"front": "出す",
+			"reading": "だす",
+			"class": "verbe godan transitif",
+			"meaning": ["sortir"],
+			"mnemonic": "だす → « Dessous » (prendre quelque chose de dessous).",
+			"example": [
+			"ゴミを出す (ゴミをだす - Sortir les poubelles)",
+			"手を出す (てをだす - Tendre la main)"
+			]
+		},
+		{
+			"front": "正しい",
+			"reading": "ただしい",
+			"class": "adjectif en -i",
+			"meaning": ["correct"],
+			"mnemonic": "ただしい → « T’as d’accord si » (si c’est correct).",
+			"example": [
+			"正しい答え (ただしいこたえ - Bonne réponse)",
+			"正しい方法 (ただしいほうほう - Méthode correcte)"
+			]
+		},
+		{
+			"front": "立つ",
+			"reading": "たつ",
+			"class": "verbe godan intransitif",
+			"meaning": ["se lever"],
+			"mnemonic": "たつ → « T’es su » (tu es debout).",
+			"example": [
+			"椅子から立つ (いすからたつ - Se lever de la chaise)",
+			"山が立つ (やまがたつ - La montagne se dresse)"
+			]
+		},
+		{
+			"front": "建物",
+			"reading": "たてもの",
+			"class": "nom",
+			"meaning": ["bâtiment"],
+			"mnemonic": "たてもの → « Tâte mon no » (construire un bâtiment).",
+			"example": [
+			"高い建物 (たかいたてもの - Bâtiment haut)",
+			"古い建物 (ふるいたてもの - Vieux bâtiment)"
+			]
+		},
+		{
+			"front": "楽しい",
+			"reading": "たのしい",
+			"class": "adjectif en -i",
+			"meaning": ["amusant"],
+			"mnemonic": "たのしい → « T’es noshi » (tu es joyeux).",
+			"example": [
+			"楽しいパーティー (たのしいパーティー - Fête amusante)",
+			"楽しい旅行 (たのしいりょこう - Voyage agréable)"
+			]
+		},
+		{
+			"front": "頼む",
+			"reading": "たのむ",
+			"class": "verbe godan transitif",
+			"meaning": ["demander"],
+			"mnemonic": "たのむ → « T’as nommé » (demander par nom).",
+			"example": [
+			"助けを頼む (たすけをたのむ - Demander de l’aide)",
+			"ピザを頼む (ピザをたのむ - Commander une pizza)"
+			]
+		},
+		{
+			"front": "煙草",
+			"reading": "たばこ",
+			"class": "nom",
+			"meaning": ["cigarette"],
+			"mnemonic": "Mot venant du portugais « tabaco ».",
+			"example": [
+			"煙草を吸う (たばこをすう - Fumer une cigarette)",
+			"煙草をやめる (たばこをやめる - Arrêter de fumer)"
+			]
+		}
+	]
+}

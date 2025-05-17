@@ -39,7 +39,7 @@ def radicals_exercise():
 # This route generates a page showing the kanji of a deck.
 @app.route('/deck')
 def deck():
-	deck_data = "Vocabulaire JLPT5 - 1"
+	deck_data = "Vocabulaire JLPT5 - 18"
 	return render_template('deck.html', deck_data=deck_data)
 
 
