@@ -1,0 +1,230 @@
+{
+	"meta": {
+		"name": "Vocabulaire JLPT5 - 8",
+		"tags": [
+			"word", "jlpt5", "vocabulaire"
+		]
+	},
+	"cards": [
+		{
+			"front": "紙",
+			"reading": "かみ",
+			"class": "nom",
+			"meaning": ["papier"],
+			"mnemonic": "かみ → « Kami » (comme les esprits, le papier est essentiel pour écrire des messages importants).",
+			"example": [
+			"紙を切る (かみをきる - Couper du papier)",
+			"新聞紙 (しんぶんし - Journal papier)"
+			]
+		},
+		{
+			"front": "カメラ",
+			"reading": "カメラ",
+			"class": "nom",
+			"meaning": ["appareil photo"],
+			"mnemonic": "Mot emprunté à l’anglais « camera ».",
+			"example": [
+			"カメラで撮る (カメラでとる - Prendre en photo)",
+			"デジタルカメラ (デジタルカメラ - Appareil photo numérique)"
+			]
+		},
+		{
+			"front": "辛い",
+			"reading": "からい",
+			"class": "adjectif en -i",
+			"meaning": ["épicé"],
+			"mnemonic": "からい → « Kara » (vide en japonais, mais ici c’est le feu !).",
+			"example": [
+			"辛いカレー (からいカレー - Curry épicé)",
+			"辛すぎる (からすぎる - Trop épicé)"
+			]
+		},
+		{
+			"front": "体",
+			"reading": "からだ",
+			"class": "nom",
+			"meaning": ["corps"],
+			"mnemonic": "からだ → « Car à danser » (le corps bouge en rythme).",
+			"example": [
+			"体が疲れた (からだがつかれた - Le corps est fatigué)",
+			"体を鍛える (からだをきたえる - Entraîner son corps)"
+			]
+		},
+		{
+			"front": "借りる",
+			"reading": "かりる",
+			"class": "verbe ichidan transitif",
+			"meaning": ["emprunter"],
+			"mnemonic": "かりる → « Car il faut » (parfois emprunter est nécessaire).",
+			"example": [
+			"DVDを借りる (DVDをかりる - Emprunter un DVD)",
+			"車を借りる (くるまをかりる - Louer une voiture)"
+			]
+		},
+		{
+			"front": "軽い",
+			"reading": "かるい",
+			"class": "adjectif en -i",
+			"meaning": ["léger"],
+			"mnemonic": "かるい → « Carouge » (un oiseau léger qui vole).",
+			"example": [
+			"軽い荷物 (かるいにもつ - Bagage léger)",
+			"軽い食事 (かるいしょくじ - Repas léger)"
+			]
+		},
+		{
+			"front": "カレンダー",
+			"reading": "カレンダー",
+			"class": "nom",
+			"meaning": ["calendrier"],
+			"mnemonic": "Mot emprunté à l’anglais « calendar ».",
+			"example": [
+			"カレンダーを見る (カレンダーをみる - Consulter un calendrier)",
+			"壁掛けカレンダー (かべかけカレンダー - Calendrier mural)"
+			]
+		},
+		{
+			"front": "川",
+			"reading": "かわ",
+			"class": "nom",
+			"meaning": ["rivière"],
+			"mnemonic": "かわ → « Kawaii » (une rivière peut être mignonne).",
+			"example": [
+			"川の流れ (かわのながれ - Courant de la rivière)",
+			"川を渡る (かわをわたる - Traverser la rivière)"
+			]
+		},
+		{
+			"front": "かわいい",
+			"reading": "かわいい",
+			"class": "adjectif en -i",
+			"meaning": ["mignon"],
+			"mnemonic": "かわいい → « Kawaii » (connu internationalement pour désigner ce qui est adorable).",
+			"example": [
+			"かわいい犬 (かわいいいぬ - Chien mignon)",
+			"かわいいデザイン (かわいいデザイン - Design mignon)"
+			]
+		},
+		{
+			"front": "考える",
+			"reading": "かんがえる",
+			"class": "verbe ichidan transitif",
+			"meaning": ["réfléchir"],
+			"mnemonic": "かんがえる → « Kangourou » (il saute d’idée en idée).",
+			"example": [
+			"問題を考える (もんだいをかんがえる - Réfléchir à un problème)",
+			"将来を考える (しょうらいをかんがえる - Penser à l’avenir)"
+			]
+		},
+		{
+			"front": "木",
+			"reading": "き",
+			"class": "nom",
+			"meaning": ["arbre"],
+			"mnemonic": "き → « Key » (les arbres sont la clé de la nature).",
+			"example": [
+			"木の葉 (きのは - Feuille d’arbre)",
+			"大きな木 (おおきなき - Grand arbre)"
+			]
+		},
+		{
+			"front": "黄色い",
+			"reading": "きいろい",
+			"class": "adjectif en -i",
+			"meaning": ["jaune"],
+			"mnemonic": "きいろい → « Kiwi jaune » (la couleur du fruit).",
+			"example": [
+			"黄色い花 (きいろいはな - Fleur jaune)",
+			"黄色い信号 (きいろいしんごう - Feu jaune)"
+			]
+		},
+		{
+			"front": "消える",
+			"reading": "きえる",
+			"class": "verbe ichidan intransitif",
+			"meaning": ["disparaître"],
+			"mnemonic": "きえる → « Qui erre » (quelque chose qui s’évanouit).",
+			"example": [
+			"光が消える (ひかりがきえる - La lumière s’éteint)",
+			"足跡が消える (あしあとがきえる - Les traces disparaissent)"
+			]
+		},
+		{
+			"front": "聞く",
+			"reading": "きく",
+			"class": "verbe godan transitif",
+			"meaning": ["écouter"],
+			"mnemonic": "きく → « Quick » (écouter rapidement une information).",
+			"example": [
+			"音楽を聞く (おんがくをきく - Écouter de la musique)",
+			"話を聞く (はなしをきく - Écouter une histoire)"
+			]
+		},
+		{
+			"front": "北",
+			"reading": "きた",
+			"class": "nom",
+			"meaning": ["nord"],
+			"mnemonic": "きた → « Kit » (un kit de survie pour le froid du nord).",
+			"example": [
+			"北の方角 (きたのほうがく - Direction nord)",
+			"北の地域 (きたのちいき - Région nordique)"
+			]
+		},
+		{
+			"front": "ギター",
+			"reading": "ギター",
+			"class": "nom",
+			"meaning": ["guitare"],
+			"mnemonic": "Mot emprunté à l’anglais « guitar ».",
+			"example": [
+			"ギターを弾く (ギターをひく - Jouer de la guitare)",
+			"エレキギター (エレキギター - Guitare électrique)"
+			]
+		},
+		{
+			"front": "汚い",
+			"reading": "きたない",
+			"class": "adjectif en -i",
+			"meaning": ["sale"],
+			"mnemonic": "きたない → « Kitten » (un chaton qui a fait des bêtises et sali la maison).",
+			"example": [
+			"汚い手 (きたないて - Mains sales)",
+			"汚い言葉 (きたないことば - Langage grossier)"
+			]
+		},
+		{
+			"front": "喫茶店",
+			"reading": "きっさてん",
+			"class": "nom",
+			"meaning": ["salon de thé"],
+			"mnemonic": "きっさてん → « Kiss a thé » (un lieu pour savourer le thé).",
+			"example": [
+			"喫茶店でコーヒー (きっさてんでコーヒー - Café dans un salon de thé)",
+			"昔ながらの喫茶店 (むかしながらのきっさてん - Salon de thé traditionnel)"
+			]
+		},
+		{
+			"front": "切手",
+			"reading": "きって",
+			"class": "nom",
+			"meaning": ["timbre"],
+			"mnemonic": "きって → « Kitte » (prononciation proche de « ticket » pour le courrier).",
+			"example": [
+			"切手を貼る (きってをはる - Coller un timbre)",
+			"記念切手 (きねんきって - Timbre commémoratif)"
+			]
+		},
+		{
+			"front": "切符",
+			"reading": "きっぷ",
+			"class": "nom",
+			"meaning": ["ticket"],
+			"mnemonic": "きっぷ → « Keep » (conservez votre ticket).",
+			"example": [
+			"切符を買う (きっぷをかう - Acheter un billet)",
+			"電車の切符 (でんしゃのきっぷ - Ticket de train)"
+			]
+		}
+	]
+}

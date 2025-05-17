@@ -1,0 +1,230 @@
+{
+	"meta": {
+		"name": "Vocabulaire JLPT5 - 3",
+		"tags": [
+			"word", "jlpt5", "vocabulaire"
+		]
+	},
+	"cards": [
+		{
+			"front": "家",
+			"reading": "いえ",
+			"class": "nom",
+			"meaning": ["maison"],
+			"mnemonic": "いえ → « Yeah ! » (cri de joie en rentrant chez soi).",
+			"example": [
+			"家に帰る (いえにかえる - Rentrer à la maison)",
+			"大きな家 (おおきないえ - Grande maison)"
+			]
+		},
+		{
+			"front": "行く",
+			"reading": "いく",
+			"class": "verbe godan intransitif",
+			"meaning": ["aller"],
+			"mnemonic": "いく → « Ici, coup » (on quitte cet endroit).",
+			"example": [
+			"学校へ行く (がっこうへいく - Aller à l’école)",
+			"駅に行く (えきにいく - Aller à la gare)"
+			]
+		},
+		{
+			"front": "いくつ",
+			"reading": "いくつ",
+			"class": "pronom",
+			"meaning": ["combien de", "quel âge"],
+			"mnemonic": "いくつ → « Qui c’est ? » (question pour compter).",
+			"example": [
+			"いくつありますか？ (いくつありますか？ - Combien y en a-t-il ?)",
+			"おいくつですか？ (おいくつですか？ - Quel âge avez-vous ?)"
+			]
+		},
+		{
+			"front": "いくら",
+			"reading": "いくら",
+			"class": "pronom",
+			"meaning": ["combien (prix)"],
+			"mnemonic": "いくら → « Ikura » (caviar, un produit cher).",
+			"example": [
+			"いくらですか？ (いくらですか？ - C’est combien ?)",
+			"いくら払う？ (いくらはらう？ - Combien je dois payer ?)"
+			]
+		},
+		{
+			"front": "池",
+			"reading": "いけ",
+			"class": "nom",
+			"meaning": ["étang"],
+			"mnemonic": "いけ → « Y ké » (pourquoi pas un étang ici ?).",
+			"example": [
+			"池の魚 (いけのさかな - Poissons de l’étang)",
+			"池を囲む (いけをかこむ - Entourer l’étang)"
+			]
+		},
+		{
+			"front": "医者",
+			"reading": "いしゃ",
+			"class": "nom",
+			"meaning": ["docteur"],
+			"mnemonic": "いしゃ → « I chat » (un vétérinaire qui soigne les chats).",
+			"example": [
+			"医者に診てもらう (いしゃにみてもらう - Consulter un médecin)",
+			"歯医者 (はいしゃ - Dentiste)"
+			]
+		},
+		{
+			"front": "椅子",
+			"reading": "いす",
+			"class": "nom",
+			"meaning": ["chaise"],
+			"mnemonic": "いす → « Issu » (d’un arbre, car les chaises sont en bois).",
+			"example": [
+			"椅子に座る (いすにすわる - S’asseoir sur une chaise)",
+			"折りたたみ椅子 (おりたたみいす - Chaise pliante)"
+			]
+		},
+		{
+			"front": "忙しい",
+			"reading": "いそがしい",
+			"class": "adjectif en -i",
+			"meaning": ["occupé"],
+			"mnemonic": "いそがしい → « I’s so busy » (je suis trop occupé).",
+			"example": [
+			"忙しい一日 (いそがしいいちにち - Journée chargée)",
+			"仕事が忙しい (しごとがいそがしい - Le travail est intense)"
+			]
+		},
+		{
+			"front": "痛い",
+			"reading": "いたい",
+			"class": "adjectif en -i",
+			"meaning": ["douloureux"],
+			"mnemonic": "いたい → « Aïe ! » (onomatopée de la douleur).",
+			"example": [
+			"頭が痛い (あたまがいたい - Mal de tête)",
+			"痛い注射 (いたいちゅうしゃ - Piqûre douloureuse)"
+			]
+		},
+		{
+			"front": "一度",
+			"reading": "いちど",
+			"class": "nom",
+			"meaning": ["une fois", "occasion"],
+			"mnemonic": "いちど → « Itchido » (une marque faite une fois).",
+			"example": [
+			"一度試す (いちどためす - Essayer une fois)",
+			"一度だけ (いちどだけ - Une seule fois)"
+			]
+		},
+		{
+			"front": "一日",
+			"reading": "いちにち",
+			"class": "nom",
+			"meaning": ["un jour", "toute la journée"],
+			"mnemonic": "いちにち → « Un jour » en un seul mot (ichi + nichi).",
+			"example": [
+			"一日中働く (いちにちじゅうはたらく - Travailler toute la journée)",
+			"一日旅行 (いちにちりょこう - Excursion d’un jour)"
+			]
+		},
+		{
+			"front": "一番",
+			"reading": "いちばん",
+			"class": "nom / adverbe",
+			"meaning": ["le premier", "le meilleur"],
+			"mnemonic": "いちばん → « Ichiban » (marque de bouillon, le numéro 1).",
+			"example": [
+			"一番好き (いちばんすき - Préféré)",
+			"一番上 (いちばんうえ - Tout en haut)"
+			]
+		},
+		{
+			"front": "いつ",
+			"reading": "いつ",
+			"class": "pronom",
+			"meaning": ["quand ?"],
+			"mnemonic": "いつ → « It’s » (quand est-ce que c’est ?).",
+			"example": [
+			"いつ来ますか？ (いつきますか？ - Quand viendrez-vous ?)",
+			"いつ始める？ (いつはじめる？ - Quand on commence ?)"
+			]
+		},
+		{
+			"front": "一緒に",
+			"reading": "いっしょに",
+			"class": "adverbe",
+			"meaning": ["ensemble"],
+			"mnemonic": "いっしょに → « Ichigo » (partager des fraises ensemble).",
+			"example": [
+			"一緒に食べる (いっしょにたべる - Manger ensemble)",
+			"一緒に行こう (いっしょにいこう - Allons-y ensemble)"
+			]
+		},
+		{
+			"front": "いつも",
+			"reading": "いつも",
+			"class": "adverbe",
+			"meaning": ["toujours"],
+			"mnemonic": "いつも → « It’s mo[ment] » (à chaque moment).",
+			"example": [
+			"いつもありがとう (いつもありがとう - Merci toujours)",
+			"いつも同じ (いつもおなじ - Toujours pareil)"
+			]
+		},
+		{
+			"front": "今",
+			"reading": "いま",
+			"class": "nom",
+			"meaning": ["maintenant"],
+			"mnemonic": "いま → « I’m a... » (maintenant, je suis...).",
+			"example": [
+			"今何時？ (いまなんじ？ - Quelle heure est-il ?)",
+			"今すぐ (いますぐ - Tout de suite)"
+			]
+		},
+		{
+			"front": "いる",
+			"reading": "いる",
+			"class": "verbe ichidan intransitif",
+			"meaning": ["être (animé)"],
+			"mnemonic": "いる → « Il luit » (présence animée comme une lumière).",
+			"example": [
+			"猫がいる (ねこがいる - Il y a un chat)",
+			"友達がいる (ともだちがいる - Avoir un ami)"
+			]
+		},
+		{
+			"front": "意味",
+			"reading": "いみ",
+			"class": "nom (verbe en する)",
+			"meaning": ["signification"],
+			"mnemonic": "いみ → « Image » (une image porte un sens).",
+			"example": [
+			"意味を調べる (いみをしらべる - Chercher la signification)",
+			"意味がない (いみがない - Ça ne veut rien dire)"
+			]
+		},
+		{
+			"front": "妹",
+			"reading": "いもうと",
+			"class": "nom",
+			"meaning": ["ma petite sœur"],
+			"mnemonic": "いもうと → « I move to » (ma sœur qui me suit partout).",
+			"example": [
+			"妹が生まれた (いもうとがうまれた - Ma sœur est née)",
+			"妹の誕生日 (いもうとのたんじょうび - Anniversaire de ma sœur)"
+			]
+		},
+		{
+			"front": "入口",
+			"reading": "いりぐち",
+			"class": "nom",
+			"meaning": ["entrée"],
+			"mnemonic": "いりぐち → « Iri goût chi » (on entre là où ça sent bon).",
+			"example": [
+			"入口はこちら (いりぐちはこちら - L’entrée est par ici)",
+			"地下鉄の入口 (ちかてつのいりぐち - Entrée du métro)"
+			]
+		}
+	]
+}

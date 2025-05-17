@@ -1,0 +1,230 @@
+{
+	"meta": {
+		"name": "Vocabulaire JLPT5 - 5",
+		"tags": [
+			"word", "jlpt5", "vocabulaire"
+		]
+	},
+	"cards": [
+		{
+			"front": "駅",
+			"reading": "えき",
+			"class": "nom",
+			"meaning": ["gare"],
+			"mnemonic": "えき → « EC » (comme EuroCity, les trains internationaux).",
+			"example": [
+			"駅に行く (えきにいく - Aller à la gare)",
+			"駅の改札 (えきのかいさつ - Portillon de la gare)"
+			]
+		},
+		{
+			"front": "選ぶ",
+			"reading": "えらぶ",
+			"class": "verbe godan transitif",
+			"meaning": ["choisir"],
+			"mnemonic": "えらぶ → « Héro but » (un héros doit choisir son objectif).",
+			"example": [
+			"色を選ぶ (いろをえらぶ - Choisir une couleur)",
+			"候補者を選ぶ (こうほしゃをえらぶ - Choisir un candidat)"
+			]
+		},
+		{
+			"front": "エレベーター",
+			"reading": "エレベーター",
+			"class": "nom",
+			"meaning": ["ascenseur"],
+			"mnemonic": "Mot emprunté à l’anglais « elevator ».",
+			"example": [
+			"エレベーターに乗る (エレベーターにのる - Prendre l’ascenseur)",
+			"エレベーターが故障 (エレベーターがこしょう - Ascenseur en panne)"
+			]
+		},
+		{
+			"front": "鉛筆",
+			"reading": "えんぴつ",
+			"class": "nom",
+			"meaning": ["crayon"],
+			"mnemonic": "えんぴつ → « Encre précise » (un crayon pour écrire finement).",
+			"example": [
+			"鉛筆で書く (えんぴつでかく - Écrire au crayon)",
+			"赤い鉛筆 (あかいえんぴつ - Crayon rouge)"
+			]
+		},
+		{
+			"front": "おいしい",
+			"reading": "おいしい",
+			"class": "adjectif en -i",
+			"meaning": ["délicieux"],
+			"mnemonic": "おいしい → « Oh ! Si bon ! » (exclamation face à un plat).",
+			"example": [
+			"おいしい料理 (おいしいりょうり - Plat délicieux)",
+			"おいしいケーキ (おいしいケーキ - Gâteau savoureux)"
+			]
+		},
+		{
+			"front": "多い",
+			"reading": "おおい",
+			"class": "adjectif en -i",
+			"meaning": ["nombreux"],
+			"mnemonic": "おおい → « Oh ! Il y en a ! » (en voyant une quantité).",
+			"example": [
+			"人が多い (ひとがおおい - Beaucoup de monde)",
+			"多い選択肢 (おおいせんたくし - Nombreuses options)"
+			]
+		},
+		{
+			"front": "大きい",
+			"reading": "おおきい",
+			"class": "adjectif en -i",
+			"meaning": ["grand"],
+			"mnemonic": "おおきい → « Oh ! Qui est-ce ? » (une personne imposante).",
+			"example": [
+			"大きい家 (おおきいいえ - Grande maison)",
+			"大きい声 (おおきいこえ - Voix forte)"
+			]
+		},
+		{
+			"front": "大勢",
+			"reading": "おおぜい",
+			"class": "nom",
+			"meaning": ["foule"],
+			"mnemonic": "おおぜい → « Oh ! Les gens ! » (en voyant une foule).",
+			"example": [
+			"大勢の観客 (おおぜいのかんきゃく - Public nombreux)",
+			"大勢で行く (おおぜいでいく - Y aller en groupe)"
+			]
+		},
+		{
+			"front": "お菓子",
+			"reading": "おかし",
+			"class": "nom",
+			"meaning": ["bonbons"],
+			"mnemonic": "おかし → « Au cas où j’ai faim » (des snacks pour plus tard).",
+			"example": [
+			"お菓子を買う (おかしをかう - Acheter des bonbons)",
+			"甘いお菓子 (あまいおかし - Sucreries)"
+			]
+		},
+		{
+			"front": "お金",
+			"reading": "おかね",
+			"class": "nom",
+			"meaning": ["argent"],
+			"mnemonic": "おかね → « Au cash » (l’argent liquide).",
+			"example": [
+			"お金を払う (おかねをはらう - Payer de l’argent)",
+			"お金がない (おかねがない - Pas d’argent)"
+			]
+		},
+		{
+			"front": "置く",
+			"reading": "おく",
+			"class": "verbe godan transitif",
+			"meaning": ["poser"],
+			"mnemonic": "おく → « Où qu’on le mette ? » (réflexion avant de poser).",
+			"example": [
+			"机に置く (つくえにおく - Poser sur le bureau)",
+			"鍵を置く (かぎをおく - Laisser les clés)"
+			]
+		},
+		{
+			"front": "起きる",
+			"reading": "おきる",
+			"class": "verbe ichidan intransitif",
+			"meaning": ["se lever"],
+			"mnemonic": "おきる → « Au lit, on se lève » (action matinale).",
+			"example": [
+			"朝早く起きる (あさはやくおきる - Se lever tôt)",
+			"ベッドから起きる (ベッドからおきる - Sortir du lit)"
+			]
+		},
+		{
+			"front": "送る",
+			"reading": "おくる",
+			"class": "verbe godan transitif",
+			"meaning": ["envoyer"],
+			"mnemonic": "おくる → « Envoi coursier » (livraison rapide).",
+			"example": [
+			"手紙を送る (てがみをおくる - Envoyer une lettre)",
+			"メールを送る (メールをおくる - Envoyer un email)"
+			]
+		},
+		{
+			"front": "教える",
+			"reading": "おしえる",
+			"class": "verbe ichidan transitif",
+			"meaning": ["enseigner"],
+			"mnemonic": "おしえる → « Oh ! Si heureux » (joie d’apprendre).",
+			"example": [
+			"数学を教える (すうがくをおしえる - Enseigner les maths)",
+			"道を教える (みちをおしえる - Indiquer le chemin)"
+			]
+		},
+		{
+			"front": "押す",
+			"reading": "おす",
+			"class": "verbe godan transitif",
+			"meaning": ["pousser"],
+			"mnemonic": "おす → « Oh ! Souffle » (pousser avec force).",
+			"example": [
+			"ボタンを押す (ボタンをおす - Appuyer sur un bouton)",
+			"ドアを押す (ドアをおす - Pousser une porte)"
+			]
+		},
+		{
+			"front": "遅い",
+			"reading": "おそい",
+			"class": "adjectif en -i",
+			"meaning": ["lent", "tard"],
+			"mnemonic": "おそい → « Oh ! Soir » (il est tard le soir).",
+			"example": [
+			"遅い時間 (おそいじかん - Heure tardive)",
+			"歩くのが遅い (あるくのがおそい - Marcher lentement)"
+			]
+		},
+		{
+			"front": "お茶",
+			"reading": "おちゃ",
+			"class": "nom",
+			"meaning": ["thé"],
+			"mnemonic": "おちゃ → « Oh ! Cha- » (comme « cha » dans « matcha »).",
+			"example": [
+			"お茶を飲む (おちゃをのむ - Boire du thé)",
+			"緑茶 (りょくちゃ - Thé vert)"
+			]
+		},
+		{
+			"front": "お手洗い",
+			"reading": "おてあらい",
+			"class": "nom",
+			"meaning": ["toilettes"],
+			"mnemonic": "おてあらい → « Oh ! Te lave » (se laver les mains).",
+			"example": [
+			"お手洗いに行く (おてあらいにいく - Aller aux toilettes)",
+			"お手洗いの場所 (おてあらいのばしょ - Emplacement des toilettes)"
+			]
+		},
+		{
+			"front": "男",
+			"reading": "おとこ",
+			"class": "nom",
+			"meaning": ["homme"],
+			"mnemonic": "おとこ → « Homme costaud » (image d’un homme fort).",
+			"example": [
+			"男の友達 (おとこのともだち - Ami masculin)",
+			"男の声 (おとこのこえ - Voix d’homme)"
+			]
+		},
+		{
+			"front": "男の子",
+			"reading": "おとこのこ",
+			"class": "nom",
+			"meaning": ["garçon"],
+			"mnemonic": "おとこのこ → « Homme petit » (un jeune homme).",
+			"example": [
+			"男の子が遊ぶ (おとこのこがあそぶ - Un garçon joue)",
+			"かわいい男の子 (かわいいおとこのこ - Joli garçon)"
+			]
+		}
+	]
+}

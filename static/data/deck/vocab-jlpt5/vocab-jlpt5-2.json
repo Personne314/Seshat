@@ -1,0 +1,230 @@
+{
+	"meta": {
+		"name": "Vocabulaire JLPT5 - 2",
+		"tags": [
+			"word", "jlpt5", "vocabulaire"
+		]
+	},
+	"cards": [
+		{
+			"front": "あちら",
+			"reading": "あちら",
+			"class": "nom",
+			"meaning": ["par là-bas (distant)"],
+			"mnemonic": "あちら → « À chili » (pays lointain comme le Chili).",
+			"example": [
+			"あちらの建物 (あちらのたてもの - Le bâtiment par là-bas)",
+			"あちらへ行く (あちらへいく - Aller par là-bas)"
+			]
+		},
+		{
+			"front": "暑い",
+			"reading": "あつい",
+			"class": "adjectif en -i",
+			"meaning": ["chaud (trop chaud)"],
+			"mnemonic": "あつい → « À chaud » (comme une journée étouffante).",
+			"example": [
+			"暑い夏 (あついなつ - Été chaud)",
+			"部屋が暑い (へやがあつい - La pièce est chaude)"
+			]
+		},
+		{
+			"front": "厚い",
+			"reading": "あつい",
+			"class": "adjectif en -i",
+			"meaning": ["épais", "lourd", "profond"],
+			"mnemonic": "あつい → « À tsuitsui » (imaginer un livre très épais).",
+			"example": [
+			"厚い本 (あついほん - Livre épais)",
+			"厚い友情 (あついゆうじょう - Amitié profonde)"
+			]
+		},
+		{
+			"front": "あと",
+			"reading": "あと",
+			"class": "nom",
+			"meaning": ["après"],
+			"mnemonic": "あと → « À toi » (c’est ton tour après moi).",
+			"example": [
+			"あとで食べる (あとでたべる - Manger après)",
+			"あと5分 (あとごふん - Encore 5 minutes)"
+			]
+		},
+		{
+			"front": "兄",
+			"reading": "あに",
+			"class": "nom",
+			"meaning": ["mon grand frère"],
+			"mnemonic": "あに → « Ah, ni » (le ni de « nînos » en grec, symbole de fraternité).",
+			"example": [
+			"兄が来る (あにがくる - Mon frère vient)",
+			"兄の車 (あにのくるま - La voiture de mon frère)"
+			]
+		},
+		{
+			"front": "姉",
+			"reading": "あね",
+			"class": "nom",
+			"meaning": ["ma grande sœur"],
+			"mnemonic": "あね → « À née » (elle est née avant toi).",
+			"example": [
+			"姉と遊ぶ (あねとあそぶ - Jouer avec ma sœur)",
+			"姉の部屋 (あねのへや - La chambre de ma sœur)"
+			]
+		},
+		{
+			"front": "あのー",
+			"reading": "あのー",
+			"class": "interjection",
+			"meaning": ["hum...", "eh bien..."],
+			"mnemonic": "あのー → « Ah non... » (hésitation avant de dire non).",
+			"example": [
+			"あのー、どこですか？ (あのー、どこですか？ - Euh... c’est où ?)",
+			"あのー、ちょっと (あのー、ちょっと - Hum... un moment)"
+			]
+		},
+		{
+			"front": "アパート",
+			"reading": "アパート",
+			"class": "nom",
+			"meaning": ["appartement"],
+			"mnemonic": "アパート → Mot japonais venant de l’anglais « apartment ».",
+			"example": [
+			"アパートを借りる (アパートをかりる - Louer un appartement)",
+			"新しいアパート (あたらしいアパート - Nouvel appartement)"
+			]
+		},
+		{
+			"front": "浴びる",
+			"reading": "あびる",
+			"class": "verbe ichidan transitif",
+			"meaning": ["prendre (douche / bain de soleil)"],
+			"mnemonic": "あびる → « À billes » (imaginer des gouttes d’eau qui tombent comme des billes).",
+			"example": [
+			"シャワーを浴びる (シャワーをあびる - Prendre une douche)",
+			"日光を浴びる (にっこうをあびる - Prendre un bain de soleil)"
+			]
+		},
+		{
+			"front": "危ない",
+			"reading": "あぶない",
+			"class": "adjectif en -i",
+			"meaning": ["dangereux", "risqué"],
+			"mnemonic": "あぶない → « À bougnoule » (terme péjoratif à éviter, mais phonétiquement proche pour retenir le danger).",
+			"example": [
+			"危ない道 (あぶないみち - Chemin dangereux)",
+			"危ない橋を渡る (あぶないはしをわたる - Prendre un risque)"
+			]
+		},
+		{
+			"front": "甘い",
+			"reading": "あまい",
+			"class": "adjectif en -i",
+			"meaning": ["sucré", "doux (goût)"],
+			"mnemonic": "あまい → « À miel » (le miel est sucré).",
+			"example": [
+			"甘いケーキ (あまいケーキ - Gâteau sucré)",
+			"甘い言葉 (あまいことば - Paroles douces)"
+			]
+		},
+		{
+			"front": "あまり",
+			"reading": "あまり",
+			"class": "adverbe",
+			"meaning": ["pas très"],
+			"mnemonic": "あまり → « À mal rire » (quelque chose de pas très drôle).",
+			"example": [
+			"あまり好きじゃない (あまりすきじゃない - Je n’aime pas beaucoup)",
+			"あまり暑くない (あまりあつくない - Pas très chaud)"
+			]
+		},
+		{
+			"front": "雨",
+			"reading": "あめ",
+			"class": "nom",
+			"meaning": ["pluie"],
+			"mnemonic": "あめ → « À mère » (la pluie qui rend triste comme une mère inquiète).",
+			"example": [
+			"雨が降る (あめがふる - Il pleut)",
+			"大雨 (おおあめ - Pluie torrentielle)"
+			]
+		},
+		{
+			"front": "アメリカ",
+			"reading": "アメリカ",
+			"class": "nom",
+			"meaning": ["USA"],
+			"mnemonic": "アメリカ → Transcription directe de « America ».",
+			"example": [
+			"アメリカに行く (アメリカにいく - Aller aux États-Unis)",
+			"アメリカの文化 (アメリカのぶんか - Culture américaine)"
+			]
+		},
+		{
+			"front": "洗う",
+			"reading": "あらう",
+			"class": "verbe godan transitif",
+			"meaning": ["laver", "rincer"],
+			"mnemonic": "あらう → « À l’eau » (on lave avec de l’eau).",
+			"example": [
+			"手を洗う (てをあらう - Se laver les mains)",
+			"野菜を洗う (やさいをあらう - Laver les légumes)"
+			]
+		},
+		{
+			"front": "ある",
+			"reading": "ある",
+			"class": "verbe intransitif",
+			"meaning": ["être", "exister (inanimé)"],
+			"mnemonic": "ある → « Ah ! Rue » (il y a une rue ici).",
+			"example": [
+			"本がある (ほんがある - Il y a un livre)",
+			"時間がない (じかんがない - Il n’y a pas de temps)"
+			]
+		},
+		{
+			"front": "歩く",
+			"reading": "あるく",
+			"class": "verbe godan intransitif",
+			"meaning": ["marcher"],
+			"mnemonic": "あるく → « À roue coupée » (on doit marcher si la roue est cassée).",
+			"example": [
+			"公園を歩く (こうえんであるく - Marcher dans le parc)",
+			"毎日歩く (まいにちあるく - Marcher tous les jours)"
+			]
+		},
+		{
+			"front": "あれ",
+			"reading": "あれ",
+			"class": "nom",
+			"meaning": ["ce truc par là-bas (distant)"],
+			"mnemonic": "あれ → « À relais » (comme un relais qu’on pointe du doigt).",
+			"example": [
+			"あれは何？ (あれはなん？ - Qu’est-ce que c’est là-bas ?)",
+			"あれを見て (あれをみて - Regarde ça)"
+			]
+		},
+		{
+			"front": "いい",
+			"reading": "いい",
+			"class": "adjectif en -i",
+			"meaning": ["bon"],
+			"mnemonic": "いい → « Eeeh ! » (exclamation de satisfaction pour quelque chose de bon).",
+			"example": [
+			"いい天気 (いいてんき - Beau temps)",
+			"いいアイデア (いいアイデア - Bonne idée)"
+			]
+		},
+		{
+			"front": "言う",
+			"reading": "いう",
+			"class": "verbe godan transitif",
+			"meaning": ["dire", "raconter"],
+			"mnemonic": "いう → « Il ouvre » la bouche pour dire quelque chose.",
+			"example": [
+			"名前を言う (なまえをいう - Dire son nom)",
+			"本当のことを言う (ほんとうのことをいう - Dire la vérité)"
+			]
+		}
+	]
+}

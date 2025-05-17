@@ -1,0 +1,230 @@
+{
+	"meta": {
+		"name": "Vocabulaire JLPT5 - 6",
+		"tags": [
+			"word", "jlpt5", "vocabulaire"
+		]
+	},
+	"cards": [
+		{
+			"front": "一昨日",
+			"reading": "おととい",
+			"class": "nom",
+			"meaning": ["avant-hier"],
+			"mnemonic": "おととい → « Oui, toi ! » (en pointant quelqu’un deux jours en arrière).",
+			"example": [
+			"一昨日会った (おとといあった - On s’est vu avant-hier)",
+			"一昨日の天気 (おとといのてんき - Météo d’avant-hier)"
+			]
+		},
+		{
+			"front": "一昨年",
+			"reading": "おととし",
+			"class": "nom",
+			"meaning": ["l’année d’avant-dernière"],
+			"mnemonic": "おととし → « Oui, toi, si... » (évoquant une année lointaine).",
+			"example": [
+			"一昨年卒業した (おととしそつぎょうした - Diplômé il y a deux ans)",
+			"一昨年の旅行 (おととしのりょこう - Voyage d’il y a deux ans)"
+			]
+		},
+		{
+			"front": "大人",
+			"reading": "おとな",
+			"class": "nom",
+			"meaning": ["adulte"],
+			"mnemonic": "おとな → « Oh ! Ton âge » (on devient adulte).",
+			"example": [
+			"大人の切符 (おとなのきっぷ - Billet adulte)",
+			"大人の友達 (おとなのともだち - Ami adulte)"
+			]
+		},
+		{
+			"front": "お腹",
+			"reading": "おなか",
+			"class": "nom",
+			"meaning": ["ventre"],
+			"mnemonic": "おなか → « Au nacre » (un estomac brillant comme une perle).",
+			"example": [
+			"お腹が空いた (おなかがすいた - Avoir faim)",
+			"お腹が痛い (おなかがいたい - Mal au ventre)"
+			]
+		},
+		{
+			"front": "同じ",
+			"reading": "おなじ",
+			"class": "adjectif en -na / nom",
+			"meaning": ["pareil"],
+			"mnemonic": "おなじ → « Ouais, n’est-ce ? » (confirmation que c’est identique).",
+			"example": [
+			"同じ服 (おなじふく - Les mêmes vêtements)",
+			"同じ答え (おなじこたえ - Réponse identique)"
+			]
+		},
+		{
+			"front": "覚える",
+			"reading": "おぼえる",
+			"class": "verbe ichidan transitif",
+			"meaning": ["mémoriser"],
+			"mnemonic": "おぼえる → « Oh ! Bon air » (une mélodie qu’on retient).",
+			"example": [
+			"単語を覚える (たんごをおぼえる - Mémoriser un mot)",
+			"道を覚える (みちをおぼえる - Retenir un chemin)"
+			]
+		},
+		{
+			"front": "重い",
+			"reading": "おもい",
+			"class": "adjectif en -i",
+			"meaning": ["lourd"],
+			"mnemonic": "おもい → « Oh ! Mois » (porter un fardeau pendant des mois).",
+			"example": [
+			"重い荷物 (おもいにんぎょう - Bagage lourd)",
+			"責任が重い (せきにんがおもい - Responsabilité pesante)"
+			]
+		},
+		{
+			"front": "面白い",
+			"reading": "おもしろい",
+			"class": "adjectif en -i",
+			"meaning": ["intéressant"],
+			"mnemonic": "おもしろい → « Oh ! Mon show rire » (un spectacle drôle).",
+			"example": [
+			"面白い本 (おもしろいほん - Livre captivant)",
+			"面白い映画 (おもしろいえいが - Film amusant)"
+			]
+		},
+		{
+			"front": "泳ぐ",
+			"reading": "およぐ",
+			"class": "verbe godan intransitif",
+			"meaning": ["nager"],
+			"mnemonic": "およぐ → « Oyez ! Gué » (traverser une rivière à la nage).",
+			"example": [
+			"海で泳ぐ (うみでおよぐ - Nager en mer)",
+			"プールで泳ぐ (プールでおよぐ - Nager en piscine)"
+			]
+		},
+		{
+			"front": "降りる",
+			"reading": "おりる",
+			"class": "verbe ichidan intransitif",
+			"meaning": ["descendre"],
+			"mnemonic": "おりる → « Au lit, on descend » (quitter son lit).",
+			"example": [
+			"バスを降りる (バスをおりる - Descendre du bus)",
+			"階段を降りる (かいだんをおりる - Descendre les escaliers)"
+			]
+		},
+		{
+			"front": "終わる",
+			"reading": "おわる",
+			"class": "verbe godan intransitif",
+			"meaning": ["finir"],
+			"mnemonic": "おわる → « Oh ! Warrre ! » (fin d’une bataille de samouraïs).",
+			"example": [
+			"授業が終わる (じゅぎょうがおわる - Le cours se termine)",
+			"イベントが終わる (イベントがおわる - L’événement s’achève)"
+			]
+		},
+		{
+			"front": "音楽",
+			"reading": "おんがく",
+			"class": "nom",
+			"meaning": ["musique"],
+			"mnemonic": "おんがく → « On gagne avec la musique » (source de joie).",
+			"example": [
+			"音楽を聴く (おんがくをきく - Écouter de la musique)",
+			"音楽の授業 (おんがくのじゅぎょう - Cours de musique)"
+			]
+		},
+		{
+			"front": "女",
+			"reading": "おんな",
+			"class": "nom",
+			"meaning": ["femme"],
+			"mnemonic": "おんな → « Oh ! Nana » (terme affectueux pour une femme).",
+			"example": [
+			"女の声 (おんなのこえ - Voix féminine)",
+			"女の友達 (おんなのともだち - Amie)"
+			]
+		},
+		{
+			"front": "女の子",
+			"reading": "おんなのこ",
+			"class": "nom",
+			"meaning": ["fille (enfant)"],
+			"mnemonic": "おんなのこ → « Oh ! Nana, c’est qui ? » (désigner une jeune fille).",
+			"example": [
+			"女の子が遊ぶ (おんなのこがあそぶ - Une fille joue)",
+			"かわいい女の子 (かわいいおんなのこ - Jolie fille)"
+			]
+		},
+		{
+			"front": "外国",
+			"reading": "がいこく",
+			"class": "nom",
+			"meaning": ["pays étranger"],
+			"mnemonic": "がいこく → « Gai ko ku » (pays joyeux et inconnu).",
+			"example": [
+			"外国に行く (がいこくにいく - Aller à l’étranger)",
+			"外国の文化 (がいこくのぶんか - Culture étrangère)"
+			]
+		},
+		{
+			"front": "外国人",
+			"reading": "がいこくじん",
+			"class": "nom",
+			"meaning": ["étranger"],
+			"mnemonic": "がいこくじん → « Gai ko ku jin » (personne d’un pays inconnu).",
+			"example": [
+			"外国人観光客 (がいこくじんかんこうきゃく - Touriste étranger)",
+			"外国人と話す (がいこくじんとはなす - Parler avec un étranger)"
+			]
+		},
+		{
+			"front": "会社",
+			"reading": "かいしゃ",
+			"class": "nom",
+			"meaning": ["entreprise"],
+			"mnemonic": "かいしゃ → « Kai sha » (lieu de réunion professionnelle).",
+			"example": [
+			"会社に勤める (かいしゃにつとめる - Travailler en entreprise)",
+			"会社の社長 (かいしゃのしゃちょう - PDG)"
+			]
+		},
+		{
+			"front": "階段",
+			"reading": "かいだん",
+			"class": "nom",
+			"meaning": ["escaliers"],
+			"mnemonic": "かいだん → « Kai dan » (ensemble de marches).",
+			"example": [
+			"階段を上がる (かいだんをあがる - Monter les escaliers)",
+			"階段の手すり (かいだんのてすり - Rampe d’escalier)"
+			]
+		},
+		{
+			"front": "買い物",
+			"reading": "かいもの",
+			"class": "nom (verbe en する)",
+			"meaning": ["shopping"],
+			"mnemonic": "かいもの → « Kai mono » (acheter des choses).",
+			"example": [
+			"買い物をする (かいものをする - Faire des courses)",
+			"食料品の買い物 (しょくりょうひんのかいもの - Courses alimentaires)"
+			]
+		},
+		{
+			"front": "買う",
+			"reading": "かう",
+			"class": "verbe godan transitif",
+			"meaning": ["acheter"],
+			"mnemonic": "かう → « Carpe ! » (acheter un poisson symbolique).",
+			"example": [
+			"服を買う (ふくをかう - Acheter des vêtements)",
+			"車を買う (くるまをかう - Acheter une voiture)"
+			]
+		}
+	]
+}

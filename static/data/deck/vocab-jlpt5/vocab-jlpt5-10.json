@@ -1,0 +1,230 @@
+{
+	"meta": {
+		"name": "Vocabulaire JLPT5 - 10",
+		"tags": [
+			"word", "jlpt5", "vocabulaire"
+		]
+	},
+	"cards": [
+		{
+			"front": "曇り",
+			"reading": "くもり",
+			"class": "nom",
+			"meaning": ["temps nuageux"],
+			"mnemonic": "くもり → « Kumo » (nuage) + « ri » (jour), un jour couvert de nuages.",
+			"example": [
+			"今日は曇りです (きょうはくもりです - Il fait nuageux aujourd’hui)",
+			"曇りの予報 (くもりのよほう - Prévision nuageuse)"
+			]
+		},
+		{
+			"front": "暗い",
+			"reading": "くらい",
+			"class": "adjectif en -i",
+			"meaning": ["sombre", "déprimé"],
+			"mnemonic": "くらい → « Kurai » (comme « cry » en anglais, on pleure dans le noir).",
+			"example": [
+			"暗い部屋 (くらいへや - Pièce sombre)",
+			"暗い気分 (くらいきぶん - Humeur maussade)"
+			]
+		},
+		{
+			"front": "クラス",
+			"reading": "クラス",
+			"class": "nom",
+			"meaning": ["classe"],
+			"mnemonic": "Mot emprunté à l’anglais « class ».",
+			"example": [
+			"クラスの友達 (クラスのともだち - Amis de classe)",
+			"数学のクラス (すうがくのクラス - Cours de maths)"
+			]
+		},
+		{
+			"front": "来る",
+			"reading": "くる",
+			"class": "verbe irrégulier intransitif",
+			"meaning": ["venir"],
+			"mnemonic": "くる → « Cool » (venir de manière décontractée).",
+			"example": [
+			"明日来る (あしたくる - Venir demain)",
+			"友達が来る (ともだちがくる - Un ami arrive)"
+			]
+		},
+		{
+			"front": "車",
+			"reading": "くるま",
+			"class": "nom",
+			"meaning": ["voiture"],
+			"mnemonic": "くるま → « Kuruma » (roues qui tournent pour avancer).",
+			"example": [
+			"車を運転する (くるまをうんてんする - Conduire une voiture)",
+			"車の鍵 (くるまのかぎ - Clés de voiture)"
+			]
+		},
+		{
+			"front": "黒",
+			"reading": "くろ",
+			"class": "nom",
+			"meaning": ["noir"],
+			"mnemonic": "くろ → « Kuro » (comme un corbeau noir).",
+			"example": [
+			"黒が好き (くろがすき - J’aime le noir)",
+			"黒のシャツ (くろのシャツ - Chemise noire)"
+			]
+		},
+		{
+			"front": "黒い",
+			"reading": "くろい",
+			"class": "adjectif en -i",
+			"meaning": ["noir (adjectif)"],
+			"mnemonic": "くろい → « Kuroi » (nuit noire et profonde).",
+			"example": [
+			"黒い猫 (くろいねこ - Chat noir)",
+			"黒い靴 (くろいくつ - Chaussures noires)"
+			]
+		},
+		{
+			"front": "警察",
+			"reading": "けいさつ",
+			"class": "nom",
+			"meaning": ["police"],
+			"mnemonic": "けいさつ → « Kei » (respect) + « satsu » (enquête), ceux qui maintiennent l’ordre.",
+			"example": [
+			"警察に通報する (けいさつにつうほうする - Appeler la police)",
+			"警察官 (けいさつかん - Policier)"
+			]
+		},
+		{
+			"front": "ケーキ",
+			"reading": "ケーキ",
+			"class": "nom",
+			"meaning": ["gâteau"],
+			"mnemonic": "Mot emprunté à l’anglais « cake ».",
+			"example": [
+			"誕生日ケーキ (たんじょうびケーキ - Gâteau d’anniversaire)",
+			"チョコレートケーキ (チョコレートケーキ - Gâteau au chocolat)"
+			]
+		},
+		{
+			"front": "今朝",
+			"reading": "けさ",
+			"class": "nom",
+			"meaning": ["ce matin"],
+			"mnemonic": "けさ → « Ke » (ce) + « sa » (matin), littéralement « ce matin ».",
+			"example": [
+			"今朝早く起きた (けさはやくおきた - Je me suis levé tôt ce matin)",
+			"今朝のニュース (けさのニュース - Actualités de ce matin)"
+			]
+		},
+		{
+			"front": "消す",
+			"reading": "けす",
+			"class": "verbe godan transitif",
+			"meaning": ["éteindre", "effacer"],
+			"mnemonic": "けす → « Kess » (son d’un interrupteur qu’on éteint).",
+			"example": [
+			"電気を消す (でんきをけす - Éteindre la lumière)",
+			"データを消す (データをけす - Supprimer des données)"
+			]
+		},
+		{
+			"front": "月曜日",
+			"reading": "げつようび",
+			"class": "nom",
+			"meaning": ["lundi"],
+			"mnemonic": "げつようび → « Getsu » (lune) + « yōbi » (jour), le jour de la lune.",
+			"example": [
+			"月曜日が忙しい (げつようびがいそがしい - Lundi est chargé)",
+			"月曜日の会議 (げつようびのかいぎ - Réunion du lundi)"
+			]
+		},
+		{
+			"front": "結婚",
+			"reading": "けっこん",
+			"class": "nom (verbe en する)",
+			"meaning": ["mariage"],
+			"mnemonic": "けっこん → « Kekkon » (engagement solennel).",
+			"example": [
+			"結婚する (けっこんする - Se marier)",
+			"結婚式 (けっこんしき - Cérémonie de mariage)"
+			]
+		},
+		{
+			"front": "玄関",
+			"reading": "げんかん",
+			"class": "nom",
+			"meaning": ["entrée"],
+			"mnemonic": "げんかん → « Genkan » (espace transitionnel avant la maison).",
+			"example": [
+			"玄関の靴 (げんかんのくつ - Chaussures à l’entrée)",
+			"玄関を掃除する (げんかんをそうじする - Nettoyer l’entrée)"
+			]
+		},
+		{
+			"front": "元気",
+			"reading": "げんき",
+			"class": "adjectif en -na",
+			"meaning": ["en forme"],
+			"mnemonic": "げんき → « Genki » (énergie vitale).",
+			"example": [
+			"元気ですか？ (げんきですか？ - Comment ça va ?)",
+			"元気な子供 (げんきなこども - Enfant énergique)"
+			]
+		},
+		{
+			"front": "公園",
+			"reading": "こうえん",
+			"class": "nom",
+			"meaning": ["parc"],
+			"mnemonic": "こうえん → « Kōen » (jardin public pour tous).",
+			"example": [
+			"公園で散歩する (こうえんであるく - Se promener dans le parc)",
+			"大きな公園 (おおきなこうえん - Grand parc)"
+			]
+		},
+		{
+			"front": "交差点",
+			"reading": "こうさてん",
+			"class": "nom",
+			"meaning": ["carrefour"],
+			"mnemonic": "こうさてん → « Kōsaten » (croisement de routes).",
+			"example": [
+			"交差点を渡る (こうさてんをわたる - Traverser l’intersection)",
+			"危ない交差点 (あぶないこうさてん - Carrefour dangereux)"
+			]
+		},
+		{
+			"front": "紅茶",
+			"reading": "こうちゃ",
+			"class": "nom",
+			"meaning": ["thé noir"],
+			"mnemonic": "こうちゃ → « Kōcha » (« thé rouge » en japonais, mais noir en Occident).",
+			"example": [
+			"紅茶を飲む (こうちゃをのむ - Boire du thé noir)",
+			"ミルクティー (ミルクティー - Thé au lait)"
+			]
+		},
+		{
+			"front": "交番",
+			"reading": "こうばん",
+			"class": "nom",
+			"meaning": ["poste de police"],
+			"mnemonic": "こうばん → « Kōban » (petit poste de police de quartier).",
+			"example": [
+			"交番に尋ねる (こうばんにたずねる - Demander au poste de police)",
+			"交番の前 (こうばんのまえ - Devant le poste)"
+			]
+		},
+		{
+			"front": "声",
+			"reading": "こえ",
+			"class": "nom",
+			"meaning": ["voix"],
+			"mnemonic": "こえ → « Koe » (son qui sort de la bouche).",
+			"example": [
+			"声が大きい (こえがおおきい - Voix forte)",
+			"優しい声 (やさしいこえ - Voix douce)"
+			]
+		}
+	]
+}

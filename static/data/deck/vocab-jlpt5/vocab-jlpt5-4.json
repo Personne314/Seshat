@@ -1,0 +1,230 @@
+{
+	"meta": {
+		"name": "Vocabulaire JLPT5 - 4",
+		"tags": [
+			"word", "jlpt5", "vocabulaire"
+		]
+	},
+	"cards": [
+		{
+			"front": "いる",
+			"reading": "いる",
+			"class": "verbe godan intransitif",
+			"meaning": ["être nécessaire", "avoir besoin"],
+			"mnemonic": "いる → « Il l’eau » (on a besoin d’eau pour survivre).",
+			"example": [
+			"お金がいる (おかながいる - Avoir besoin d’argent)",
+			"時間がいる (じかんがいる - Il faut du temps)"
+			]
+		},
+		{
+			"front": "入れる",
+			"reading": "いれる",
+			"class": "verbe ichidan transitif",
+			"meaning": ["mettre dans", "insérer"],
+			"mnemonic": "いれる → « Y relais » (on insère un relais dans un circuit).",
+			"example": [
+			"鞄に入れる (かばんにいれる - Mettre dans un sac)",
+			"コインを入れる (コインをいれる - Insérer une pièce)"
+			]
+		},
+		{
+			"front": "色",
+			"reading": "いろ",
+			"class": "nom",
+			"meaning": ["couleur"],
+			"mnemonic": "いろ → « Y roll » (un rouleau de peinture coloré).",
+			"example": [
+			"色を選ぶ (いろをえらぶ - Choisir une couleur)",
+			"鮮やかな色 (あざやかないろ - Couleur vive)"
+			]
+		},
+		{
+			"front": "いろいろ",
+			"reading": "いろいろ",
+			"class": "adjectif / adverbe",
+			"meaning": ["divers", "varié"],
+			"mnemonic": "いろいろ → « Y a royal » (une royale variété).",
+			"example": [
+			"いろいろな本 (いろいろなほん - Divers livres)",
+			"いろいろ試す (いろいろためす - Essayer différentes choses)"
+			]
+		},
+		{
+			"front": "上",
+			"reading": "うえ",
+			"class": "nom",
+			"meaning": ["sur", "au-dessus"],
+			"mnemonic": "うえ → « Ouais ! » (en haut, c’est génial !).",
+			"example": [
+			"机の上 (つくえのうえ - Sur la table)",
+			"空の上 (そらのうえ - Au-dessus du ciel)"
+			]
+		},
+		{
+			"front": "後ろ",
+			"reading": "うしろ",
+			"class": "nom",
+			"meaning": ["derrière"],
+			"mnemonic": "うしろ → « Où chiro ? » (où est-ce derrière ?).",
+			"example": [
+			"後ろを向く (うしろをむく - Se retourner)",
+			"後ろの席 (うしろのせき - Siège arrière)"
+			]
+		},
+		{
+			"front": "薄い",
+			"reading": "うすい",
+			"class": "adjectif en -i",
+			"meaning": ["fin", "léger"],
+			"mnemonic": "うすい → « U suivi » (un fil fin qui suit un chemin).",
+			"example": [
+			"薄い紙 (うすいかみ - Papier fin)",
+			"薄い味 (うすいあじ - Saveur légère)"
+			]
+		},
+		{
+			"front": "歌",
+			"reading": "うた",
+			"class": "nom",
+			"meaning": ["chanson"],
+			"mnemonic": "うた → « UTA » (Universal Tune Artist).",
+			"example": [
+			"歌を聴く (うたをきく - Écouter une chanson)",
+			"好きな歌 (すきなうた - Chanson préférée)"
+			]
+		},
+		{
+			"front": "歌う",
+			"reading": "うたう",
+			"class": "verbe godan transitif",
+			"meaning": ["chanter"],
+			"mnemonic": "うたう → « UTA + U » (chanter une mélodie).",
+			"example": [
+			"カラオケで歌う (カラオケでうたう - Chanter au karaoké)",
+			"国歌を歌う (こっかをうたう - Chanter l’hymne national)"
+			]
+		},
+		{
+			"front": "うち",
+			"reading": "うち",
+			"class": "nom",
+			"meaning": ["maison", "chez-soi"],
+			"mnemonic": "うち → « Où chi ? » (chez toi, où est le chien ?).",
+			"example": [
+			"うちに帰る (うちにかえる - Rentrer à la maison)",
+			"うちの家族 (うちのかぞく - Ma famille)"
+			]
+		},
+		{
+			"front": "生まれる",
+			"reading": "うまれる",
+			"class": "verbe ichidan intransitif",
+			"meaning": ["naître"],
+			"mnemonic": "うまれる → « Humain mal rêve » (le rêve de devenir humain en naissant).",
+			"example": [
+			"赤ちゃんが生まれる (あかちゃんがうまれる - Un bébé naît)",
+			"日本で生まれた (にほんでうまれた - Être né au Japon)"
+			]
+		},
+		{
+			"front": "海",
+			"reading": "うみ",
+			"class": "nom",
+			"meaning": ["mer"],
+			"mnemonic": "うみ → « You me » (toi et moi à la mer).",
+			"example": [
+			"海で泳ぐ (うみでおよぐ - Nager dans la mer)",
+			"海の景色 (うみのけしき - Paysage marin)"
+			]
+		},
+		{
+			"front": "売る",
+			"reading": "うる",
+			"class": "verbe godan transitif",
+			"meaning": ["vendre"],
+			"mnemonic": "うる → « U lu » (un livre vendu et lu).",
+			"example": [
+			"商品を売る (しょうひんをうる - Vendre des produits)",
+			"家を売る (いえをうる - Vendre une maison)"
+			]
+		},
+		{
+			"front": "うるさい",
+			"reading": "うるさい",
+			"class": "adjectif en -i",
+			"meaning": ["bruyant", "agaçant"],
+			"mnemonic": "うるさい → « Urgent ! Silence ! » (demander le calme).",
+			"example": [
+			"うるさい音 (うるさいおと - Bruit fort)",
+			"うるさい人 (うるさいひと - Personne bruyante)"
+			]
+		},
+		{
+			"front": "嬉しい",
+			"reading": "うれしい",
+			"class": "adjectif en -i",
+			"meaning": ["heureux", "joyeux"],
+			"mnemonic": "うれしい → « Hourra ! Shiny ! » (joie éclatante).",
+			"example": [
+			"嬉しい知らせ (うれしいしらせ - Une bonne nouvelle)",
+			"誕生日が嬉しい (たんじょうびがうれしい - Être heureux pour son anniversaire)"
+			]
+		},
+		{
+			"front": "上着",
+			"reading": "うわぎ",
+			"class": "nom",
+			"meaning": ["manteau", "veste"],
+			"mnemonic": "うわぎ → « Ouah ! Gui » (décorer un manteau avec du gui).",
+			"example": [
+			"上着を着る (うわぎをきる - Porter un manteau)",
+			"厚い上着 (あついうわぎ - Manteau épais)"
+			]
+		},
+		{
+			"front": "絵",
+			"reading": "え",
+			"class": "nom",
+			"meaning": ["dessin", "peinture"],
+			"mnemonic": "え → « É » (initiale de « École des Beaux-Arts »).",
+			"example": [
+			"絵を描く (えをかく - Dessiner un tableau)",
+			"美しい絵 (うつくしいえ - Belle peinture)"
+			]
+		},
+		{
+			"front": "映画",
+			"reading": "えいが",
+			"class": "nom",
+			"meaning": ["film"],
+			"mnemonic": "えいが → « A ga » (comme « Ah ! » devant un bon film).",
+			"example": [
+			"映画を見る (えいがをみる - Regarder un film)",
+			"アクション映画 (アクションえいが - Film d’action)"
+			]
+		},
+		{
+			"front": "映画館",
+			"reading": "えいがかん",
+			"class": "nom",
+			"meaning": ["cinéma"],
+			"mnemonic": "えいがかん → « Eiga-kan » (kan = salle, lieu des films).",
+			"example": [
+			"映画館に行く (えいがかんにいく - Aller au cinéma)",
+			"映画館のチケット (えいがかんのチケット - Billet de cinéma)"
+			]
+		},
+		{
+			"front": "英語",
+			"reading": "えいご",
+			"class": "nom",
+			"meaning": ["anglais (langue)"],
+			"mnemonic": "えいご → « Ego » (parler anglais pour booster son ego).",
+			"example": [
+			"英語を勉強する (えいごをべんきょうする - Étudier l’anglais)",
+			"英語の先生 (えいごのせんせい - Professeur d’anglais)"
+			]
+		}
+	]
+}

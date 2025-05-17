@@ -1,0 +1,230 @@
+{
+	"meta": {
+		"name": "Vocabulaire JLPT5 - 11",
+		"tags": [
+			"word", "jlpt5", "vocabulaire"
+		]
+	},
+	"cards": [
+		{
+			"front": "コート",
+			"reading": "コート",
+			"class": "nom",
+			"meaning": ["manteau"],
+			"mnemonic": "Mot emprunté à l’anglais « coat » (prononciation similaire).",
+			"example": [
+			"冬のコート (ふゆのコート - Manteau d’hiver)",
+			"コートを掛ける (コートをかける - Accrocher un manteau)"
+			]
+		},
+		{
+			"front": "コーヒー",
+			"reading": "コーヒー",
+			"class": "nom",
+			"meaning": ["café"],
+			"mnemonic": "Mot emprunté à l’anglais « coffee ».",
+			"example": [
+			"ホットコーヒー (ホットコーヒー - Café chaud)",
+			"コーヒーカップ (コーヒーカップ - Tasse à café)"
+			]
+		},
+		{
+			"front": "ここ",
+			"reading": "ここ",
+			"class": "nom",
+			"meaning": ["ici"],
+			"mnemonic": "ここ → « Cocorico » (le coq français chante *ici*).",
+			"example": [
+			"ここに立つ (ここにたつ - Se tenir ici)",
+			"ここから始まる (ここからはじまる - Commencer d’ici)"
+			]
+		},
+		{
+			"front": "午後",
+			"reading": "ごご",
+			"class": "nom",
+			"meaning": ["après-midi"],
+			"mnemonic": "ごご → « Goûter » (le repas de l’après-midi en France).",
+			"example": [
+			"午後2時 (ごごにじ - 14h00)",
+			"午後の会議 (ごごのかいぎ - Réunion de l’après-midi)"
+			]
+		},
+		{
+			"front": "午前",
+			"reading": "ごぜん",
+			"class": "nom",
+			"meaning": ["matin"],
+			"mnemonic": "ごぜん → « Goût zen » (un matin calme et serein).",
+			"example": [
+			"午前5時 (ごぜんごじ - 5h00)",
+			"午前中の仕事 (ごぜんちゅうのしごと - Travail matinal)"
+			]
+		},
+		{
+			"front": "答え",
+			"reading": "こたえ",
+			"class": "nom",
+			"meaning": ["réponse"],
+			"mnemonic": "こたえ → « Côté » (la réponse est de ce *côté*-ci).",
+			"example": [
+			"答えを書く (こたえをかく - Écrire la réponse)",
+			"最終答え (さいしゅうこたえ - Réponse finale)"
+			]
+		},
+		{
+			"front": "答える",
+			"reading": "こたえる",
+			"class": "verbe ichidan intransitif",
+			"meaning": ["répondre"],
+			"mnemonic": "こたえる → « Côte à l’air » (répondre avec transparence).",
+			"example": [
+			"質問に答える (しつもんにこたえる - Répondre à une question)",
+			"メールに答える (メールにこたえる - Répondre à un email)"
+			]
+		},
+		{
+			"front": "こちら",
+			"reading": "こちら",
+			"class": "nom",
+			"meaning": ["ce côté-ci"],
+			"mnemonic": "こちら → « Cochez ici » (pointez vers cette direction).",
+			"example": [
+			"こちらへどうぞ (こちらへどうぞ - Par ici, s’il vous plaît)",
+			"こちら側 (こちらがわ - Ce côté-ci)"
+			]
+		},
+		{
+			"front": "コップ",
+			"reading": "コップ",
+			"class": "nom",
+			"meaning": ["verre (à boire)"],
+			"mnemonic": "Mot emprunté au néerlandais « kop ».",
+			"example": [
+			"コップの水 (コップのみず - Verre d’eau)",
+			"ガラスのコップ (ガラスのコップ - Verre en verre)"
+			]
+		},
+		{
+			"front": "今年",
+			"reading": "ことし",
+			"class": "nom",
+			"meaning": ["cette année"],
+			"mnemonic": "ことし → « C’est cette année » (contraction phonétique).",
+			"example": [
+			"今年の目標 (ことしのもくひょう - Objectif de cette année)",
+			"今年の夏 (ことしのなつ - Été de cette année)"
+			]
+		},
+		{
+			"front": "言葉",
+			"reading": "ことば",
+			"class": "nom",
+			"meaning": ["mot"],
+			"mnemonic": "ことば → « Côte à mots » (une plage remplie de mots).",
+			"example": [
+			"優しい言葉 (やさしいことば - Mots gentils)",
+			"言葉の力 (ことばのちから - Pouvoir des mots)"
+			]
+		},
+		{
+			"front": "子供",
+			"reading": "こども",
+			"class": "nom",
+			"meaning": ["enfant"],
+			"mnemonic": "こども → « Code homme » (les enfants sont le code de l’avenir).",
+			"example": [
+			"子供の遊び場 (こどものあそびば - Aire de jeux pour enfants)",
+			"子供の教育 (こどものきょういく - Éducation des enfants)"
+			]
+		},
+		{
+			"front": "ご飯",
+			"reading": "ごはん",
+			"class": "nom",
+			"meaning": ["riz", "repas"],
+			"mnemonic": "ごはん → « Goût vanille » (le riz a un goût neutre comme la vanille).",
+			"example": [
+			"朝ご飯 (あさごはん - Petit-déjeuner)",
+			"ご飯をよそう (ごはんをよそう - Servir le riz)"
+			]
+		},
+		{
+			"front": "コピー",
+			"reading": "コピー",
+			"class": "nom (verbe en する)",
+			"meaning": ["copie"],
+			"mnemonic": "Mot emprunté à l’anglais « copy ».",
+			"example": [
+			"コピーする (コピーする - Photocopier)",
+			"コピー用紙 (コピーようし - Papier pour photocopie)"
+			]
+		},
+		{
+			"front": "困る",
+			"reading": "こまる",
+			"class": "verbe godan intransitif",
+			"meaning": ["être en difficulté"],
+			"mnemonic": "こまる → « Comme un rat » (coincé comme un rat dans un piège).",
+			"example": [
+			"道に迷って困る (みちにまよってこまる - Être perdu et en difficulté)",
+			"時間がなくて困る (じかんがなくてこまる - Manquer de temps)"
+			]
+		},
+		{
+			"front": "これ",
+			"reading": "これ",
+			"class": "nom",
+			"meaning": ["ceci"],
+			"mnemonic": "これ → « Corps » (montrer un objet près de son corps).",
+			"example": [
+			"これは何？ (これはなん？ - Qu’est-ce que c’est ?)",
+			"これください (これください - Je prends ceci)"
+			]
+		},
+		{
+			"front": "今月",
+			"reading": "こんげつ",
+			"class": "nom",
+			"meaning": ["ce mois"],
+			"mnemonic": "こんげつ → « Compte les jours » (d’un mois).",
+			"example": [
+			"今月の給料 (こんげつのきゅうりょう - Salaire du mois)",
+			"今月の予定 (こんげつのよてい - Planning du mois)"
+			]
+		},
+		{
+			"front": "今週",
+			"reading": "こんしゅう",
+			"class": "nom",
+			"meaning": ["cette semaine"],
+			"mnemonic": "こんしゅう → « Comme un chou » (une semaine qui se déroule doucement).",
+			"example": [
+			"今週の予定 (こんしゅうのよてい - Planning de la semaine)",
+			"今週末 (こんしゅうまつ - Ce week-end)"
+			]
+		},
+		{
+			"front": "こんな",
+			"reading": "こんな",
+			"class": "adjectif démonstratif",
+			"meaning": ["comme ça"],
+			"mnemonic": "こんな → « Connais ça » (quelque chose de familier).",
+			"example": [
+			"こんなことは初めて (こんなことははじめて - C’est la première fois que ça arrive)",
+			"こんなに早い (こんなにはやい - Si tôt que ça)"
+			]
+		},
+		{
+			"front": "今晩",
+			"reading": "こんばん",
+			"class": "nom",
+			"meaning": ["ce soir"],
+			"mnemonic": "こんばん → « Conte en banlieue » (une histoire racontée *ce soir*).",
+			"example": [
+			"今晩会いましょう (こんばんあいましょう - Rendez-vous ce soir)",
+			"今晩の予定 (こんばんのよてい - Programme de ce soir)"
+			]
+		}
+	]
+}

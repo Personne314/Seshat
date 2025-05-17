@@ -1,0 +1,230 @@
+{
+	"meta": {
+		"name": "Vocabulaire JLPT5 - 12",
+		"tags": [
+			"word", "jlpt5", "vocabulaire"
+		]
+	},
+	"cards": [
+		{
+			"front": "最後",
+			"reading": "さいご",
+			"class": "nom",
+			"meaning": ["fin", "dernier"],
+			"mnemonic": "さいご → « Saigner jusqu’au goût » (jusqu’à la *fin*).",
+			"example": [
+			"最後のチャンス (さいごのチャンス - Dernière chance)",
+			"最後まで頑張る (さいごまでがんばる - Tenir jusqu’à la fin)"
+			]
+		},
+		{
+			"front": "財布",
+			"reading": "さいふ",
+			"class": "nom",
+			"meaning": ["portefeuille"],
+			"mnemonic": "さいふ → Mot japonais venant du français « portefeuille » (sens identique).",
+			"example": [
+			"財布を忘れた (さいふをわすれた - J’ai oublié mon portefeuille)",
+			"革の財布 (かわのさいふ - Portefeuille en cuir)"
+			]
+		},
+		{
+			"front": "魚",
+			"reading": "さかな",
+			"class": "nom",
+			"meaning": ["poisson"],
+			"mnemonic": "さかな → « Sac à nage » (le poisson nage dans l’eau).",
+			"example": [
+			"魚を釣る (さかなをつる - Pêcher un poisson)",
+			"焼き魚 (やきざかな - Poisson grillé)"
+			]
+		},
+		{
+			"front": "先",
+			"reading": "さき",
+			"class": "nom",
+			"meaning": ["avant", "auparavant"],
+			"mnemonic": "さき → « Sac à ski » (les skis vont *en avant*).",
+			"example": [
+			"先の予定 (さきのよてい - Planning futur)",
+			"先に食べる (さきにたべる - Manger en premier)"
+			]
+		},
+		{
+			"front": "咲く",
+			"reading": "さく",
+			"class": "verbe godan intransitif",
+			"meaning": ["fleurir"],
+			"mnemonic": "さく → « Sakura » (fleurir comme les cerisiers).",
+			"example": [
+			"花が咲く (はながさく - Les fleurs s’épanouissent)",
+			"桜が咲く (さくらがさく - Les cerisiers fleurissent)"
+			]
+		},
+		{
+			"front": "作文",
+			"reading": "さくぶん",
+			"class": "nom",
+			"meaning": ["composition écrite"],
+			"mnemonic": "さくぶん → « Sac à bonnes idées » (écrire un texte structuré).",
+			"example": [
+			"作文を書く (さくぶんをかく - Écrire une rédaction)",
+			"夏休みの作文 (なつやすみのさくぶん - Rédaction de vacances)"
+			]
+		},
+		{
+			"front": "サッカー",
+			"reading": "サッカー",
+			"class": "nom",
+			"meaning": ["football"],
+			"mnemonic": "Mot emprunté à l’anglais « soccer ».",
+			"example": [
+			"サッカーをする (サッカーをする - Jouer au football)",
+			"サッカーの試合 (サッカーのしあい - Match de foot)"
+			]
+		},
+		{
+			"front": "雑誌",
+			"reading": "ざっし",
+			"class": "nom",
+			"meaning": ["magazine"],
+			"mnemonic": "ざっし → Mot venant du français « magazine » (adaptation phonétique).",
+			"example": [
+			"雑誌を読む (ざっしをよむ - Lire un magazine)",
+			"ファッション雑誌 (ファッションざっし - Magazine de mode)"
+			]
+		},
+		{
+			"front": "砂糖",
+			"reading": "さとう",
+			"class": "nom",
+			"meaning": ["sucre"],
+			"mnemonic": "さとう → « Sucre » (prononciation proche du français).",
+			"example": [
+			"砂糖を入れる (さとうをいれる - Ajouter du sucre)",
+			"黒砂糖 (くろざとう - Cassonade)"
+			]
+		},
+		{
+			"front": "寒い",
+			"reading": "さむい",
+			"class": "adjectif en -i",
+			"meaning": ["froid"],
+			"mnemonic": "さむい → « Ça m’a gelé » (expression pour le froid intense).",
+			"example": [
+			"寒い冬 (さむいふゆ - Hiver froid)",
+			"今日は寒い (きょうはさむい - Il fait froid aujourd’hui)"
+			]
+		},
+		{
+			"front": "再来年",
+			"reading": "さらいねん",
+			"class": "nom",
+			"meaning": ["l’année après la prochaine"],
+			"mnemonic": "さらいねん → « Sur l’année » (au-delà de l’année prochaine).",
+			"example": [
+			"再来年の計画 (さらいねんのけいかく - Projet pour dans deux ans)",
+			"再来年結婚する (さらいねんけっこんする - Se marier dans deux ans)"
+			]
+		},
+		{
+			"front": "散歩",
+			"reading": "さんぽ",
+			"class": "nom (verbe en する)",
+			"meaning": ["promenade"],
+			"mnemonic": "さんぽ → « Sans poteaux » (marcher librement).",
+			"example": [
+			"公園を散歩する (こうえんをさんぽする - Se promener dans le parc)",
+			"犬の散歩 (いぬのさんぽ - Promener le chien)"
+			]
+		},
+		{
+			"front": "塩",
+			"reading": "しお",
+			"class": "nom",
+			"meaning": ["sel"],
+			"mnemonic": "しお → « Sel » (prononciation similaire en français).",
+			"example": [
+			"塩をかける (しおをかける - Saupoudrer de sel)",
+			"塩辛い (しおからい - Salé)"
+			]
+		},
+		{
+			"front": "しかし",
+			"reading": "しかし",
+			"class": "conjonction",
+			"meaning": ["cependant"],
+			"mnemonic": "しかし → « C’est cassé » (mais on peut réparer).",
+			"example": [
+			"しかし問題がある (しかしもんだいがある - Mais il y a un problème)",
+			"頑張った、しかし失敗した (がんばった、しかししっぱいした - J’ai essayé, mais j’ai échoué)"
+			]
+		},
+		{
+			"front": "時間",
+			"reading": "じかん",
+			"class": "nom",
+			"meaning": ["temps", "heure"],
+			"mnemonic": "じかん → « Temps » (emprunt du chinois, sens identique).",
+			"example": [
+			"時間がない (じかんがない - Pas le temps)",
+			"約束の時間 (やくそくのじかん - Heure du rendez-vous)"
+			]
+		},
+		{
+			"front": "仕事",
+			"reading": "しごと",
+			"class": "nom (verbe en する)",
+			"meaning": ["travail"],
+			"mnemonic": "しごと → « Job » (prononciation proche du français).",
+			"example": [
+			"仕事をする (しごとをする - Travailler)",
+			"新しい仕事 (あたらしいしごと - Nouveau travail)"
+			]
+		},
+		{
+			"front": "辞書",
+			"reading": "じしょ",
+			"class": "nom",
+			"meaning": ["dictionnaire"],
+			"mnemonic": "じしょ → « Livre des mots » (traduction littérale).",
+			"example": [
+			"辞書を引く (じしょをひく - Consulter un dictionnaire)",
+			"電子辞書 (でんしじしょ - Dictionnaire électronique)"
+			]
+		},
+		{
+			"front": "字引",
+			"reading": "じびき",
+			"class": "nom",
+			"meaning": ["dictionnaire"],
+			"mnemonic": "じびき → « Guide des caractères » (sens littéral).",
+			"example": [
+			"字引で調べる (じびきでしらべる - Chercher dans le dictionnaire)",
+			"古い字引 (ふるいじびき - Vieux dictionnaire)"
+			]
+		},
+		{
+			"front": "静か",
+			"reading": "しずか",
+			"class": "adjectif en -na",
+			"meaning": ["calme"],
+			"mnemonic": "しずか → « Chut ! C’est calme » (demande de silence).",
+			"example": [
+			"静かな場所 (しずかなばしょ - Endroit calme)",
+			"静かにする (しずかにする - Se taire)"
+			]
+		},
+		{
+			"front": "下",
+			"reading": "した",
+			"class": "nom",
+			"meaning": ["dessous", "en-dessous"],
+			"mnemonic": "した → « Chat » (le chat se cache *en dessous* du canapé).",
+			"example": [
+			"下にある (したにある - Être en dessous)",
+			"テーブルの下 (テーブルのした - Sous la table)"
+			]
+		}
+	]
+}

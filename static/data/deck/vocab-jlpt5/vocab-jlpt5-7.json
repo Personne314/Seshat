@@ -1,0 +1,230 @@
+{
+	"meta": {
+		"name": "Vocabulaire JLPT5 - 7",
+		"tags": [
+			"word", "jlpt5", "vocabulaire"
+		]
+	},
+	"cards": [
+		{
+			"front": "返す",
+			"reading": "かえす",
+			"class": "verbe godan transitif",
+			"meaning": ["retourner", "rendre"],
+			"mnemonic": "かえす → « Cash ! » (quand on rend un objet, on récupère son argent).",
+			"example": [
+			"本を返す (ほんをかえす - Rendre un livre)",
+			"お金を返す (おかねをかえす - Rembourser de l’argent)"
+			]
+		},
+		{
+			"front": "帰る",
+			"reading": "かえる",
+			"class": "verbe godan intransitif",
+			"meaning": ["rentrer chez soi"],
+			"mnemonic": "かえる → « Car » (on prend la voiture pour rentrer à la maison).",
+			"example": [
+			"家に帰る (いえにかえる - Rentrer à la maison)",
+			"会社に帰る (かいしゃにかえる - Retourner au bureau)"
+			]
+		},
+		{
+			"front": "顔",
+			"reading": "かお",
+			"class": "nom",
+			"meaning": ["visage"],
+			"mnemonic": "かお → « Cow » (imaginez une vache avec un visage expressif).",
+			"example": [
+			"顔を洗う (かおをあらう - Se laver le visage)",
+			"きれいな顔 (きれいなかお - Beau visage)"
+			]
+		},
+		{
+			"front": "かかる",
+			"reading": "かかる",
+			"class": "verbe godan intransitif",
+			"meaning": ["prendre (temps)", "coûter"],
+			"mnemonic": "かかる → « Kakarot » (le personnage de DBZ qui prend du temps à se transformer).",
+			"example": [
+			"時間がかかる (じかんがかかる - Prendre du temps)",
+			"お金がかかる (おかねがかかる - Coûter cher)"
+			]
+		},
+		{
+			"front": "鍵",
+			"reading": "かぎ",
+			"class": "nom",
+			"meaning": ["clé"],
+			"mnemonic": "かぎ → « Key » (prononciation similaire à l’anglais).",
+			"example": [
+			"鍵をなくす (かぎをなくす - Perdre sa clé)",
+			"ドアの鍵 (ドアのかぎ - Clé de la porte)"
+			]
+		},
+		{
+			"front": "書く",
+			"reading": "かく",
+			"class": "verbe godan transitif",
+			"meaning": ["écrire"],
+			"mnemonic": "かく → « Coco » (le son d’un stylo qui gratte le papier).",
+			"example": [
+			"手紙を書く (てがみをかく - Écrire une lettre)",
+			"名前を書く (なまえをかく - Écrire son nom)"
+			]
+		},
+		{
+			"front": "学生",
+			"reading": "がくせい",
+			"class": "nom",
+			"meaning": ["étudiant"],
+			"mnemonic": "がくせい → « Gakusei » (« gaku » = études, « sei » = vie).",
+			"example": [
+			"学生です (がくせいです - Je suis étudiant)",
+			"大学生 (だいがくせい - Étudiant universitaire)"
+			]
+		},
+		{
+			"front": "かける",
+			"reading": "かける",
+			"class": "verbe ichidan transitif",
+			"meaning": ["porter (lunettes)", "accrocher"],
+			"mnemonic": "かける → « Car glasses » (porter des lunettes en conduisant).",
+			"example": [
+			"メガネをかける (メガネをかける - Porter des lunettes)",
+			"絵をかける (えをかける - Accrocher un tableau)"
+			]
+		},
+		{
+			"front": "傘",
+			"reading": "かさ",
+			"class": "nom",
+			"meaning": ["parapluie"],
+			"mnemonic": "かさ → « Casa » (maison portative contre la pluie).",
+			"example": [
+			"傘を開く (かさをひらく - Ouvrir un parapluie)",
+			"赤い傘 (あかいかさ - Parapluie rouge)"
+			]
+		},
+		{
+			"front": "貸す",
+			"reading": "かす",
+			"class": "verbe godan transitif",
+			"meaning": ["prêter"],
+			"mnemonic": "かす → « Cast » (jeter/prêter un objet à quelqu’un).",
+			"example": [
+			"お金を貸す (おかねをかす - Prêter de l’argent)",
+			"本を貸す (ほんをかす - Prêter un livre)"
+			]
+		},
+		{
+			"front": "風",
+			"reading": "かぜ",
+			"class": "nom",
+			"meaning": ["vent"],
+			"mnemonic": "かぜ → « Crazy wind » (vent fort et imprévisible).",
+			"example": [
+			"強い風 (つよいかぜ - Vent violent)",
+			"風が吹く (かぜがふく - Le vent souffle)"
+			]
+		},
+		{
+			"front": "風邪",
+			"reading": "かぜ",
+			"class": "nom",
+			"meaning": ["rhume"],
+			"mnemonic": "かぜ → « Catch-ay » (attraper un rhume).",
+			"example": [
+			"風邪をひく (かぜをひく - Attraper un rhume)",
+			"風邪薬 (かぜぐすり - Médicament contre le rhume)"
+			]
+		},
+		{
+			"front": "家族",
+			"reading": "かぞく",
+			"class": "nom",
+			"meaning": ["famille"],
+			"mnemonic": "かぞく → « Cars okay » (voyager en famille en voiture).",
+			"example": [
+			"大家族 (だいかぞく - Grande famille)",
+			"家族旅行 (かぞくりょこう - Voyage familial)"
+			]
+		},
+		{
+			"front": "カタカナ",
+			"reading": "カタカナ",
+			"class": "nom",
+			"meaning": ["katakana"],
+			"mnemonic": "Mot japonais pour l’alphabet des mots étrangers.",
+			"example": [
+			"カタカナを書く (カタカナをかく - Écrire en katakana)",
+			"カタカナ表 (カタカナひょう - Tableau des katakana)"
+			]
+		},
+		{
+			"front": "学校",
+			"reading": "がっこう",
+			"class": "nom",
+			"meaning": ["école"],
+			"mnemonic": "がっこう → « Gakko » (lieu d’apprentissage).",
+			"example": [
+			"学校へ行く (がっこうへいく - Aller à l’école)",
+			"学校の先生 (がっこうのせんせい - Professeur d’école)"
+			]
+		},
+		{
+			"front": "カップ",
+			"reading": "カップ",
+			"class": "nom",
+			"meaning": ["tasse"],
+			"mnemonic": "Mot emprunté à l’anglais « cup ».",
+			"example": [
+			"コーヒーカップ (コーヒーカップ - Tasse à café)",
+			"プラスチックのカップ (プラスチックのカップ - Tasse en plastique)"
+			]
+		},
+		{
+			"front": "角",
+			"reading": "かど",
+			"class": "nom",
+			"meaning": ["angle", "coin"],
+			"mnemonic": "かど → « Card » (tourner à l’angle comme une carte).",
+			"example": [
+			"道の角 (みちのかど - Coin de rue)",
+			"尖った角 (とがったかど - Angle pointu)"
+			]
+		},
+		{
+			"front": "かばん",
+			"reading": "かばん",
+			"class": "nom",
+			"meaning": ["sac"],
+			"mnemonic": "かばん → « Cabane » (un sac qui contient beaucoup).",
+			"example": [
+			"革のかばん (かわのかばん - Sac en cuir)",
+			"重いかばん (おもいかばん - Sac lourd)"
+			]
+		},
+		{
+			"front": "花瓶",
+			"reading": "かびん",
+			"class": "nom",
+			"meaning": ["vase"],
+			"mnemonic": "かびん → « Cabin » (petit espace pour les fleurs).",
+			"example": [
+			"花瓶に花 (かびんにはな - Fleurs dans un vase)",
+			"花瓶を割る (かびんをわる - Casser un vase)"
+			]
+		},
+		{
+			"front": "かぶる",
+			"reading": "かぶる",
+			"class": "verbe godan transitif",
+			"meaning": ["porter (sur la tête)", "couvrir"],
+			"mnemonic": "かぶる → « Cap rule » (règle de porter une casquette).",
+			"example": [
+			"帽子をかぶる (ぼうしをかぶる - Porter un chapeau)",
+			"雪をかぶる山 (ゆきをかぶるやま - Montagne couverte de neige)"
+			]
+		}
+	]
+}

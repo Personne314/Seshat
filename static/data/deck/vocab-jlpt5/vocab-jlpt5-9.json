@@ -1,0 +1,230 @@
+{
+	"meta": {
+		"name": "Vocabulaire JLPT5 - 9",
+		"tags": [
+			"word", "jlpt5", "vocabulaire"
+		]
+	},
+	"cards": [
+		{
+			"front": "昨日",
+			"reading": "きのう",
+			"class": "nom",
+			"meaning": ["hier"],
+			"mnemonic": "きのう → « Key no » (la clé des souvenirs d’hier).",
+			"example": [
+			"昨日会った (きのうあった - Nous nous sommes vus hier)",
+			"昨日の天気 (きのうのてんき - La météo d’hier)"
+			]
+		},
+		{
+			"front": "着る",
+			"reading": "きる",
+			"class": "verbe ichidan transitif",
+			"meaning": ["porter (vêtements)"],
+			"mnemonic": "きる → « Key route » (le chemin pour s’habiller).",
+			"example": [
+			"コートを着る (コートをきる - Porter un manteau)",
+			"着る物 (きるもの - Vêtements)"
+			]
+		},
+		{
+			"front": "牛肉",
+			"reading": "ぎゅうにく",
+			"class": "nom",
+			"meaning": ["viande de bœuf"],
+			"mnemonic": "ぎゅうにく → « Gyū » (meuglement de vache) + « niku » (viande).",
+			"example": [
+			"牛肉を買う (ぎゅうにくをかう - Acheter du bœuf)",
+			"牛肉料理 (ぎゅうにくりょうり - Plat de bœuf)"
+			]
+		},
+		{
+			"front": "牛乳",
+			"reading": "ぎゅうにゅう",
+			"class": "nom",
+			"meaning": ["lait de vache"],
+			"mnemonic": "ぎゅうにゅう → « Gyūnyū » (« lait de vache » en un mot).",
+			"example": [
+			"牛乳を飲む (ぎゅうにゅうをのむ - Boire du lait)",
+			"牛乳パック (ぎゅうにゅうパック - Brique de lait)"
+			]
+		},
+		{
+			"front": "今日",
+			"reading": "きょう",
+			"class": "nom",
+			"meaning": ["aujourd’hui"],
+			"mnemonic": "きょう → « Kyo » (aujourd’hui est une clé pour agir).",
+			"example": [
+			"今日の予定 (きょうのよてい - Programme du jour)",
+			"今日会いましょう (きょうあいましょう - Rendez-vous aujourd’hui)"
+			]
+		},
+		{
+			"front": "去年",
+			"reading": "きょねん",
+			"class": "nom",
+			"meaning": ["l’année dernière"],
+			"mnemonic": "きょねん → « Kyo-nen » (une année déjà derrière nous).",
+			"example": [
+			"去年の旅行 (きょねんのりょこう - Voyage de l’an dernier)",
+			"去年卒業した (きょねんそつぎょうした - Diplômé l’année dernière)"
+			]
+		},
+		{
+			"front": "教室",
+			"reading": "きょうしつ",
+			"class": "nom",
+			"meaning": ["salle de classe"],
+			"mnemonic": "きょうしつ → « Kyo-shitsu » (salle d’enseignement).",
+			"example": [
+			"教室に入る (きょうしつにはいる - Entrer en classe)",
+			"教室の机 (きょうしつのつくえ - Bureau de classe)"
+			]
+		},
+		{
+			"front": "兄弟",
+			"reading": "きょうだい",
+			"class": "nom",
+			"meaning": ["frères et sœurs"],
+			"mnemonic": "きょうだい → « Kyo-dai » (liens familiaux forts).",
+			"example": [
+			"兄弟がいる (きょうだいがいる - Avoir des frères et sœurs)",
+			"兄弟喧嘩 (きょうだいけんか - Dispute fraternelle)"
+			]
+		},
+		{
+			"front": "嫌い",
+			"reading": "きらい",
+			"class": "adjectif en -na",
+			"meaning": ["détesté"],
+			"mnemonic": "きらい → « Kirai » (comme « killer » en anglais, quelque chose qu’on veut éviter).",
+			"example": [
+			"嫌いな食べ物 (きらいなたべもの - Nourriture détestée)",
+			"犬が嫌い (いぬがきらい - Détester les chiens)"
+			]
+		},
+		{
+			"front": "切る",
+			"reading": "きる",
+			"class": "verbe godan transitif",
+			"meaning": ["couper"],
+			"mnemonic": "きる → « Shear » (ciseaux pour couper).",
+			"example": [
+			"紙を切る (かみをきる - Couper du papier)",
+			"電話を切る (でんわをきる - Raccrocher le téléphone)"
+			]
+		},
+		{
+			"front": "きれい",
+			"reading": "きれい",
+			"class": "adjectif en -na",
+			"meaning": ["beau", "propre"],
+			"mnemonic": "きれい → « Kirei » (brillance et pureté).",
+			"example": [
+			"きれいな花 (きれいなはな - Belle fleur)",
+			"部屋をきれいにする (へやをきれいにする - Nettoyer la pièce)"
+			]
+		},
+		{
+			"front": "金曜日",
+			"reading": "きんようび",
+			"class": "nom",
+			"meaning": ["vendredi"],
+			"mnemonic": "きんようび → « Kin » (or) + « yōbi » (jour), le jour précieux avant le week-end.",
+			"example": [
+			"金曜日の夜 (きんようびのよる - Vendredi soir)",
+			"金曜日が好き (きんようびがすき - J’aime le vendredi)"
+			]
+		},
+		{
+			"front": "銀行",
+			"reading": "ぎんこう",
+			"class": "nom",
+			"meaning": ["banque"],
+			"mnemonic": "ぎんこう → « Gin » (argent) + « kō » (institution).",
+			"example": [
+			"銀行に行く (ぎんこうにいく - Aller à la banque)",
+			"銀行口座 (ぎんこうこうざ - Compte bancaire)"
+			]
+		},
+		{
+			"front": "空気",
+			"reading": "くうき",
+			"class": "nom",
+			"meaning": ["air"],
+			"mnemonic": "くうき → « Kūki » (comme « cool air » en anglais).",
+			"example": [
+			"空気がきれい (くうきがきれい - Air pur)",
+			"空気を吸う (くうきをすう - Respirer)"
+			]
+		},
+		{
+			"front": "薬",
+			"reading": "くすり",
+			"class": "nom",
+			"meaning": ["médicament"],
+			"mnemonic": "くすり → « Kusuri » (son proche de « cure » en anglais).",
+			"example": [
+			"薬を飲む (くすりをのむ - Prendre un médicament)",
+			"風邪薬 (かぜぐすり - Médicament contre le rhume)"
+			]
+		},
+		{
+			"front": "果物",
+			"reading": "くだもの",
+			"class": "nom",
+			"meaning": ["fruit"],
+			"mnemonic": "くだもの → « Kuda mono » (choses sucrées de la nature).",
+			"example": [
+			"果物を買う (くだものをかう - Acheter des fruits)",
+			"甘い果物 (あまいくだもの - Fruit sucré)"
+			]
+		},
+		{
+			"front": "口",
+			"reading": "くち",
+			"class": "nom",
+			"meaning": ["bouche"],
+			"mnemonic": "くち → « Kuchi » (son d’une bouche qui s’ouvre).",
+			"example": [
+			"口を開ける (くちをあける - Ouvrir la bouche)",
+			"口が大きい (くちがおおきい - Grande bouche)"
+			]
+		},
+		{
+			"front": "靴",
+			"reading": "くつ",
+			"class": "nom",
+			"meaning": ["chaussures"],
+			"mnemonic": "くつ → « Kutsu » (son similaire à « shoes » en japonais).",
+			"example": [
+			"靴を履く (くつをはく - Mettre des chaussures)",
+			"新しい靴 (あたらしいくつ - Nouvelles chaussures)"
+			]
+		},
+		{
+			"front": "靴下",
+			"reading": "くつした",
+			"class": "nom",
+			"meaning": ["chaussettes"],
+			"mnemonic": "くつした → « Kutsu » (chaussures) + « shita » (dessous).",
+			"example": [
+			"靴下を脱ぐ (くつしたをぬぐ - Enlever les chaussettes)",
+			"長い靴下 (ながいくつした - Chaussettes longues)"
+			]
+		},
+		{
+			"front": "国",
+			"reading": "くに",
+			"class": "nom",
+			"meaning": ["pays"],
+			"mnemonic": "くに → « Kuni » (territoire avec une identité unique).",
+			"example": [
+			"国を守る (くにをまもる - Protéger le pays)",
+			"外国 (がいこく - Pays étranger)"
+			]
+		}
+	]	
+}
