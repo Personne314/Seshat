@@ -1,5 +1,6 @@
 {
-    "raicals-dailies-amount": 0,
+    "radicals-dailies-amount": 0,
     "kanjis-dailies-amount": 10,
-    "words-dailies-amount": 20
+    "words-dailies-amount": 20,
+    "app-color-theme": "dark"
 }

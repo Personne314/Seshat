@@ -12,9 +12,10 @@ options = None
 # This function returns the default app options.
 def options_create_default():
 	return {
-		"raicals-dailies-amount": 5,
+		"radicals-dailies-amount": 5,
 		"kanjis-dailies-amount": 0,
-		"words-dailies-amount": 0
+		"words-dailies-amount": 0,
+		"app-color-theme": "light"
 	}
 
 # This function loads the options and creates a default

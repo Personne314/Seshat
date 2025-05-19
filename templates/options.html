@@ -1,89 +1,100 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Configuration des Options</title>
-    <style>
-        .section {
-            border: 1px solid #ddd;
-            margin: 10px 0;
-            border-radius: 5px;
-        }
-        .section summary {
-            background: #f5f5f5;
-            padding: 10px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-        .options-group {
-            padding: 15px;
-        }
-        select {
-            padding: 5px;
-            margin: 5px 0;
-            width: 200px;
-        }
-        button {
-            padding: 10px 20px;
-            background: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-    </style>
+	<title>Configuration des Options</title>
+	<style>
+		.section {
+			border: 1px solid #ddd;
+			margin: 10px 0;
+			border-radius: 5px;
+		}
+		.section summary {
+			background: #f5f5f5;
+			padding: 10px;
+			cursor: pointer;
+			font-weight: bold;
+		}
+		.options-group {
+			padding: 15px;
+		}
+		select {
+			padding: 5px;
+			margin: 5px 0;
+			width: 200px;
+		}
+		button {
+			padding: 10px 20px;
+			background: #4CAF50;
+			color: white;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+	</style>
 </head>
 <body>
-    <h1>Paramètres de l'application</h1>
-    
-    <form method="POST" action="/save-options">
-        {% set values = [0,5,10,15,20,30,40] %}
-        
-        <!-- Section Raicals -->
-        <details class="section">
-            <summary>Raicals</summary>
-            <div class="options-group">
-                <label for="raicals">Quantité quotidienne :</label>
-                <select name="raicals-dailies-amount" id="raicals">
-                    {% for val in values %}
-                    <option value="{{ val }}" {% if options['raicals-dailies-amount'] == val %}selected{% endif %}>
-                        {{ val }}
-                    </option>
-                    {% endfor %}
-                </select>
-            </div>
-        </details>
+	{% include "header.html" %}
 
-        <!-- Section Kanjis -->
-        <details class="section">
-            <summary>Kanjis</summary>
-            <div class="options-group">
-                <label for="kanjis">Quantité quotidienne :</label>
-                <select name="kanjis-dailies-amount" id="kanjis">
-                    {% for val in values %}
-                    <option value="{{ val }}" {% if options['kanjis-dailies-amount'] == val %}selected{% endif %}>
-                        {{ val }}
-                    </option>
-                    {% endfor %}
-                </select>
-            </div>
-        </details>
 
-        <!-- Section Mots -->
-        <details class="section">
-            <summary>Mots</summary>
-            <div class="options-group">
-                <label for="words">Quantité quotidienne :</label>
-                <select name="words-dailies-amount" id="words">
-                    {% for val in values %}
-                    <option value="{{ val }}" {% if options['words-dailies-amount'] == val %}selected{% endif %}>
-                        {{ val }}
-                    </option>
-                    {% endfor %}
-                </select>
-            </div>
-        </details>
+	<h1>Paramètres de l'application</h1>
+	
+	<form method="POST" action="/save-options">
+		{% set dailies_values = [0,5,10,15,20,30,40] %}
+		
+		<!-- Section radicals -->
 
-        <button type="submit">Sauvegarder</button>
-    </form>
+
+		
+		<details class="section">
+			<summary>Dailies</summary>
+			<div class="options-group">
+				<label for="radicals">Radicaux Quotitiens :</label>
+				<select name="radicals-dailies-amount" id="radicals">
+					{% for val in dailies_values %}
+					<option value="{{ val }}" {% if options["radicals-dailies-amount"] == val %}selected{% endif %}>
+						{{ val }}
+					</option>
+					{% endfor %}
+				</select>
+			</div>
+			<div class="options-group">
+				<label for="kanjis">Kanjis Quotitiens :</label>
+				<select name="kanjis-dailies-amount" id="kanjis">
+					{% for val in dailies_values %}
+					<option value="{{ val }}" {% if options["kanjis-dailies-amount"] == val %}selected{% endif %}>
+						{{ val }}
+					</option>
+					{% endfor %}
+				</select>
+			</div>
+			<div class="options-group">
+				<label for="words">Mots Quotitiens :</label>
+				<select name="words-dailies-amount" id="words">
+					{% for val in dailies_values %}
+					<option value="{{ val }}" {% if options["words-dailies-amount"] == val %}selected{% endif %}>
+						{{ val }}
+					</option>
+					{% endfor %}
+				</select>
+			</div>
+		</details>
+
+		<details class="section">
+			<summary>Thèmes</summary>
+			<div class="options-group">
+				<label for="words">Thème de l'application :</label>
+				<select name="app-color-theme" id="theme">
+					<option value="light" {% if options["app-color-theme"] == "light" %}selected{% endif %}>
+						Clair
+					</option>
+					<option value="dark" {% if options["app-color-theme"] == "dark" %}selected{% endif %}>
+						Sombre
+					</option>
+				</select>
+			</div>
+		</details>
+
+		<button type="submit">Sauvegarder</button>
+	</form>
 </body>
 </html>

@@ -37,25 +37,24 @@ def radicals_exercise():
 
 
 
+
+# This route generates a page used to modify tha application options.
 @app.route("/options")
 def show_options():
 	options = get_options()
 	print(options)
 	return render_template("options.html", options=options)
 
+# This route is called to save modified options.
 @app.route("/save-options", methods=["POST"])
 def save_options():
 	options_update({
-		"raicals-dailies-amount": int(request.form["raicals-dailies-amount"]),
+		"radicals-dailies-amount": int(request.form["radicals-dailies-amount"]),
 		"kanjis-dailies-amount": int(request.form["kanjis-dailies-amount"]),
-		"words-dailies-amount": int(request.form["words-dailies-amount"])
+		"words-dailies-amount": int(request.form["words-dailies-amount"]),
+		"app-color-theme": str(request.form["app-color-theme"])
 	})
 	return redirect("/")
-
-
-
-
-
 
 # This route generates a page showing the kanji of a deck.
 @app.route("/deck")
