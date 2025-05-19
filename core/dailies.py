@@ -1,7 +1,7 @@
 from datetime import date
 from os import path
 from json import dump, load
-from core.options import options
+from core.options import get_options
 
 
 

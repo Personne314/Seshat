@@ -9,10 +9,6 @@ options = None
 
 
 
-#################################################################################
-# This section defines functions used to initialize the options.				#
-#################################################################################
-
 # This function returns the default app options.
 def options_create_default():
 	return {
@@ -33,3 +29,15 @@ def options_init():
 			options = options_create_default()
 			with open(OPTIONS_FILE, "w", encoding="utf-8") as f:
 				dump(options, f, ensure_ascii=False, indent=4)
+
+# This function is used to update the options.
+def options_update(new_options):
+	global options
+	options = new_options
+	with open(OPTIONS_FILE, "w", encoding="utf-8") as f:
+		dump(options, f, ensure_ascii=False, indent=4)
+
+# This function returns the options.
+def get_options():
+	global options
+	return options
