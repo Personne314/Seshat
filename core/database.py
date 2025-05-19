@@ -2,8 +2,7 @@ import sqlite3
 from flask import g
 from os import path
 from pathlib import Path
-from json import load, JSONDecodeError, dump
-from flask import jsonify
+from json import load, JSONDecodeError
 from sys import exit
 
 
@@ -39,6 +38,10 @@ def close_db(e=None):
 
 
 
+#################################################################################
+# This section defines functions used to initialize the database.				#
+#################################################################################
+
 # Checks the structure of a card dict.
 def check_card_structure(json, fields, lists):
 	if not isinstance(json, dict): return False
@@ -56,7 +59,6 @@ def get_next_autoincrement_id(db, table):
 	result = db.execute(f"SELECT seq FROM sqlite_sequence WHERE name='{table}'").fetchone()
 	if result: return result[0] + 1
 	else: return 1
-
 
 # Adds a deck in the database and returns it's id.
 def create_deck(db, meta, json_file):
@@ -271,8 +273,6 @@ def create_cards_kanji(db, deck_id, cards, json_file):
 		radical_values
 	)
 
-
-
 # Initialises the database.
 def init_db():
 	print(f"[SESHAT]: info: database initialization")
@@ -319,7 +319,9 @@ def init_db():
 
 
 
-# This section defines functions to access specific data in the db.
+#################################################################################
+# This section defines functions to access deck data in the db.					#
+#################################################################################
 
 # Gets all the cards of the specified deck.
 def db_get_deck_cards(name, tags):
@@ -366,52 +368,35 @@ def db_get_deck_cards_radical(db, name):
 	]
 	return data
 
-
-
-
-
-
-
-
 # Gets all the cards of the specified word deck.
 def db_get_deck_cards_word(db, name):
-    request = f"""
-    SELECT
-        E.japanese_name,
-        E.mnemonic,
-        WI.reading AS reading,
-        WI.word_class AS class,
-        (SELECT GROUP_CONCAT(meaning, '|')
-         FROM Meaning M
-         WHERE M.element_id = E.id) AS meaning,
-        (SELECT GROUP_CONCAT(example, '|')
-         FROM Example EX
-         WHERE EX.element_id = E.id) AS example
-    FROM Element E
-    JOIN Deck D ON E.deck_id = D.deck_id
-    LEFT JOIN WordInfo WI ON E.id = WI.element_id
-    WHERE E.element_type = 'word' AND D.deck_name = '{name}';
-    """
-    res = db.execute(request)
-    data = [
-        {
-            **dict(row),
-            "meaning": [m.strip() for m in row["meaning"].split("|") if m.strip()] if row["meaning"] else [],
-            "example": [e.strip() for e in row["example"].split("|") if e.strip()] if row["example"] else []
-        }
-        for row in res
-    ]
-    return data
-
-
-
-
-
-
-
-
-
-
+	request = f"""
+	SELECT
+		E.japanese_name,
+		E.mnemonic,
+		WI.reading AS reading,
+		WI.word_class AS class,
+		(SELECT GROUP_CONCAT(meaning, '|')
+		 FROM Meaning M
+		 WHERE M.element_id = E.id) AS meaning,
+		(SELECT GROUP_CONCAT(example, '|')
+		 FROM Example EX
+		 WHERE EX.element_id = E.id) AS example
+	FROM Element E
+	JOIN Deck D ON E.deck_id = D.deck_id
+	LEFT JOIN WordInfo WI ON E.id = WI.element_id
+	WHERE E.element_type = 'word' AND D.deck_name = '{name}';
+	"""
+	res = db.execute(request)
+	data = [
+		{
+			**dict(row),
+			"meaning": [m.strip() for m in row["meaning"].split("|") if m.strip()] if row["meaning"] else [],
+			"example": [e.strip() for e in row["example"].split("|") if e.strip()] if row["example"] else []
+		}
+		for row in res
+	]
+	return data
 
 # Gets all the cards of the specified kanji deck.
 def db_get_deck_cards_kanji(db, name):
@@ -473,3 +458,42 @@ def db_get_deck_meta(name):
 		for row in res
 	]
 	return data[0]
+
+
+
+#################################################################################
+# This section defines functions to access deck data in the db.					#
+#################################################################################
+
+# This function updates a list of scores in the database.
+# scores must be a list of (element_id, last_review, validation_count, difficulty).
+def db_upsert_scores(scores):
+	db = get_db()
+	query = """
+	INSERT INTO Score (element_id, last_review, validation_count, difficulty)
+	VALUES (?, ?, ?, ?)
+	ON CONFLICT(element_id) DO UPDATE SET
+		last_review = excluded.last_review,
+		validation_count = excluded.validation_count,
+		difficulty = excluded.difficulty
+	"""
+	db.executemany(query, scores)
+	db.commit()
+
+# this function return a  the n scores with the greater id as a
+# list of (element_id, last_review, validation_count, difficulty).
+def db_get_priority_elements(n):
+	db = get_db()
+	query = """
+	SELECT element_id, last_review, validation_count, difficulty,
+		CASE WHEN last_review IS NULL THEN 1e999  -- valeur approchant l'infini
+			ELSE (julianday('now') - julianday(last_review)) / 
+				(POWER(2, validation_count) * difficulty)
+		END AS priority
+	FROM Score
+	ORDER BY priority DESC
+	LIMIT ?
+	"""
+	cursor = db.execute(query, (n,))
+	results = [(row[0], row[1], row[2], row[3]) for row in cursor.fetchall()]
+	return results
