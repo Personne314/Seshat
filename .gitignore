@@ -4,3 +4,5 @@ env/
 *.db
 __pycache__
 notes/voc_n5.txt
+./dailies.json
+./options.json
