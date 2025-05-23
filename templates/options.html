@@ -2,51 +2,23 @@
 <html>
 <head>
 	<title>Configuration des Options</title>
-	<style>
-		.section {
-			border: 1px solid #ddd;
-			margin: 10px 0;
-			border-radius: 5px;
-		}
-		.section summary {
-			background: #f5f5f5;
-			padding: 10px;
-			cursor: pointer;
-			font-weight: bold;
-		}
-		.options-group {
-			padding: 15px;
-		}
-		select {
-			padding: 5px;
-			margin: 5px 0;
-			width: 200px;
-		}
-		button {
-			padding: 10px 20px;
-			background: #4CAF50;
-			color: white;
-			border: none;
-			border-radius: 4px;
-			cursor: pointer;
-		}
-	</style>
+	<link rel="stylesheet" href="/static/css/{{options["app-color-theme"]}}/main.css">
+	<link rel="stylesheet" href="/static/css/{{options["app-color-theme"]}}/forms.css">
 </head>
 <body>
 	{% include "header.html" %}
 
-
+	<!-- Form to update the app options -->
+	<br/>
 	<h1>Paramètres de l'application</h1>
-	
-	<form method="POST" action="/save-options">
+	<form method="POST" action="/api/save-options">
 		{% set dailies_values = [0,5,10,15,20,30,40] %}
 		
-		<!-- Section radicals -->
-
-
-		
+		<!-- Dailies options -->
 		<details class="section">
 			<summary>Dailies</summary>
+
+			<!-- The number of radicals to work on each day -->
 			<div class="options-group">
 				<label for="radicals">Radicaux Quotitiens :</label>
 				<select name="radicals-dailies-amount" id="radicals">
@@ -57,6 +29,8 @@
 					{% endfor %}
 				</select>
 			</div>
+
+			<!-- The number of kanjis to work on each day -->
 			<div class="options-group">
 				<label for="kanjis">Kanjis Quotitiens :</label>
 				<select name="kanjis-dailies-amount" id="kanjis">
@@ -67,6 +41,8 @@
 					{% endfor %}
 				</select>
 			</div>
+
+			<!-- The number of words to work on each day -->
 			<div class="options-group">
 				<label for="words">Mots Quotitiens :</label>
 				<select name="words-dailies-amount" id="words">
@@ -79,6 +55,7 @@
 			</div>
 		</details>
 
+		<!-- Theme options -->
 		<details class="section">
 			<summary>Thèmes</summary>
 			<div class="options-group">
@@ -94,6 +71,7 @@
 			</div>
 		</details>
 
+		<!-- This post on an api route that get the form data and save it -->
 		<button type="submit">Sauvegarder</button>
 	</form>
 </body>

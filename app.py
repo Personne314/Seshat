@@ -42,25 +42,18 @@ def radicals_exercise():
 @app.route("/options")
 def show_options():
 	options = get_options()
-	print(options)
 	return render_template("options.html", options=options)
-
-# This route is called to save modified options.
-@app.route("/save-options", methods=["POST"])
-def save_options():
-	options_update({
-		"radicals-dailies-amount": int(request.form["radicals-dailies-amount"]),
-		"kanjis-dailies-amount": int(request.form["kanjis-dailies-amount"]),
-		"words-dailies-amount": int(request.form["words-dailies-amount"]),
-		"app-color-theme": str(request.form["app-color-theme"])
-	})
-	return redirect("/")
 
 # This route generates a page showing the kanji of a deck.
 @app.route("/deck")
 def page_deck():
 	deck_data = "Vocabulaire JLPT5 - 18"
 	return render_template("deck.html", deck_data=deck_data)
+
+# This route generates a page showing the deck list.
+@app.route("/decks")
+def page_decks():
+	return render_template("decks.html")
 
 
 
@@ -72,6 +65,17 @@ def get_deck(deck_name):
 	deck_meta = db_get_deck_meta(deck_name)
 	deck_cards = db_get_deck_cards(deck_name, deck_meta["tags"])
 	return jsonify({"meta": deck_meta, "cards": deck_cards})
+
+# This route is called to save modified options.
+@app.route("/api/save-options", methods=["POST"])
+def save_options():
+	options_update({
+		"radicals-dailies-amount": int(request.form["radicals-dailies-amount"]),
+		"kanjis-dailies-amount": int(request.form["kanjis-dailies-amount"]),
+		"words-dailies-amount": int(request.form["words-dailies-amount"]),
+		"app-color-theme": str(request.form["app-color-theme"])
+	})
+	return redirect("/")
 
 
 
