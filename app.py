@@ -1,5 +1,6 @@
 from flask import Flask, redirect, render_template, jsonify, request
-from core.database import get_db, close_db, db_get_deck_meta, db_get_deck_cards, db_get_decks_tags
+from core.database import get_db, close_db, db_get_deck_meta, db_get_deck_cards, \
+	db_get_decks_tags, db_get_decks_by_tags
 from core.options import options_init, options_update, get_options
 from core.dailies import dailies_init
 
@@ -97,6 +98,23 @@ def api_save_options():
 		"words-dailies-amount": int(request.form["words-dailies-amount"]),
 		"app-color-theme": str(request.form["app-color-theme"])
 	})
+	return redirect("/")
+
+# Route to get the json representing the decks.
+@app.route("/api/decks", methods=["POST"])
+def api_get_decks():
+	data = request.get_json()
+	print("data:",data)
+	if not data or "tags" not in data or "min" not in data or "amount" not in data:
+		return jsonify([])
+	return jsonify(db_get_decks_by_tags(data["tags"], data["min"], data["amount"]))
+
+# This route is called to save modified decks.
+@app.route("/api/save-decks", methods=["POST"])
+def api_save_decks():
+	
+	# TO BE IMPLEMENTED
+
 	return redirect("/")
 
 

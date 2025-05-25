@@ -24,7 +24,7 @@
 	</div>
 
 
-	<form method="POST" action="/api/update-decks" class="deck-form">
+	<form method="POST" action="/api/save-decks" class="deck-form">
 		<!-- Section des decks actifs -->
 		<details class="section" open>
 			<summary>Decks Actifs ({{active_decks|length}})</summary>
@@ -48,38 +48,15 @@
 			</div>
 		</details>
 
-		<!-- Section des decks inactifs -->
-		<details class="section">
-			<summary>Decks Inactifs ({{inactive_decks|length}})</summary>
-			<div class="options-group deck-grid">
-				{% for deck in inactive_decks %}
-				<div class="deck-option">
-					<div class="deck-header">
-						<h3>{{deck.name}}</h3>
-						<div class="deck-tags">
-							{% for tag in deck.tags %}
-							<span class="tag">{{tag}}</span>
-							{% endfor %}
-						</div>
-					</div>
-					<label class="toggle-switch">
-						<input type="checkbox" name="active_deck_{{deck.id}}">
-						<span class="slider"></span>
-					</label>
-				</div>
-				{% endfor %}
-			</div>
-		</details>
 
-		<!-- Boutons d'action -->
+		<!-- This post on an api route that get the form data and save it -->
 		<div class="form-actions">
 			<button type="submit" class="primary">Enregistrer les modifications</button>
 		</div>
 	</form>
 
-
-
-
+	<script src="{{ url_for('static', filename='js/decks.js') }}"></script>
+	<script>setDeckType("kanji");</script>
 
 </body>
 </html>

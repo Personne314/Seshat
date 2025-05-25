@@ -498,70 +498,82 @@ def db_get_priority_elements(n):
 	results = [(row[0], row[1], row[2], row[3]) for row in cursor.fetchall()]
 	return results
 
-# This function returns all the decks and their elements in the following format :
-# {"active":[{"name":"deck_name", "content":[("element_name", validation_count), ...]}, ...], 
-#  "inactive":[{"name":"deck_name", "content": ["element_name", ...]}, ...]}
-def db_get_decks_by_tag(tag):
+# This function returns the list of all existing tags for one type of deck.
+def db_get_decks_tags(deck_type):
+	db = get_db()
+	query = """
+		SELECT dt2.tag as count
+		FROM DeckTag dt1
+		JOIN DeckTag dt2 ON dt1.deck_id = dt2.deck_id
+		WHERE dt1.tag = ?
+		AND dt2.tag != ?
+		GROUP BY dt2.tag
+		ORDER BY count DESC, dt2.tag COLLATE NOCASE ASC
+	"""
+	cursor = db.execute(query, (deck_type, deck_type))
+	return [row[0] for row in cursor.fetchall()]
+
+
+
+
+
+
+
+
+
+
+
+
+# This returns the decks 
+def db_get_decks_by_tags(tags, min, amount):
 	db = get_db()
 
-	# Gets the decks.
-	decks = db.execute("""
+	# Lists the decks that have all the tags.
+	decks_query = """
 		SELECT D.deck_id, D.deck_name, D.is_active
 		FROM DeckTag DT
 		JOIN Deck D ON DT.deck_id = D.deck_id
-		WHERE DT.tag = ?
-		ORDER BY D.deck_name
-	""", (tag,)).fetchall()
-	if not decks:
-		return {"active": [], "inactive": []}
-	deck_map = {deck["deck_id"]: {
-		"name": deck["deck_name"],
-		"is_active": bool(deck["is_active"]),
-		"content": []
-	} for deck in decks}
+		WHERE DT.tag IN ({})
+		GROUP BY D.deck_id
+		HAVING COUNT(DISTINCT DT.tag) = ?
+		ORDER BY LENGTH(D.deck_name), D.deck_name COLLATE NOCASE
+		LIMIT ? OFFSET ?
+	""".format(','.join('?' * len(tags)))
+	params = tags + [len(tags), amount, min]
+	decks = db.execute(decks_query, params).fetchall()
+	if not decks: return []
+
+	# Maps these decks before inserting the data.
+	deck_map = {
+		deck["deck_id"]: {
+			"name": deck["deck_name"],
+			"is_active": bool(deck["is_active"]),
+			"content": []
+		} 
+		for deck in decks
+	}
 	deck_ids = tuple(deck_map.keys())
 
-	# 2) Gets raw element data. 
-	query = f"""
+	# Gets all the elements data.
+	elements_query = f"""
 		SELECT 
 			E.deck_id,
 			E.japanese_name,
 			COALESCE(S.validation_count, 0) AS validation_count
 		FROM Element E
 		LEFT JOIN Score S ON E.id = S.element_id
-		WHERE E.deck_id IN ({','.join('?' for _ in deck_ids)})
+		WHERE E.deck_id IN ({','.join('?' * len(deck_ids))})
+		ORDER BY E.japanese_name
 	"""
-	rows = db.execute(query, deck_ids).fetchall()
-	elements_by_deck = {}
+	rows = db.execute(elements_query, deck_ids).fetchall()
+
+	# Insert the data at the right place then converts the map to a sorted list.
 	for row in rows:
-		deck_id = row["deck_id"]
-		elements_by_deck.setdefault(deck_id, []).append(row)
-
-	# Builds the lists.
-	active_decks = []
-	inactive_decks = []
-	for deck_id, deck in deck_map.items():
-		elements = elements_by_deck.get(deck_id, [])
-		if deck["is_active"]:
-			deck["content"] = [[e["japanese_name"], e["validation_count"]] for e in elements]
-			active_decks.append(deck)
-		else:
-			deck["content"] = [e["japanese_name"] for e in elements]
-			inactive_decks.append(deck)
-		del deck["is_active"]
-	return {"active": active_decks, "inactive": inactive_decks}
-
-# This function returns the list of all existing tags for one type of deck.
-def db_get_decks_tags(deck_type):
-	db = get_db()
-	query = """
-	SELECT dt2.tag as count
-	FROM DeckTag dt1
-	JOIN DeckTag dt2 ON dt1.deck_id = dt2.deck_id
-	WHERE dt1.tag = ?
-	AND dt2.tag != ?
-	GROUP BY dt2.tag
-	ORDER BY count DESC, dt2.tag COLLATE NOCASE ASC
-	"""
-	cursor = db.execute(query, (deck_type, deck_type))
-	return [row[0] for row in cursor.fetchall()]
+		deck = deck_map[row["deck_id"]]
+		deck["content"].append(
+			[row[1], row[2]] if deck["is_active"] else row[1]
+		)
+	decks = list(deck_map.values())
+	return sorted(
+		decks, key=lambda x: (len(x["name"]), x["name"].lower()) 
+	)
