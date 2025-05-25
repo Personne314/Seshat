@@ -1,5 +1,5 @@
 from flask import Flask, redirect, render_template, jsonify, request
-from core.database import get_db, close_db, db_get_deck_meta, db_get_deck_cards
+from core.database import get_db, close_db, db_get_deck_meta, db_get_deck_cards, db_get_decks_by_tag, db_upsert_scores,db_get_priority_elements
 from core.options import options_init, options_update, get_options
 from core.dailies import dailies_init
 
@@ -39,6 +39,13 @@ def index():
 # This route generates a page used to modify tha application options.
 @app.route("/options")
 def show_options():
+
+	db_upsert_scores([(4,"11-11-2011", 5, 1.2)])
+	a = db_get_priority_elements(1)
+	print(a)
+	res = db_get_decks_by_tag("word")
+
+	print(res)
 	return render_template("options.html", options=get_options(), active_page="options")
 
 # This route generates a page showing the kanji of a deck.

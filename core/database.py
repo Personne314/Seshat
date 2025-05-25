@@ -64,7 +64,7 @@ def get_next_autoincrement_id(db, table):
 def create_deck(db, meta, json_file):
 
 	# Inserts the deck.
-	cursor = db.execute(f"INSERT INTO Deck (deck_name) VALUES ('{meta["name"]}');")
+	cursor = db.execute(f"INSERT INTO Deck (deck_name, is_active) VALUES ('{meta["name"]}', 0);")
 	deck_id = cursor.lastrowid
 	
 	# Inserts the tags.
@@ -462,7 +462,7 @@ def db_get_deck_meta(name):
 
 
 #################################################################################
-# This section defines functions to access deck data in the db.					#
+# This section defines functions to access the scores in the db.				#
 #################################################################################
 
 # This function updates a list of scores in the database.
@@ -480,7 +480,7 @@ def db_upsert_scores(scores):
 	db.executemany(query, scores)
 	db.commit()
 
-# this function return a  the n scores with the greater id as a
+# this function return a the n scores with the greater id as a
 # list of (element_id, last_review, validation_count, difficulty).
 def db_get_priority_elements(n):
 	db = get_db()
@@ -497,3 +497,56 @@ def db_get_priority_elements(n):
 	cursor = db.execute(query, (n,))
 	results = [(row[0], row[1], row[2], row[3]) for row in cursor.fetchall()]
 	return results
+
+# This function returns all the decks and their elements in the following format :
+# {"active":[{"name":"deck_name", "content":[("element_name", validation_count), ...]}, ...], 
+#  "inactive":[{"name":"deck_name", "content": ["element_name", ...]}, ...]}
+def db_get_decks_by_tag(tag):
+	db = get_db()
+
+	# Gets the decks.
+	decks = db.execute("""
+		SELECT D.deck_id, D.deck_name, D.is_active
+		FROM DeckTag DT
+		JOIN Deck D ON DT.deck_id = D.deck_id
+		WHERE DT.tag = ?
+		ORDER BY D.deck_name
+	""", (tag,)).fetchall()
+	if not decks:
+		return {"active": [], "inactive": []}
+	deck_map = {deck["deck_id"]: {
+		"name": deck["deck_name"],
+		"is_active": bool(deck["is_active"]),
+		"content": []
+	} for deck in decks}
+	deck_ids = tuple(deck_map.keys())
+
+	# 2) Gets raw element data. 
+	query = f"""
+		SELECT 
+			E.deck_id,
+			E.japanese_name,
+			COALESCE(S.validation_count, 0) AS validation_count
+		FROM Element E
+		LEFT JOIN Score S ON E.id = S.element_id
+		WHERE E.deck_id IN ({','.join('?' for _ in deck_ids)})
+	"""
+	rows = db.execute(query, deck_ids).fetchall()
+	elements_by_deck = {}
+	for row in rows:
+		deck_id = row["deck_id"]
+		elements_by_deck.setdefault(deck_id, []).append(row)
+
+	# Builds the lists.
+	active_decks = []
+	inactive_decks = []
+	for deck_id, deck in deck_map.items():
+		elements = elements_by_deck.get(deck_id, [])
+		if deck["is_active"]:
+			deck["content"] = [[e["japanese_name"], e["validation_count"]] for e in elements]
+			active_decks.append(deck)
+		else:
+			deck["content"] = [e["japanese_name"] for e in elements]
+			inactive_decks.append(deck)
+		del deck["is_active"]
+	return {"active": active_decks, "inactive": inactive_decks}

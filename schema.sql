@@ -86,7 +86,8 @@ CREATE TABLE Score (
 -- Element  1 <--> 0  Deck
 CREATE TABLE Deck (
 	deck_id INTEGER PRIMARY KEY AUTOINCREMENT,
-	deck_name TEXT NOT NULL
+	deck_name TEXT NOT NULL,
+	is_active INTEGER NOT NULL DEFAULT 0 CHECK (is_active IN (0, 1))
 );
 
 -- This contains all the deck tags.
