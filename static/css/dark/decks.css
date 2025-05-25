@@ -1,0 +1,63 @@
+/* Barre de recherche */
+.search-container {
+	max-width: 48%;
+    padding-left: 25.25%;
+	margin-bottom: 25px;
+}
+
+#tag-search {
+	width: 100%;
+	padding: 12px 15px;
+	border: 1px solid #555;
+	border-radius: 6px;
+	background-color: #2b2b2b;
+	color: #f0f0f0;
+	font-size: 1em;
+	margin-bottom: 15px;
+	transition: border-color 0.3s;
+}
+
+#tag-search:focus {
+	border-color: #e53935;
+	outline: none;
+}
+
+/* Filtres de tags */
+.tag-filters {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.tag-filter {
+	background-color: #3a3a3a;
+	color: #ccc;
+	padding: 5px 12px;
+	border-radius: 15px;
+	font-size: 0.85em;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	border: 1px solid #555;
+}
+
+.tag-filter:hover {
+	background-color: #656565;
+	color: #fff;
+}
+
+.tag-filter.active {
+	background-color: #e53935;
+	color: white;
+	border-color: #e53935;
+}
+
+/* Animation pour la recherche */
+.deck-option {
+	transition: all 0.3s ease;
+}
+
+.deck-option.hidden {
+	opacity: 0.3;
+	transform: scale(0.98);
+	pointer-events: none;
+}

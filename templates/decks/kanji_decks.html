@@ -3,9 +3,82 @@
 <head>
 	<title>Configuration des Options</title>
 	<link rel="stylesheet" href="/static/css/{{options['app-color-theme']}}/main.css">
+	<link rel="stylesheet" href="/static/css/{{options['app-color-theme']}}/forms.css">
+	<link rel="stylesheet" href="/static/css/{{options['app-color-theme']}}/decks.css">
 </head>
 <body>
 	{% include "header.html" %}
+
+
+	<!-- Form to update the used kanji decks -->
+	<br/>
+	<h1>Decks de Kanji</h1>
+
+	<div class="search-container">
+		<input type="text" id="tag-search" placeholder="Rechercher par tag...">
+		<div class="tag-filters">
+			{% for tag in all_tags %}
+			<span class="tag-filter" data-tag="{{tag}}">{{tag}}</span>
+			{% endfor %}
+		</div>
+	</div>
+
+
+	<form method="POST" action="/api/update-decks" class="deck-form">
+		<!-- Section des decks actifs -->
+		<details class="section" open>
+			<summary>Decks Actifs ({{active_decks|length}})</summary>
+			<div class="options-group deck-grid">
+				{% for deck in active_decks %}
+				<div class="deck-option">
+					<div class="deck-header">
+						<h3>{{deck.name}}</h3>
+						<div class="deck-tags">
+							{% for tag in deck.tags %}
+							<span class="tag">{{tag}}</span>
+							{% endfor %}
+						</div>
+					</div>
+					<label class="toggle-switch">
+						<input type="checkbox" name="active_deck_{{deck.id}}" checked>
+						<span class="slider"></span>
+					</label>
+				</div>
+				{% endfor %}
+			</div>
+		</details>
+
+		<!-- Section des decks inactifs -->
+		<details class="section">
+			<summary>Decks Inactifs ({{inactive_decks|length}})</summary>
+			<div class="options-group deck-grid">
+				{% for deck in inactive_decks %}
+				<div class="deck-option">
+					<div class="deck-header">
+						<h3>{{deck.name}}</h3>
+						<div class="deck-tags">
+							{% for tag in deck.tags %}
+							<span class="tag">{{tag}}</span>
+							{% endfor %}
+						</div>
+					</div>
+					<label class="toggle-switch">
+						<input type="checkbox" name="active_deck_{{deck.id}}">
+						<span class="slider"></span>
+					</label>
+				</div>
+				{% endfor %}
+			</div>
+		</details>
+
+		<!-- Boutons d'action -->
+		<div class="form-actions">
+			<button type="submit" class="primary">Enregistrer les modifications</button>
+		</div>
+	</form>
+
+
+
 
 
 </body>

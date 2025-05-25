@@ -550,3 +550,18 @@ def db_get_decks_by_tag(tag):
 			inactive_decks.append(deck)
 		del deck["is_active"]
 	return {"active": active_decks, "inactive": inactive_decks}
+
+# This function returns the list of all existing tags for one type of deck.
+def db_get_decks_tags(deck_type):
+	db = get_db()
+	query = """
+	SELECT dt2.tag as count
+	FROM DeckTag dt1
+	JOIN DeckTag dt2 ON dt1.deck_id = dt2.deck_id
+	WHERE dt1.tag = ?
+	AND dt2.tag != ?
+	GROUP BY dt2.tag
+	ORDER BY count DESC, dt2.tag COLLATE NOCASE ASC
+	"""
+	cursor = db.execute(query, (deck_type, deck_type))
+	return [row[0] for row in cursor.fetchall()]

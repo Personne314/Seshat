@@ -1,5 +1,5 @@
 from flask import Flask, redirect, render_template, jsonify, request
-from core.database import get_db, close_db, db_get_deck_meta, db_get_deck_cards, db_get_decks_by_tag, db_upsert_scores,db_get_priority_elements
+from core.database import get_db, close_db, db_get_deck_meta, db_get_deck_cards, db_get_decks_tags
 from core.options import options_init, options_update, get_options
 from core.dailies import dailies_init
 
@@ -39,13 +39,6 @@ def index():
 # This route generates a page used to modify tha application options.
 @app.route("/options")
 def show_options():
-
-	db_upsert_scores([(4,"11-11-2011", 5, 1.2)])
-	a = db_get_priority_elements(1)
-	print(a)
-	res = db_get_decks_by_tag("word")
-
-	print(res)
 	return render_template("options.html", options=get_options(), active_page="options")
 
 # This route generates a page showing the kanji of a deck.
@@ -57,17 +50,32 @@ def page_deck():
 # This route generates a page showing the kanji deck list.
 @app.route("/decks-kanji")
 def page_decks_kanji():
-	return render_template("decks/kanji_decks.html", options=get_options(), active_page="decks-kanji")
+	return render_template(
+		"decks/kanji_decks.html", 
+		options=get_options(), 
+		active_page="decks-kanji",
+		all_tags=db_get_decks_tags("kanji")
+	)
 
 # This route generates a page showing the word deck list.
 @app.route("/decks-word")
 def page_decks_word():
-	return render_template("decks/word_decks.html", options=get_options(), active_page="decks-word")
+	return render_template(
+		"decks/word_decks.html", 
+		options=get_options(), 
+		active_page="decks-word",
+		all_tags=db_get_decks_tags("word")
+	)
 
 # This route generates a page showing the radical deck list.
 @app.route("/decks-radical")
 def page_decks_radical():
-	return render_template("decks/radical_decks.html", options=get_options(), active_page="decks-radical")
+	return render_template(
+		"decks/radical_decks.html", 
+		options=get_options(), 
+		active_page="decks-radical",
+		all_tags=db_get_decks_tags("radical")
+	)
 
 
 

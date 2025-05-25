@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Deck</title>
 	<link rel="stylesheet" href="/static/css/flashcard.css">
+	<link rel="stylesheet" href="/static/css/{{options['app-color-theme']}}/main.css">
+	<link rel="stylesheet" href="/static/css/{{options['app-color-theme']}}/deck.css">
+
 </head>
 <body>
-
-	<header class="deck-header">
+	{% include "header.html" %}
+	<div class="deck-header">
 		<h1 id="deck-name"></h1>
 		<div id="deck-tags"></div>
-	</header>
+	</div>
 	<main class="deck-main">
 		<div class="flashcards-deck">
 			<div class="deck-container" id="deck-container"></div>
@@ -19,7 +20,6 @@
 			<button class="deck-btn next">&gt;</button>
 		</div>
 	</main>
-
 	<div id="deck-data" 
 		data-name="{{deck_data}}"
 		style="display: none;">
