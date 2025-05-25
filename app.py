@@ -20,40 +20,47 @@ def teardown_appcontext(exception):
 
 
 
-# Main route. Placeholder.
-@app.route("/")
-def index():
-	dailies_init()
-	deck_data = "test"
-	return "PLACEHOLDER"
 
 # Radical exercice route.
 @app.route("/radicals-exercise")
 def radicals_exercise():
 	deck_data = "radicals-14"
-	return render_template("exercices/radical_exercise.html", deck_data=deck_data)
+	return render_template("exercices/radical_exercise.html", deck_data=deck_data, active_page="home")
 
 
 
 
-
+# This route generates the dailies if needed then the main page.
+@app.route("/")
+def index():
+	dailies_init()
+	return render_template("index.html", options=get_options(), active_page="home")
 
 # This route generates a page used to modify tha application options.
 @app.route("/options")
 def show_options():
-	options = get_options()
-	return render_template("options.html", options=options)
+	return render_template("options.html", options=get_options(), active_page="options")
 
 # This route generates a page showing the kanji of a deck.
 @app.route("/deck")
 def page_deck():
 	deck_data = "Vocabulaire JLPT5 - 18"
-	return render_template("deck.html", deck_data=deck_data)
+	return render_template("decks/deck.html", options=get_options(), deck_data=deck_data)
 
-# This route generates a page showing the deck list.
-@app.route("/decks")
-def page_decks():
-	return render_template("decks.html")
+# This route generates a page showing the kanji deck list.
+@app.route("/decks-kanji")
+def page_decks_kanji():
+	return render_template("decks/kanji_decks.html", options=get_options(), active_page="decks-kanji")
+
+# This route generates a page showing the word deck list.
+@app.route("/decks-word")
+def page_decks_word():
+	return render_template("decks/word_decks.html", options=get_options(), active_page="decks-word")
+
+# This route generates a page showing the radical deck list.
+@app.route("/decks-radical")
+def page_decks_radical():
+	return render_template("decks/radical_decks.html", options=get_options(), active_page="decks-radical")
 
 
 
@@ -61,14 +68,14 @@ def page_decks():
 
 # Route to get the json representing the deck cards.
 @app.route("/api/deck/<string:deck_name>")
-def get_deck(deck_name):
+def api_get_deck(deck_name):
 	deck_meta = db_get_deck_meta(deck_name)
 	deck_cards = db_get_deck_cards(deck_name, deck_meta["tags"])
 	return jsonify({"meta": deck_meta, "cards": deck_cards})
 
 # This route is called to save modified options.
 @app.route("/api/save-options", methods=["POST"])
-def save_options():
+def api_save_options():
 	options_update({
 		"radicals-dailies-amount": int(request.form["radicals-dailies-amount"]),
 		"kanjis-dailies-amount": int(request.form["kanjis-dailies-amount"]),
