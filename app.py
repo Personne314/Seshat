@@ -1,6 +1,6 @@
 from flask import Flask, redirect, render_template, jsonify, request
 from core.database import get_db, close_db, db_get_deck_meta, db_get_deck_cards, \
-	db_get_decks_tags, db_get_decks_by_tags
+	db_get_decks_tags, db_get_decks_by_tags, db_get_decks_by_tags_amount
 from core.options import options_init, options_update, get_options
 from core.dailies import dailies_init
 
@@ -107,6 +107,15 @@ def api_get_decks():
 	if not data or "tags" not in data or "min" not in data or "amount" not in data:
 		return jsonify([])
 	return jsonify(db_get_decks_by_tags(data["tags"], data["min"], data["amount"]))
+
+# Route to get the number of decks returned by /api/decks.
+@app.route("/api/decks-count", methods=["POST"])
+def api_get_decks_count():
+	data = request.get_json()
+	if not data or "tags" not in data or "min" not in data or "amount" not in data:
+		return jsonify([])
+	return jsonify(db_get_decks_by_tags_amount(data["tags"], data["min"], data["amount"]))
+
 
 # This route is called to save modified decks.
 @app.route("/api/save-decks", methods=["POST"])

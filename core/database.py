@@ -524,7 +524,7 @@ def db_get_decks_tags(deck_type):
 
 
 
-# This returns the decks 
+# This returns the decks that have all the tags with their elements.
 def db_get_decks_by_tags(tags, min, amount):
 	db = get_db()
 
@@ -575,3 +575,22 @@ def db_get_decks_by_tags(tags, min, amount):
 	return sorted(
 		decks, key=lambda x: (len(x["name"]), x["name"].lower()) 
 	)
+
+# This returns the amount of decks returned by the previous function. 
+def db_get_decks_by_tags_amount(tags, min, amount):
+	db = get_db()
+
+	# Lists the decks that have all the tags.
+	decks_query = """
+		SELECT D.deck_id, D.deck_name, D.is_active
+		FROM DeckTag DT
+		JOIN Deck D ON DT.deck_id = D.deck_id
+		WHERE DT.tag IN ({})
+		GROUP BY D.deck_id
+		HAVING COUNT(DISTINCT DT.tag) = ?
+		ORDER BY LENGTH(D.deck_name), D.deck_name COLLATE NOCASE
+		LIMIT ? OFFSET ?
+	""".format(','.join('?' * len(tags)))
+	params = tags + [len(tags), amount, min]
+	decks = db.execute(decks_query, params).fetchall()
+	return {"count": len(decks)}
