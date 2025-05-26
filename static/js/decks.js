@@ -6,6 +6,11 @@ deckStates = {};
 modified = false;
 
 
+
+const MAX_SCORE = 10;
+
+
+
 // Defines the deck type to use.
 function setDeckType(type) {
 	deck_type = type;
@@ -35,25 +40,33 @@ function createDeckSections(decks) {
         const details = document.createElement('details');
         details.className = 'section';
         if (deck.is_active) details.open = true;
+        
         const summary = document.createElement('summary');
         summary.innerHTML = `
             <div class="deck-summary-header">
                 <span>${deck.name}</span>
                 <label class="toggle-switch">
                     <input type="checkbox"
-                           ${deck.is_active ? 'checked' : ''}
-                           data-deck-name="${deck.name}">
+                        ${deck.is_active ? 'checked' : ''}
+                        data-deck-name="${deck.name}">
                     <span class="slider"></span>
                 </label>
             </div>
         `;
         const content = document.createElement('div');
-        content.className = 'options-group';
-        content.innerHTML = `
-            <div class="kanji-grid">
-                ${deck.content.map(k => `<span>${k}</span>`).join('')}
-            </div>
-        `;
+        content.className = 'elements-grid';
+        content.innerHTML = deck.content.map(item => {
+            const [text, score = 0] = Array.isArray(item) ? item : [item, 0];
+            const progressPercent = Math.min(100, (score / MAX_SCORE) * 100);
+            return `
+                <div class="element-card">
+                    <div class="element-text">${text}</div>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: ${progressPercent}%"></div>
+                    </div>
+                </div>
+            `;
+        }).join('');
         details.appendChild(summary);
         details.appendChild(content);
         form.appendChild(details);
