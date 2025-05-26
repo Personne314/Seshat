@@ -11,6 +11,12 @@ function setDeckType(type) {
 
 
 
+function updateDecks() {
+	document.getElementById("page-indicator").innerHTML = `Page ${current_page+1}`
+}
+
+
+
 
 function createDeckSections(decks) {
     const form = document.querySelector('.deck-form');
@@ -69,11 +75,13 @@ function triggerTagSearch(tags, min, amount) {
 	}).then(response => response.json()).then(data => {
 		
 		
+
+
 		createDeckSections(data)
 		console.log("Server answer:", data);
 		
 
-
+		updateDecks();
 	})
 	.catch(error => console.error('Error:', error));
 }
