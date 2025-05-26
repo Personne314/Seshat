@@ -14,19 +14,20 @@ function setDeckType(type) {
 	triggerTagSearch([deck_type], 0,deck_per_page);
 }
 
-
-
-
-
-
-
+// This creates the content of the page to display the decks.
 function createDeckSections(decks) {
     const form = document.querySelector('.deck-form');
     form.innerHTML = '';
+    const hiddenInput = document.createElement('input');
+    hiddenInput.type = 'hidden';
+    hiddenInput.name = 'deckStates';
+    form.appendChild(hiddenInput);
 
-	// Inits the dict with de initial state of the decks.
+    // Inits the dict with the initial state of the decks.
     decks.forEach(deck => {
-        deckStates[deck.name] = deck.is_active;
+        if (deckStates[deck.name] !== undefined) {
+            deck.is_active = deckStates[deck.name];
+        }
     });
 
 	// Creates the deck sections
@@ -39,8 +40,7 @@ function createDeckSections(decks) {
             <div class="deck-summary-header">
                 <span>${deck.name}</span>
                 <label class="toggle-switch">
-                    <input type="checkbox" 
-                           name="deck_${deck.id}" 
+                    <input type="checkbox"
                            ${deck.is_active ? 'checked' : ''}
                            data-deck-name="${deck.name}">
                     <span class="slider"></span>
@@ -66,23 +66,23 @@ function createDeckSections(decks) {
         <button type="submit" class="primary">Enregistrer</button>
     `;
     form.appendChild(submitDiv);
+    form.addEventListener('submit', function(e) {
+        hiddenInput.value = JSON.stringify(deckStates);
+    });
 
-	// Adds the listeners.
+    // Adds the toggle buttons listeners.
     document.querySelectorAll('.toggle-switch input').forEach(checkbox => {
-        checkbox.addEventListener('change', function() {
+        checkbox.addEventListener('change', function () {
             const deckName = this.dataset.deckName;
             deckStates[deckName] = this.checked;
             modified = true;
+            const detailsElement = this.closest('details');
+            if (detailsElement) {
+                detailsElement.open = this.checked;
+            }
         });
     });
 }
-
-
-
-
-
-
-
 
 // This trigger the search and update the page
 function triggerTagSearch(tags, min, amount) {
@@ -91,30 +91,13 @@ function triggerTagSearch(tags, min, amount) {
 		headers: {'Content-Type': 'application/json'},
 		body: JSON.stringify({tags:tags, min:min, amount:amount})
 	}).then(response => response.json()).then(data => {
-		
-		
-
-
 		createDeckSections(data);
-		console.log("Server answer:", data);
-		
-
 		document.getElementById("page-indicator").innerHTML = `Page ${current_page+1}`
 	})
 	.catch(error => console.error('Error:', error));
 }
 
-
-
-
-
-
-
-
-
-
-
-// Met à jour l'affichage des decks
+// Updates the deck display upon page change.
 async function updateDecksDisplay(diff) {
 	const tagSearch = document.getElementById('tag-search');
     const tags = [...new Set(
@@ -139,91 +122,56 @@ async function updateDecksDisplay(diff) {
 	.catch(error => console.error('Error:', error));
 }
 
-
-
-
-
-
-
-
-
-// This adds the events for the search bar. 
+// This adds the events. 
 document.addEventListener('DOMContentLoaded', function() {
-	const tagSearch = document.getElementById('tag-search');
-	const tagFilters = document.querySelectorAll('.tag-filter');
-	
-	// Tag click event.
-	tagFilters.forEach(tag => {
-		tag.addEventListener('click', function() {
-			const currentTags = tagSearch.value.trim();
-			const tagValue = this.getAttribute('data-tag');
-			if (!currentTags.includes(tagValue)) {
-				tagSearch.value = currentTags ? `${currentTags} ${tagValue}` : tagValue;
-			}
-		});
-	});
-	
-	// Enter key pressure detection.
-	tagSearch.addEventListener('keydown', function(e) {
-		if (e.key === 'Enter') {
-			e.preventDefault();
-			const tags = [...new Set(
-				[deck_type, ...tagSearch.value.trim().toLowerCase().split(/\s+/).filter(Boolean)]
-			)];
-			current_page = 0;
-			triggerTagSearch(tags, 0,deck_per_page);
-		}
-	});
+    const tagSearch = document.getElementById('tag-search');
+    const tagFilters = document.querySelectorAll('.tag-filter');
 
+    // Tag click event.
+    tagFilters.forEach(tag => {
+        tag.addEventListener('click', function() {
+            const currentTags = tagSearch.value.trim();
+            const tagValue = this.getAttribute('data-tag');
+            if (!currentTags.includes(tagValue)) {
+                tagSearch.value = currentTags ? `${currentTags} ${tagValue}` : tagValue;
+            }
+        });
+    });
 
+    // Enter key pressure detection.
+    tagSearch.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            const tags = [...new Set(
+                [deck_type, ...tagSearch.value.trim().toLowerCase().split(/\s+/).filter(Boolean)]
+            )];
+            current_page = 0;
+            triggerTagSearch(tags, 0, deck_per_page);
+        }
+    });
+
+    // Events for the page buttons.
     const prevBtn = document.querySelector('.pagination-btn.prev');
     const nextBtn = document.querySelector('.pagination-btn.next');
-    const pageIndicator = document.getElementById('page-indicator');
-
-    // Bouton Précédent
     prevBtn.addEventListener('click', async () => {
         if (current_page > 0) {
             await updateDecksDisplay(-1);
         }
     });
-
-    // Bouton Suivant
     nextBtn.addEventListener('click', async () => {
         await updateDecksDisplay(1);
     });
 
+    // Inject deckStates in the form on submit.
+    const form = document.querySelector('.deck-form');
+    if (form) {
+        const hiddenInput = document.createElement('input');
+        hiddenInput.type = 'hidden';
+        hiddenInput.name = 'deckStates';
+        form.appendChild(hiddenInput);
+
+        form.addEventListener('submit', function () {
+            hiddenInput.value = JSON.stringify(deckStates);
+        });
+    }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // Exemple de fonction pour sauvegarder les changements
-// function saveAllDeckStates() {
-//     console.log("États actuels des decks:", deckStates);
-//     // Envoyer deckStates au serveur via fetch()
-//     fetch('/api/update-decks', {
-//         method: 'POST',
-//         headers: {'Content-Type': 'application/json'},
-//         body: JSON.stringify(deckStates)
-//     }).then(response => response.json())
-//       .then(data => console.log("Réponse du serveur:", data));
-// }
-
-// // À appeler quand on clique sur "Enregistrer"
-// document.querySelector('.deck-form').addEventListener('submit', function(e) {
-//     e.preventDefault();
-//     saveAllDeckStates();
-// });
-
-
-

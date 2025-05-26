@@ -3,6 +3,9 @@ from core.database import get_db, close_db, db_get_deck_meta, db_get_deck_cards,
 	db_get_decks_tags, db_get_decks_by_tags, db_get_decks_by_tags_amount
 from core.options import options_init, options_update, get_options
 from core.dailies import dailies_init
+from json import loads
+
+
 
 # Creates the app.
 app = Flask(__name__)
@@ -120,9 +123,9 @@ def api_get_decks_count():
 # This route is called to save modified decks.
 @app.route("/api/save-decks", methods=["POST"])
 def api_save_decks():
-	
-	# TO BE IMPLEMENTED
-
+	deck_states = request.form.get("deckStates")
+	parsed_states = loads(deck_states)
+	print(parsed_states)
 	return redirect("/")
 
 
