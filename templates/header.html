@@ -1,10 +1,9 @@
 <nav class="navbar">
 	<div class="nav-container">
 		<div class="logo">
-			<div class="logo-placeholder"></div>
+			<img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="logo-image" />
 			<span>SESHAT</span>
 		</div>
-
 		<div class="nav-items">
 			<a href="/" class="nav-link {% if active_page == 'home' %}active{% endif %}">Accueil</a>
 			<div class="nav-link dropdown {% if active_page in ['decks-kanji', 'decks-word', 'decks-radical'] %}active{% endif %}">

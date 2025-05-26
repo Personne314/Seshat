@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Configuration des Options</title>
+	<title>Decks de Vocabulaire</title>
+	<link rel="icon" type="image/png" href="{{ url_for('static', filename='images/logo.png') }}">
 	<link rel="stylesheet" href="/static/css/{{options['app-color-theme']}}/main.css">
+	<link rel="stylesheet" href="/static/css/{{options['app-color-theme']}}/forms.css">
+	<link rel="stylesheet" href="/static/css/{{options['app-color-theme']}}/decks.css">
 </head>
 <body>
 	{% include "header.html" %}
 
+	<!-- Page update the used word decks -->
+	<br/>
+	<h1>Decks de Vocabulaire</h1>
+
+	<!-- Search bar for tags -->
+	<div class="search-container">
+		<input type="text" id="tag-search" placeholder="Rechercher par tag...">
+		<div class="tag-filters">
+			{% for tag in all_tags %}
+			<span class="tag-filter" data-tag="{{tag}}">{{tag}}</span>
+			{% endfor %}
+		</div>
+	</div>
+
+	<!-- This form lists the decks -->
+	<form method="POST" action="/api/save-decks" class="deck-form"></form>
+
+	<!-- Pagination -->
+	<div class="pagination">
+		<button class="pagination-btn prev">Précédent</button>
+		<span class="page-indicator" id="page-indicator"></span>
+		<button class="pagination-btn next">Suivant</button>
+	</div>
+
+	<!-- This script is used to make the search bar and the list work -->
+	<script src="{{ url_for('static', filename='js/decks.js') }}"></script>
+	<script>setDeckType("word");</script>
 
 </body>
 </html>
