@@ -570,9 +570,7 @@ def db_get_decks_by_tags(tags, min, amount):
 	# Insert the data at the right place then converts the map to a sorted list.
 	for row in rows:
 		deck = deck_map[row["deck_id"]]
-		deck["content"].append(
-			[row[1], row[2]] if deck["is_active"] else row[1]
-		)
+		deck["content"].append([row[1], row[2]])
 	decks = list(deck_map.values())
 	return sorted(
 		decks, key=lambda x: (len(x["name"]), x["name"].lower()) 

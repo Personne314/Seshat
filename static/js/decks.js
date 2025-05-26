@@ -7,6 +7,59 @@ function setDeckType(type) {
 	triggerTagSearch([deck_type], 0,10);
 }
 
+
+
+
+
+
+function createDeckSections(decks) {
+    const form = document.querySelector('.deck-form');
+    form.innerHTML = '';
+
+    decks.forEach(deck => {
+        const details = document.createElement('details');
+        details.className = 'section';
+        if (deck.is_active) details.open = true;
+
+        const summary = document.createElement('summary');
+        summary.innerHTML = `
+            <div class="deck-summary-header">
+                <span>${deck.name}</span>
+                <label class="toggle-switch">
+                    <input type="checkbox" 
+                           name="deck_${deck.id}" 
+                           ${deck.is_active ? 'checked' : ''}>
+                    <span class="slider"></span>
+                </label>
+            </div>
+        `;
+
+        const content = document.createElement('div');
+        content.className = 'options-group';
+        content.innerHTML = `
+            <div class="kanji-grid">
+                ${deck.content.map(k => `<span>${k}</span>`).join('')}
+            </div>
+        `;
+
+        details.appendChild(summary);
+        details.appendChild(content);
+        form.appendChild(details);
+    });
+
+    form.innerHTML += `
+        <div class="form-actions">
+            <button type="submit" class="primary">Enregistrer</button>
+        </div>
+    `;
+}
+
+
+
+
+
+
+
 // This trigger the search and update the page
 function triggerTagSearch(tags, min, amount) {
 	fetch('/api/decks', {
@@ -16,7 +69,7 @@ function triggerTagSearch(tags, min, amount) {
 	}).then(response => response.json()).then(data => {
 		
 		
-		
+		createDeckSections(data)
 		console.log("Server answer:", data);
 		
 

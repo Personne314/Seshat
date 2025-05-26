@@ -104,7 +104,6 @@ def api_save_options():
 @app.route("/api/decks", methods=["POST"])
 def api_get_decks():
 	data = request.get_json()
-	print("data:",data)
 	if not data or "tags" not in data or "min" not in data or "amount" not in data:
 		return jsonify([])
 	return jsonify(db_get_decks_by_tags(data["tags"], data["min"], data["amount"]))

@@ -10,6 +10,7 @@ form {
 	box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 	margin-bottom: 20px;
 	overflow: hidden;
+	color: #2a2a2a;
 }
 
 .section summary {
@@ -20,6 +21,7 @@ form {
 	cursor: pointer;
 	outline: none;
 	border-bottom: 1px solid #ddd;
+	color: #2a2a2a;
 }
 
 .section[open] summary {
@@ -36,6 +38,7 @@ form {
 .options-group label {
 	font-weight: 500;
 	margin-bottom: 5px;
+	color: #373636;
 }
 
 .options-group select {
@@ -43,14 +46,20 @@ form {
 	border: 1px solid #ccc;
 	border-radius: 6px;
 	background-color: #f9f9f9;
+	color: #2a2a2a;
 	transition: border-color 0.3s;
+}
+
+.options-group select:focus {
+	border-color: #e53935;
+	outline: none;
 }
 
 form button[type="submit"] {
 	display: block;
 	margin: 30px auto;
 	padding: 12px 30px;
-	background-color: #e53935; /* rouge principal */
+	background-color: #e53935; 
 	color: white;
 	font-weight: bold;
 	font-size: 1.1em;
@@ -61,5 +70,51 @@ form button[type="submit"] {
 }
 
 form button[type="submit"]:hover {
-	background-color: #c62828; /* rouge foncé au survol */
+	background-color: #c62828;
+}
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+    margin-left: 15px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #c62828;
+    transition: .4s;
+    border-radius: 24px;
+}
+
+.toggle-switch .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(236, 236, 236);
+    transition: .4s;
+    border-radius: 50%;
+}
+
+.toggle-switch input:checked + .slider {
+    background-color: #2e7d32;
+}
+
+.toggle-switch input:checked + .slider:before {
+    transform: translateX(26px);
 }

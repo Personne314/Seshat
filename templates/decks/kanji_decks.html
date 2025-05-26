@@ -10,10 +10,11 @@
 	{% include "header.html" %}
 
 
-	<!-- Form to update the used kanji decks -->
+	<!-- Page update the used kanji decks -->
 	<br/>
 	<h1>Decks de Kanji</h1>
 
+	<!-- Search bar for tags -->
 	<div class="search-container">
 		<input type="text" id="tag-search" placeholder="Rechercher par tag...">
 		<div class="tag-filters">
@@ -23,38 +24,10 @@
 		</div>
 	</div>
 
+	<!-- This form lists the decks -->
+	<form method="POST" action="/api/save-decks" class="deck-form"></form>
 
-	<form method="POST" action="/api/save-decks" class="deck-form">
-		<!-- Section des decks actifs -->
-		<details class="section" open>
-			<summary>Decks Actifs ({{active_decks|length}})</summary>
-			<div class="options-group deck-grid">
-				{% for deck in active_decks %}
-				<div class="deck-option">
-					<div class="deck-header">
-						<h3>{{deck.name}}</h3>
-						<div class="deck-tags">
-							{% for tag in deck.tags %}
-							<span class="tag">{{tag}}</span>
-							{% endfor %}
-						</div>
-					</div>
-					<label class="toggle-switch">
-						<input type="checkbox" name="active_deck_{{deck.id}}" checked>
-						<span class="slider"></span>
-					</label>
-				</div>
-				{% endfor %}
-			</div>
-		</details>
-
-
-		<!-- This post on an api route that get the form data and save it -->
-		<div class="form-actions">
-			<button type="submit" class="primary">Enregistrer les modifications</button>
-		</div>
-	</form>
-
+	<!-- This script is used to make the search bar and the list work -->
 	<script src="{{ url_for('static', filename='js/decks.js') }}"></script>
 	<script>setDeckType("kanji");</script>
 
