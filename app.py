@@ -45,10 +45,11 @@ def show_options():
 	return render_template("options.html", options=get_options(), active_page="options")
 
 # This route generates a page showing the kanji of a deck.
-@app.route("/deck")
+@app.route("/deck", methods=["POST"])
 def page_deck():
-	deck_data = "Vocabulaire JLPT5 - 18"
-	return render_template("decks/deck.html", options=get_options(), deck_data=deck_data)
+	deck_name = request.form.get('deck', '')
+	card_name = request.form.get('card', '')
+	return render_template("decks/deck.html", options=get_options(), deck_name=deck_name, card_name=card_name)
 
 # This route generates a page showing the kanji deck list.
 @app.route("/decks-kanji")
@@ -118,14 +119,11 @@ def api_get_decks_count():
 		return jsonify([])
 	return jsonify(db_get_decks_by_tags_amount(data["tags"], data["min"], data["amount"]))
 
-
 # This route is called to save modified decks.
 @app.route("/api/save-decks", methods=["POST"])
 def api_save_decks():
 	deck_states = request.form.get("deckStates")
-	parsed_states = loads(deck_states)
-	print(parsed_states)
-	db_update_decks_status(parsed_states)
+	db_update_decks_status(loads(deck_states))
 	return redirect("/")
 
 

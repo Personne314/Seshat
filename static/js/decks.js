@@ -19,6 +19,26 @@ function setDeckType(type) {
 	triggerTagSearch([deck_type], 0,deck_per_page);
 }
 
+
+// Redirection to the deck viewer.
+function navigateToDeck(deckName, cardText) {
+    const form = document.createElement('form');
+    form.method = 'POST';
+    form.action = '/deck';
+    const inputDeck = document.createElement('input');
+    inputDeck.type = 'hidden';
+    inputDeck.name = 'deck';
+    inputDeck.value = deckName;
+    form.appendChild(inputDeck);
+    const inputCard = document.createElement('input');
+    inputCard.type = 'hidden';
+    inputCard.name = 'card';
+    inputCard.value = cardText;
+    form.appendChild(inputCard);
+    document.body.appendChild(form);
+    form.submit();
+}
+
 // This creates the content of the page to display the decks.
 function createDeckSections(decks) {
     const form = document.querySelector('.deck-form');
@@ -40,7 +60,6 @@ function createDeckSections(decks) {
         const details = document.createElement('details');
         details.className = 'section';
         if (deck.is_active) details.open = true;
-        
         const summary = document.createElement('summary');
         summary.innerHTML = `
             <div class="deck-summary-header">
@@ -56,16 +75,17 @@ function createDeckSections(decks) {
         const content = document.createElement('div');
         content.className = 'elements-grid';
         content.innerHTML = deck.content.map(item => {
-            const [text, score = 0] = Array.isArray(item) ? item : [item, 0];
-            const progressPercent = Math.min(100, (score / MAX_SCORE) * 100);
-            return `
-                <div class="element-card">
-                    <div class="element-text">${text}</div>
-                    <div class="progress-container">
-                        <div class="progress-bar" style="width: ${progressPercent}%"></div>
-                    </div>
+        const [text, score = 0] = Array.isArray(item) ? item : [item, 0];
+        const progressPercent = Math.min(100, (score / MAX_SCORE) * 100);
+        return `
+            <div class="element-card clickable"
+                data-deck="${deck.name}"
+                data-text="${text}">
+                <div class="element-text">${text}</div>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: ${progressPercent}%"></div>
                 </div>
-            `;
+            </div>`;
         }).join('');
         details.appendChild(summary);
         details.appendChild(content);
@@ -81,6 +101,15 @@ function createDeckSections(decks) {
     form.appendChild(submitDiv);
     form.addEventListener('submit', function(e) {
         hiddenInput.value = JSON.stringify(deckStates);
+    });
+
+    // Adds cards listeners.
+    document.querySelectorAll('.element-card.clickable').forEach(card => {
+        card.addEventListener('click', () => {
+            const deckName = card.dataset.deck;
+            const cardText = card.dataset.text;
+            navigateToDeck(deckName, cardText);
+        });
     });
 
     // Adds the toggle buttons listeners.

@@ -2,7 +2,10 @@
 <html lang="fr">
 <head>
 	<title>Deck</title>
+	<link rel="icon" type="image/png" href="{{ url_for('static', filename='images/logo.png') }}">
+
 	<link rel="stylesheet" href="/static/css/flashcard.css">
+
 	<link rel="stylesheet" href="/static/css/{{options['app-color-theme']}}/main.css">
 	<link rel="stylesheet" href="/static/css/{{options['app-color-theme']}}/deck.css">
 
@@ -21,7 +24,8 @@
 		</div>
 	</main>
 	<div id="deck-data" 
-		data-name="{{deck_data}}"
+		data-deck="{{deck_name}}"
+		data-card="{{card_name}}"
 		style="display: none;">
 	</div>
 	<script src="/static/js/flashcard.js"></script>

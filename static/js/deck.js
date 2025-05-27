@@ -5,7 +5,11 @@ class FlashcardDeck {
 	// Deck constructor.
 	constructor() {
 		const elt = document.getElementById('deck-data');
-		this.name = elt.dataset.name;
+		this.name = elt.dataset.deck;
+		this.init_card = elt.dataset.card;
+
+		console.log(this.name);
+		console.log(this.init_card);
 
 		// HTML elements.
 		this.deck = document.querySelector('.deck-container');
@@ -58,14 +62,23 @@ class FlashcardDeck {
 
 		// Loads the cards from jsons.
 		const cards = [];
-		for (const card_data of deck_cards) {
+		let targetIndex = 0;
+		for (const [index, card_data] of deck_cards.entries()) {
 			let card = await loadCard(this.name, card_data, this.type);
-			if (card != null) cards.push(card);
+			if (card != null) {
+				cards.push(card);
+				if (this.init_card && card_data.japanese_name === this.init_card) {
+					targetIndex = index;
+				}
+			}
 		}
 
 		// Renders the code.
 		this.deck.innerHTML = cards.map((card, index) => card.render(index)).join('');
 		this.cards = document.querySelectorAll('.flashcard');
+		
+		// Définit la carte courante
+		this.currentIndex = targetIndex;
 		this.updateDeck();
 	}
 
