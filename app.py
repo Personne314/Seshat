@@ -1,8 +1,7 @@
 from flask import Flask, redirect, render_template, jsonify, request
-from core.database import get_db, close_db, db_get_deck_meta, db_get_deck_cards, \
-	db_get_decks_tags, db_get_decks_by_tags, db_get_decks_by_tags_amount
-from core.options import options_init, options_update, get_options
-from core.dailies import dailies_init
+from core.database import *
+from core.options import *
+from core.dailies import *
 from json import loads
 
 
@@ -126,6 +125,7 @@ def api_save_decks():
 	deck_states = request.form.get("deckStates")
 	parsed_states = loads(deck_states)
 	print(parsed_states)
+	db_update_decks_status(parsed_states)
 	return redirect("/")
 
 

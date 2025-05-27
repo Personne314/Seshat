@@ -459,27 +459,6 @@ def db_get_deck_meta(name):
 	]
 	return data[0]
 
-
-
-#################################################################################
-# This section defines functions to access the scores in the db.				#
-#################################################################################
-
-# This function updates a list of scores in the database.
-# scores must be a list of (element_id, last_review, validation_count, difficulty).
-def db_upsert_scores(scores):
-	db = get_db()
-	query = """
-	INSERT INTO Score (element_id, last_review, validation_count, difficulty)
-	VALUES (?, ?, ?, ?)
-	ON CONFLICT(element_id) DO UPDATE SET
-		last_review = excluded.last_review,
-		validation_count = excluded.validation_count,
-		difficulty = excluded.difficulty
-	"""
-	db.executemany(query, scores)
-	db.commit()
-
 # this function return a the n scores with the greater id as a
 # list of (element_id, last_review, validation_count, difficulty).
 def db_get_priority_elements(n):
@@ -512,17 +491,6 @@ def db_get_decks_tags(deck_type):
 	"""
 	cursor = db.execute(query, (deck_type, deck_type))
 	return [row[0] for row in cursor.fetchall()]
-
-
-
-
-
-
-
-
-
-
-
 
 # This returns the decks that have all the tags with their elements.
 def db_get_decks_by_tags(tags, min, amount):
@@ -594,3 +562,36 @@ def db_get_decks_by_tags_amount(tags, min, amount):
 	params = tags + [len(tags), amount, min]
 	decks = db.execute(decks_query, params).fetchall()
 	return {"count": len(decks)}
+
+# Update the decks status. 
+def db_update_decks_status(decks_status):
+    db = get_db()
+    params = [(1 if is_active else 0, name) for name, is_active in decks_status.items()]
+    update_query = """
+        UPDATE Deck
+        SET is_active = ?
+        WHERE deck_name = ?
+    """
+    db.executemany(update_query, params)
+    db.commit()
+
+
+
+#################################################################################
+# This section defines functions to access the scores in the db.				#
+#################################################################################
+
+# This function updates a list of scores in the database.
+# scores must be a list of (element_id, last_review, validation_count, difficulty).
+def db_upsert_scores(scores):
+	db = get_db()
+	query = """
+	INSERT INTO Score (element_id, last_review, validation_count, difficulty)
+	VALUES (?, ?, ?, ?)
+	ON CONFLICT(element_id) DO UPDATE SET
+		last_review = excluded.last_review,
+		validation_count = excluded.validation_count,
+		difficulty = excluded.difficulty
+	"""
+	db.executemany(query, scores)
+	db.commit()
