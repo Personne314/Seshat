@@ -1,79 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Configuration des Options</title>
-	<link rel="icon" type="image/png" href="{{ url_for('static', filename='images/logo.png') }}">
-	<link rel="stylesheet" href="/static/css/{{options['app-color-theme']}}/main.css">
-	<link rel="stylesheet" href="/static/css/{{options['app-color-theme']}}/forms.css">
+    <title>Configuration des Options</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/logo.png') }}">
+    <link rel="stylesheet" href="/static/css/{{options['app-color-theme']}}/main.css">
+    <link rel="stylesheet" href="/static/css/{{options['app-color-theme']}}/forms.css">
 </head>
 <body>
-	{% include "header.html" %}
+    {% include "header.html" %}
 
-	<!-- Form to update the app options -->
-	<br/>
-	<h1>Paramètres de l'application</h1>
-	<form method="POST" action="/api/save-options">
-		{% set dailies_values = [0,5,10,15,20,30,40] %}
-		
-		<!-- Dailies options -->
-		<details class="section">
-			<summary>Dailies</summary>
+    <!-- Form to update the app options -->
+    <br/>
+    <h1>Paramètres de l'application</h1>
+    <form method="POST" action="/api/save-options">
+        {% set dailies_values = [0,5,10,15,20,30,40] %}
+        
+        <!-- Dailies options -->
+        <details class="section">
+            <summary>Dailies</summary>
 
-			<!-- The number of radicals to work on each day -->
-			<div class="options-group">
-				<label for="radicals">Radicaux Quotitiens :</label>
-				<select name="radicals-dailies-amount" id="radicals">
-					{% for val in dailies_values %}
-					<option value="{{ val }}" {% if options["radicals-dailies-amount"] == val %}selected{% endif %}>
-						{{ val }}
-					</option>
-					{% endfor %}
-				</select>
-			</div>
+            <!-- The number of radicals to work on each day -->
+            <div class="options-group">
+                <label for="radicals">Radicaux Quotitiens :</label>
+                <select name="radicals-dailies-amount" id="radicals">
+                    {% for val in dailies_values %}
+                    <option value="{{ val }}" {% if options["radicals-dailies-amount"] == val %}selected{% endif %}>
+                        {{ val }}
+                    </option>
+                    {% endfor %}
+                </select>
+            </div>
 
-			<!-- The number of kanjis to work on each day -->
-			<div class="options-group">
-				<label for="kanjis">Kanjis Quotitiens :</label>
-				<select name="kanjis-dailies-amount" id="kanjis">
-					{% for val in dailies_values %}
-					<option value="{{ val }}" {% if options["kanjis-dailies-amount"] == val %}selected{% endif %}>
-						{{ val }}
-					</option>
-					{% endfor %}
-				</select>
-			</div>
+            <!-- The number of kanjis to work on each day -->
+            <div class="options-group">
+                <label for="kanjis">Kanjis Quotitiens :</label>
+                <select name="kanjis-dailies-amount" id="kanjis">
+                    {% for val in dailies_values %}
+                    <option value="{{ val }}" {% if options["kanjis-dailies-amount"] == val %}selected{% endif %}>
+                        {{ val }}
+                    </option>
+                    {% endfor %}
+                </select>
+            </div>
 
-			<!-- The number of words to work on each day -->
-			<div class="options-group">
-				<label for="words">Mots Quotitiens :</label>
-				<select name="words-dailies-amount" id="words">
-					{% for val in dailies_values %}
-					<option value="{{ val }}" {% if options["words-dailies-amount"] == val %}selected{% endif %}>
-						{{ val }}
-					</option>
-					{% endfor %}
-				</select>
-			</div>
-		</details>
+            <!-- The number of words to work on each day -->
+            <div class="options-group">
+                <label for="words">Mots Quotitiens :</label>
+                <select name="words-dailies-amount" id="words">
+                    {% for val in dailies_values %}
+                    <option value="{{ val }}" {% if options["words-dailies-amount"] == val %}selected{% endif %}>
+                        {{ val }}
+                    </option>
+                    {% endfor %}
+                </select>
+            </div>
 
-		<!-- Theme options -->
-		<details class="section">
-			<summary>Thèmes</summary>
-			<div class="options-group">
-				<label for="words">Thème de l'application :</label>
-				<select name="app-color-theme" id="theme">
-					<option value="light" {% if options["app-color-theme"] == "light" %}selected{% endif %}>
-						Clair
-					</option>
-					<option value="dark" {% if options["app-color-theme"] == "dark" %}selected{% endif %}>
-						Sombre
-					</option>
-				</select>
-			</div>
-		</details>
+            <!-- Reset Dailies button -->
+            <div class="options-group">
+                <button type="button" onclick="resetDailies()" class="reset-button">
+                    Reset des Dailies
+                </button>
+            </div>
+        </details>
 
-		<!-- This post on an api route that get the form data and save it -->
-		<button type="submit">Sauvegarder</button>
-	</form>
+        <!-- Theme options -->
+        <details class="section">
+            <summary>Thèmes</summary>
+            <div class="options-group">
+                <label for="words">Thème de l'application :</label>
+                <select name="app-color-theme" id="theme">
+                    <option value="light" {% if options["app-color-theme"] == "light" %}selected{% endif %}>
+                        Clair
+                    </option>
+                    <option value="dark" {% if options["app-color-theme"] == "dark" %}selected{% endif %}>
+                        Sombre
+                    </option>
+                </select>
+            </div>
+        </details>
+
+        <!-- This post on an api route that get the form data and save it -->
+        <button type="submit">Sauvegarder</button>
+    </form>
+
+	<!-- Script for the options -->
+	<script src="{{ url_for('static', filename='js/options.js') }}"></script>
 </body>
 </html>

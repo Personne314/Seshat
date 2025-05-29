@@ -3,6 +3,7 @@ from core.database import *
 from core.options import *
 from core.dailies import *
 from json import loads
+from os import remove
 
 
 
@@ -126,6 +127,13 @@ def api_get_decks_count():
 def api_save_decks():
 	deck_states = request.form.get("deckStates")
 	db_update_decks_status(loads(deck_states))
+	return redirect("/")
+
+# This route is used to reset the dailies.
+@app.route("/api/reset-dailies")
+def api_reset_dailies():
+	if path.isfile("dailies.json"):
+		remove("dailies.json")
 	return redirect("/")
 
 

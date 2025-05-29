@@ -55,6 +55,7 @@ form {
 	outline: none;
 }
 
+.options-group button[type="button"],
 form button[type="submit"] {
 	display: block;
 	margin: 30px auto;
