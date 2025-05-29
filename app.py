@@ -37,6 +37,8 @@ def radicals_exercise():
 @app.route("/")
 def index():
 	dailies_init()
+
+
 	return render_template("index.html", options=get_options(), active_page="home")
 
 # This route generates a page used to modify tha application options.

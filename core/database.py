@@ -465,24 +465,6 @@ def db_get_deck_meta(name):
 	]
 	return data[0]
 
-# this function return a the n scores with the greater id as a
-# list of (element_id, last_review, validation_count, difficulty).
-def db_get_priority_elements(n):
-	db = get_db()
-	query = """
-	SELECT element_id, last_review, validation_count, difficulty,
-		CASE WHEN last_review IS NULL THEN 1e999  -- valeur approchant l'infini
-			ELSE (julianday('now') - julianday(last_review)) / 
-				(POWER(2, validation_count) * difficulty)
-		END AS priority
-	FROM Score
-	ORDER BY priority DESC
-	LIMIT ?
-	"""
-	cursor = db.execute(query, (n,))
-	results = [(row[0], row[1], row[2], row[3]) for row in cursor.fetchall()]
-	return results
-
 # This function returns the list of all existing tags for one type of deck.
 def db_get_decks_tags(deck_type):
 	db = get_db()
@@ -601,3 +583,24 @@ def db_upsert_scores(scores):
 	"""
 	db.executemany(query, scores)
 	db.commit()
+
+# This function return a the n scores with the greater id as a
+# list of (element_id, last_review, validation_count, difficulty).
+def db_get_priority_elements(n, type):
+	db = get_db()
+	query = """
+	SELECT S.element_id, S.last_review, S.validation_count, S.difficulty,
+		CASE WHEN S.last_review IS NULL THEN 1e999
+			ELSE (julianday('now') - julianday(S.last_review)) / 
+				(POWER(2, S.validation_count) * S.difficulty)
+		END AS priority
+	FROM Score S
+	JOIN Element E ON S.element_id = E.id
+	JOIN Deck D ON E.deck_id = D.deck_id
+	WHERE D.is_active = 1 AND E.element_type = ?
+	ORDER BY priority DESC
+	LIMIT ?
+	"""
+	cursor = db.execute(query, (type, n))
+	results = [(row[0], row[1], row[2], row[3]) for row in cursor.fetchall()]
+	return results
