@@ -2,6 +2,7 @@ from datetime import date
 from os import path
 from json import dump, load
 from core.options import get_options
+from core.database import db_get_priority_elements
 
 
 
@@ -17,15 +18,18 @@ last_dailies = None
 
 # This function creates a list of dailies for kanjis.
 def dailies_generates_kanji():
-	return []
+	n = get_options()["kanjis-dailies-amount"]
+	return db_get_priority_elements(n, "kanji")
 
 # This function creates a list of dailies for words.
 def dailies_generates_word():
-	return []
+	n = get_options()["words-dailies-amount"]
+	return db_get_priority_elements(n, "word")
 
 # This function creates a list of dailies for radicals.
 def dailies_generates_radical():
-	return []
+	n = get_options()["radicals-dailies-amount"]
+	return db_get_priority_elements(n, "radical")
 
 # This function loads the dailies file if there is one and creates 
 # new dailies if the old ones don't exist or are outdated. 
