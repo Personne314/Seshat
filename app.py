@@ -38,13 +38,16 @@ def radicals_exercise():
 @app.route("/")
 def index():
 	dailies_init()
-
-
 	return render_template("index.html", options=get_options(), active_page="home")
+
+# This route generates a page used to mosearch for words.
+@app.route("/dictionary")
+def page_dictionary():
+	return render_template("dictionary.html", options=get_options(), active_page="dictionary")
 
 # This route generates a page used to modify tha application options.
 @app.route("/options")
-def show_options():
+def page_options():
 	return render_template("options.html", options=get_options(), active_page="options")
 
 # This route generates a page showing the kanji of a deck.
