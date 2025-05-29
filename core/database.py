@@ -75,10 +75,6 @@ def create_deck(db, meta, json_file):
 			values = []
 			for tag in tags:
 				values.extend([deck_id, tag])
-			# db.execute(
-			# 	f"INSERT INTO DeckTag (deck_id, tag) VALUES {placeholders}",
-			# 	values
-			# )
 			try:
 				db.execute(
 					f"INSERT INTO DeckTag (deck_id, tag) VALUES {placeholders}",
@@ -273,6 +269,15 @@ def create_cards_kanji(db, deck_id, cards, json_file):
 		radical_values
 	)
 
+# This initialises a score for each element.
+def initialize_scores():
+	db = get_db()
+	db.execute("""
+		INSERT INTO Score (element_id, last_review, validation_count, difficulty)
+        SELECT id, NULL, 0, 1.0 FROM Element
+	""")
+	db.commit()
+
 # Initialises the database.
 def init_db():
 	print(f"[SESHAT]: info: database initialization")
@@ -310,7 +315,8 @@ def init_db():
 			except JSONDecodeError as e:
 				print(f"[SESHAT]: error: deck '{json_file}' couldn't be loaded : {e}")
 				exit(1)
-		db.commit()	
+		db.commit()
+	initialize_scores()
 
 	if len_files == i :
 		print(f"[SESHAT]: info: database initialized\n")

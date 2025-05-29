@@ -74,7 +74,7 @@ CREATE TABLE RadicalReading (
 -- Element  1 <--> 1  Score
 CREATE TABLE Score (
 	element_id INTEGER PRIMARY KEY,
-	last_review DATE,
+	last_review DATE DEFAULT NULL,
 	validation_count INTEGER NOT NULL DEFAULT 0,
 	difficulty REAL NOT NULL DEFAULT 1.0,
 	FOREIGN KEY (element_id) REFERENCES Element(id) ON DELETE CASCADE
