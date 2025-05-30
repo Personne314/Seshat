@@ -141,11 +141,9 @@ async function updateDecksDisplay(diff) {
     const tags = [...new Set(
         [deck_type, ...tagSearch.value.trim().toLowerCase().split(/\s+/).filter(Boolean)]
     )];
-
     current_page += diff;
     const min = current_page * deck_per_page;
     const amount = deck_per_page;
-
 	fetch('/api/decks/count', {
 		method: 'POST',
 		headers: {'Content-Type': 'application/json'},

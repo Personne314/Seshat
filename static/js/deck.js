@@ -8,9 +8,6 @@ class FlashcardDeck {
 		this.name = elt.dataset.deck;
 		this.init_card = elt.dataset.card;
 
-		console.log(this.name);
-		console.log(this.init_card);
-
 		// HTML elements.
 		this.deck = document.querySelector('.deck-container');
 		this.prevBtn = document.querySelector('.prev');

@@ -563,6 +563,29 @@ def db_update_decks_status(decks_status):
     db.executemany(update_query, params)
     db.commit()
 
+# Returns the name of the deck containing the element.
+def db_get_deck_from_element(card_id):
+	db = get_db()
+	deck_query = f'''
+		SELECT D.deck_name
+		FROM Deck AS D
+		JOIN Element AS E ON D.deck_id = E.deck_id
+		WHERE E.id = {card_id}
+	'''
+	cursor = db.execute(deck_query)
+	return cursor.fetchone()[0]
+
+# Returns the name of the element of a given id.
+def db_get_name_from_element(card_id):
+	db = get_db()
+	deck_query = f'''
+		SELECT E.japanese_name
+		FROM Element AS E
+		WHERE E.id = {card_id}
+	'''
+	cursor = db.execute(deck_query)
+	return cursor.fetchone()[0]
+
 
 
 #################################################################################

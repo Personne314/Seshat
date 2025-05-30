@@ -55,6 +55,9 @@ def page_options():
 def page_deck():
 	deck_name = request.form.get('deck', '')
 	card_name = request.form.get('card', '')
+	if card_name.isdigit():
+		deck_name = db_get_deck_from_element(card_name)
+		card_name = db_get_name_from_element(card_name)
 	return render_template("decks/deck.html", options=get_options(), deck_name=deck_name, card_name=card_name)
 
 # This route generates a page showing the kanji deck list.

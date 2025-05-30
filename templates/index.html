@@ -1,70 +1,47 @@
-
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Configuration des Options</title>
 	<link rel="icon" type="image/png" href="{{ url_for('static', filename='images/logo.png') }}">
 	<link rel="stylesheet" href="/static/css/{{options['app-color-theme']}}/main.css">
+	<link rel="stylesheet" href="/static/css/{{options['app-color-theme']}}/decks.css">
 	<link rel="stylesheet" href="/static/css/{{options['app-color-theme']}}/home.css">
 </head>
 <body>
 	{% include "header.html" %}
 	
 	<div class="main-container">
-		<h1>Suivi du Travail</h1>
+		<h1>Suivi du Travail - <span id="current-date"></span></h1>
 		
 		<div class="tabs">
-			<div class="tab active" data-tab="dailies">Dailies</div>
+			<div class="tab active" data-tab="dailies">Révision</div>
 			<div class="tab" data-tab="errors">Erreurs de Révision</div>
 		</div>
 		
 		<div class="tab-content active" id="dailies">
 			<div class="section">
-				<h2 class="section-title">Dernières Dailies</h2>
-				<div class="dailies-container">
-					<!-- Placeholder pour les dailies - sera remplacé par JS -->
-					<div class="daily-item">
-						<div class="daily-title">Daily du 15/05/2023</div>
-						<div class="daily-date">Postée par: John Doe</div>
-						<div class="daily-content">
-							Aujourd'hui j'ai travaillé sur l'interface utilisateur et corrigé plusieurs bugs mineurs. Demain je prévois de commencer l'intégration de l'API...
-						</div>
-					</div>
-					
-					<div class="daily-item">
-						<div class="daily-title">Daily du 14/05/2023</div>
-						<div class="daily-date">Postée par: Jane Smith</div>
-						<div class="daily-content">
-							J'ai terminé le module d'authentification et commencé les tests. J'ai rencontré un problème avec les tokens JWT qui expirent trop rapidement...
-						</div>
-					</div>
-					
-					<div class="daily-item">
-						<div class="daily-title">Daily du 13/05/2023</div>
-						<div class="daily-date">Postée par: Mike Johnson</div>
-						<div class="daily-content">
-							Progrès sur le système de notifications. J'ai implémenté les webhooks mais il reste à gérer les erreurs de connexion et les retours en ligne...
-						</div>
-					</div>
-					
-					<div class="daily-item">
-						<div class="daily-title">Daily du 12/05/2023</div>
-						<div class="daily-date">Postée par: Sarah Williams</div>
-						<div class="daily-content">
-							Révision du design des tableaux de bord. J'ai créé plusieurs maquettes et les ai soumises à l'équipe pour feedback. Attente de validation avant...
-						</div>
-					</div>
-					
-					<div class="daily-item">
-						<div class="daily-title">Daily du 11/05/2023</div>
-						<div class="daily-date">Postée par: David Brown</div>
-						<div class="daily-content">
-							Optimisation des requêtes SQL pour le reporting. J'ai réduit le temps d'exécution de 45% mais il reste quelques jointures problématiques à...
-						</div>
-					</div>
-					
+				<h2 class="section-title">Radicaux</h2>
+				<div class="elements-grid" id="radicals-grid">
 					<div class="placeholder">
-						<div>Plus de dailies seront chargées ici via JavaScript</div>
+						<div>Chargement des radicaux...</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="section">
+				<h2 class="section-title">Kanji</h2>
+				<div class="elements-grid" id="kanji-grid">
+					<div class="placeholder">
+						<div>Chargement des kanji...</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="section">
+				<h2 class="section-title">Vocabulaire</h2>
+				<div class="elements-grid" id="vocabulary-grid">
+					<div class="placeholder">
+						<div>Chargement du vocabulaire...</div>
 					</div>
 				</div>
 			</div>
@@ -74,7 +51,7 @@
 			<div class="section">
 				<h2 class="section-title">Erreurs de Révision</h2>
 				<div class="errors-container">
-					<!-- Placeholder pour les erreurs - sera remplacé par JS -->
+					<!-- Contenu des erreurs inchangé -->
 					<div class="error-item">
 						<div class="error-header">
 							<div class="error-title">Problème d'authentification</div>
@@ -95,16 +72,6 @@
 						</div>
 					</div>
 					
-					<div class="error-item">
-						<div class="error-header">
-							<div class="error-title">Problème de performance</div>
-							<div class="error-date">08/05/2023 - Mineur</div>
-						</div>
-						<div class="error-content">
-							Le chargement du tableau de bord prend plus de 5 secondes lorsqu'il y a plus de 1000 entrées. Le problème vient de la requête SQL qui ne limite pas correctement les résultats.
-						</div>
-					</div>
-					
 					<div class="placeholder">
 						<div>Plus d'erreurs seront chargées ici via JavaScript</div>
 					</div>
@@ -113,28 +80,7 @@
 		</div>
 	</div>
 	
-	<script>
-		// Gestion des onglets
-		document.addEventListener('DOMContentLoaded', function() {
-			const tabs = document.querySelectorAll('.tab');
-			const tabContents = document.querySelectorAll('.tab-content');
-			
-			tabs.forEach(tab => {
-				tab.addEventListener('click', () => {
-					// Retirer la classe active de tous les onglets et contenus
-					tabs.forEach(t => t.classList.remove('active'));
-					tabContents.forEach(c => c.classList.remove('active'));
-					
-					// Ajouter la classe active à l'onglet cliqué
-					tab.classList.add('active');
-					
-					// Afficher le contenu correspondant
-					const tabId = tab.getAttribute('data-tab');
-					document.getElementById(tabId).classList.add('active');
-				});
-			});
-
-		});
-	</script>
+	<!-- Script for the index -->
+	<script src="{{ url_for('static', filename='js/home.js') }}"></script>
 </body>
 </html>
