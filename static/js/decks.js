@@ -7,10 +7,6 @@ modified = false;
 
 
 
-const MAX_SCORE = 10;
-
-
-
 // Defines the deck type to use.
 function setDeckType(type) {
 	deck_type = type;
@@ -76,7 +72,7 @@ function createDeckSections(decks) {
         content.className = 'elements-grid';
         content.innerHTML = deck.content.map(item => {
         const [text, score = 0] = Array.isArray(item) ? item : [item, 0];
-        const progressPercent = Math.min(100, (score / MAX_SCORE) * 100);
+        const progressPercent = Math.min(100.0, (score / 10.0) * 100.0);
         return `
             <div class="element-card clickable"
                 data-deck="${deck.name}"
@@ -150,7 +146,7 @@ async function updateDecksDisplay(diff) {
     const min = current_page * deck_per_page;
     const amount = deck_per_page;
 
-	fetch('/api/decks-count', {
+	fetch('/api/decks/count', {
 		method: 'POST',
 		headers: {'Content-Type': 'application/json'},
 		body: JSON.stringify({tags:tags, min:min, amount:amount})

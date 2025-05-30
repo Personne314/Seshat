@@ -48,5 +48,5 @@ def dailies_init():
 			"word": dailies_generates_word(),
 			"radical": dailies_generates_radical()
 		}
-		with open(DAILIES_FILE, "w", encoding="utf-8") as f:
-			dump(last_dailies, f, ensure_ascii=False, indent=4)
+	with open(DAILIES_FILE, "w", encoding="utf-8") as f:
+		dump(last_dailies, f, ensure_ascii=False, indent=4)

@@ -118,12 +118,6 @@ async function loadCard(deck_name, card_data, type) {
 		const mnemonic = card_data.mnemonic ?? null;
 		const example = card_data.example ?? null;
 
-		console.log(type);
-		console.log(front);
-		console.log(meaning);
-		console.log(mnemonic);
-		console.log(example);
-
 		// Creates the right card.
 		switch (type) {
 			case "word":
@@ -136,7 +130,7 @@ async function loadCard(deck_name, card_data, type) {
 				throw new Error(`[SESHAT]: unknown card type '${type}'`);
 		}
 
-	// Errors managment.
+	// Error managment.
 	} catch (error) {
 		console.error(`Error when loading deck '${deck_name}' card :`, error);
 		return null;

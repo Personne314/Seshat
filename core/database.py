@@ -589,7 +589,7 @@ def db_upsert_scores(scores):
 def db_get_priority_elements(n, type):
 	db = get_db()
 	query = """
-	SELECT S.element_id, S.last_review, S.validation_count, S.difficulty,
+	SELECT E.japanese_name, S.element_id, S.last_review, S.validation_count, S.difficulty,
 		CASE WHEN S.last_review IS NULL THEN 1e999
 			ELSE (julianday('now') - julianday(S.last_review)) / 
 				(POWER(2, S.validation_count) * S.difficulty)
@@ -602,5 +602,5 @@ def db_get_priority_elements(n, type):
 	LIMIT ?
 	"""
 	cursor = db.execute(query, (type, n))
-	results = [(row[0], row[1], row[2], row[3]) for row in cursor.fetchall()]
+	results = [(row[0], row[1], row[2], row[3], row[4]) for row in cursor.fetchall()]
 	return results

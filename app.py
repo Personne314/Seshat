@@ -58,7 +58,7 @@ def page_deck():
 	return render_template("decks/deck.html", options=get_options(), deck_name=deck_name, card_name=card_name)
 
 # This route generates a page showing the kanji deck list.
-@app.route("/decks-kanji")
+@app.route("/decks/kanji")
 def page_decks_kanji():
 	return render_template(
 		"decks/kanji_decks.html", 
@@ -68,7 +68,7 @@ def page_decks_kanji():
 	)
 
 # This route generates a page showing the word deck list.
-@app.route("/decks-word")
+@app.route("/decks/word")
 def page_decks_word():
 	return render_template(
 		"decks/word_decks.html", 
@@ -78,7 +78,7 @@ def page_decks_word():
 	)
 
 # This route generates a page showing the radical deck list.
-@app.route("/decks-radical")
+@app.route("/decks/radical")
 def page_decks_radical():
 	return render_template(
 		"decks/radical_decks.html", 
@@ -99,7 +99,7 @@ def api_get_deck(deck_name):
 	return jsonify({"meta": deck_meta, "cards": deck_cards})
 
 # This route is called to save modified options.
-@app.route("/api/save-options", methods=["POST"])
+@app.route("/api/options/save", methods=["POST"])
 def api_save_options():
 	options_update({
 		"radicals-dailies-amount": int(request.form["radicals-dailies-amount"]),
@@ -118,7 +118,7 @@ def api_get_decks():
 	return jsonify(db_get_decks_by_tags(data["tags"], data["min"], data["amount"]))
 
 # Route to get the number of decks returned by /api/decks.
-@app.route("/api/decks-count", methods=["POST"])
+@app.route("/api/decks/count", methods=["POST"])
 def api_get_decks_count():
 	data = request.get_json()
 	if not data or "tags" not in data or "min" not in data or "amount" not in data:
@@ -126,18 +126,25 @@ def api_get_decks_count():
 	return jsonify(db_get_decks_by_tags_amount(data["tags"], data["min"], data["amount"]))
 
 # This route is called to save modified decks.
-@app.route("/api/save-decks", methods=["POST"])
+@app.route("/api/decks/save", methods=["POST"])
 def api_save_decks():
 	deck_states = request.form.get("deckStates")
 	db_update_decks_status(loads(deck_states))
 	return redirect("/")
 
 # This route is used to reset the dailies.
-@app.route("/api/reset-dailies")
+@app.route("/api/dailies/reset")
 def api_reset_dailies():
 	if path.isfile("dailies.json"):
 		remove("dailies.json")
 	return redirect("/")
+
+# This route is used to get the dailies card main informations.
+@app.route("/api/dailies/get")
+def api_get_dailies():
+	with open("dailies.json", 'r', encoding='utf-8') as f:
+		return jsonify(load(f))
+	return jsonify({})
 
 
 
