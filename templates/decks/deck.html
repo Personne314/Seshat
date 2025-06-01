@@ -9,10 +9,15 @@
 </head>
 <body>
 	{% include "header.html" %}
+
+	<!-- Page to show the content of a deck -->
+	<!-- This shows the title of the deck and its tags -->
 	<div class="deck-header">
 		<h1 id="deck-name"></h1>
 		<div id="deck-tags"></div>
 	</div>
+	
+	<!-- Here the cards are displayed -->
 	<main class="deck-main">
 		<div class="flashcards-deck">
 			<div class="deck-container" id="deck-container"></div>
@@ -20,6 +25,8 @@
 			<button class="deck-btn next">&gt;</button>
 		</div>
 	</main>
+
+	<!-- Script and data of the deck -->
 	<div id="deck-data" 
 		data-deck="{{deck_name}}"
 		data-card="{{card_name}}"
@@ -27,6 +34,5 @@
 	</div>
 	<script src="/static/js/flashcard.js"></script>
 	<script src="/static/js/deck.js"></script>
-
 </body>
 </html>

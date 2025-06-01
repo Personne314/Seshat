@@ -26,10 +26,9 @@ def teardown_appcontext(exception):
 
 
 # Radical exercice route.
-@app.route("/radicals-exercise")
+@app.route("/exercice")
 def radicals_exercise():
-	deck_data = "radicals-14"
-	return render_template("exercices/radical_exercise.html", deck_data=deck_data, active_page="home")
+	return render_template("exercice.html", options=get_options())
 
 
 

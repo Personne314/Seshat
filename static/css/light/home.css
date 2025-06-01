@@ -5,11 +5,12 @@
 }
 
 .section {
-	background-color: #2c2c2c;
+	background-color: #ffffff;
 	border-radius: 8px;
 	padding: 20px;
 	margin-bottom: 30px;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+	border: 1px solid #e0e0e0;
 }
 
 .section-title {
@@ -17,7 +18,7 @@
 	margin-top: 0;
 	margin-bottom: 20px;
 	color: #e53935;
-	border-bottom: 1px solid #444;
+	border-bottom: 1px solid #e0e0e0;
 	padding-bottom: 10px;
 }
 
@@ -28,37 +29,38 @@
 }
 
 .daily-item {
-	background-color: #3a3a3a;
+	background-color: #f9f9f9;
 	border-radius: 6px;
 	padding: 15px;
 	width: calc(33.333% - 14px);
 	box-sizing: border-box;
 	transition: transform 0.2s;
 	cursor: pointer;
-	border: 1px solid #444;
+	border: 1px solid #e0e0e0;
 }
 
 .daily-item:hover {
 	transform: translateY(-5px);
-	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+	background-color: #f5f5f5;
 }
 
 .daily-title {
 	font-weight: bold;
 	margin-bottom: 10px;
-	color: #f5f5f5;
+	color: #333;
 }
 
 .daily-date {
 	font-size: 0.8em;
-	color: #aaa;
+	color: #777;
 	margin-bottom: 10px;
 }
 
 .daily-content {
 	height: 100px;
 	overflow: hidden;
-	color: #ddd;
+	color: #555;
 	font-size: 0.9em;
 	line-height: 1.4;
 }
@@ -70,7 +72,7 @@
 }
 
 .error-item {
-	background-color: #3a3a3a;
+	background-color: #f9f9f9;
 	border-radius: 6px;
 	padding: 15px;
 	border-left: 4px solid #e53935;
@@ -84,23 +86,23 @@
 
 .error-title {
 	font-weight: bold;
-	color: #f5f5f5;
+	color: #333;
 }
 
 .error-date {
 	font-size: 0.8em;
-	color: #aaa;
+	color: #777;
 }
 
 .error-content {
-	color: #ddd;
+	color: #555;
 	font-size: 0.9em;
 	line-height: 1.4;
 }
 
 .placeholder {
-	background-color: #444;
-	color: #777;
+	background-color: #f5f5f5;
+	color: #999;
 	text-align: center;
 	padding: 40px;
 	border-radius: 6px;
@@ -110,26 +112,26 @@
 .tabs {
 	display: flex;
 	margin-bottom: 20px;
-	border-bottom: 1px solid #444;
+	border-bottom: 1px solid #e0e0e0;
 }
 
 .tab {
 	padding: 10px 20px;
 	cursor: pointer;
-	color: #ccc;
+	color: #777;
 	border-bottom: 3px solid transparent;
 	transition: all 0.3s;
 }
 
 .tab.active {
-	color: #f5f5f5;
+	color: #e53935;
 	border-bottom: 3px solid #e53935;
 	font-weight: bold;
 }
 
 .tab:hover:not(.active) {
-	color: #fff;
-	background-color: #3a3a3a;
+	color: #333;
+	background-color: #f5f5f5;
 }
 
 .tab-content {

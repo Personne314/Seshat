@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Configuration des Options</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/logo.png') }}">
+    <link rel="stylesheet" href="/static/css/{{options['app-color-theme']}}/main.css">
+    <link rel="stylesheet" href="/static/css/{{options['app-color-theme']}}/flashcard.css">
+    <link rel="stylesheet" href="/static/css/{{options['app-color-theme']}}/exercice.css">
+</head>
+<body>
+    {% include "header.html" %}
+
+    <div class="question-header">
+        <h1>Question <span class="question-number">1</span></h1>
+    </div>
+    
+    <main class="question-main">
+        <div class="flashcard-container">
+            <div class="flashcard active">
+                <div class="flashcard-inner">
+                    <div class="flashcard-face flashcard-front">
+                        <div class="card-content">
+                            <p>Contenu de la question (ex: 猫)</p>
+                        </div>
+                    </div>
+                    <div class="flashcard-face flashcard-back">
+                        <div class="card-content">
+                            <p>Réponse ou indice (ex: chat)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Zone de réponse en bas de page -->
+    <footer class="answer-footer">
+        <div class="answer-container">
+            <div class="answer-placeholder">
+                <p>Zone de réponse (QCM, texte libre, etc.)</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
