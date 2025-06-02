@@ -10,10 +10,12 @@
 <body>
     {% include "header.html" %}
 
+    <!-- Question header -->
     <div class="question-header">
         <h1>Question <span class="question-number">1</span></h1>
     </div>
     
+    <!-- Question card -->
     <main class="question-main">
         <div class="flashcard-container">
             <div class="flashcard active">
@@ -33,13 +35,36 @@
         </div>
     </main>
 
-    <!-- Zone de réponse en bas de page -->
+    <!-- Question answer area -->
     <footer class="answer-footer">
         <div class="answer-container">
-            <div class="answer-placeholder">
-                <p>Zone de réponse (QCM, texte libre, etc.)</p>
+            <div class="answer-methods">
+                <div id="qcm" class="answer-method">
+                    <label>
+                        <input type="radio" name="qcm-answer" value="a" class="qcm-option">
+                        <span class="qcm-button">Option A</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="qcm-answer" value="b" class="qcm-option">
+                        <span class="qcm-button">Option B</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="qcm-answer" value="c" class="qcm-option">
+                        <span class="qcm-button">Option C</span>
+                    </label>
+                </div>
+                <div id="japanese" class="answer-method">
+                    <textarea id="jp-input" placeholder="Réponse en japonais..."></textarea>
+                </div>
+                <div id="french" class="answer-method">
+                    <textarea id="fr-input" placeholder="Réponse en français..."></textarea>
+                </div>
             </div>
         </div>
     </footer>
+
+	<!-- Scripts for the exercices -->
+    <script src="/static/js/wanakana.min.js"></script>
+    <script src="/static/js/exercice.js"></script>
 </body>
 </html>
