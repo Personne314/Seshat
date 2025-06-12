@@ -44,9 +44,36 @@ def dailies_init():
 	if last_dailies["date"] != str(date.today()):
 		last_dailies = {
 			"date": str(date.today()),
-			"kanji": dailies_generates_kanji(),
-			"word": dailies_generates_word(),
-			"radical": dailies_generates_radical()
+			"dailies": {
+				"kanji": dailies_generates_kanji(),
+				"word": dailies_generates_word(),
+				"radical": dailies_generates_radical()
+			},
+			"errors": {
+				"kanji": [],
+				"word": [],
+				"radical": []
+			}
 		}
 	with open(DAILIES_FILE, "w", encoding="utf-8") as f:
 		dump(last_dailies, f, ensure_ascii=False, indent=4)
+
+
+
+#################################################################################
+# This section defines functions used to manipulate the dailies.				#
+#################################################################################
+
+# This returns the set of dailies to do.
+def dailies_get_todo():
+	global last_dailies
+	if last_dailies == None :
+		dailies_init()
+	return last_dailies["dailies"]
+
+# This returns the set of dailies errors.
+def dailies_get_error():
+	global last_dailies
+	if last_dailies == None :
+		dailies_init()
+	return last_dailies["errors"]

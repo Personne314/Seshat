@@ -1,4 +1,5 @@
 from flask import Flask, redirect, render_template, jsonify, request
+from core.exercices import *
 from core.database import *
 from core.options import *
 from core.dailies import *
@@ -144,9 +145,33 @@ def api_reset_dailies():
 # This route is used to get the dailies card main informations.
 @app.route("/api/dailies/get")
 def api_get_dailies():
-	with open("dailies.json", 'r', encoding='utf-8') as f:
-		return jsonify(load(f))
-	return jsonify({})
+	return jsonify(dailies_get_todo())
+
+# Route to get the json representing a set of dailies exercices.
+@app.route("/api/dailies/exercices/<string:type>")
+def api_get_dailies_exercices(type):
+	exercices = {"type":"dailies", "exercices":[]}
+	dailies = dailies_get_todo()
+
+	# Gets the dailies element to work on
+	elements = []
+	if type == "all":
+		elements = dailies["kanji"] + dailies["word"] + dailies["radical"]
+	elif type == "kanji":
+		elements = dailies["kanji"]
+	elif type == "word":
+		elements = dailies["word"]
+	elif type == "radical":
+		elements = dailies["radical"]
+
+	info = {"kanji":[],"word":[],"radical":[]}
+	cards = db_get_cards_by_ids([elt[1] for elt in elements])
+	for card in cards :
+		info[card["type"]].append(card["japanese"])
+	print (cards, info)
+	for card in cards :
+		exercices["exercices"] + exercices_create(card, info)
+	return jsonify(exercices)
 
 
 

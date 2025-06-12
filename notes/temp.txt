@@ -1,0 +1,19 @@
+[
+	{"id": 21, "type": "word", "japanese": "会う", "mnemonic": "あう → Imaginez deux personnes qui s’exclament « Ah ! » (あ) et « Ouah ! » (う) en se rencontrant.", "meaning": ["rencontrer", "voir"], "example": ["友達に会う (ともだちにあう - Rencontrer un ami)", "駅で会う (えきであう - Se voir à la gare)"], "reading": "あう", "class": "verbe intransitif"}, 
+	{"id": 22, "type": "word", "japanese": "青い", "mnemonic": "あおい → « A.O. » comme dans « Azur Océan » (la couleur bleue de la mer).", "meaning": ["bleu"], "example": ["青い目 (あおいめ - Yeux bleus)", "青い空 (あおいそら - Ciel bleu)"], "reading": "あおい", "class": "adjectif en -i"}, 
+	{"id": 23, "type": "word", "japanese": "赤", "mnemonic": "あか → Imaginez un « arc-en-ciel » (aka) où le rouge est la première couleur.", "meaning": ["rouge"], "example": ["赤が好き (あかがすき - J’aime le rouge)", "赤のドレス (あかのどれす - Une robe rouge)"], "reading": "あか", "class": "nom"}, 
+	{"id": 24, "type": "word", "japanese": "赤い", "mnemonic": "あかい → « À qui » est ce feu rouge ? À moi (akai).", "meaning": ["rouge (adjectif)"], "example": ["赤いりんご (あかいりんご - Pomme rouge)", "赤い信号 (あかいしんごう - Feu rouge)"], "reading": "あかい", "class": "adjectif en -i"}, 
+	{"id": 25, "type": "word", "japanese": "上がる", "mnemonic": "あがる → « À gare » (on monte dans le train à la gare).", "meaning": ["monter"], "example": ["手を上げる (てをあげる - Lever la main)", "階段を上がる (かいだんをあがる - Monter les escaliers)"], "reading": "あがる", "class": "verbe godan intransitif"}, 
+	
+	{"id": 673, "type": "kanji", "japanese": "人", "mnemonic": "Une silhouette simplifiée d'un être humain. Imaginez les deux jambes de quelqu'un qui marche.", "meaning": ["humain", "personne"], "example": ["一人", "人々", "日本人"], "on": ["ジン", "ニン"], "kun": ["-と", "-り", "ひと"], "radical": ["人"]},
+	{"id": 674, "type": "kanji", "japanese": "一", "mnemonic": "Une simple ligne horizontale représentant l'unité. Imaginez-la comme la base de tout, la première marche d'un escalier.", "meaning": ["un"], "example": ["一つ", "一人", "一日"], "on": ["イチ", "イツ"], "kun": ["ひと"], "radical": ["一"]}, 
+	{"id": 675, "type": "kanji", "japanese": "日", "mnemonic": "Représente le soleil avec un cercle contenant un point central. Imaginez-le illuminant le ciel chaque jour.", "meaning": ["jour", "soleil"], "example": ["日曜日", "日本", "毎日"], "on": ["ジツ", "ニチ"], "kun": ["-か", "-び", "ひ"], "radical": ["日"]}, 
+	{"id": 676, "type": "kanji", "japanese": "大", "mnemonic": "Un homme avec les bras et jambes écartés pour paraître plus grand. Imaginez quelqu'un s'étendant pour montrer sa grandeur.", "meaning": ["grand", "large"], "example": ["大人", "大使館", "大学"], "on": ["タイ", "ダイ"], "kun": ["おお", "おお.いに", "おお.きい"], "radical": ["大"]}, 
+	{"id": 677, "type": "kanji", "japanese": "年", "mnemonic": "Basé sur le radical 干 (sec). Imaginez une tige sèche représentant le passage du temps, chaque année laissant sa marque.", "meaning": ["année"], "example": ["今年", "去年", "来年"], "on": ["ネン"], "kun": ["とし"], "radical": ["丿", "干"]}, 
+	
+	{"id": 866, "type": "radical", "japanese": "艹", "mnemonic": "Deux brins d'herbe qui poussent - imaginez un petit jardin qui germe", "meaning": ["herbe"], "example": ["花", "茶", "草", "薬"], "reading": "くさかんむり"},
+	{"id": 867, "type": "radical", "japanese": "氵", "mnemonic": "Trois gouttes d'eau qui coulent - imaginez des gouttes tombant d'un robinet", "meaning": ["eau", "liquide"], "example": ["泳", "海", "漢", "瀬"], "reading": "さんずい"}, 
+	{"id": 868, "type": "radical", "japanese": "木", "mnemonic": "Un arbre avec ses racines et ses branches - dessinez-le mentalement", "meaning": ["arbre"], "example": ["板", "林", "森", "機"], "reading": "きへん"}, 
+	{"id": 869, "type": "radical", "japanese": "扌", "mnemonic": "Une main qui attrape quelque chose - geste de saisie", "meaning": ["main"], "example": ["打", "抱", "押", "持"], "reading": "てへん"}, 
+	{"id": 870, "type": "radical", "japanese": "口", "mnemonic": "Un carré qui représente une bouche ouverte", "meaning": ["bouche"], "example": ["叫", "吃", "名", "和"], "reading": "くち"}
+] 

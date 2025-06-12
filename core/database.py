@@ -274,7 +274,7 @@ def initialize_scores():
 	db = get_db()
 	db.execute("""
 		INSERT INTO Score (element_id, last_review, validation_count, difficulty)
-        SELECT id, NULL, 0, 1.0 FROM Element
+		SELECT id, NULL, 0, 1.0 FROM Element
 	""")
 	db.commit()
 
@@ -443,6 +443,87 @@ def db_get_deck_cards_kanji(db, name):
 	]
 	return data
 
+# Gets the cards of the elements for which ids are in ids.
+def db_get_cards_by_ids(ids):
+	db = get_db()
+	id_list = ",".join(str(int(i)) for i in ids)
+	request = f"""
+	SELECT
+		E.id,
+		E.element_type,
+		E.japanese_name,
+		E.mnemonic,
+		RR.reading AS radical_reading,
+		WI.reading       AS word_reading,
+		WI.word_class    AS word_class,
+		KR_on.readings   AS on_readings,
+		KR_kun.readings  AS kun_readings,
+		KR.radicals      AS kanji_radicals,
+		M.meanings,
+		EX.examples
+	FROM Element E
+	LEFT JOIN RadicalReading RR
+		ON E.id = RR.element_id
+	LEFT JOIN WordInfo WI
+		ON E.id = WI.element_id
+	LEFT JOIN (
+		SELECT element_id, GROUP_CONCAT(reading, '|') AS readings
+		FROM KanjiReading
+		WHERE reading_type = 'on'
+		GROUP BY element_id
+	) KR_on ON E.id = KR_on.element_id
+	LEFT JOIN (
+		SELECT element_id, GROUP_CONCAT(reading, '|') AS readings
+		FROM KanjiReading
+		WHERE reading_type = 'kun'
+		GROUP BY element_id
+	) KR_kun ON E.id = KR_kun.element_id
+	LEFT JOIN (
+		SELECT element_id, GROUP_CONCAT(radical, '|') AS radicals
+		FROM KanjiRadical
+		GROUP BY element_id
+	) KR ON E.id = KR.element_id
+	LEFT JOIN (
+		SELECT element_id, GROUP_CONCAT(meaning, '|') AS meanings
+		FROM Meaning
+		GROUP BY element_id
+	) M ON E.id = M.element_id
+	LEFT JOIN (
+		SELECT element_id, GROUP_CONCAT(example, '|') AS examples
+		FROM Example
+		GROUP BY element_id
+	) EX ON E.id = EX.element_id
+	WHERE E.id IN ({id_list});
+	"""
+	res = db.execute(request)
+	cards = []
+	for row in res:
+		base = {
+			"id":          row["id"],
+			"type":        row["element_type"],
+			"japanese":    row["japanese_name"],
+			"mnemonic":    row["mnemonic"] or "",
+			"meaning":     [m.strip() for m in (row["meanings"] or "").split("|") if m.strip()],
+			"example":     [e.strip() for e in (row["examples"] or "").split("|") if e.strip()],
+		}
+		if row["element_type"] == "radical":
+			base.update({
+				"reading": row["radical_reading"] or ""
+			})
+		elif row["element_type"] == "word":
+			base.update({
+				"reading": row["word_reading"] or "",
+				"class":   row["word_class"]   or ""
+			})
+		elif row["element_type"] == "kanji":
+			base.update({
+				"on":       [o.strip() for o in (row["on_readings"] or "").split("|") if o.strip()],
+				"kun":      [k.strip() for k in (row["kun_readings"] or "").split("|") if k.strip()],
+				"radical":  [r.strip() for r in (row["kanji_radicals"] or "").split("|") if r.strip()],
+			})
+		cards.append(base)
+	return cards
+
 # Gets a deck metadata.
 def db_get_deck_meta(name):
 	db = get_db()
@@ -553,15 +634,15 @@ def db_get_decks_by_tags_amount(tags, min, amount):
 
 # Update the decks status. 
 def db_update_decks_status(decks_status):
-    db = get_db()
-    params = [(1 if is_active else 0, name) for name, is_active in decks_status.items()]
-    update_query = """
-        UPDATE Deck
-        SET is_active = ?
-        WHERE deck_name = ?
-    """
-    db.executemany(update_query, params)
-    db.commit()
+	db = get_db()
+	params = [(1 if is_active else 0, name) for name, is_active in decks_status.items()]
+	update_query = """
+		UPDATE Deck
+		SET is_active = ?
+		WHERE deck_name = ?
+	"""
+	db.executemany(update_query, params)
+	db.commit()
 
 # Returns the name of the deck containing the element.
 def db_get_deck_from_element(card_id):
@@ -612,7 +693,7 @@ def db_upsert_scores(scores):
 def db_get_priority_elements(n, type):
 	db = get_db()
 	query = """
-	SELECT E.japanese_name, S.element_id, S.last_review, S.validation_count, S.difficulty,
+	SELECT E.japanese_name, S.element_id, S.last_review, S.validation_count, S.difficulty, E.element_type,
 		CASE WHEN S.last_review IS NULL THEN 1e999
 			ELSE (julianday('now') - julianday(S.last_review)) / 
 				(POWER(2, S.validation_count) * S.difficulty)
@@ -625,5 +706,5 @@ def db_get_priority_elements(n, type):
 	LIMIT ?
 	"""
 	cursor = db.execute(query, (type, n))
-	results = [(row[0], row[1], row[2], row[3], row[4]) for row in cursor.fetchall()]
+	results = [(row[0], row[1], row[2], row[3], row[4], row[5]) for row in cursor.fetchall()]
 	return results

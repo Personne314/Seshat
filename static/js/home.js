@@ -17,8 +17,13 @@ function navigateToElement(card_id) {
 async function loadDailies() {
 	try {
 		const response = await fetch('/api/dailies/get');
-		const data = await response.json();
-		document.getElementById('current-date').textContent = data.date;
+		const data = await response.json();document.getElementById('current-date').textContent =
+			new Date().toLocaleDateString('fr-FR', {
+				year:    'numeric',
+				month:   'long',
+				day:     'numeric'
+			}
+		);
 		displayRadicals(data.radical || []);
 		displayKanji(data.kanji || []);
 		displayVocabulary(data.word || []);
