@@ -25,18 +25,9 @@ def teardown_appcontext(exception):
 
 
 
-
-# Radical exercice route.
-@app.route("/exercice")
-def radicals_exercise():
-	return render_template("exercice.html", options=get_options())
-
-
-
-
 # This route generates the dailies if needed then the main page.
 @app.route("/")
-def index():
+def page_index():
 	dailies_init()
 	return render_template("index.html", options=get_options(), active_page="home")
 
@@ -89,6 +80,11 @@ def page_decks_radical():
 		active_page="decks-radical",
 		all_tags=db_get_decks_tags("radical")
 	)
+
+# This route generates the exercices pages.
+@app.route("/exercices/<string:type>")
+def page_exercises(type):
+	return render_template("exercices.html", options=get_options(), type=type)
 
 
 
