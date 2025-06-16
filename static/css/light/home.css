@@ -1,213 +1,94 @@
-.main-container {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 20px;
-}
-
 .section {
-	background-color: #ffffff;
-	border-radius: 8px;
-	padding: 20px;
-	margin-bottom: 30px;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-	border: 1px solid #e0e0e0;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e0e0e0;
 }
 
 .section-title {
-	font-size: 1.5em;
-	margin-top: 0;
-	margin-bottom: 20px;
-	color: #e53935;
-	border-bottom: 1px solid #e0e0e0;
-	padding-bottom: 10px;
-}
-
-.dailies-container {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 20px;
+    color: #e53935;
+    border-bottom-color: #e0e0e0;
 }
 
 .daily-item {
-	background-color: #f9f9f9;
-	border-radius: 6px;
-	padding: 15px;
-	width: calc(33.333% - 14px);
-	box-sizing: border-box;
-	transition: transform 0.2s;
-	cursor: pointer;
-	border: 1px solid #e0e0e0;
+    background-color: #f9f9f9;
+    border-color: #e0e0e0;
 }
 
 .daily-item:hover {
-	transform: translateY(-5px);
-	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-	background-color: #f5f5f5;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    background-color: #f5f5f5;
 }
 
 .daily-title {
-	font-weight: bold;
-	margin-bottom: 10px;
-	color: #333;
+    color: #333;
 }
 
 .daily-date {
-	font-size: 0.8em;
-	color: #777;
-	margin-bottom: 10px;
+    color: #777;
 }
 
 .daily-content {
-	height: 100px;
-	overflow: hidden;
-	color: #555;
-	font-size: 0.9em;
-	line-height: 1.4;
-}
-
-.errors-container {
-	display: flex;
-	flex-direction: column;
-	gap: 15px;
+    color: #555;
 }
 
 .error-item {
-	background-color: #f9f9f9;
-	border-radius: 6px;
-	padding: 15px;
-	border-left: 4px solid #e53935;
-}
-
-.error-header {
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border-left-color: #e53935;
 }
 
 .error-title {
-	font-weight: bold;
-	color: #333;
+    color: #333;
 }
 
 .error-date {
-	font-size: 0.8em;
-	color: #777;
+    color: #777;
 }
 
 .error-content {
-	color: #555;
-	font-size: 0.9em;
-	line-height: 1.4;
+    color: #555;
 }
 
 .placeholder {
-	background-color: #f5f5f5;
-	color: #999;
-	text-align: center;
-	padding: 40px;
-	border-radius: 6px;
-	font-style: italic;
+    background-color: #f5f5f5;
+    color: #999;
 }
 
 .tabs {
-	display: flex;
-	margin-bottom: 20px;
-	border-bottom: 1px solid #e0e0e0;
+    border-bottom-color: #e0e0e0;
 }
 
 .tab {
-	padding: 10px 20px;
-	cursor: pointer;
-	color: #777;
-	border-bottom: 3px solid transparent;
-	transition: all 0.3s;
+    color: #777;
 }
 
 .tab.active {
-	color: #e53935;
-	border-bottom: 3px solid #e53935;
-	font-weight: bold;
+    color: #e53935;
+    border-bottom-color: #e53935;
 }
 
 .tab:hover:not(.active) {
-	color: #333;
-	background-color: #f5f5f5;
-}
-
-.tab-content {
-	display: none;
-}
-
-.tab-content.active {
-	display: block;
-}
-
-@media (max-width: 768px) {
-	.daily-item {
-		width: calc(50% - 10px);
-	}
-}
-
-@media (max-width: 480px) {
-	.daily-item {
-		width: 100%;
-	}
-}
-
-.exercises-container {
-	display: flex;
-	justify-content: flex-end;
-	margin-bottom: 20px;
+    color: #333;
+    background-color: #f5f5f5;
 }
 
 .exercises-button {
-	padding: 8px 16px;
-	background: #e53935;
-	color: #f0f0f0;
-	border: none;
-	border-radius: 6px;
-	cursor: pointer;
-	font-size: 1.1em;
-	transition: all 0.2s ease;
-	text-decoration: none;
-	display: inline-block;
-	text-align: center;
+    background: #e53935;
+    color: #f0f0f0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .exercises-button:hover {
-	background: #c62828;
-}
-
-.section-header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-bottom: 15px;
-}
-
-.section-title-container {
-	display: flex;
-	align-items: center;
-	flex-grow: 1;
+    background: #c62828;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
 
 .section-exercise-button {
-	padding: 6px 12px;
-	background: #e53935;
-	color: #f0f0f0;
-	border: none;
-	border-radius: 6px;
-	cursor: pointer;
-	font-size: 1.1em;
-	transition: all 0.2s ease;
-	text-decoration: none;
-	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-	font-weight: 500;
-	position: relative;
-	top: -15px;
+    background: #e53935;
+    color: #f0f0f0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .section-exercise-button:hover {
-	background: #c62828;
-	box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    background: #c62828;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }

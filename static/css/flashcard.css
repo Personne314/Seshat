@@ -1,0 +1,107 @@
+.flashcards-deck {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: calc(100vh - 140px); 
+	width: 100%;
+	overflow: hidden;
+}
+
+.deck-container {
+	position: relative;
+	width: 500px;
+	height: 500px;
+}
+
+.deck-btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	border: none;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	font-size: 1.2em;
+	cursor: pointer;
+	transition: background 0.3s;
+	z-index: 10;
+}
+
+.deck-btn.prev {
+	left: 15px;
+}
+
+.deck-btn.next {
+	right: 15px;
+}
+
+.flashcard {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+.flashcard.active {
+	opacity: 1;
+	z-index: 1;
+}
+
+.flashcard-inner {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	transform-style: preserve-3d;
+	transition: transform 0.6s;
+	border-radius: 15px;
+}
+
+.flashcard.flipped .flashcard-inner {
+	transform: rotateY(180deg);
+}
+
+.flashcard-face {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+	backface-visibility: hidden;
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.flashcard-front {
+	font-size: 5em;
+}
+
+.flashcard-back {
+	transform: rotateY(180deg);
+	overflow-y: auto;
+}
+
+.card-content {
+	width: 100%;
+}
+
+.card-title {
+	font-size: 1.5em;
+	margin-bottom: 15px;
+}
+
+.card-info {
+	margin: 10px 0;
+	font-size: 0.9em;
+}
+
+.example {
+	margin-top: 15px;
+	font-style: italic;
+	font-size: 0.9em;
+}

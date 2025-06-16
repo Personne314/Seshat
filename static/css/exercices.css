@@ -1,0 +1,124 @@
+.question-header {
+	position: fixed;
+	top: var(--nav-height, 60px);
+	left: 0;
+	width: 100%;
+	padding: 20px 0 10px;
+	text-align: center;
+	z-index: 500;
+}
+
+.question-number {
+	font-weight: bold;
+}
+
+.question-main {
+	padding-top: var(--nav-height, 60px);
+	min-height: calc(100vh - 240px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flashcard-container {
+	width: 500px;
+	height: 500px;
+	position: relative;
+}
+
+.answer-footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 0;
+	z-index: 500;
+}
+
+.answer-container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 20px;
+	text-align: center;
+}
+
+.answer-placeholder {
+	border-radius: 5px;
+	padding: 20px;
+	margin: 15px 0;
+}
+
+.answer-methods {
+	margin-top: 20px;
+}
+
+.answer-method {
+	display: none;
+	height: 120px;
+}
+
+.answer-method.active {
+	display: flex;
+}
+
+.answer-method textarea {
+	width: 100%;
+	height: 100%;
+	padding: 15px;
+	border-radius: 12px;
+	font-size: 1.1em;
+	line-height: 1.6;
+	resize: none;
+	transition: all 0.3s ease;
+	box-sizing: border-box;
+	font-family: "Noto Sans", "Noto Sans JP", "Segoe UI", sans-serif;
+}
+
+.answer-method textarea:focus {
+	outline: none;
+}
+
+#qcm {
+	justify-content: center;
+	gap: 15px;
+	padding: 0;
+	background: none;
+}
+
+#qcm label {
+	display: flex;
+	margin: 0;
+}
+
+.qcm-option {
+	display: none;
+}
+
+.qcm-button {
+	padding: 14px 25px;
+	border-radius: 10px;
+	font-size: 1.1em;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.2s ease;
+	text-align: center;
+	min-width: 100px;
+}
+
+.answer-method-switcher {
+	display: flex;
+	justify-content: center;
+	gap: 12px;
+	margin-bottom: 20px;
+}
+
+.answer-method-switcher button {
+	padding: 10px 20px;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.2s ease;
+	font-size: 1em;
+}
+
+#japanese, #french {
+	font-size: 1.1em;
+}

@@ -1,0 +1,184 @@
+.main-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.section {
+	border-radius: 8px;
+	padding: 20px;
+	margin-bottom: 30px;
+}
+
+.section-title {
+	font-size: 1.5em;
+	margin-top: 0;
+	margin-bottom: 20px;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 10px;
+}
+
+.dailies-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.daily-item {
+	border-radius: 6px;
+	padding: 15px;
+	width: calc(33.333% - 14px);
+	box-sizing: border-box;
+	transition: transform 0.2s;
+	cursor: pointer;
+	border: 1px solid transparent;
+}
+
+.daily-item:hover {
+	transform: translateY(-5px);
+}
+
+.daily-title {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.daily-date {
+	font-size: 0.8em;
+	margin-bottom: 10px;
+}
+
+.daily-content {
+	height: 100px;
+	overflow: hidden;
+	font-size: 0.9em;
+	line-height: 1.4;
+}
+
+.errors-container {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.error-item {
+	border-radius: 6px;
+	padding: 15px;
+	border-left: 4px solid transparent;
+}
+
+.error-header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.error-title {
+	font-weight: bold;
+}
+
+.error-date {
+	font-size: 0.8em;
+}
+
+.error-content {
+	font-size: 0.9em;
+	line-height: 1.4;
+}
+
+.placeholder {
+	text-align: center;
+	padding: 40px;
+	border-radius: 6px;
+	font-style: italic;
+}
+
+.tabs {
+	display: flex;
+	margin-bottom: 20px;
+	border-bottom: 1px solid transparent;
+}
+
+.tab {
+	padding: 10px 20px;
+	cursor: pointer;
+	border-bottom: 3px solid transparent;
+	transition: all 0.3s;
+}
+
+.tab.active {
+	font-weight: bold;
+	border-bottom: 3px solid transparent; 
+}
+
+.tab-content {
+	display: none;
+}
+
+.tab-content.active {
+	display: block;
+}
+
+@media (max-width: 768px) {
+	.daily-item {
+		width: calc(50% - 10px);
+	}
+}
+
+@media (max-width: 480px) {
+	.daily-item {
+		width: 100%;
+	}
+}
+
+.exercises-container {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 20px;
+}
+
+.exercises-button {
+	padding: 8px 16px;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 1.1em;
+	transition: all 0.2s ease;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+}
+
+.exercises-button:hover {
+	transform: translateY(-2px);
+}
+
+.section-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.section-title-container {
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+}
+
+.section-exercise-button {
+	padding: 6px 12px;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 1.1em;
+	transition: all 0.2s ease;
+	text-decoration: none;
+	font-weight: 500;
+	position: relative;
+	top: -15px;
+}
+
+.section-exercise-button:hover {
+	transform: translateY(-2px);
+}

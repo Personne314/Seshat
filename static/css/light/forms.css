@@ -1,121 +1,51 @@
-form {
-	max-width: 55%;
-	margin: 40px auto;
-	padding: 20px;
-}
-
 .section {
-	background: #ffffff;
-	border-radius: 8px;
-	box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-	margin-bottom: 20px;
-	overflow: hidden;
-	color: #2a2a2a;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    color: #2a2a2a;
 }
 
 .section summary {
-	padding: 15px 20px;
-	font-size: 1.1em;
-	font-weight: bold;
-	background-color: #f0f0f0;
-	cursor: pointer;
-	outline: none;
-	border-bottom: 1px solid #ddd;
-	color: #2a2a2a;
+    background-color: #e7e7e7;
+    border-bottom-color: #ddd;
+    color: #2a2a2a;
 }
 
 .section[open] summary {
-	background-color: #e9e9e9;
-}
-
-.options-group {
-	padding: 20px;
-	display: flex;
-	flex-direction: column;
-	gap: 15px;
+    background-color: #e9e9e9;
 }
 
 .options-group label {
-	font-weight: 500;
-	margin-bottom: 5px;
-	color: #373636;
+    color: #373636;
 }
 
 .options-group select {
-	padding: 8px 10px;
-	border: 1px solid #ccc;
-	border-radius: 6px;
-	background-color: #f9f9f9;
-	color: #2a2a2a;
-	transition: border-color 0.3s;
+    border-color: #ccc;
+    background-color: #f0f0f0;
+    color: #2a2a2a;
 }
 
 .options-group select:focus {
-	border-color: #e53935;
-	outline: none;
+    border-color: #e53935;
 }
 
 .options-group button[type="button"],
 form button[type="submit"] {
-	display: block;
-	margin: 30px auto;
-	padding: 12px 30px;
-	background-color: #e53935; 
-	color: white;
-	font-weight: bold;
-	font-size: 1.1em;
-	border: none;
-	border-radius: 6px;
-	cursor: pointer;
-	transition: background-color 0.3s ease;
+    background-color: #e53935; 
+    color: white;
 }
 
 form button[type="submit"]:hover {
-	background-color: #c62828;
-}
-
-.toggle-switch {
-    position: relative;
-    display: inline-block;
-    width: 50px;
-    height: 24px;
-    margin-left: 15px;
-}
-
-.toggle-switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
+    background-color: #c62828;
 }
 
 .toggle-switch .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     background-color: #c62828;
-    transition: .4s;
-    border-radius: 24px;
 }
 
 .toggle-switch .slider:before {
-    position: absolute;
-    content: "";
-    height: 16px;
-    width: 16px;
-    left: 4px;
-    bottom: 4px;
     background-color: rgb(236, 236, 236);
-    transition: .4s;
-    border-radius: 50%;
 }
 
 .toggle-switch input:checked + .slider {
     background-color: #2e7d32;
-}
-
-.toggle-switch input:checked + .slider:before {
-    transform: translateX(26px);
 }
