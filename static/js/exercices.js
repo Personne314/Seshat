@@ -1,5 +1,5 @@
 // Active an answer method. qcm, japanese or french.
-function switchAnswerMethod(method) {
+async function switchAnswerMethod(method, choices) {
 	const methods = document.querySelectorAll('.answer-method');
 	methods.forEach(div => {
 		div.classList.remove('active');
@@ -12,6 +12,26 @@ function switchAnswerMethod(method) {
 	[...activeDiv.querySelectorAll('input, textarea, button, select')].forEach(el => {
 		el.disabled = false;
 	});
+
+	// If the mode is qcm, updates the choices.
+	if (method === 'qcm' && Array.isArray(choices)) {
+		activeDiv.innerHTML = '';
+		choices.forEach((choice, index) => {
+			const label = document.createElement('label');
+			const input = document.createElement('input');
+			input.type = 'radio';
+			input.name = 'qcm-answer';
+			input.value = choice;
+			input.classList.add('qcm-option');
+			const span = document.createElement('span');
+			span.classList.add('qcm-button');
+			span.textContent = choice;
+			label.appendChild(input);
+			label.appendChild(span);
+			activeDiv.appendChild(label);
+		});
+	}
+
 }
 
 
@@ -22,6 +42,36 @@ function switchAnswerMethod(method) {
 
 
 
+
+
+
+
+// This function initialize the current exercice.
+async function initializeExercice(exercice) {
+	const questionNumber = document.getElementById('question-number');
+	const currentNumber = parseInt(questionNumber.textContent, 10);
+	questionNumber.textContent = currentNumber + 1;
+
+	// Sets the answer type.
+	console.log(exercice);
+	const answer_type = exercice.answer_type;
+	const choices = exercice?.choices ?? null;
+	await switchAnswerMethod(answer_type, choices);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+// This initializes all the exercices on the page loading.
 async function initializeExercices() {
 	const exercicesDataElement = document.getElementById('exercices-data');
 	const exerciceType = exercicesDataElement.dataset.type;
@@ -46,7 +96,7 @@ async function initializeExercices() {
 		
 
 
-		console.log("Exercices data fetched successfully:", exercices);
+		await initializeExercice(exercices["exercices"][0])
 
 
 
@@ -68,7 +118,6 @@ async function initializeExercices() {
 
 // Adds the listeners.
 document.addEventListener('DOMContentLoaded', () => {
-	switchAnswerMethod('qcm');
 	const jpInput = document.getElementById('jp-input');
 	if (jpInput && window.wanakana) {
 		wanakana.bind(jpInput);

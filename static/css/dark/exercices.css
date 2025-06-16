@@ -69,7 +69,7 @@
 }
 
 .answer-method.active {
-    display: block;
+    display: flex;
 }
 
 .answer-method textarea {
@@ -101,7 +101,6 @@
 }
 
 #qcm {
-    display: flex;
     justify-content: center;
     gap: 15px;
     padding: 0;

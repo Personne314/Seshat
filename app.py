@@ -149,7 +149,7 @@ def api_get_dailies_exercices(type):
 	exercices = {"type":"dailies", "exercices":[]}
 	dailies = dailies_get_todo()
 
-	# Gets the dailies element to work on
+	# Gets the dailies element to work on.
 	elements = []
 	if type == "all":
 		elements = dailies["kanji"] + dailies["word"] + dailies["radical"]
@@ -160,13 +160,13 @@ def api_get_dailies_exercices(type):
 	elif type == "radical":
 		elements = dailies["radical"]
 
+	# Makes the exrecices from the cards.
 	info = {"kanji":[],"word":[],"radical":[]}
 	cards = db_get_cards_by_ids([elt[1] for elt in elements])
 	for card in cards :
 		info[card["type"]].append(card["japanese"])
-	print (cards, info)
 	for card in cards :
-		exercices["exercices"] + exercices_create(card, info)
+		exercices["exercices"] += exercices_create(card, info)
 	return jsonify(exercices)
 
 
