@@ -47,7 +47,7 @@
 	color: #212529;
 }
 
-.qcm-button:hover {
+.qcm-button:not(.disabled-interactivity):hover {
 	background-color: #e9ecef;
 }
 
@@ -63,7 +63,7 @@
 	color: #212529;
 }
 
-.answer-method-switcher button:hover {
+.answer-method-switcher .qcm-button:not(.disabled-interactivity):hover {
 	background-color: #e2e6ea;
 }
 

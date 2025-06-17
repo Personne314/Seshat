@@ -48,10 +48,6 @@
 	margin: 15px 0;
 }
 
-.answer-methods {
-	margin-top: 20px;
-}
-
 .answer-method {
 	display: none;
 	height: 120px;
@@ -66,7 +62,7 @@
 	height: 100%;
 	padding: 15px;
 	border-radius: 12px;
-	font-size: 1.1em;
+	font-size: 1.3em;
 	line-height: 1.6;
 	resize: none;
 	transition: all 0.3s ease;
@@ -97,11 +93,15 @@
 .qcm-button {
 	padding: 14px 25px;
 	border-radius: 10px;
-	font-size: 1.1em;
+	font-size: 1.3em;
 	cursor: pointer;
 	transition: background-color 0.3s ease, transform 0.2s ease;
 	text-align: center;
 	min-width: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	line-height: 1;
 }
 
 .answer-method-switcher {
@@ -119,6 +119,10 @@
 	font-size: 1em;
 }
 
-#japanese, #french {
-	font-size: 1.1em;
+#jap, #fr {
+	font-size: 1em;
+}
+
+.flashcard-front {
+	font-size: 2em;
 }

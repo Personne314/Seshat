@@ -5,6 +5,7 @@ from core.options import *
 from core.dailies import *
 from json import loads
 from os import remove
+from random import shuffle
 
 
 
@@ -167,6 +168,7 @@ def api_get_dailies_exercices(type):
 		info[card["type"]].append(card["japanese"])
 	for card in cards :
 		exercices["exercices"] += exercices_create(card, info)
+	shuffle(exercices["exercices"])
 	return jsonify(exercices)
 
 
