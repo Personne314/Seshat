@@ -43,7 +43,7 @@
 			"front": "いくら",
 			"reading": "いくら",
 			"class": "pronom",
-			"meaning": ["combien (prix)"],
+			"meaning": ["combien"],
 			"mnemonic": "いくら → « Ikura » (caviar, un produit cher).",
 			"example": [
 			"いくらですか？ (いくらですか？ - C’est combien ?)",
@@ -142,7 +142,7 @@
 			"front": "いつ",
 			"reading": "いつ",
 			"class": "pronom",
-			"meaning": ["quand ?"],
+			"meaning": ["quand"],
 			"mnemonic": "いつ → « It’s » (quand est-ce que c’est ?).",
 			"example": [
 			"いつ来ますか？ (いつきますか？ - Quand viendrez-vous ?)",
@@ -186,7 +186,7 @@
 			"front": "いる",
 			"reading": "いる",
 			"class": "verbe ichidan intransitif",
-			"meaning": ["être (animé)"],
+			"meaning": ["être"],
 			"mnemonic": "いる → « Il luit » (présence animée comme une lumière).",
 			"example": [
 			"猫がいる (ねこがいる - Il y a un chat)",
@@ -208,7 +208,7 @@
 			"front": "妹",
 			"reading": "いもうと",
 			"class": "nom",
-			"meaning": ["ma petite sœur"],
+			"meaning": ["petite soeur"],
 			"mnemonic": "いもうと → « I move to » (ma sœur qui me suit partout).",
 			"example": [
 			"妹が生まれた (いもうとがうまれた - Ma sœur est née)",

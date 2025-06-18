@@ -21,7 +21,7 @@
 			"front": "着る",
 			"reading": "きる",
 			"class": "verbe ichidan transitif",
-			"meaning": ["porter (vêtements)"],
+			"meaning": ["porter"],
 			"mnemonic": "きる → « Key route » (le chemin pour s’habiller).",
 			"example": [
 			"コートを着る (コートをきる - Porter un manteau)",
@@ -32,7 +32,7 @@
 			"front": "牛肉",
 			"reading": "ぎゅうにく",
 			"class": "nom",
-			"meaning": ["viande de bœuf"],
+			"meaning": ["viande de boeuf"],
 			"mnemonic": "ぎゅうにく → « Gyū » (meuglement de vache) + « niku » (viande).",
 			"example": [
 			"牛肉を買う (ぎゅうにくをかう - Acheter du bœuf)",
@@ -87,7 +87,7 @@
 			"front": "兄弟",
 			"reading": "きょうだい",
 			"class": "nom",
-			"meaning": ["frères et sœurs"],
+			"meaning": ["frères et soeurs"],
 			"mnemonic": "きょうだい → « Kyo-dai » (liens familiaux forts).",
 			"example": [
 			"兄弟がいる (きょうだいがいる - Avoir des frères et sœurs)",

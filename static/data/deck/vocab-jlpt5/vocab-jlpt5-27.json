@@ -21,7 +21,7 @@
 			"front": "毎〜",
 			"reading": "まい",
 			"class": "préfixe",
-			"meaning": ["chaque..."],
+			"meaning": ["chaque"],
 			"mnemonic": "Mai → « Maille » (répétition régulière).",
 			"example": [
 			"毎週月曜日 (まいしゅうげつようび - Chaque lundi)",
@@ -120,7 +120,7 @@
 			"front": "まずい",
 			"reading": "まずい",
 			"class": "adjectif en -i",
-			"meaning": ["déplaisant", "mauvais (au goût)"],
+			"meaning": ["déplaisant", "mauvais"],
 			"mnemonic": "Mazui → « Ma zut ! » (dégoût soudain).",
 			"example": [
 			"まずい料理 (まずいりょうり - Plat mauvais)",
@@ -186,7 +186,7 @@
 			"front": "マッチ",
 			"reading": "マッチ",
 			"class": "nom",
-			"meaning": ["un match"],
+			"meaning": ["match"],
 			"mnemonic": "Matchi → Anglais « match » (compétition).",
 			"example": [
 			"サッカーのマッチ (サッカーのマッチ - Match de football)",

@@ -32,7 +32,7 @@
 			"front": "日本語",
 			"reading": "にほん・ご",
 			"class": "nom",
-			"meaning": ["la langue japonaise"],
+			"meaning": ["japonais"],
 			"mnemonic": "Nihongo → « Née honnête gosse » (langue apprise dès l'enfance).",
 			"example": [
 			"日本語を話す (にほんごをはなす - Parler japonais)",
@@ -54,7 +54,7 @@
 			"front": "ニュース",
 			"reading": "ニュース",
 			"class": "nom",
-			"meaning": ["les infos", "les actualités"],
+			"meaning": ["les infos", "actualités"],
 			"mnemonic": "Nyûsu → Mot anglais « news » (même sens en français).",
 			"example": [
 			"ニュースを見る (ニュースをみる - Regarder les actualités)",
@@ -65,7 +65,7 @@
 			"front": "庭",
 			"reading": "にわ",
 			"class": "nom",
-			"meaning": ["le jardin"],
+			"meaning": ["jardin"],
 			"mnemonic": "Niwa → « Ni wagon » (espace vert sans train).",
 			"example": [
 			"庭で遊ぶ (にわであそぶ - Jouer dans le jardin)",
@@ -76,7 +76,7 @@
 			"front": "脱ぐ",
 			"reading": "ぬ・ぐ",
 			"class": "verbe godan transitif",
-			"meaning": ["enlever (vêtements)"],
+			"meaning": ["enlever"],
 			"mnemonic": "Nugu → « Nuage » (vêtements qui disparaissent comme des nuages).",
 			"example": [
 			"靴を脱ぐ (くつをぬぐ - Enlever ses chaussures)",

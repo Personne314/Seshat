@@ -43,7 +43,7 @@
 			"front": "かかる",
 			"reading": "かかる",
 			"class": "verbe godan intransitif",
-			"meaning": ["prendre (temps)", "coûter"],
+			"meaning": ["prendre du temps", "coûter"],
 			"mnemonic": "かかる → « Kakarot » (le personnage de DBZ qui prend du temps à se transformer).",
 			"example": [
 			"時間がかかる (じかんがかかる - Prendre du temps)",
@@ -87,7 +87,7 @@
 			"front": "かける",
 			"reading": "かける",
 			"class": "verbe ichidan transitif",
-			"meaning": ["porter (lunettes)", "accrocher"],
+			"meaning": ["porter", "accrocher"],
 			"mnemonic": "かける → « Car glasses » (porter des lunettes en conduisant).",
 			"example": [
 			"メガネをかける (メガネをかける - Porter des lunettes)",
@@ -219,7 +219,7 @@
 			"front": "かぶる",
 			"reading": "かぶる",
 			"class": "verbe godan transitif",
-			"meaning": ["porter (sur la tête)", "couvrir"],
+			"meaning": ["porter", "couvrir"],
 			"mnemonic": "かぶる → « Cap rule » (règle de porter une casquette).",
 			"example": [
 			"帽子をかぶる (ぼうしをかぶる - Porter un chapeau)",

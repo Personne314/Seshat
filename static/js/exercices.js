@@ -1,15 +1,16 @@
 // Stores the current exercice
-let currentExercice = null;
+let allExercices = []
+let currentExercice = -1;
 
+// Flip the current card.
+function flipActiveCard() {
+    const activeCard = document.querySelector('.flashcard.active');
+    if (activeCard) {
+        activeCard.classList.toggle('flipped');
+    }
+}
 
-
-
-
-
-
-
-
-
+// Deactivates all input methods.
 function disableAnswerInputs() {
     const qcmDiv = document.getElementById('qcm');
     if (qcmDiv) {
@@ -30,26 +31,69 @@ function disableAnswerInputs() {
     }
 }
 
-
-function enableAnswerInputs() {
-    const qcmDiv = document.getElementById('qcm');
-    if (qcmDiv) {
-        [...qcmDiv.querySelectorAll('input[type="radio"], .qcm-button')].forEach(el => {
-            el.disabled = false;
-            el.classList.remove('disabled-interactivity');
-        });
-    }
-    const jpInput = document.getElementById('jp-input');
-    if (jpInput) {
-        jpInput.disabled = false;
-        jpInput.classList.remove('disabled-interactivity');
-    }
-    const frInput = document.getElementById('fr-input');
-    if (frInput) {
-        frInput.disabled = false;
-        frInput.classList.remove('disabled-interactivity');
+// Activates the currently used input method.
+function enableAnswerInputs(method) {
+    if (method === 'qcm') {
+        const qcmDiv = document.getElementById('qcm');
+        if (qcmDiv) {
+            [...qcmDiv.querySelectorAll('input[type="radio"], .qcm-button')].forEach(el => {
+                el.disabled = false;
+                el.classList.remove('disabled-interactivity');
+            });
+        }
+    } else if (method === 'jap') {
+        const jpInput = document.getElementById('jp-input');
+        if (jpInput) {
+            jpInput.disabled = false;
+            jpInput.classList.remove('disabled-interactivity');
+        }
+    } else if (method === 'fr') {
+        const frInput = document.getElementById('fr-input');
+        if (frInput) {
+            frInput.disabled = false;
+            frInput.classList.remove('disabled-interactivity');
+        }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+// This renders the back of the card and flip it.
+function renderAnswerResult(given_elt, answer_elt, isCorrect) {
+    const flashcardBackContent = document.querySelector('.flashcard-back .card-content');
+    const flashcardBack = document.querySelector('.flashcard-back');
+    if (!flashcardBackContent || !flashcardBack) {
+        console.error("Unable to find flashcard back element.");
+        return;
+    }
+    if (isCorrect) flashcardBackContent.innerHTML = `
+        <div class="card-content">
+            <h3 id="result-title" class="result-title-correct">Vrai</h3>
+            <div id="given-answer">${answer_elt}</div>
+        </div>
+    `;
+    else flashcardBackContent.innerHTML = `
+        <div class="card-content">
+            <h3 id="result-title" class="result-title-incorrect">Faux</h3>
+            <div id="given-answer">${answer_elt.join('<br>')}</div>
+        </div>
+        
+    
+    
+    `;
+    flipActiveCard();
+}
+
+
+
 
 
 
@@ -59,47 +103,37 @@ function enableAnswerInputs() {
 
 
 // Checks a qcm answer.
-function checkQCMAnswer(selectedAnswer) {
-    if (!currentExercice) {
+function checkQCMAnswer(answer) {
+    if (currentExercice < 0) {
         console.error("Aucun exercice en cours pour vérifier la réponse QCM.");
         return;
     }
-
-	console.log("QCM");
-    
-	// DO THINGS
-
+    disableAnswerInputs();
+    let answers = allExercices[currentExercice].answers;
+    renderAnswerResult(answer, answers, answers.includes(answer));
 }
 
 // Checks a jap answer.
-function checkJapaneseAnswer(userAnswer) {
-    if (!currentExercice) {
+function checkJapaneseAnswer(answer) {
+    if (currentExercice < 0) {
         console.error("Aucun exercice en cours pour vérifier la réponse japonaise.");
         return;
     }
-
-	console.log("JAP");
-
-	// DO THINGS
-
+    disableAnswerInputs();
+    let answers = allExercices[currentExercice].answers;
+    renderAnswerResult(answer, answers, answers.includes(answer));
 }
 
-
 // Checks a fr answer.
-function checkFrenchAnswer(userAnswer) {
-    if (!currentExercice) {
+function checkFrenchAnswer(answer) {
+    if (currentExercice < 0) {
         console.error("Aucun exercice en cours pour vérifier la réponse française.");
         return;
     }
-   
-	console.log("FR");
-
-	// DO THINGS
-
+    disableAnswerInputs();
+    let answers = allExercices[currentExercice].answers;
+    renderAnswerResult(answer, answers, answers.includes(answer));
 }
-
-
-
 
 // This switch the interface used to answer.
 async function switchAnswerMethod(method, choices = null) {
@@ -156,11 +190,10 @@ async function switchAnswerMethod(method, choices = null) {
 }
 
 // Initialize an exercice and display it.
-async function initializeExercice(exercice) {
-    currentExercice = exercice;
+async function initializeExercice(id) {
     const questionNumber = document.getElementById('question-number');
-    const currentNumber = parseInt(questionNumber.textContent, 10);
-    questionNumber.textContent = currentNumber + 1;
+    questionNumber.textContent = currentExercice+1;
+    let exercice = allExercices[id];
 
 	// Switch the answer mode.
     const answer_type = exercice.answer_type;
@@ -201,7 +234,9 @@ async function initializeExercices() {
 		// Parses the json.
         const exercices = await response.json();
         if (exercices && exercices.exercices && exercices.exercices.length > 0) {
-            await initializeExercice(exercices.exercices[0]); // Charge le premier exercice
+            allExercices = exercices.exercices;
+            currentExercice = 0;
+            await initializeExercice(0);
         } else {
             console.warn("Aucun exercice trouvé dans la réponse de l'API.");
             const flashcardFrontContent = document.querySelector('.flashcard-front .card-content');

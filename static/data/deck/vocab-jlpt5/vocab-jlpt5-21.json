@@ -21,7 +21,7 @@
 			"front": "中",
 			"reading": "なか",
 			"class": "nom",
-			"meaning": ["l'intérieur"],
+			"meaning": ["intérieur"],
 			"mnemonic": "Naka → « Nacre » (coquillage contenant un intérieur précieux).",
 			"example": [
 			"中に入る (なかにはいる - Entrer à l'intérieur)",
@@ -32,7 +32,7 @@
 			"front": "長い",
 			"reading": "なが・い",
 			"class": "adjectif en -i",
-			"meaning": ["long (distance)", "long (temps)"],
+			"meaning": ["long", "long (distance)", "long (temps)"],
 			"mnemonic": "Nagai → « Nage libre » (longue distance à parcourir).",
 			"example": [
 			"長い道 (ながいみち - Long chemin)",
@@ -87,7 +87,7 @@
 			"front": "など",
 			"reading": "など",
 			"class": "particule",
-			"meaning": ["etc...", "et ainsi de suite"],
+			"meaning": ["etc", "et ainsi de suite"],
 			"mnemonic": "Nado → « Nappe d'eau » (énumération qui s'étend).",
 			"example": [
 			"りんごなど (りんごなど - Pommes etc.)",
@@ -98,7 +98,7 @@
 			"front": "何",
 			"reading": "なに",
 			"class": "pronom",
-			"meaning": ["quoi ?"],
+			"meaning": ["quoi"],
 			"mnemonic": "Nani → « Nanny ? » (question surprise).",
 			"example": [
 			"何ですか？ (なんですか？ - Qu'est-ce que c'est ?)",
@@ -120,7 +120,7 @@
 			"front": "何日",
 			"reading": "なん・にち",
 			"class": "pronom",
-			"meaning": ["quel jour ?"],
+			"meaning": ["quel jour"],
 			"mnemonic": "Nannichi → « Non, ni chichi » (jour indéterminé).",
 			"example": [
 			"何日ですか？ (なんにちですか？ - Quel jour sommes-nous ?)",
@@ -219,7 +219,7 @@
 			"front": "西",
 			"reading": "にし",
 			"class": "nom",
-			"meaning": ["l'Ouest"],
+			"meaning": ["Ouest"],
 			"mnemonic": "Nishi → « Ni chichi » (point cardinal sans parenté).",
 			"example": [
 			"西の空 (にしのそら - Ciel à l'ouest)",

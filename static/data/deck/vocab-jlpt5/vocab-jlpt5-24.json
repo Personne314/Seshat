@@ -120,7 +120,7 @@
 			"front": "東",
 			"reading": "ひがし",
 			"class": "nom",
-			"meaning": ["l'Est"],
+			"meaning": ["Est"],
 			"mnemonic": "Higashi → « Hilare gazouillis » (soleil levant joyeux).",
 			"example": [
 			"東に向かう (ひがしにむかう - Se diriger vers l'est)",
@@ -142,7 +142,7 @@
 			"front": "弾く",
 			"reading": "ひ・く",
 			"class": "verbe godan transitif",
-			"meaning": ["jouer (instrument de musique)"],
+			"meaning": ["jouer", "jouer (instrument de musique)"],
 			"mnemonic": "Hiku → « Hic musique » (jouer une note).",
 			"example": [
 			"ピアノを弾く (ピアノをひく - Jouer du piano)",
@@ -153,7 +153,7 @@
 			"front": "低い",
 			"reading": "ひく・い",
 			"class": "adjectif en -i",
-			"meaning": ["bas (position)", "bas (rang)", "bas (qualité)", "bas (valeur)", "bas (degré)"],
+			"meaning": ["bas"],
 			"mnemonic": "Hikui → « Hic ouïe » (son ou position basse).",
 			"example": [
 			"低い声 (ひくいこえ - Voix grave)",
@@ -175,7 +175,7 @@
 			"front": "左",
 			"reading": "ひだり",
 			"class": "nom",
-			"meaning": ["la gauche"],
+			"meaning": ["gauche"],
 			"mnemonic": "Hidari → « Hilare à droite » (contraste directionnel).",
 			"example": [
 			"左に曲がる (ひだりにまがる - Tourner à gauche)",
@@ -186,7 +186,7 @@
 			"front": "人",
 			"reading": "ひと",
 			"class": "nom",
-			"meaning": ["une personne"],
+			"meaning": ["personne"],
 			"mnemonic": "Hito → « Hic tôt » (individu rencontré).",
 			"example": [
 			"優しい人 (やさしいひと - Personne gentille)",

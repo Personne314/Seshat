@@ -43,7 +43,7 @@
 			"front": "卵",
 			"reading": "たまご",
 			"class": "nom",
-			"meaning": ["œuf"],
+			"meaning": ["oeuf"],
 			"mnemonic": "たまご → « Tama gogo » (une balle à 17h, forme ronde comme un œuf).",
 			"example": [
 			"卵を割る (たまごをわる - Casser un œuf)",
@@ -54,7 +54,7 @@
 			"front": "誰",
 			"reading": "だれ",
 			"class": "pronom",
-			"meaning": ["qui ?"],
+			"meaning": ["qui"],
 			"mnemonic": "だれ → « Dare » (qui ose ?).",
 			"example": [
 			"誰が来た？ (だれがきた？ - Qui est venu ?)",

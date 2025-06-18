@@ -131,7 +131,7 @@
 			"front": "そこ",
 			"reading": "そこ",
 			"class": "nom",
-			"meaning": ["ici (proche)"],
+			"meaning": ["ici"],
 			"mnemonic": "そこ → « Socle » (base où on place un objet).",
 			"example": [
 			"そこに置く (そこにおく - Poser ici)",
@@ -175,7 +175,7 @@
 			"front": "その",
 			"reading": "その",
 			"class": "adjectif démonstratif",
-			"meaning": ["ce ..."],
+			"meaning": ["ce"],
 			"mnemonic": "その → « Ceux-là » (désigne quelque chose de spécifique).",
 			"example": [
 			"その本 (そのほん - Ce livre)",

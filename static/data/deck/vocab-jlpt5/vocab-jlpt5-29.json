@@ -54,7 +54,7 @@
 			"front": "もしもし",
 			"reading": "もしもし",
 			"class": "interjection",
-			"meaning": ["allô (téléphone)"],
+			"meaning": ["allô"],
 			"mnemonic": "Moshimoshi → « Moche moche » (salutation téléphonique).",
 			"example": [
 			"もしもし、田中です (もしもし、たなかです - Allô, c'est Tanaka)"
@@ -152,7 +152,7 @@
 			"front": "八百屋",
 			"reading": "や・おや",
 			"class": "nom",
-			"meaning": ["marchand de fruits et légumes"],
+			"meaning": ["primeur", "marchand de fruits et légumes"],
 			"mnemonic": "Yaoya → « Y'a au yaourt » (étalage varié).",
 			"example": [
 			"八百屋で買い物 (やおやでかいもの - Acheter chez le primeur)",

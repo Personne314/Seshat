@@ -10,7 +10,7 @@
 			"front": "あちら",
 			"reading": "あちら",
 			"class": "nom",
-			"meaning": ["par là-bas (distant)"],
+			"meaning": ["par là-bas"],
 			"mnemonic": "あちら → « À chili » (pays lointain comme le Chili).",
 			"example": [
 			"あちらの建物 (あちらのたてもの - Le bâtiment par là-bas)",
@@ -21,7 +21,7 @@
 			"front": "暑い",
 			"reading": "あつい",
 			"class": "adjectif en -i",
-			"meaning": ["chaud (trop chaud)"],
+			"meaning": ["chaud", "trop chaud"],
 			"mnemonic": "あつい → « À chaud » (comme une journée étouffante).",
 			"example": [
 			"暑い夏 (あついなつ - Été chaud)",
@@ -54,7 +54,7 @@
 			"front": "兄",
 			"reading": "あに",
 			"class": "nom",
-			"meaning": ["mon grand frère"],
+			"meaning": ["grand frère"],
 			"mnemonic": "あに → « Ah, ni » (le ni de « nînos » en grec, symbole de fraternité).",
 			"example": [
 			"兄が来る (あにがくる - Mon frère vient)",
@@ -65,7 +65,7 @@
 			"front": "姉",
 			"reading": "あね",
 			"class": "nom",
-			"meaning": ["ma grande sœur"],
+			"meaning": ["grande soeur"],
 			"mnemonic": "あね → « À née » (elle est née avant toi).",
 			"example": [
 			"姉と遊ぶ (あねとあそぶ - Jouer avec ma sœur)",
@@ -76,7 +76,7 @@
 			"front": "あのー",
 			"reading": "あのー",
 			"class": "interjection",
-			"meaning": ["hum...", "eh bien..."],
+			"meaning": ["hum", "eh bien"],
 			"mnemonic": "あのー → « Ah non... » (hésitation avant de dire non).",
 			"example": [
 			"あのー、どこですか？ (あのー、どこですか？ - Euh... c’est où ?)",
@@ -98,7 +98,7 @@
 			"front": "浴びる",
 			"reading": "あびる",
 			"class": "verbe ichidan transitif",
-			"meaning": ["prendre (douche / bain de soleil)"],
+			"meaning": ["prendre"],
 			"mnemonic": "あびる → « À billes » (imaginer des gouttes d’eau qui tombent comme des billes).",
 			"example": [
 			"シャワーを浴びる (シャワーをあびる - Prendre une douche)",
@@ -120,7 +120,7 @@
 			"front": "甘い",
 			"reading": "あまい",
 			"class": "adjectif en -i",
-			"meaning": ["sucré", "doux (goût)"],
+			"meaning": ["sucré", "doux"],
 			"mnemonic": "あまい → « À miel » (le miel est sucré).",
 			"example": [
 			"甘いケーキ (あまいケーキ - Gâteau sucré)",
@@ -175,7 +175,7 @@
 			"front": "ある",
 			"reading": "ある",
 			"class": "verbe intransitif",
-			"meaning": ["être", "exister (inanimé)"],
+			"meaning": ["être", "exister"],
 			"mnemonic": "ある → « Ah ! Rue » (il y a une rue ici).",
 			"example": [
 			"本がある (ほんがある - Il y a un livre)",
@@ -197,7 +197,7 @@
 			"front": "あれ",
 			"reading": "あれ",
 			"class": "nom",
-			"meaning": ["ce truc par là-bas (distant)"],
+			"meaning": ["ce truc par là-bas"],
 			"mnemonic": "あれ → « À relais » (comme un relais qu’on pointe du doigt).",
 			"example": [
 			"あれは何？ (あれはなん？ - Qu’est-ce que c’est là-bas ?)",

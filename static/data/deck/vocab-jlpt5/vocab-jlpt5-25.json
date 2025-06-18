@@ -87,7 +87,7 @@
 			"front": "プール",
 			"reading": "プール",
 			"class": "nom",
-			"meaning": ["la piscine"],
+			"meaning": ["piscine"],
 			"mnemonic": "Pûru → Anglais « pool » (même sens en français).",
 			"example": [
 			"プールで泳ぐ (プールでおよぐ - Nager dans la piscine)",
@@ -98,7 +98,7 @@
 			"front": "フォーク",
 			"reading": "フォーク",
 			"class": "nom",
-			"meaning": ["la fourchette"],
+			"meaning": ["fourchette"],
 			"mnemonic": "Fôku → Anglais « fork » (ustensile de table).",
 			"example": [
 			"フォークで食べる (フォークでたべる - Manger avec une fourchette)",
@@ -109,7 +109,7 @@
 			"front": "吹く",
 			"reading": "ふ・く",
 			"class": "verbe godan intransitif",
-			"meaning": ["souffler", "jouer (instrument à vent)"],
+			"meaning": ["souffler", "jouer"],
 			"mnemonic": "Fuku → « Fou culte » (action énergique du vent).",
 			"example": [
 			"風が吹く (かぜがふく - Le vent souffle)",
@@ -164,7 +164,7 @@
 			"front": "降る",
 			"reading": "ふ・る",
 			"class": "verbe godan intransitif",
-			"meaning": ["tomber (pluie, neige)"],
+			"meaning": ["tomber"],
 			"mnemonic": "Furu → « Fou rue » (précipitations intenses).",
 			"example": [
 			"雨が降る (あめがふる - Il pleut)",

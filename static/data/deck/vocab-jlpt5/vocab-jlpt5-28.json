@@ -10,7 +10,7 @@
 			"front": "磨く",
 			"reading": "みが・く",
 			"class": "verbe godan transitif",
-			"meaning": ["polir", "brosser (ex: dents)", "dorer"],
+			"meaning": ["polir", "brosser", "dorer"],
 			"mnemonic": "Migaku → « Mi gâteau » (action de polir comme un décor).",
 			"example": [
 			"歯を磨く (はをみがく - Se brosser les dents)",
@@ -21,7 +21,7 @@
 			"front": "右",
 			"reading": "みぎ",
 			"class": "nom",
-			"meaning": ["la droite"],
+			"meaning": ["droite"],
 			"mnemonic": "Migi → « Mille gis » (direction majoritaire).",
 			"example": [
 			"右に曲がる (みぎにまがる - Tourner à droite)",
@@ -43,7 +43,7 @@
 			"front": "水",
 			"reading": "みず",
 			"class": "nom",
-			"meaning": ["l'eau"],
+			"meaning": ["eau"],
 			"mnemonic": "Mizu → « Missue » (liquide vital).",
 			"example": [
 			"冷たい水 (つめたいみず - Eau froide)",
@@ -120,7 +120,7 @@
 			"front": "南",
 			"reading": "みなみ",
 			"class": "nom",
-			"meaning": ["le Sud"],
+			"meaning": ["Sud"],
 			"mnemonic": "Minami → « Mini ami » (direction ensoleillée).",
 			"example": [
 			"南へ向かう (みなみへむかう - Se diriger vers le sud)",
@@ -131,7 +131,7 @@
 			"front": "耳",
 			"reading": "みみ",
 			"class": "nom",
-			"meaning": ["l'oreille"],
+			"meaning": ["oreille"],
 			"mnemonic": "Mimi → « Mimi que » (organe auditif).",
 			"example": [
 			"耳が大きい (みみがおおきい - Avoir de grandes oreilles)",
@@ -164,7 +164,7 @@
 			"front": "難しい",
 			"reading": "むずか・しい",
 			"class": "adjectif en -i",
-			"meaning": ["difficile", "dur", "compliqué", "sérieux (problème, maladie)"],
+			"meaning": ["difficile", "dur", "compliqué", "sérieux"],
 			"mnemonic": "Muzukashii → « Muscule chi » (effort nécessaire).",
 			"example": [
 			"難しい問題 (むずかしいもんだい - Problème complexe)",
@@ -219,7 +219,7 @@
 			"front": "メートル",
 			"reading": "メートル",
 			"class": "nom",
-			"meaning": ["mètres"],
+			"meaning": ["mètre"],
 			"mnemonic": "Mētoru → Français « mètre » (unité de mesure).",
 			"example": [
 			"100メートル走 (100メートルそう - Course de 100 mètres)",

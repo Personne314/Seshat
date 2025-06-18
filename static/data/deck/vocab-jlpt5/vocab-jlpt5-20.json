@@ -76,7 +76,7 @@
 			"front": "遠く",
 			"reading": "とお・く",
 			"class": "nom",
-			"meaning": ["le lointain", "la distance"],
+			"meaning": ["le lointain", "distance"],
 			"mnemonic": "Tôku → « Tout coup » (distance soudaine).",
 			"example": [
 			"遠くに山が見える (とおくにやまがみえる - Voir des montagnes au loin)",
@@ -98,7 +98,7 @@
 			"front": "時計",
 			"reading": "とけい",
 			"class": "nom",
-			"meaning": ["l'horloge", "la montre"],
+			"meaning": ["horloge", "montre"],
 			"mnemonic": "Tokei → « Tocquet » (bruit d'une horloge ancienne).",
 			"example": [
 			"時計を直す (とけいをなおす - Réparer une montre)",
@@ -109,7 +109,7 @@
 			"front": "所",
 			"reading": "ところ",
 			"class": "nom",
-			"meaning": ["l'endroit", "le lieu", "la place"],
+			"meaning": ["endroit", "lieu", "place"],
 			"mnemonic": "Tokoro → « Trou corail » (endroit coloré et spécifique).",
 			"example": [
 			"安全な所 (あんぜんなところ - Endroit sûr)",

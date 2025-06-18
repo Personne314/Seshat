@@ -43,7 +43,7 @@
 			"front": "雪",
 			"reading": "ゆき",
 			"class": "nom",
-			"meaning": ["la neige"],
+			"meaning": ["neige"],
 			"mnemonic": "Yuki → « You qui » (blancheur hivernale).",
 			"example": [
 			"雪が降る (ゆきがふる - Neiger)",
@@ -65,7 +65,7 @@
 			"front": "洋服",
 			"reading": "よう・ふく",
 			"class": "nom",
-			"meaning": ["vêtements (style européen)"],
+			"meaning": ["vêtements"],
 			"mnemonic": "Yôfuku → « Yo, faux culte » (mode occidentale).",
 			"example": [
 			"洋服を買う (ようふくをかう - Acheter des vêtements)",
@@ -142,7 +142,7 @@
 			"front": "来月",
 			"reading": "らい・げつ",
 			"class": "nom",
-			"meaning": ["le mois prochain"],
+			"meaning": ["mois prochain"],
 			"mnemonic": "Raigetsu → « Lai gâteau » (futur proche).",
 			"example": [
 			"来月の予定 (らいげつのよてい - Plan du mois prochain)",
@@ -153,7 +153,7 @@
 			"front": "来週",
 			"reading": "らい・しゅう",
 			"class": "nom",
-			"meaning": ["la semaine prochaine"],
+			"meaning": ["semaine prochaine"],
 			"mnemonic": "Raishû → « Lai chou » (cycle à venir).",
 			"example": [
 			"来週の会議 (らいしゅうのかいぎ - Réunion de la semaine prochaine)",
@@ -164,7 +164,7 @@
 			"front": "来年",
 			"reading": "らい・ねん",
 			"class": "nom",
-			"meaning": ["l'an prochain"],
+			"meaning": ["annnée prochaine"],
 			"mnemonic": "Rainen → « Laine année » (futur textile temporel).",
 			"example": [
 			"来年の目標 (らいねんのもくひょう - Objectif pour l'an prochain)",
@@ -175,7 +175,7 @@
 			"front": "ラジオ",
 			"reading": "ラジオ",
 			"class": "nom",
-			"meaning": ["la radio"],
+			"meaning": ["radio"],
 			"mnemonic": "Rajio → Anglais « radio » (même sens).",
 			"example": [
 			"ラジオを聴く (ラジオをきく - Écouter la radio)",
@@ -197,7 +197,7 @@
 			"front": "留学生",
 			"reading": "りゅう・がくせい",
 			"class": "nom",
-			"meaning": ["étudiants à l'étranger"],
+			"meaning": ["étudiant étranger"],
 			"mnemonic": "Ryûgakusei → « Lion galaxie » (voyage académique).",
 			"example": [
 			"留学生と友達になる (りゅうがくせいとともだちになる - Se lier avec un étudiant étranger)",
@@ -208,7 +208,7 @@
 			"front": "両親",
 			"reading": "りょうしん",
 			"class": "nom",
-			"meaning": ["les parents"],
+			"meaning": ["parents"],
 			"mnemonic": "Ryōshin → « Lion chien » (piliers familiaux).",
 			"example": [
 			"両親に電話する (りょうしんにでんわする - Appeler ses parents)",

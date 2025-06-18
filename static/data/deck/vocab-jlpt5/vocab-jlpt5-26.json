@@ -65,7 +65,7 @@
 			"front": "勉強",
 			"reading": "べんきょう",
 			"class": "verbe (suru)",
-			"meaning": ["les études", "étudier"],
+			"meaning": ["études", "étudier"],
 			"mnemonic": "Benkyō → « Banc qu’eau » (concentration studieuse).",
 			"example": [
 			"日本語を勉強する (にほんごをべんきょうする - Étudier le japonais)",
@@ -76,7 +76,7 @@
 			"front": "弁当",
 			"reading": "べんとう",
 			"class": "nom",
-			"meaning": ["bento (lunch box japonaise)"],
+			"meaning": ["bento"],
 			"mnemonic": "Bentō → « Bento » (même mot en français).",
 			"example": [
 			"弁当を作る (べんとうをつくる - Préparer un bento)",
@@ -120,7 +120,7 @@
 			"front": "他",
 			"reading": "ほか",
 			"class": "nom",
-			"meaning": ["le reste", "l'autre"],
+			"meaning": ["reste", "l'autre"],
 			"mnemonic": "Hoka → « Hoquet » (élément supplémentaire).",
 			"example": [
 			"他の人 (ほかのひと - Autre personne)",
@@ -219,7 +219,7 @@
 			"front": "本当",
 			"reading": "ほん・とう",
 			"class": "nom",
-			"meaning": ["la vérité", "la réalité"],
+			"meaning": ["vérité", "réalité"],
 			"mnemonic": "Hontō → « Honte haut » (vérité choquante).",
 			"example": [
 			"本当の話 (ほんとうのはなし - Histoire vraie)",
