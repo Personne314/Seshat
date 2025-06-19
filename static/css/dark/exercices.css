@@ -71,3 +71,19 @@
 	background-color: #e53935;
 	border-color: #e53935;
 }
+
+.clicked {
+	background-color: #d32f2f;
+	border-color: #d32f2f;
+	color: white;
+}
+
+.result-title-correct {
+    color: #28a745;
+    border-color: #28a745;
+}
+
+.result-title-incorrect {
+    color: #dc3545;
+    border-color: #dc3545;
+}

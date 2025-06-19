@@ -127,14 +127,6 @@
 	font-size: 2em;
 }
 
-
-
-
-
-
-
-
-
 #given-answer {
     font-size: 3.5em;
     font-weight: bold;
@@ -143,7 +135,6 @@
     text-align: center;
     letter-spacing: 1px;
 }
-
 
 #result-title {
     font-size: 5em;
@@ -155,12 +146,8 @@
     letter-spacing: 1px;
 }
 
-.result-title-correct {
-    color: #28a745;
-    border-color: #28a745;
-}
-
-.result-title-incorrect {
-    color: #dc3545;
-    border-color: #dc3545;
+.qcm-button.disabled-interactivity {
+    opacity: 0.9;
+    cursor: not-allowed;
+    pointer-events: none;
 }

@@ -171,6 +171,7 @@ async function switchAnswerMethod(method, choices = null) {
 			// Adds the listeners for the answer check function.
             span.addEventListener('click', () => {
                 if (!span.classList.contains('disabled-interactivity')) {
+                    span.classList.add('clicked');
                 	checkQCMAnswer(choice);
 				}
             });
