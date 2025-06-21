@@ -1,67 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Configuration des Options</title>
-	<link rel="icon" type="image/png" href="{{ url_for('static', filename='images/logo.png') }}">
-	<link rel="stylesheet" href="/static/css/main.css">
-	<link rel="stylesheet" href="/static/css/flashcard.css">
-	<link rel="stylesheet" href="/static/css/exercices.css">
-	<link rel="stylesheet" href="/static/css/{{options['app-color-theme']}}/main.css">
-	<link rel="stylesheet" href="/static/css/{{options['app-color-theme']}}/flashcard.css">
-	<link rel="stylesheet" href="/static/css/{{options['app-color-theme']}}/exercices.css">
+    <title>Exercices</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/logo.png') }}">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/flashcard.css">
+    <link rel="stylesheet" href="/static/css/exercices.css">
+    <link rel="stylesheet" href="/static/css/{{options['app-color-theme']}}/main.css">
+    <link rel="stylesheet" href="/static/css/{{options['app-color-theme']}}/flashcard.css">
+    <link rel="stylesheet" href="/static/css/{{options['app-color-theme']}}/exercices.css">
 </head>
 <body>
-	{% include "header.html" %}
+    {% include "header.html" %}
 
-	<!-- Question header -->
-	<div class="question-header">
-		<h1>Question <span id="question-number" class="question-number">0</span></h1>
-	</div>
-	
-	<!-- Question card -->
-	<main class="question-main">
-		<div class="flashcard-container">
-			<div class="flashcard active">
-				<div class="flashcard-inner">
-					<div class="flashcard-face flashcard-front">
-						<div class="card-content">
-							<p>Chargement de la question...</p>
-						</div>
-					</div>
-					<div class="flashcard-face flashcard-back">
-						<div class="card-content">
-							<p>Chargement de la réponse...</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</main>
+	<!-- Display the question number -->
+    <div class="question-header">
+        <h1>Question <span id="question-number" class="question-number">0</span></h1>
+    </div>
 
-	<!-- Question answer area -->
-	<footer class="answer-footer">
-		<div class="answer-container">
-			<div class="answer-methods">
-				<div id="qcm" class="answer-method">
-				</div>
-				<div id="jap" class="answer-method">
-					<textarea id="jp-input" placeholder="Réponse en japonais..."></textarea>
-				</div>
-				<div id="fr" class="answer-method">
-					<textarea id="fr-input" placeholder="Réponse en français..."></textarea>
-				</div>
-			</div>
-		</div>
-	</footer>
+	<!-- Display the actual question content -->
+    <main class="question-main">
+        <div class="flashcard-container">
+            <div class="flashcard active">
+                <div class="flashcard-inner">
+                    <div class="flashcard-face flashcard-front">
+                        <div class="card-content">
+                            <p>Chargement de la question...</p>
+                        </div>
+                    </div>
+                    <div class="flashcard-face flashcard-back">
+                        <div class="card-content">
+                            <p>Chargement de la réponse...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-	<!-- Contains the data of the exercices to prepares -->
-	<div id="exercices-data" 
-		data-type="{{type}}"
-		style="display: none;">
-	</div>
+	<!-- Display the answer area -->
+    <footer class="answer-footer">
+        <div class="answer-container">
+            <div class="answer-methods">
+                <div id="qcm" class="answer-method">
+                </div>
+                <div id="jap" class="answer-method">
+                    <textarea id="jp-input" placeholder="Réponse en japonais..."></textarea>
+                </div>
+                <div id="fr" class="answer-method">
+                    <textarea id="fr-input" placeholder="Réponse en français..."></textarea>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-	<!-- Scripts for the exercices -->
-	<script src="/static/js/wanakana.min.js"></script>
-	<script src="/static/js/exercices.js"></script>
+	<!-- Area usedto render the end screen -->
+    <div id="end-screen-overlay" class="end-screen-overlay">
+        <div id="end-screen-content" class="end-screen-content">
+            <h2 id="end-screen-title"></h2>
+            <p>Score : <span id="final-score"></span> %</p>
+            <p>Durée : <span id="final-duration"></span></p>
+            <p id="end-screen-message"></p>
+        </div>
+    </div>
+    <div id="exercices-data"
+        data-type="{{type}}"
+        style="display: none;">
+    </div>
+
+	<!-- Used scripts -->
+    <script src="/static/js/wanakana.min.js"></script>
+    <script src="/static/js/exercices.js"></script>
 </body>
 </html>

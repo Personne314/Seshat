@@ -87,3 +87,38 @@
     color: #dc3545;
     border-color: #dc3545;
 }
+
+body.dim-blur > *:not(.end-screen-overlay) {
+    filter: brightness(0.5);
+}
+
+.end-screen-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.end-screen-content {
+    background-color: var(--card-background-color, #3a3a3a);
+    color: var(--text-color, #e2e8f0);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.end-screen-content h2 {
+    color: var(--primary-color, #e53935);
+}
+
+.end-screen-content #restart-button {
+    background-color: var(--primary-color, #e53935);
+    color: white;
+}
+
+.end-screen-content #restart-button:hover {
+    background-color: var(--primary-color-dark, #d32f2f);
+}
+
+.given-answer-display {
+    color: var(--text-color, #e2e8f0);
+}
+
+.correct-answer-display {
+    color: var(--result-title-correct, #28a745);
+}

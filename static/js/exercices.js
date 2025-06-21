@@ -2,6 +2,9 @@
 let allExercices = []
 let currentExercice = -1;
 let nextQuestion = false;
+let correctAnswersCount = 0;
+let startTime = null;
+let totalQuestions = 0;
 
 // Go to the next question. Returns false if there is no more questions.
 function goToNextQuestion() {
@@ -10,6 +13,8 @@ function goToNextQuestion() {
         initializeExercice(currentExercice);
         return true;
     }
+    // Si toutes les questions ont été répondues
+    displayEndScreen(); // Affiche l'écran de fin
     return false;
 }
 
@@ -67,6 +72,7 @@ function enableAnswerInputs(method) {
     }
 }
 
+
 // This renders the back of the card and flip it.
 function renderAnswerResult(given_elt, answer_elt, isCorrect) {
     const flashcardBackContent = document.querySelector('.flashcard-back .card-content');
@@ -99,7 +105,11 @@ function checkQCMAnswer(answer) {
     }
     disableAnswerInputs();
     let answers = allExercices[currentExercice].answers;
-    renderAnswerResult(answer, answers, answers.includes(answer));
+    const isCorrect = answers.includes(answer);
+    if (isCorrect) {
+        correctAnswersCount++; // Incrémente le compteur de bonnes réponses
+    }
+    renderAnswerResult(answer, answers, isCorrect);
 }
 
 // Checks a jap answer.
@@ -110,7 +120,11 @@ function checkJapaneseAnswer(answer) {
     }
     disableAnswerInputs();
     let answers = allExercices[currentExercice].answers;
-    renderAnswerResult(answer, answers, answers.includes(answer));
+    const isCorrect = answers.includes(answer);
+    if (isCorrect) {
+        correctAnswersCount++; // Incrémente le compteur de bonnes réponses
+    }
+    renderAnswerResult(answer, answers, isCorrect);
 }
 
 // Checks a fr answer.
@@ -121,7 +135,11 @@ function checkFrenchAnswer(answer) {
     }
     disableAnswerInputs();
     let answers = allExercices[currentExercice].answers;
-    renderAnswerResult(answer, answers, answers.includes(answer));
+    const isCorrect = answers.includes(answer);
+    if (isCorrect) {
+        correctAnswersCount++; // Incrémente le compteur de bonnes réponses
+    }
+    renderAnswerResult(answer, answers, isCorrect);
 }
 
 // This switch the interface used to answer.
@@ -192,12 +210,12 @@ async function initializeExercice(id) {
     let exercice = allExercices[id];
     nextQuestion = false;
 
-	// Switch the answer mode.
+    // Switch the answer mode.
     const answer_type = exercice.answer_type;
     const choices = exercice?.choices ?? null;
     await switchAnswerMethod(answer_type, choices);
 
-	// Renders the question.
+    // Renders the question.
     const flashcardFrontContent = document.querySelector('.flashcard-front .card-content');
     if (flashcardFrontContent && exercice.question) {
         flashcardFrontContent.innerHTML = '';
@@ -207,20 +225,76 @@ async function initializeExercice(id) {
     } else if (flashcardFrontContent) {
         flashcardFrontContent.innerHTML = '<p>Question non disponible.</p>';
     }
-    
-    // Remettre la carte à l'endroit
     const activeCard = document.querySelector('.flashcard.active');
     if (activeCard) {
         activeCard.classList.remove('flipped');
     }
 }
 
+// Handle redirection after quiz ends
+function handleEndScreenInteraction() {
+    if (!document.getElementById('end-screen-overlay').classList.contains('active')) return;
+
+    // Remove these listeners before redirecting to prevent multiple submissions.
+    document.removeEventListener('click', handleEndScreenInteraction);
+    document.removeEventListener('keydown', handleEndScreenInteraction);
+
+    // Create a form element to submit data and trigger a full page redirect.
+    const form = document.createElement('form');
+    form.method = 'POST';
+    form.action = '/api/exercices/end';
+    form.enctype = 'text/plain';
+    const input = document.createElement('input');
+    input.name = '_';
+    input.value = JSON.stringify({});
+    input.style.display = 'none';
+
+    // Submit the form, causing a full page redirect.
+    form.appendChild(input);
+    document.body.appendChild(form);
+    form.submit();
+}
+
+// Displays the end screen with results.
+function displayEndScreen() {
+    const endTime = new Date();
+    const durationInSeconds = (endTime - startTime) / 1000;
+    const minutes = Math.floor(durationInSeconds / 60);
+    const seconds = Math.floor(durationInSeconds % 60);
+    const percentage = totalQuestions > 0 ? (correctAnswersCount / totalQuestions) * 100 : 0;
+    let message = "";
+    let title = "";
+    if (percentage >= 80) {
+        message = "Félicitations ! Excellent travail !";
+        title = "Quiz Terminé !";
+    } else {
+        message = "Bon effort ! Continuez à pratiquer pour vous améliorer !";
+        title = "Quiz Terminé !";
+    }
+
+    // Update HTML elements.
+    document.getElementById('end-screen-title').textContent = title;
+    document.getElementById('final-score').textContent = percentage.toFixed(0);
+    document.getElementById('final-duration').textContent = `${minutes} min ${seconds} sec`;
+    document.getElementById('end-screen-message').textContent = message;
+
+    // Show the end screen.
+    document.body.classList.add('dim-blur');
+    document.getElementById('end-screen-overlay').classList.add('active');
+    document.querySelector('main').removeEventListener('click', handleNextQuestion);
+    document.querySelector('footer').removeEventListener('click', handleNextQuestionFooter);
+    document.removeEventListener('keydown', handleNextQuestionKeydown);
+    document.addEventListener('click', handleEndScreenInteraction);
+    document.addEventListener('keydown', handleEndScreenInteraction);
+}
+
+
 // Initializes the exercices.
 async function initializeExercices() {
     const exercicesDataElement = document.getElementById('exercices-data');
     const exerciceType = exercicesDataElement.dataset.type;
 
-	// Gets the exercices.
+    // Gets the exercices.
     let apiUrl = "";
     if (["kanji", "word", "radical", "all"].includes(exerciceType)) {
         apiUrl = `/api/dailies/exercices/${exerciceType}`;
@@ -234,11 +308,14 @@ async function initializeExercices() {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
 
-		// Parses the json.
+        // Parses the json.
         const exercices = await response.json();
         if (exercices && exercices.exercices && exercices.exercices.length > 0) {
             allExercices = exercices.exercices;
+            totalQuestions = allExercices.length;
             currentExercice = 0;
+            correctAnswersCount = 0;
+            startTime = new Date();
             await initializeExercice(0);
         } else {
             console.warn("Aucun exercice trouvé dans la réponse de l'API.");
@@ -248,13 +325,38 @@ async function initializeExercices() {
             }
         }
 
-	// Error during question loading.
+    // Error during question loading.
     } catch (error) {
         console.error("Erreur lors du chargement des exercices :", error);
         const flashcardFrontContent = document.querySelector('.flashcard-front .card-content');
         if (flashcardFrontContent) {
-            flashcardFrontContent.innerHTML = '<p>Erreur lors du chargement des questions.</p>';
+                flashcardFrontContent.innerHTML = '<p>Erreur lors du chargement des questions.</p>';
         }
+    }
+}
+
+// Handler for next question transition.
+function handleNextQuestion(event) {
+    if (event.target.closest('.answer-method')) return;
+    if (nextQuestion) {
+        goToNextQuestion();
+    }
+}
+
+// Handler for next question transition.
+function handleNextQuestionFooter(event) {
+    if (!event.target.closest('.answer-method')) {
+        handleNextQuestion(event);
+    }
+}
+
+// Handler for next question transition.
+function handleNextQuestionKeydown(event) {
+    const activeElement = document.activeElement;
+    const isInputFocused = activeElement.tagName === 'INPUT' || activeElement.tagName === 'TEXTAREA';
+    if (nextQuestion && (event.key === 'Enter' || event.key === ' ') && !isInputFocused) {
+        event.preventDefault();
+        handleNextQuestion(event);
     }
 }
 
@@ -263,54 +365,30 @@ document.addEventListener('DOMContentLoaded', () => {
     const jpInput = document.getElementById('jp-input');
     const frInput = document.getElementById('fr-input');
 
-	// Setup the japanese input.
+    // Setup the japanese input.
     if (window.wanakana) {
         wanakana.bind(jpInput);
     }
-	jpInput.addEventListener('keydown', (event) => {
-		if (event.key === 'Enter') {
-			event.preventDefault();
-			checkJapaneseAnswer(jpInput.value);
-		}
-	});
-    
-	// Setup the french input.
-	frInput.addEventListener('keydown', (event) => {
-		if (event.key === 'Enter') {
-			event.preventDefault();
-			checkFrenchAnswer(frInput.value);
-		}
-	});
-
-    // Handles the next question transition.
-    function handleNextQuestion(event) {
-        if (event.target.closest('.answer-method')) return;
-        if (nextQuestion) {
-            const didGoNext = goToNextQuestion();
-            if (!didGoNext) {
-                disableAnswerInputs();
-                nextQuestion = false;
-                console.log("END");
-            }
+    jpInput.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            checkJapaneseAnswer(jpInput.value);
         }
-    }
+    });
+
+    // Setup the french input.
+    frInput.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            checkFrenchAnswer(frInput.value);
+        }
+    });
 
     // Events for next question
-    document.addEventListener('keydown', (event) => {
-        const activeElement = document.activeElement;
-        const isInputFocused = activeElement.tagName === 'INPUT' || activeElement.tagName === 'TEXTAREA';
-        if (nextQuestion && (event.key === 'Enter' || event.key === ' ') && !isInputFocused) {
-            event.preventDefault();
-            handleNextQuestion(event);
-        }
-    });
+    document.addEventListener('keydown', handleNextQuestionKeydown);
     document.querySelector('main').addEventListener('click', handleNextQuestion);
-    document.querySelector('footer').addEventListener('click', (event) => {
-        if (!event.target.closest('.answer-method')) {
-            handleNextQuestion(event);
-        }
-    });
+    document.querySelector('footer').addEventListener('click', handleNextQuestionFooter);
 
-	// Initializes the exercices.
+    // Initializes the exercices.
     initializeExercices();
 });

@@ -128,7 +128,7 @@
 }
 
 #given-answer {
-    font-size: 3.5em;
+    font-size: 2.5em;
     font-weight: bold;
     margin-bottom: 15px;
     padding-bottom: 8px;
@@ -150,4 +150,79 @@
     opacity: 0.9;
     cursor: not-allowed;
     pointer-events: none;
+}
+
+body.dim-blur > *:not(.end-screen-overlay) {
+    filter: blur(5px);
+    transition: filter 0.5s ease-in-out;
+    pointer-events: none;
+}
+
+.end-screen-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.end-screen-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.end-screen-content {
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    transform: scale(0.8);
+    opacity: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.end-screen-overlay.active .end-screen-content {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.end-screen-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.end-screen-content p {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.end-screen-content #restart-button {
+    padding: 12px 25px;
+    margin-top: 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.end-screen-content #restart-button:hover {
+    transform: translateY(-2px);
+}
+
+.given-answer-display {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.correct-answer-display {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
 }

@@ -169,6 +169,14 @@ def api_get_dailies_exercices(type):
 	shuffle(exercices["exercices"])
 	return jsonify(exercices)
 
+# This is used to process the results of an exercice.
+@app.route('/api/exercices/end', methods=['POST'])
+def api_exercices_end():
+    raw_data = request.data.decode('utf-8')
+    data = loads(raw_data) if raw_data else {}
+    print(data)
+    return redirect("/")
+
 
 
 # Launches the app.
