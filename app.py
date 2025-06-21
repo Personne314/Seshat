@@ -4,7 +4,6 @@ from core.database import *
 from core.options import *
 from core.dailies import *
 from json import loads
-from os import remove
 from random import shuffle
 
 
@@ -135,8 +134,7 @@ def api_save_decks():
 # This route is used to reset the dailies.
 @app.route("/api/dailies/reset")
 def api_reset_dailies():
-	if path.isfile("dailies.json"):
-		remove("dailies.json")
+	dailies_delete()
 	return redirect("/")
 
 # This route is used to get the dailies card main informations.

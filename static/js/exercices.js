@@ -1,6 +1,17 @@
 // Stores the current exercice
 let allExercices = []
 let currentExercice = -1;
+let nextQuestion = false;
+
+// Go to the next question. Returns false if there is no more questions.
+function goToNextQuestion() {
+    if (currentExercice < allExercices.length - 1) {
+        currentExercice++;
+        initializeExercice(currentExercice);
+        return true;
+    }
+    return false;
+}
 
 // Flip the current card.
 function flipActiveCard() {
@@ -56,16 +67,6 @@ function enableAnswerInputs(method) {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
 // This renders the back of the card and flip it.
 function renderAnswerResult(given_elt, answer_elt, isCorrect) {
     const flashcardBackContent = document.querySelector('.flashcard-back .card-content');
@@ -77,30 +78,18 @@ function renderAnswerResult(given_elt, answer_elt, isCorrect) {
     if (isCorrect) flashcardBackContent.innerHTML = `
         <div class="card-content">
             <h3 id="result-title" class="result-title-correct">Vrai</h3>
-            <div id="given-answer">${answer_elt}</div>
+            <div id="given-answer">${answer_elt.join(", ")}</div>
         </div>
     `;
     else flashcardBackContent.innerHTML = `
         <div class="card-content">
             <h3 id="result-title" class="result-title-incorrect">Faux</h3>
-            <div id="given-answer">${answer_elt.join('<br>')}</div>
+            <div id="given-answer">${answer_elt.join(", ")}</div>
         </div>
-        
-    
-    
     `;
     flipActiveCard();
+    nextQuestion = true;
 }
-
-
-
-
-
-
-
-
-
-
 
 // Checks a qcm answer.
 function checkQCMAnswer(answer) {
@@ -154,7 +143,7 @@ async function switchAnswerMethod(method, choices = null) {
         el.disabled = false;
     });
 
-	// Updates the choices in case of a qcm.
+    // Updates the choices in case of a qcm.
     if (method === 'qcm' && Array.isArray(choices)) {
         activeDiv.innerHTML = '';
         choices.forEach((choice, index) => {
@@ -168,26 +157,32 @@ async function switchAnswerMethod(method, choices = null) {
             span.classList.add('qcm-button');
             span.textContent = choice;
 
-			// Adds the listeners for the answer check function.
+            // Adds the listeners for the answer check function.
             span.addEventListener('click', () => {
                 if (!span.classList.contains('disabled-interactivity')) {
                     span.classList.add('clicked');
-                	checkQCMAnswer(choice);
-				}
+                    checkQCMAnswer(choice);
+                }
             });
             label.appendChild(input);
             label.appendChild(span);
             activeDiv.appendChild(label);
         });
 
-	// Clears the content of the input.
+    // Clears the content of the input and sets focus.
     } else if (method === 'jap') {
-		const jpInput = document.getElementById('jp-input');
-		if (jpInput) jpInput.value = '';
-	} else if (method === 'fr') {
-		const frInput = document.getElementById('fr-input');
-		if (frInput) frInput.value = '';
-	}
+        const jpInput = document.getElementById('jp-input');
+        if (jpInput) {
+            jpInput.value = '';
+            jpInput.focus();
+        }
+    } else if (method === 'fr') {
+        const frInput = document.getElementById('fr-input');
+        if (frInput) {
+            frInput.value = '';
+            frInput.focus();
+        }
+    }
 }
 
 // Initialize an exercice and display it.
@@ -195,6 +190,7 @@ async function initializeExercice(id) {
     const questionNumber = document.getElementById('question-number');
     questionNumber.textContent = currentExercice+1;
     let exercice = allExercices[id];
+    nextQuestion = false;
 
 	// Switch the answer mode.
     const answer_type = exercice.answer_type;
@@ -210,6 +206,12 @@ async function initializeExercice(id) {
         flashcardFrontContent.appendChild(questionParagraph);
     } else if (flashcardFrontContent) {
         flashcardFrontContent.innerHTML = '<p>Question non disponible.</p>';
+    }
+    
+    // Remettre la carte à l'endroit
+    const activeCard = document.querySelector('.flashcard.active');
+    if (activeCard) {
+        activeCard.classList.remove('flipped');
     }
 }
 
@@ -279,6 +281,35 @@ document.addEventListener('DOMContentLoaded', () => {
 			checkFrenchAnswer(frInput.value);
 		}
 	});
+
+    // Handles the next question transition.
+    function handleNextQuestion(event) {
+        if (event.target.closest('.answer-method')) return;
+        if (nextQuestion) {
+            const didGoNext = goToNextQuestion();
+            if (!didGoNext) {
+                disableAnswerInputs();
+                nextQuestion = false;
+                console.log("END");
+            }
+        }
+    }
+
+    // Events for next question
+    document.addEventListener('keydown', (event) => {
+        const activeElement = document.activeElement;
+        const isInputFocused = activeElement.tagName === 'INPUT' || activeElement.tagName === 'TEXTAREA';
+        if (nextQuestion && (event.key === 'Enter' || event.key === ' ') && !isInputFocused) {
+            event.preventDefault();
+            handleNextQuestion(event);
+        }
+    });
+    document.querySelector('main').addEventListener('click', handleNextQuestion);
+    document.querySelector('footer').addEventListener('click', (event) => {
+        if (!event.target.closest('.answer-method')) {
+            handleNextQuestion(event);
+        }
+    });
 
 	// Initializes the exercices.
     initializeExercices();

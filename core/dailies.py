@@ -3,6 +3,7 @@ from os import path
 from json import dump, load
 from core.options import get_options
 from core.database import db_get_priority_elements
+from os import remove
 
 
 
@@ -63,6 +64,13 @@ def dailies_init():
 #################################################################################
 # This section defines functions used to manipulate the dailies.				#
 #################################################################################
+
+# This deletes the dailies file.
+def dailies_delete():
+	global last_dailies
+	if path.isfile("dailies.json"):
+		remove("dailies.json")
+	last_dailies = None
 
 # This returns the set of dailies to do.
 def dailies_get_todo():
