@@ -19,11 +19,13 @@ def exercices_create_kanji(kanji, info):
 	shuffle(qcm_choices)
 	return [
 		{
+			"id": kanji["id"],
 			"answer_type": "fr",
 			"answers": kanji["meaning"],
 			"question": f"Que signifie le kanji '{kanji["japanese"]}' en français ?"
 		},
 		{	
+			"id": kanji["id"],
 			"answer_type": "qcm",
 			"answers": [kanji["japanese"]],
 			"choices": qcm_choices,
@@ -39,11 +41,13 @@ def exercices_create_word(word, info):
 	shuffle(qcm_choices)
 	return [
 		{
+			"id": word["id"],
 			"answer_type": "fr",
 			"answers": word["meaning"],
 			"question": f"Que signifie le mot '{word["japanese"]}' en français ?"
 		},
 		{	
+			"id": word["id"],
 			"answer_type": "qcm",
 			"answers": [word["japanese"]],
 			"choices": qcm_choices,
@@ -59,11 +63,13 @@ def exercices_create_radical(radical, info):
 	shuffle(qcm_choices)
 	return [
 		{
+			"id": radical["id"],
 			"answer_type": "fr",
 			"answers": radical["meaning"],
 			"question": f"Que signifie le radical '{radical["japanese"]}' en français ?"
 		},
 		{	
+			"id": radical["id"],
 			"answer_type": "qcm",
 			"answers": [radical["japanese"]],
 			"choices": qcm_choices,

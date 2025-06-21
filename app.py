@@ -172,10 +172,11 @@ def api_get_dailies_exercices(type):
 # This is used to process the results of an exercice.
 @app.route('/api/exercices/end', methods=['POST'])
 def api_exercices_end():
-    raw_data = request.data.decode('utf-8')
-    data = loads(raw_data) if raw_data else {}
-    print(data)
-    return redirect("/")
+	raw_data = request.data.decode('utf-8')
+	json_str = raw_data.split('=', 1)[1] if '=' in raw_data else raw_data
+	data = loads(json_str) if json_str else {}
+	print(data)
+	return redirect("/")
 
 
 

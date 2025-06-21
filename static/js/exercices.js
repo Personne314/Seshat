@@ -5,6 +5,8 @@ let nextQuestion = false;
 let correctAnswersCount = 0;
 let startTime = null;
 let totalQuestions = 0;
+// Nouveau dictionnaire pour stocker les résultats par ID d'exercice
+let exerciceResults = {}; // { "id_exercice_1": [bonnes_reponses, total_questions], "id_exercice_2": [bonnes_reponses, total_questions] }
 
 // Go to the next question. Returns false if there is no more questions.
 function goToNextQuestion() {
@@ -13,8 +15,7 @@ function goToNextQuestion() {
         initializeExercice(currentExercice);
         return true;
     }
-    // Si toutes les questions ont été répondues
-    displayEndScreen(); // Affiche l'écran de fin
+    displayEndScreen();
     return false;
 }
 
@@ -72,7 +73,6 @@ function enableAnswerInputs(method) {
     }
 }
 
-
 // This renders the back of the card and flip it.
 function renderAnswerResult(given_elt, answer_elt, isCorrect) {
     const flashcardBackContent = document.querySelector('.flashcard-back .card-content');
@@ -97,6 +97,13 @@ function renderAnswerResult(given_elt, answer_elt, isCorrect) {
     nextQuestion = true;
 }
 
+// Update the results.
+function updateExerciceResults(exerciceId, isCorrect) {
+    if (!exerciceResults[exerciceId]) exerciceResults[exerciceId] = [0, 0];
+    if (isCorrect)  exerciceResults[exerciceId][0]++;
+    exerciceResults[exerciceId][1]++;
+}
+
 // Checks a qcm answer.
 function checkQCMAnswer(answer) {
     if (currentExercice < 0) {
@@ -104,11 +111,13 @@ function checkQCMAnswer(answer) {
         return;
     }
     disableAnswerInputs();
-    let answers = allExercices[currentExercice].answers;
+    let exercice = allExercices[currentExercice];
+    let answers = exercice.answers;
     const isCorrect = answers.includes(answer);
     if (isCorrect) {
-        correctAnswersCount++; // Incrémente le compteur de bonnes réponses
+        correctAnswersCount++;
     }
+    updateExerciceResults(exercice.id, isCorrect);
     renderAnswerResult(answer, answers, isCorrect);
 }
 
@@ -119,11 +128,13 @@ function checkJapaneseAnswer(answer) {
         return;
     }
     disableAnswerInputs();
-    let answers = allExercices[currentExercice].answers;
+    let exercice = allExercices[currentExercice];
+    let answers = exercice.answers;
     const isCorrect = answers.includes(answer);
     if (isCorrect) {
-        correctAnswersCount++; // Incrémente le compteur de bonnes réponses
+        correctAnswersCount++;
     }
+    updateExerciceResults(exercice.id, isCorrect);
     renderAnswerResult(answer, answers, isCorrect);
 }
 
@@ -134,11 +145,13 @@ function checkFrenchAnswer(answer) {
         return;
     }
     disableAnswerInputs();
-    let answers = allExercices[currentExercice].answers;
+    let exercice = allExercices[currentExercice];
+    let answers = exercice.answers;
     const isCorrect = answers.includes(answer);
     if (isCorrect) {
-        correctAnswersCount++; // Incrémente le compteur de bonnes réponses
+        correctAnswersCount++;
     }
+    updateExerciceResults(exercice.id, isCorrect);
     renderAnswerResult(answer, answers, isCorrect);
 }
 
@@ -231,7 +244,7 @@ async function initializeExercice(id) {
     }
 }
 
-// Handle redirection after quiz ends
+// Handle redirection after quiz ends.
 function handleEndScreenInteraction() {
     if (!document.getElementById('end-screen-overlay').classList.contains('active')) return;
 
@@ -244,9 +257,14 @@ function handleEndScreenInteraction() {
     form.method = 'POST';
     form.action = '/api/exercices/end';
     form.enctype = 'text/plain';
+    const exercicesDataElement = document.getElementById('exercices-data');
+    const dataToSend = {
+        "type": exercicesDataElement.dataset.type,
+        "results": exerciceResults
+    };
     const input = document.createElement('input');
     input.name = '_';
-    input.value = JSON.stringify({});
+    input.value = JSON.stringify(dataToSend);
     input.style.display = 'none';
 
     // Submit the form, causing a full page redirect.
@@ -288,7 +306,6 @@ function displayEndScreen() {
     document.addEventListener('keydown', handleEndScreenInteraction);
 }
 
-
 // Initializes the exercices.
 async function initializeExercices() {
     const exercicesDataElement = document.getElementById('exercices-data');
@@ -316,6 +333,7 @@ async function initializeExercices() {
             currentExercice = 0;
             correctAnswersCount = 0;
             startTime = new Date();
+            exerciceResults = {};
             await initializeExercice(0);
         } else {
             console.warn("Aucun exercice trouvé dans la réponse de l'API.");
