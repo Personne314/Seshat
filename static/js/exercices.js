@@ -5,8 +5,8 @@ let nextQuestion = false;
 let correctAnswersCount = 0;
 let startTime = null;
 let totalQuestions = 0;
-// Nouveau dictionnaire pour stocker les résultats par ID d'exercice
-let exerciceResults = {}; // { "id_exercice_1": [bonnes_reponses, total_questions], "id_exercice_2": [bonnes_reponses, total_questions] }
+let exerciceResults = {};
+let exercicesType = null;
 
 // Go to the next question. Returns false if there is no more questions.
 function goToNextQuestion() {
@@ -257,9 +257,8 @@ function handleEndScreenInteraction() {
     form.method = 'POST';
     form.action = '/api/exercices/end';
     form.enctype = 'text/plain';
-    const exercicesDataElement = document.getElementById('exercices-data');
     const dataToSend = {
-        "type": exercicesDataElement.dataset.type,
+        "type": exercicesType,
         "results": exerciceResults
     };
     const input = document.createElement('input');
@@ -328,6 +327,7 @@ async function initializeExercices() {
         // Parses the json.
         const exercices = await response.json();
         if (exercices && exercices.exercices && exercices.exercices.length > 0) {
+            exercicesType = exercices.type
             allExercices = exercices.exercices;
             totalQuestions = allExercices.length;
             currentExercice = 0;

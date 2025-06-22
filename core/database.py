@@ -675,7 +675,7 @@ def db_get_name_from_element(card_id):
 
 # This function updates a list of scores in the database.
 # scores must be a list of (element_id, last_review, validation_count, difficulty).
-def db_upsert_scores(scores):
+def db_update_scores(scores):
 	db = get_db()
 	query = """
 	INSERT INTO Score (element_id, last_review, validation_count, difficulty)
@@ -706,5 +706,5 @@ def db_get_priority_elements(n, type):
 	LIMIT ?
 	"""
 	cursor = db.execute(query, (type, n))
-	results = [(row[0], row[1], row[2], row[3], row[4], row[5]) for row in cursor.fetchall()]
+	results = [[row[0], row[1], row[2], row[3], row[4], row[5]] for row in cursor.fetchall()]
 	return results

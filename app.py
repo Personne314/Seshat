@@ -175,7 +175,8 @@ def api_exercices_end():
 	raw_data = request.data.decode('utf-8')
 	json_str = raw_data.split('=', 1)[1] if '=' in raw_data else raw_data
 	data = loads(json_str) if json_str else {}
-	print(data)
+	if data.get("type") == "dailies" :
+		dailies_process_result(data["results"])
 	return redirect("/")
 
 
