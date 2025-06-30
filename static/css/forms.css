@@ -44,8 +44,9 @@ form {
 
 .options-group button[type="button"],
 form button[type="submit"] {
+	min-width: 40%;
 	display: block;
-	margin: 30px auto;
+	margin: auto;
 	padding: 12px 30px;
 	font-weight: bold;
 	font-size: 1.1em;

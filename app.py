@@ -84,7 +84,15 @@ def page_decks_radical():
 # This route generates the exercices pages.
 @app.route("/exercices/<string:type>")
 def page_exercises(type):
-	return render_template("exercices.html", options=get_options(), type=type)
+    # Détermine la page active en fonction du type d'exercice
+    active_page_map = {
+        'free-kanji': 'exercices-free-kanji',
+        'free-word': 'exercices-free-word',
+        'free-radical': 'exercices-free-radical',
+        'free-all': 'exercices-free-all'
+    }
+    active_page = active_page_map.get(type, 'dailies')
+    return render_template("exercices.html", options=get_options(), type=type, active_page=active_page)
 
 
 
@@ -178,6 +186,32 @@ def api_exercices_end():
 	if data.get("type") == "dailies" :
 		dailies_process_result(data["results"])
 	return redirect("/")
+
+
+
+
+# This route is used to import the progression.
+@app.route("/api/progression/import")
+def api_import_progression():
+	return redirect("/")
+
+# This route is used to export the progression.
+@app.route("/api/progression/export")
+def api_export_progression():
+	return redirect("/")
+
+# This route is used to reset the progression.
+@app.route("/api/progression/reset")
+def api_reset_progression():
+	return redirect("/")
+
+# This route is used to sync the database with the json data.
+@app.route("/api/database/sync")
+def api_sync_database():
+	return redirect("/")
+
+
+
 
 
 

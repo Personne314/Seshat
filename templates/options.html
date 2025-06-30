@@ -11,19 +11,16 @@
 <body>
     {% include "header.html" %}
 
-    <!-- Form to update the app options -->
     <br/>
     <h1>Paramètres de l'application</h1>
     <form method="POST" action="/api/options/save">
         {% set dailies_values = [0,5,10,15,20,30,40] %}
-        
-        <!-- Dailies options -->
+
         <details class="section">
             <summary>Dailies</summary>
 
-            <!-- The number of radicals to work on each day -->
             <div class="options-group">
-                <label for="radicals">Radicaux Quotitiens :</label>
+                <label for="radicals">Radicaux Quotidens :</label>
                 <select name="radicals-dailies-amount" id="radicals">
                     {% for val in dailies_values %}
                     <option value="{{ val }}" {% if options["radicals-dailies-amount"] == val %}selected{% endif %}>
@@ -33,9 +30,8 @@
                 </select>
             </div>
 
-            <!-- The number of kanjis to work on each day -->
             <div class="options-group">
-                <label for="kanjis">Kanjis Quotitiens :</label>
+                <label for="kanjis">Kanjis Quotidens :</label>
                 <select name="kanjis-dailies-amount" id="kanjis">
                     {% for val in dailies_values %}
                     <option value="{{ val }}" {% if options["kanjis-dailies-amount"] == val %}selected{% endif %}>
@@ -45,9 +41,8 @@
                 </select>
             </div>
 
-            <!-- The number of words to work on each day -->
             <div class="options-group">
-                <label for="words">Mots Quotitiens :</label>
+                <label for="words">Mots Quotidens :</label>
                 <select name="words-dailies-amount" id="words">
                     {% for val in dailies_values %}
                     <option value="{{ val }}" {% if options["words-dailies-amount"] == val %}selected{% endif %}>
@@ -57,15 +52,13 @@
                 </select>
             </div>
 
-            <!-- Reset Dailies button -->
             <div class="options-group">
                 <button type="button" onclick="resetDailies()" class="reset-button">
-                    Reset des Dailies
+                    Réinitialiser les Dailies
                 </button>
             </div>
         </details>
 
-        <!-- Theme options -->
         <details class="section">
             <summary>Thèmes</summary>
             <div class="options-group">
@@ -81,11 +74,29 @@
             </div>
         </details>
 
-        <!-- This post on an api route that get the form data and save it -->
+        <details class="section">
+            <summary>Progression</summary>
+
+            <div class="options-group">
+                <button type="button" onclick="window.location.href='/api/progression/export'">Exporter la progression</button>
+            </div>
+
+            <div class="options-group">
+                <button type="button" onclick="window.location.href='/api/progression/import'">Importer la progression</button>
+            </div>
+
+            <div class="options-group">
+                <button type="button" onclick="window.location.href='/api/progression/reset'" class="reset-button">Réinitialiser la progression</button>
+            </div>
+
+            <div class="options-group">
+                <button type="button" onclick="window.location.href='/api/database/sync'">Synchroniser la base de données</button>
+            </div>
+        </details>
+
         <button type="submit">Sauvegarder</button>
     </form>
 
-	<!-- Script for the options -->
-	<script src="{{ url_for('static', filename='js/options.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/options.js') }}"></script>
 </body>
 </html>

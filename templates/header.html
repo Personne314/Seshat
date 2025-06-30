@@ -6,6 +6,16 @@
 		</div>
 		<div class="nav-items">
 			<a href="/" class="nav-link {% if active_page == 'home' %}active{% endif %}">Accueil</a>
+			<!-- Nouveau menu déroulant Exercices -->
+			<div class="nav-link dropdown {% if active_page in ['dailies', 'exercices-free-kanji', 'exercices-free-word', 'exercices-free-radical', 'exercices-free-all'] %}active{% endif %}">
+				<a class="dropdown-toggle">Exercices</a>
+				<div class="dropdown-menu">
+					<a href="/exercices/free-kanji">Kanji</a>
+					<a href="/exercices/free-word">Deck</a>
+					<a href="/exercices/free-radical">Radicaux</a>
+					<a href="/exercices/free-all">Tout</a>
+				</div>
+			</div>
 			<div class="nav-link dropdown {% if active_page in ['decks-kanji', 'decks-word', 'decks-radical'] %}active{% endif %}">
 				<a class="dropdown-toggle">Decks</a>
 				<div class="dropdown-menu">
